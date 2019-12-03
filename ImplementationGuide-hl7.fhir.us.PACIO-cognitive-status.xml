@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.PACIO-cognitive-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PACIO_Cognitive_Status</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status</pre></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status"/>
+  <version value="0.1.0"/>
+  <name value="PACIO_Cognitive_Status"/>
+  <title value="PACIO Cognitive Status"/>
+  <status value="draft"/>
+  <date value="2019-11-27T15:12:56-05:00"/>
+  <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.us.PACIO-cognitive-status"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping>
+      <name value="Profiles in this Implementation Guide"/>
+      <description value="Profiles in this Implementation Guide"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-cs-BundledCognitiveStatus.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-cs-BundledCognitiveStatus"/>
+      </reference>
+      <name value="pacio-cs-BundledCognitiveStatus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-cs-CognitiveStatus.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-cs-CognitiveStatus"/>
+      </reference>
+      <name value="pacio-cs-CognitiveStatus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-AgeGroupVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-AgeGroupVS"/>
+      </reference>
+      <name value="AgeGroupVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-AnatomicalDirectionVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-AnatomicalDirectionVS"/>
+      </reference>
+      <name value="AnatomicalDirectionVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-BodyLocationVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-BodyLocationVS"/>
+      </reference>
+      <name value="BodyLocationVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-ClockFaceDirectionVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-ClockFaceDirectionVS"/>
+      </reference>
+      <name value="ClockFaceDirectionVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-ConditionStatusTrendVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-ConditionStatusTrendVS"/>
+      </reference>
+      <name value="ConditionStatusTrendVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-DetectedNotDetectedVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-DetectedNotDetectedVS"/>
+      </reference>
+      <name value="DetectedNotDetectedVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-GestationalTimePeriodVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-GestationalTimePeriodVS"/>
+      </reference>
+      <name value="GestationalTimePeriodVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-GradedAmountVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-GradedAmountVS"/>
+      </reference>
+      <name value="GradedAmountVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-GradedFrequencyVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-GradedFrequencyVS"/>
+      </reference>
+      <name value="GradedFrequencyVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-GradedPortionVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-GradedPortionVS"/>
+      </reference>
+      <name value="GradedPortionVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-ImageMimeTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-ImageMimeTypeVS"/>
+      </reference>
+      <name value="ImageMimeTypeVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-LandmarkTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-LandmarkTypeVS"/>
+      </reference>
+      <name value="LandmarkTypeVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-LanguageQualifierVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-LanguageQualifierVS"/>
+      </reference>
+      <name value="LanguageQualifierVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-LateralityVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-LateralityVS"/>
+      </reference>
+      <name value="LateralityVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-LowerBoundTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-LowerBoundTypeVS"/>
+      </reference>
+      <name value="LowerBoundTypeVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-OrientationVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-OrientationVS"/>
+      </reference>
+      <name value="OrientationVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-PerformanceGradingScaleVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-PerformanceGradingScaleVS"/>
+      </reference>
+      <name value="PerformanceGradingScaleVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-PositiveNegativeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-PositiveNegativeVS"/>
+      </reference>
+      <name value="PositiveNegativeVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-SettingVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-SettingVS"/>
+      </reference>
+      <name value="SettingVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-StatisticTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-StatisticTypeVS"/>
+      </reference>
+      <name value="StatisticTypeVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-UnitsOfLengthVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-UnitsOfLengthVS"/>
+      </reference>
+      <name value="UnitsOfLengthVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-UpperBoundTypeVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-UpperBoundTypeVS"/>
+      </reference>
+      <name value="UpperBoundTypeVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-YesNoUnknownVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-YesNoUnknownVS"/>
+      </reference>
+      <name value="YesNoUnknownVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-shr-core-YesNoVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/shr-core-YesNoVS"/>
+      </reference>
+      <name value="YesNoVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-shr-core-ImageMimeTypeCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/shr-core-ImageMimeTypeCS"/>
+      </reference>
+      <name value="ImageMimeTypeCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-shr-core-LanguageQualifierCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/shr-core-LanguageQualifierCS"/>
+      </reference>
+      <name value="LanguageQualifierCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-shr-core-PerformanceGradingScaleCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/shr-core-PerformanceGradingScaleCS"/>
+      </reference>
+      <name value="PerformanceGradingScaleCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-shr-core-SettingCS.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/shr-core-SettingCS"/>
+      </reference>
+      <name value="SettingCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="PACIO Cognitive Status"/>
+      <generation value="html"/>
+    </page>
+  </definition>
+</ImplementationGuide>

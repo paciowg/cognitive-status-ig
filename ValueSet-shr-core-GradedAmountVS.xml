@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="shr-core-GradedAmountVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>GradedAmountVS ValueSet</b></p>
+<p>A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.</p>
+</div>
+  </text>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
+  <version value="0.1.0"/>
+  <name value="GradedAmountVS"/>
+  <title value="GradedAmountVS"/>
+  <status value="draft"/>
+  <date value="2019-11-27T00:00:00-05:00"/>
+  <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="260413007"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="55605001"/>
+        <display value="Minimal"/>
+      </concept>
+      <concept>
+        <code value="255507004"/>
+        <display value="Small"/>
+      </concept>
+      <concept>
+        <code value="255508009"/>
+        <display value="Medium"/>
+      </concept>
+      <concept>
+        <code value="255509001"/>
+        <display value="Large"/>
+      </concept>
+      <concept>
+        <code value="42425007"/>
+        <display value="Equivocal. Equivocal represents a borderline value, too close to call; for example, a value very close to a cut-off between positive and negative."/>
+      </concept>
+      <concept>
+        <code value="82334004"/>
+        <display value="Indeterminate. Indeterminate means the results were uninterpretable, or cannot be determined; technical issues prevented obtaining a valid result."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

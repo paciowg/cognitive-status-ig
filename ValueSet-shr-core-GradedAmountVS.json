@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-GradedAmountVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>GradedAmountVS ValueSet</b></p>\n<p>A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS",
+  "version": "0.1.0",
+  "name": "GradedAmountVS",
+  "title": "GradedAmountVS",
+  "status": "draft",
+  "date": "2019-11-27T00:00:00-05:00",
+  "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        },
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "260413007",
+            "display": "None"
+          },
+          {
+            "code": "55605001",
+            "display": "Minimal"
+          },
+          {
+            "code": "255507004",
+            "display": "Small"
+          },
+          {
+            "code": "255508009",
+            "display": "Medium"
+          },
+          {
+            "code": "255509001",
+            "display": "Large"
+          },
+          {
+            "code": "42425007",
+            "display": "Equivocal. Equivocal represents a borderline value, too close to call; for example, a value very close to a cut-off between positive and negative."
+          },
+          {
+            "code": "82334004",
+            "display": "Indeterminate. Indeterminate means the results were uninterpretable, or cannot be determined; technical issues prevented obtaining a valid result."
+          }
+        ]
+      }
+    ]
+  }
+}

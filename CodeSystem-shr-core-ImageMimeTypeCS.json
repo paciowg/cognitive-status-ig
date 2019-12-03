@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "shr-core-ImageMimeTypeCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ImageMimeTypeCS CodeSystem</b></p>\n<p>Mime types that apply to photographic images.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS",
+  "version": "0.1.0",
+  "name": "ImageMimeTypeCS",
+  "title": "ImageMimeTypeCS",
+  "status": "draft",
+  "date": "2019-11-27T00:00:00-05:00",
+  "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        },
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/"
+        }
+      ]
+    }
+  ],
+  "description": "Mime types that apply to photographic images.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "image/bmp",
+      "display": ".bmp",
+      "definition": ".bmp"
+    },
+    {
+      "code": "image/gif",
+      "display": ".gif",
+      "definition": ".gif"
+    },
+    {
+      "code": "image/jpeg",
+      "display": ".jpeg",
+      "definition": ".jpeg"
+    },
+    {
+      "code": "image/png",
+      "display": ".png",
+      "definition": ".png"
+    },
+    {
+      "code": "image/svg+xml",
+      "display": ".svg",
+      "definition": ".svg"
+    },
+    {
+      "code": "image/tiff",
+      "display": ".tiff",
+      "definition": ".tiff"
+    }
+  ]
+}

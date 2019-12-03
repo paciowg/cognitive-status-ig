@@ -1,0 +1,559 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.us.PACIO-cognitive-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIO_Cognitive_Status</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status</pre></div>"
+  },
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status",
+  "version": "0.1.0",
+  "name": "PACIO_Cognitive_Status",
+  "title": "PACIO Cognitive Status",
+  "status": "draft",
+  "date": "2019-11-27T15:12:56-05:00",
+  "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        },
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.us.PACIO-cognitive-status",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.0"
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "name": "Profiles in this Implementation Guide",
+        "description": "Profiles in this Implementation Guide"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-cs-BundledCognitiveStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-cs-BundledCognitiveStatus"
+        },
+        "name": "pacio-cs-BundledCognitiveStatus",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-cs-CognitiveStatus.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-cs-CognitiveStatus"
+        },
+        "name": "pacio-cs-CognitiveStatus",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-AgeGroupVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-AgeGroupVS"
+        },
+        "name": "AgeGroupVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-AnatomicalDirectionVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-AnatomicalDirectionVS"
+        },
+        "name": "AnatomicalDirectionVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-BodyLocationVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-BodyLocationVS"
+        },
+        "name": "BodyLocationVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-ClockFaceDirectionVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-ClockFaceDirectionVS"
+        },
+        "name": "ClockFaceDirectionVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-ConditionStatusTrendVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-ConditionStatusTrendVS"
+        },
+        "name": "ConditionStatusTrendVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-DetectedNotDetectedVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-DetectedNotDetectedVS"
+        },
+        "name": "DetectedNotDetectedVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-GestationalTimePeriodVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-GestationalTimePeriodVS"
+        },
+        "name": "GestationalTimePeriodVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-GradedAmountVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-GradedAmountVS"
+        },
+        "name": "GradedAmountVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-GradedFrequencyVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-GradedFrequencyVS"
+        },
+        "name": "GradedFrequencyVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-GradedPortionVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-GradedPortionVS"
+        },
+        "name": "GradedPortionVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-ImageMimeTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-ImageMimeTypeVS"
+        },
+        "name": "ImageMimeTypeVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-LandmarkTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-LandmarkTypeVS"
+        },
+        "name": "LandmarkTypeVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-LanguageQualifierVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-LanguageQualifierVS"
+        },
+        "name": "LanguageQualifierVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-LateralityVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-LateralityVS"
+        },
+        "name": "LateralityVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-LowerBoundTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-LowerBoundTypeVS"
+        },
+        "name": "LowerBoundTypeVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-OrientationVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-OrientationVS"
+        },
+        "name": "OrientationVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-PerformanceGradingScaleVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-PerformanceGradingScaleVS"
+        },
+        "name": "PerformanceGradingScaleVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-PositiveNegativeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-PositiveNegativeVS"
+        },
+        "name": "PositiveNegativeVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-SettingVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-SettingVS"
+        },
+        "name": "SettingVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-StatisticTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-StatisticTypeVS"
+        },
+        "name": "StatisticTypeVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-UnitsOfLengthVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-UnitsOfLengthVS"
+        },
+        "name": "UnitsOfLengthVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-UpperBoundTypeVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-UpperBoundTypeVS"
+        },
+        "name": "UpperBoundTypeVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-YesNoUnknownVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-YesNoUnknownVS"
+        },
+        "name": "YesNoUnknownVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-shr-core-YesNoVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/shr-core-YesNoVS"
+        },
+        "name": "YesNoVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-shr-core-ImageMimeTypeCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/shr-core-ImageMimeTypeCS"
+        },
+        "name": "ImageMimeTypeCS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-shr-core-LanguageQualifierCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/shr-core-LanguageQualifierCS"
+        },
+        "name": "LanguageQualifierCS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-shr-core-PerformanceGradingScaleCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/shr-core-PerformanceGradingScaleCS"
+        },
+        "name": "PerformanceGradingScaleCS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-shr-core-SettingCS.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/shr-core-SettingCS"
+        },
+        "name": "SettingCS",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "index.html",
+      "title": "PACIO Cognitive Status",
+      "generation": "html"
+    }
+  }
+}

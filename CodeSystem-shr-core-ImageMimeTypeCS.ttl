@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "shr-core-ImageMimeTypeCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>ImageMimeTypeCS CodeSystem</b></p>\n<p>Mime types that apply to photographic images.</p>\n</div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "ImageMimeTypeCS"];
+  fhir:CodeSystem.title [ fhir:value "ImageMimeTypeCS"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2019-11-27T00:00:00-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare/" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/homehealth/" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Mime types that apply to photographic images."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "image/bmp" ];
+     fhir:CodeSystem.concept.display [ fhir:value ".bmp" ];
+     fhir:CodeSystem.concept.definition [ fhir:value ".bmp" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "image/gif" ];
+     fhir:CodeSystem.concept.display [ fhir:value ".gif" ];
+     fhir:CodeSystem.concept.definition [ fhir:value ".gif" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "image/jpeg" ];
+     fhir:CodeSystem.concept.display [ fhir:value ".jpeg" ];
+     fhir:CodeSystem.concept.definition [ fhir:value ".jpeg" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "image/png" ];
+     fhir:CodeSystem.concept.display [ fhir:value ".png" ];
+     fhir:CodeSystem.concept.definition [ fhir:value ".png" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "image/svg+xml" ];
+     fhir:CodeSystem.concept.display [ fhir:value ".svg" ];
+     fhir:CodeSystem.concept.definition [ fhir:value ".svg" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "image/tiff" ];
+     fhir:CodeSystem.concept.display [ fhir:value ".tiff" ];
+     fhir:CodeSystem.concept.definition [ fhir:value ".tiff" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS.ttl> .
+
+# -------------------------------------------------------------------------------------
+

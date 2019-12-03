@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="shr-core-ImageMimeTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>ImageMimeTypeVS ValueSet</b></p>
+<p>Mime types that apply to photographic images.</p>
+</div>
+  </text>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS"/>
+  <version value="0.1.0"/>
+  <name value="ImageMimeTypeVS"/>
+  <title value="ImageMimeTypeVS"/>
+  <status value="draft"/>
+  <date value="2019-11-27T00:00:00-05:00"/>
+  <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+    </telecom>
+  </contact>
+  <description value="Mime types that apply to photographic images."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+      <concept>
+        <code value="image/bmp"/>
+        <display value=".bmp"/>
+      </concept>
+      <concept>
+        <code value="image/gif"/>
+        <display value=".gif"/>
+      </concept>
+      <concept>
+        <code value="image/jpeg"/>
+        <display value=".jpeg"/>
+      </concept>
+      <concept>
+        <code value="image/png"/>
+        <display value=".png"/>
+      </concept>
+      <concept>
+        <code value="image/svg+xml"/>
+        <display value=".svg"/>
+      </concept>
+      <concept>
+        <code value="image/tiff"/>
+        <display value=".tiff"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

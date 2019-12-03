@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-GestationalTimePeriodVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>GestationalTimePeriodVS ValueSet</b></p>\n<p>Time periods of pregnancy</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS",
+  "version": "0.1.0",
+  "name": "GestationalTimePeriodVS",
+  "title": "GestationalTimePeriodVS",
+  "status": "draft",
+  "date": "2019-11-27T00:00:00-05:00",
+  "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        },
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/"
+        }
+      ]
+    }
+  ],
+  "description": "Time periods of pregnancy",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncimeta.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C0032979",
+            "display": "Pregnancy Trimester, First"
+          },
+          {
+            "code": "C0032980",
+            "display": "Pregnancy Trimester, Second"
+          },
+          {
+            "code": "C0032981",
+            "display": "Pregnancy Trimester, Third"
+          },
+          {
+            "code": "C0747967",
+            "display": "PRIOR TO CONCEPTION"
+          },
+          {
+            "code": "C0585037",
+            "display": "Entire pregnancy time period"
+          },
+          {
+            "code": "C1839947",
+            "display": "Birth-newborn period"
+          }
+        ]
+      }
+    ]
+  }
+}

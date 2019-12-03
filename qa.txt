@@ -1,0 +1,74 @@
+﻿PACIO_Cognitive_Status : Validation Results
+=========================================
+
+err = 6, warn = 0, info = 0
+Generated Wed Nov 27 15:13:07 EST 2019. FHIR version 4.0.0 for hl7.fhir.us.PACIO-cognitive-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-cognitive-status)
+
+ Build Errors : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-ImageMimeTypeCS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-LanguageQualifierCS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-PerformanceGradingScaleCS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-SettingCS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/ig : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-BundledCognitiveStatus : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-CognitiveStatus : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AgeGroupVS : 1 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AnatomicalDirectionVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-BodyLocationVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ClockFaceDirectionVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ConditionStatusTrendVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-DetectedNotDetectedVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GestationalTimePeriodVS : 1 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedAmountVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedFrequencyVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedPortionVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ImageMimeTypeVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LandmarkTypeVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LanguageQualifierVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LateralityVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LowerBoundTypeVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-OrientationVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PerformanceGradingScaleVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PositiveNegativeVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-SettingVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-StatisticTypeVS : 1 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UnitsOfLengthVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UpperBoundTypeVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoUnknownVS : 0 / 0
+ /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoVS : 0 / 0
+</table>
+== n/a ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-ImageMimeTypeCS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-LanguageQualifierCS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-PerformanceGradingScaleCS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-SettingCS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/ig.xml ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-BundledCognitiveStatus.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-CognitiveStatus.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AgeGroupVS.json ==
+ERROR: shr-core-AgeGroupVS: Error from server: Unable to provide support for code system http://ncimeta.nci.nih.gov
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AnatomicalDirectionVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-BodyLocationVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ClockFaceDirectionVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ConditionStatusTrendVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-DetectedNotDetectedVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GestationalTimePeriodVS.json ==
+ERROR: shr-core-GestationalTimePeriodVS: Error from server: Unable to provide support for code system http://ncimeta.nci.nih.gov
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedAmountVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedFrequencyVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedPortionVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ImageMimeTypeVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LandmarkTypeVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LanguageQualifierVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LateralityVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LowerBoundTypeVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-OrientationVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PerformanceGradingScaleVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PositiveNegativeVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-SettingVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-StatisticTypeVS.json ==
+ERROR: shr-core-StatisticTypeVS: Error from server: Unable to provide support for code system http://ncimeta.nci.nih.gov
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UnitsOfLengthVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UpperBoundTypeVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoUnknownVS.json ==
+== /Users/tshaffer/Developer/pacio/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoVS.json ==

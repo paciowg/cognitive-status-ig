@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="shr-core-StatisticTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>StatisticTypeVS ValueSet</b></p>
+<p>How to interpret a reported quantity, i.e, whether the quantity is an maximum, minimum, mean, median, etc.</p>
+</div>
+  </text>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-StatisticTypeVS"/>
+  <version value="0.1.0"/>
+  <name value="StatisticTypeVS"/>
+  <title value="StatisticTypeVS"/>
+  <status value="draft"/>
+  <date value="2019-11-27T00:00:00-05:00"/>
+  <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+    </telecom>
+  </contact>
+  <description value="How to interpret a reported quantity, i.e, whether the quantity is an maximum, minimum, mean, median, etc."/>
+  <compose>
+    <include>
+      <system value="http://ncimeta.nci.nih.gov"/>
+      <concept>
+        <code value="C1524031"/>
+        <display value="Desired or observed minimum"/>
+      </concept>
+      <concept>
+        <code value="C0806909"/>
+        <display value="Desired or observed maximum"/>
+      </concept>
+      <concept>
+        <code value="C0444504"/>
+        <display value="Mean value"/>
+      </concept>
+      <concept>
+        <code value="C0876920"/>
+        <display value="Median value"/>
+      </concept>
+      <concept>
+        <code value="C0750480"/>
+        <display value="Count"/>
+      </concept>
+      <concept>
+        <code value="C1514721"/>
+        <display value="Range, the difference between lowest and highest numerical values"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

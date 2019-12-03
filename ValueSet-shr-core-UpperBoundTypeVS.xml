@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="shr-core-UpperBoundTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+<p><b>UpperBoundTypeVS ValueSet</b></p>
+<p>Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value.</p>
+</div>
+  </text>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS"/>
+  <version value="0.1.0"/>
+  <name value="UpperBoundTypeVS"/>
+  <title value="UpperBoundTypeVS"/>
+  <status value="draft"/>
+  <date value="2019-11-27T00:00:00-05:00"/>
+  <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+    </telecom>
+  </contact>
+  <description value="Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/quantity-comparator"/>
+      <concept>
+        <code value="&lt;"/>
+        <display value="The actual value is less than the given value."/>
+      </concept>
+      <concept>
+        <code value="&lt;="/>
+        <display value="The actual value is less than or equal to the given value."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

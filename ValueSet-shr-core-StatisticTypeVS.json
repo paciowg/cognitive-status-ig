@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shr-core-StatisticTypeVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>StatisticTypeVS ValueSet</b></p>\n<p>How to interpret a reported quantity, i.e, whether the quantity is an maximum, minimum, mean, median, etc.</p>\n</div>"
+  },
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-StatisticTypeVS",
+  "version": "0.1.0",
+  "name": "StatisticTypeVS",
+  "title": "StatisticTypeVS",
+  "status": "draft",
+  "date": "2019-11-27T00:00:00-05:00",
+  "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        },
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/homehealth/"
+        }
+      ]
+    }
+  ],
+  "description": "How to interpret a reported quantity, i.e, whether the quantity is an maximum, minimum, mean, median, etc.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncimeta.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C1524031",
+            "display": "Desired or observed minimum"
+          },
+          {
+            "code": "C0806909",
+            "display": "Desired or observed maximum"
+          },
+          {
+            "code": "C0444504",
+            "display": "Mean value"
+          },
+          {
+            "code": "C0876920",
+            "display": "Median value"
+          },
+          {
+            "code": "C0750480",
+            "display": "Count"
+          },
+          {
+            "code": "C1514721",
+            "display": "Range, the difference between lowest and highest numerical values"
+          }
+        ]
+      }
+    ]
+  }
+}
