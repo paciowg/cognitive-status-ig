@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ad2196cf-48a6-47dd-9307-b9e8e6aca141"/>
+  <id value="1d2bdf29-a82f-45df-b3cf-5aa951dbb690"/>
   <meta>
-    <lastUpdated value="2019-11-27T15:12:56.076-05:00"/>
+    <lastUpdated value="2019-12-03T23:20:33.342+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-AnatomicalDirectionVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -426,9 +428,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
+        <version value="0.1.0"/>
+        <name value="AnatomicalDirectionVS"/>
+        <title value="Anatomical Direction VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Terms that specify anatomical direction."/>
         <expansion>
-          <identifier value="urn:uuid:3b6b650b-4d97-4a01-b7c9-2721db30e849"/>
-          <timestamp value="2019-11-27T19:54:36.082Z"/>
+          <identifier value="urn:uuid:539a7cc5-c694-495c-bcaa-c5ade3789edf"/>
+          <timestamp value="2019-12-03T23:20:39+00:00"/>
+          <total value="49"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -687,8 +712,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-BodyLocationVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -8714,6 +8741,24 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS"/>
+        <version value="0.1.0"/>
+        <name value="BodyLocationVS"/>
+        <title value="Body Location VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Codes that describe normal and pathologic anatomic systems, regions, cavities, and spaces. The code set includes codes from the SNOMED CT hierarchy descending from 123037004 &#39;Body Structure&#39;.&#xA;&#xA;Body location is a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.&#xA;&#xA;* Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.&#xA;* Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.&#xA;* Relation to landmark: The location relative to a landmark is specified by:&#xA;- Establishing the location and type of landmark using a body site code and optional laterality/orientation, and&#xA;- Specifying the direction and distance from the landmark to the body location.&#xA;&#xA;Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR&#39;s stand-alone BodySite (aka BodyStructure in r4) which &#39;is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient&#39; (FHIR 3.5)."/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
@@ -8721,8 +8766,13 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:1b0c2180-3166-4dba-ae1d-c8abce40d5b0"/>
-          <timestamp value="2019-11-27T19:54:36.269Z"/>
+          <identifier value="urn:uuid:6b650e7d-00cb-4bbd-9856-1561143817b9"/>
+          <timestamp value="2019-12-03T23:20:40+00:00"/>
+          <total value="1000"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -13736,8 +13786,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-ClockFaceDirectionVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13955,12 +14007,35 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS"/>
+        <version value="0.1.0"/>
+        <name value="ClockFaceDirectionVS"/>
+        <title value="Clock Face Direction VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="The relative direction of an object described using the analogy of a 12-hour clock to describe angles and directions. One imagines a clock face lying either upright or flat in front of oneself, and identifies the twelve hour markings with the directions in which they point."/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4efbcf89-ed62-46ac-9f06-4b4757299233"/>
-          <timestamp value="2019-11-27T19:55:27.035Z"/>
+          <identifier value="urn:uuid:d41160d4-8252-4983-a222-e2fca9927c5f"/>
+          <timestamp value="2019-12-03T23:21:14+00:00"/>
+          <total value="24"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -14094,8 +14169,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-ConditionStatusTrendVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -14169,9 +14246,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS"/>
+        <version value="0.1.0"/>
+        <name value="ConditionStatusTrendVS"/>
+        <title value="Condition Status Trend VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Standardized value set that describes the trend or status of a disease, condition, or ability. Based on LOINC answer lists LL2751-7 and LL4721-8. The value&#xA0;SNOMED-CT 260415000 (Not Detected) should be used to express No Evidence of Disease (NED), condition resolved, or full remission."/>
         <expansion>
-          <identifier value="urn:uuid:156be8ab-fc9f-4bc6-bcf3-5a1df4ca2511"/>
-          <timestamp value="2019-11-27T19:55:28.457Z"/>
+          <identifier value="urn:uuid:3d0c8702-91d7-4de0-a94b-40022f26ada5"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -14215,8 +14315,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-DetectedNotDetectedVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -14274,9 +14376,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS"/>
+        <version value="0.1.0"/>
+        <name value="DetectedNotDetectedVS"/>
+        <title value="Detected Not Detected VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Value set consisting of the answers Detected (Present) and NotDetected (Absent). The terms detected and not detected are preferred because they reflect outcomes of experimental observation, while present and absent suggest ground truth. This value set reconciles or combines LOINC answer lists LL956-4, LL750-1, LL744-4,  LL955-6, LL3950-4, LL3250-9, LL2872-1, LL2410-0, LL2355-7."/>
         <expansion>
-          <identifier value="urn:uuid:423b2405-d9c1-46ec-b33a-abd762ef7edc"/>
-          <timestamp value="2019-11-27T19:55:28.597Z"/>
+          <identifier value="urn:uuid:a34c608f-30d5-4c33-91b3-7763bb908964"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -14310,8 +14435,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-GradedAmountVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -14393,9 +14520,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
+        <version value="0.1.0"/>
+        <name value="GradedAmountVS"/>
+        <title value="Graded Amount VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate."/>
         <expansion>
-          <identifier value="urn:uuid:b5c311f2-4b68-4e2b-8ae0-bdbb40e344fc"/>
-          <timestamp value="2019-11-27T19:55:29.238Z"/>
+          <identifier value="urn:uuid:165b3883-a091-4b51-82f9-bccdadf1e4b8"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -14444,8 +14594,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-GradedFrequencyVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -14535,9 +14687,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS"/>
+        <version value="0.1.0"/>
+        <name value="GradedFrequencyVS"/>
+        <title value="Graded Frequency VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Answers to &#39;how often&#39; questions. A 5-value qualitative scale of frequency of an event equivalent to LL1016-6, LL1024-0, LL346-8."/>
         <expansion>
-          <identifier value="urn:uuid:01d7f712-e11d-4efc-b919-3c7dfaa00e83"/>
-          <timestamp value="2019-11-27T19:55:29.378Z"/>
+          <identifier value="urn:uuid:dca5a318-7b9a-45e2-a843-4169457b3aab"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -14591,8 +14766,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-GradedPortionVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -14674,9 +14851,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS"/>
+        <version value="0.1.0"/>
+        <name value="GradedPortionVS"/>
+        <title value="Graded Portion VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Answers to &#39;how much of&#39; questions, such as &#39;how much of the time do/did you...&#39; A 5-value qualitative scale, equivalent to LL2095-9, LL1017-4"/>
         <expansion>
-          <identifier value="urn:uuid:5d1b7e48-650c-454c-a34e-471bba54b045"/>
-          <timestamp value="2019-11-27T19:55:29.535Z"/>
+          <identifier value="urn:uuid:85d140ea-0bec-4b3f-afd5-b2140781ca1e"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -14805,9 +15005,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS"/>
         <version value="0.1.0"/>
         <name value="ImageMimeTypeVS"/>
-        <title value="ImageMimeTypeVS"/>
+        <title value="Image Mime Type VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14821,8 +15021,8 @@
         </contact>
         <description value="Mime types that apply to photographic images."/>
         <expansion>
-          <identifier value="urn:uuid:66904fc0-5cb1-44fd-a1a5-974e84fd2414"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <identifier value="urn:uuid:dddf1756-895f-4b0f-935a-eb2d0d1bc008"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14874,7 +15074,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1006 concepts</p>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on SNOMED CT United States edition 01-Mar 2019</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
@@ -22947,9 +23147,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LandmarkTypeVS"/>
         <version value="0.1.0"/>
         <name value="LandmarkTypeVS"/>
-        <title value="LandmarkTypeVS"/>
+        <title value="Landmark Type VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -22963,8 +23163,14 @@
         </contact>
         <description value="The type of feature that constitutes the landmark, for example, particularly if the landmark is an acquired body structure or physical object. The landmark type value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.&#xA;&#xA;+ Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.&#xA;+ Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.&#xA;+ Relation to landmark: The location relative to a landmark is specified by:&#xA;- Establishing the location and type of landmark using a body site code and optional laterality/orientation, and&#xA;- Specifying the direction and distance from the landmark to the body location.&#xA;&#xA;Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR&#39;s stand-alone BodySite (aka BodyStructure in r4) which &#39;is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient&#39; (FHIR 3.5)."/>
         <expansion>
-          <identifier value="urn:uuid:316d77f6-d0e9-4a8b-beeb-f3f725c50742"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:b1b69f5c-5eab-4a54-861f-96e5d49b2329"/>
+          <timestamp value="2019-12-03T23:21:15+00:00"/>
           <total value="1006"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28113,9 +28319,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS"/>
         <version value="0.1.0"/>
         <name value="LanguageQualifierVS"/>
-        <title value="LanguageQualifierVS"/>
+        <title value="Language Qualifier VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28129,8 +28335,8 @@
         </contact>
         <description value="A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way."/>
         <expansion>
-          <identifier value="urn:uuid:a839cd90-283e-4383-9240-b08e056611d8"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <identifier value="urn:uuid:579a631b-e0f4-493c-bfc1-9e779fa78af7"/>
+          <timestamp value="2019-12-03T23:21:49+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28185,8 +28391,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-LateralityVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -28236,9 +28444,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS"/>
+        <version value="0.1.0"/>
+        <name value="LateralityVS"/>
+        <title value="Laterality VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Terms that specify the side of the body. The laterality value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.&#xA;&#xA;+ Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.&#xA;+ Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.&#xA;+ Relation to landmark: The location relative to a landmark is specified by:&#xA;- Establishing the location and type of landmark using a body site code and optional laterality/orientation, and&#xA;- Specifying the direction and distance from the landmark to the body location.&#xA;&#xA;Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR&#39;s stand-alone BodySite (aka BodyStructure in r4) which &#39;is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient&#39; (FHIR 3.5)."/>
         <expansion>
-          <identifier value="urn:uuid:dfdc72de-c666-4ad6-9727-46d9c7fde85b"/>
-          <timestamp value="2019-11-27T19:56:22.738Z"/>
+          <identifier value="urn:uuid:4225c3c1-d422-41d4-8c0d-16291a3a1fa1"/>
+          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -28275,7 +28506,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/quantity-comparator version 4.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/quantity-comparator version 4.0.1</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-quantity-comparator.html">
                 <code>http://hl7.org/fhir/quantity-comparator</code>
@@ -28315,9 +28546,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS"/>
         <version value="0.1.0"/>
         <name value="LowerBoundTypeVS"/>
-        <title value="LowerBoundTypeVS"/>
+        <title value="Lower Bound Type VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28331,8 +28562,8 @@
         </contact>
         <description value="Indicates the actual value is gt (&gt;) or gte (&gt;=) the given value."/>
         <expansion>
-          <identifier value="urn:uuid:7fc2b820-f65a-4f84-95c0-9f5e7bcaff14"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <identifier value="urn:uuid:c6e7dbf2-74b7-464a-86ee-603fc4607dd2"/>
+          <timestamp value="2019-12-03T23:21:49+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28340,7 +28571,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/quantity-comparator|4.0.0"/>
+            <valueUri value="http://hl7.org/fhir/quantity-comparator|4.0.1"/>
           </parameter>
           <contains>
             <system value="http://hl7.org/fhir/quantity-comparator"/>
@@ -28357,8 +28588,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-AnatomicalDirectionVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -28776,9 +29009,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
+        <version value="0.1.0"/>
+        <name value="AnatomicalDirectionVS"/>
+        <title value="Anatomical Direction VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Terms that specify anatomical direction."/>
         <expansion>
-          <identifier value="urn:uuid:3b6b650b-4d97-4a01-b7c9-2721db30e849"/>
-          <timestamp value="2019-11-27T19:54:36.082Z"/>
+          <identifier value="urn:uuid:539a7cc5-c694-495c-bcaa-c5ade3789edf"/>
+          <timestamp value="2019-12-03T23:20:39+00:00"/>
+          <total value="49"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -29109,9 +29365,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS"/>
         <version value="0.1.0"/>
         <name value="PerformanceGradingScaleVS"/>
-        <title value="PerformanceGradingScaleVS"/>
+        <title value="Performance Grading Scale VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29125,8 +29381,8 @@
         </contact>
         <description value="A simple performance grading scale. Also useful for grading quality and knowledge."/>
         <expansion>
-          <identifier value="urn:uuid:ad747a9b-bf75-4027-99a9-fe0f43e1d160"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <identifier value="urn:uuid:d264c94c-9dd6-4cd5-8743-69b6c77f6092"/>
+          <timestamp value="2019-12-03T23:21:49+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29166,8 +29422,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-PositiveNegativeVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -29225,9 +29483,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS"/>
+        <version value="0.1.0"/>
+        <name value="PositiveNegativeVS"/>
+        <title value="Positive Negative VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Interpretation of a test result as positive, negative, equivocal, or indeterminate. Consolidates LOINC answer lists LL360-9, LL2329-2, LL2038-9, LL2021-5, LL2010-8, LL2009-0."/>
         <expansion>
-          <identifier value="urn:uuid:d9cf6b84-5b77-4f0a-9392-7cbabdd1d716"/>
-          <timestamp value="2019-11-27T19:56:23.050Z"/>
+          <identifier value="urn:uuid:715d4a21-53ad-4a33-9e14-eea89e7ab4eb"/>
+          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -29565,9 +29846,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-SettingVS"/>
         <version value="0.1.0"/>
         <name value="SettingVS"/>
-        <title value="SettingVS"/>
+        <title value="Setting VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29581,8 +29862,8 @@
         </contact>
         <description value="What type of place is found at a given location. More than one descriptor may be applicable."/>
         <expansion>
-          <identifier value="urn:uuid:8000f9ad-ae54-4189-a488-7cb40f05af3e"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <identifier value="urn:uuid:7e395704-a07f-44f7-a9de-b9ab16a6d764"/>
+          <timestamp value="2019-12-03T23:21:50+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29767,8 +30048,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-UnitsOfLengthVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -29831,9 +30114,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS"/>
+        <version value="0.1.0"/>
+        <name value="UnitsOfLengthVS"/>
+        <title value="Units Of Length VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Units of measure related to length or distance."/>
         <expansion>
-          <identifier value="urn:uuid:7f4a24ee-df6e-4e8a-acd1-aacafcd72125"/>
-          <timestamp value="2019-11-27T19:56:24.332Z"/>
+          <identifier value="urn:uuid:f84e13dd-db11-43ae-8917-a7c4ee4a72a9"/>
+          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -29890,7 +30196,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/quantity-comparator version 4.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/quantity-comparator version 4.0.1</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-quantity-comparator.html">
                 <code>http://hl7.org/fhir/quantity-comparator</code>
@@ -29930,9 +30236,9 @@
         <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS"/>
         <version value="0.1.0"/>
         <name value="UpperBoundTypeVS"/>
-        <title value="UpperBoundTypeVS"/>
+        <title value="Upper Bound Type VS"/>
         <status value="draft"/>
-        <date value="2019-11-27T00:00:00-05:00"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29946,8 +30252,8 @@
         </contact>
         <description value="Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value."/>
         <expansion>
-          <identifier value="urn:uuid:35daf19b-d2fc-4d4a-984e-369eb7c61687"/>
-          <timestamp value="2019-11-27T15:13:01-05:00"/>
+          <identifier value="urn:uuid:77bb2dcb-8e6f-4e1b-8e2d-66f0e2dc82b8"/>
+          <timestamp value="2019-12-03T23:21:50+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29955,7 +30261,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/quantity-comparator|4.0.0"/>
+            <valueUri value="http://hl7.org/fhir/quantity-comparator|4.0.1"/>
           </parameter>
           <contains>
             <system value="http://hl7.org/fhir/quantity-comparator"/>
@@ -29972,8 +30278,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-YesNoUnknownVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -30023,9 +30331,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS"/>
+        <version value="0.1.0"/>
+        <name value="YesNoUnknownVS"/>
+        <title value="Yes No Unknown VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="A value set containing yes, no, and unknown."/>
         <expansion>
-          <identifier value="urn:uuid:8c5c3ef2-912e-41b7-af0d-829e3d4dad0c"/>
-          <timestamp value="2019-11-27T19:56:24.472Z"/>
+          <identifier value="urn:uuid:89f1b91a-e2d3-4570-bf33-f52fcc958f0e"/>
+          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>
@@ -30054,8 +30385,10 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS"/>
     <resource>
       <ValueSet>
+        <id value="shr-core-YesNoVS"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -30097,9 +30430,32 @@
             </table>
           </div>
         </text>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS"/>
+        <version value="0.1.0"/>
+        <name value="YesNoVS"/>
+        <title value="Yes No VS"/>
+        <status value="draft"/>
+        <date value="2019-12-03T00:00:00+00:00"/>
+        <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientcare/"/>
+          </telecom>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/homehealth/"/>
+          </telecom>
+        </contact>
+        <description value="Value set indicating yes or no (values drawn from Snomed CT), equivalent to LL361-7."/>
         <expansion>
-          <identifier value="urn:uuid:ccc4e4bf-4e28-429c-9940-38fa04cdc26d"/>
-          <timestamp value="2019-11-27T19:56:24.629Z"/>
+          <identifier value="urn:uuid:7a997f92-38b2-4e9f-94a8-b00210bbb198"/>
+          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueString value="-1"/>

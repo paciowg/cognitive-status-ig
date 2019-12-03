@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Cognitive_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-11-27T15:12:56-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-03T23:20:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -36,6 +36,15 @@
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.0";
      fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core";
+       fhir:link <http://hl7.org/fhir/us/core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.grouping [
@@ -58,7 +67,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cs-BundledCognitiveStatus" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "pacio-cs-BundledCognitiveStatus" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundled Cognitive Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -75,7 +84,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cs-CognitiveStatus" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "pacio-cs-CognitiveStatus" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cognitive Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -92,7 +101,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AgeGroupVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-AgeGroupVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AgeGroupVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age Group VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -109,7 +118,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-AnatomicalDirectionVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AnatomicalDirectionVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Direction VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -126,7 +135,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-BodyLocationVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BodyLocationVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Location VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -143,7 +152,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ClockFaceDirectionVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ClockFaceDirectionVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Clock Face Direction VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -160,7 +169,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ConditionStatusTrendVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConditionStatusTrendVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Status Trend VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -177,7 +186,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-DetectedNotDetectedVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DetectedNotDetectedVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -194,7 +203,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GestationalTimePeriodVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GestationalTimePeriodVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gestational Time Period VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
@@ -211,7 +220,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedAmountVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GradedAmountVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Amount VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
@@ -228,7 +237,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedFrequencyVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GradedFrequencyVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Frequency VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
@@ -245,7 +254,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedPortionVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GradedPortionVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Portion VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;
@@ -262,7 +271,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ImageMimeTypeVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ImageMimeTypeVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Image Mime Type VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -279,7 +288,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LandmarkTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LandmarkTypeVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LandmarkTypeVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Landmark Type VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -296,7 +305,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LanguageQualifierVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LanguageQualifierVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Qualifier VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
@@ -313,7 +322,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LateralityVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LateralityVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
@@ -330,7 +339,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LowerBoundTypeVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LowerBoundTypeVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lower Bound Type VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 17;
@@ -347,7 +356,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-OrientationVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-OrientationVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OrientationVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Orientation VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 18;
@@ -364,7 +373,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-PerformanceGradingScaleVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PerformanceGradingScaleVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Performance Grading Scale VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
@@ -381,7 +390,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-PositiveNegativeVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PositiveNegativeVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Positive Negative VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
@@ -398,7 +407,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-SettingVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-SettingVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SettingVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;
@@ -415,7 +424,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-StatisticTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-StatisticTypeVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "StatisticTypeVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Statistic Type VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 22;
@@ -432,7 +441,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-UnitsOfLengthVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UnitsOfLengthVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Units Of Length VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 23;
@@ -449,7 +458,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-UpperBoundTypeVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UpperBoundTypeVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Upper Bound Type VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 24;
@@ -466,7 +475,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-YesNoUnknownVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "YesNoUnknownVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 25;
@@ -483,7 +492,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-YesNoVS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "YesNoVS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No VS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
@@ -500,7 +509,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-ImageMimeTypeCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ImageMimeTypeCS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Image Mime Type CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
@@ -517,7 +526,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-LanguageQualifierCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LanguageQualifierCS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Qualifier CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28;
@@ -534,7 +543,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-PerformanceGradingScaleCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PerformanceGradingScaleCS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Performance Grading Scale CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29;
@@ -551,7 +560,7 @@
          fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-SettingCS" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SettingCS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

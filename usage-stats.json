@@ -7,11 +7,11 @@
     "Observation": [
       {
         "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus",
-        "title": "pacio-cs-BundledCognitiveStatus"
+        "title": "Bundled Cognitive Status"
       },
       {
         "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
-        "title": "pacio-cs-CognitiveStatus"
+        "title": "Cognitive Status"
       }
     ]
   },
@@ -33,6 +33,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"

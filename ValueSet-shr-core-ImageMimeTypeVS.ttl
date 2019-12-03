@@ -15,9 +15,9 @@
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "ImageMimeTypeVS"];
-  fhir:ValueSet.title [ fhir:value "ImageMimeTypeVS"];
+  fhir:ValueSet.title [ fhir:value "Image Mime Type VS"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2019-11-27T00:00:00-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2019-12-03T00:00:00+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ValueSet.contact [
      fhir:index 0;

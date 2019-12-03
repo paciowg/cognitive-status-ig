@@ -10,7 +10,7 @@
   "name": "PACIO_Cognitive_Status",
   "title": "PACIO Cognitive Status",
   "status": "draft",
-  "date": "2019-11-27T15:12:56-05:00",
+  "date": "2019-12-03T23:20:33+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -30,6 +30,13 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.0"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/us/core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.0.0"
+    }
   ],
   "definition": {
     "grouping": [
@@ -53,7 +60,7 @@
         "reference": {
           "reference": "StructureDefinition/pacio-cs-BundledCognitiveStatus"
         },
-        "name": "pacio-cs-BundledCognitiveStatus",
+        "name": "Bundled Cognitive Status",
         "exampleBoolean": false
       },
       {
@@ -70,7 +77,7 @@
         "reference": {
           "reference": "StructureDefinition/pacio-cs-CognitiveStatus"
         },
-        "name": "pacio-cs-CognitiveStatus",
+        "name": "Cognitive Status",
         "exampleBoolean": false
       },
       {
@@ -87,7 +94,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-AgeGroupVS"
         },
-        "name": "AgeGroupVS",
+        "name": "Age Group VS",
         "exampleBoolean": false
       },
       {
@@ -104,7 +111,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-AnatomicalDirectionVS"
         },
-        "name": "AnatomicalDirectionVS",
+        "name": "Anatomical Direction VS",
         "exampleBoolean": false
       },
       {
@@ -121,7 +128,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-BodyLocationVS"
         },
-        "name": "BodyLocationVS",
+        "name": "Body Location VS",
         "exampleBoolean": false
       },
       {
@@ -138,7 +145,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-ClockFaceDirectionVS"
         },
-        "name": "ClockFaceDirectionVS",
+        "name": "Clock Face Direction VS",
         "exampleBoolean": false
       },
       {
@@ -155,7 +162,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-ConditionStatusTrendVS"
         },
-        "name": "ConditionStatusTrendVS",
+        "name": "Condition Status Trend VS",
         "exampleBoolean": false
       },
       {
@@ -172,7 +179,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-DetectedNotDetectedVS"
         },
-        "name": "DetectedNotDetectedVS",
+        "name": "Detected Not Detected VS",
         "exampleBoolean": false
       },
       {
@@ -189,7 +196,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-GestationalTimePeriodVS"
         },
-        "name": "GestationalTimePeriodVS",
+        "name": "Gestational Time Period VS",
         "exampleBoolean": false
       },
       {
@@ -206,7 +213,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-GradedAmountVS"
         },
-        "name": "GradedAmountVS",
+        "name": "Graded Amount VS",
         "exampleBoolean": false
       },
       {
@@ -223,7 +230,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-GradedFrequencyVS"
         },
-        "name": "GradedFrequencyVS",
+        "name": "Graded Frequency VS",
         "exampleBoolean": false
       },
       {
@@ -240,7 +247,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-GradedPortionVS"
         },
-        "name": "GradedPortionVS",
+        "name": "Graded Portion VS",
         "exampleBoolean": false
       },
       {
@@ -257,7 +264,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-ImageMimeTypeVS"
         },
-        "name": "ImageMimeTypeVS",
+        "name": "Image Mime Type VS",
         "exampleBoolean": false
       },
       {
@@ -274,7 +281,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-LandmarkTypeVS"
         },
-        "name": "LandmarkTypeVS",
+        "name": "Landmark Type VS",
         "exampleBoolean": false
       },
       {
@@ -291,7 +298,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-LanguageQualifierVS"
         },
-        "name": "LanguageQualifierVS",
+        "name": "Language Qualifier VS",
         "exampleBoolean": false
       },
       {
@@ -308,7 +315,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-LateralityVS"
         },
-        "name": "LateralityVS",
+        "name": "Laterality VS",
         "exampleBoolean": false
       },
       {
@@ -325,7 +332,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-LowerBoundTypeVS"
         },
-        "name": "LowerBoundTypeVS",
+        "name": "Lower Bound Type VS",
         "exampleBoolean": false
       },
       {
@@ -342,7 +349,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-OrientationVS"
         },
-        "name": "OrientationVS",
+        "name": "Orientation VS",
         "exampleBoolean": false
       },
       {
@@ -359,7 +366,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-PerformanceGradingScaleVS"
         },
-        "name": "PerformanceGradingScaleVS",
+        "name": "Performance Grading Scale VS",
         "exampleBoolean": false
       },
       {
@@ -376,7 +383,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-PositiveNegativeVS"
         },
-        "name": "PositiveNegativeVS",
+        "name": "Positive Negative VS",
         "exampleBoolean": false
       },
       {
@@ -393,7 +400,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-SettingVS"
         },
-        "name": "SettingVS",
+        "name": "Setting VS",
         "exampleBoolean": false
       },
       {
@@ -410,7 +417,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-StatisticTypeVS"
         },
-        "name": "StatisticTypeVS",
+        "name": "Statistic Type VS",
         "exampleBoolean": false
       },
       {
@@ -427,7 +434,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-UnitsOfLengthVS"
         },
-        "name": "UnitsOfLengthVS",
+        "name": "Units Of Length VS",
         "exampleBoolean": false
       },
       {
@@ -444,7 +451,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-UpperBoundTypeVS"
         },
-        "name": "UpperBoundTypeVS",
+        "name": "Upper Bound Type VS",
         "exampleBoolean": false
       },
       {
@@ -461,7 +468,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-YesNoUnknownVS"
         },
-        "name": "YesNoUnknownVS",
+        "name": "Yes No Unknown VS",
         "exampleBoolean": false
       },
       {
@@ -478,7 +485,7 @@
         "reference": {
           "reference": "ValueSet/shr-core-YesNoVS"
         },
-        "name": "YesNoVS",
+        "name": "Yes No VS",
         "exampleBoolean": false
       },
       {
@@ -495,7 +502,7 @@
         "reference": {
           "reference": "CodeSystem/shr-core-ImageMimeTypeCS"
         },
-        "name": "ImageMimeTypeCS",
+        "name": "Image Mime Type CS",
         "exampleBoolean": false
       },
       {
@@ -512,7 +519,7 @@
         "reference": {
           "reference": "CodeSystem/shr-core-LanguageQualifierCS"
         },
-        "name": "LanguageQualifierCS",
+        "name": "Language Qualifier CS",
         "exampleBoolean": false
       },
       {
@@ -529,7 +536,7 @@
         "reference": {
           "reference": "CodeSystem/shr-core-PerformanceGradingScaleCS"
         },
-        "name": "PerformanceGradingScaleCS",
+        "name": "Performance Grading Scale CS",
         "exampleBoolean": false
       },
       {
@@ -546,7 +553,7 @@
         "reference": {
           "reference": "CodeSystem/shr-core-SettingCS"
         },
-        "name": "SettingCS",
+        "name": "Setting CS",
         "exampleBoolean": false
       }
     ],

@@ -11,9 +11,9 @@
   <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
   <version value="0.1.0"/>
   <name value="GradedAmountVS"/>
-  <title value="GradedAmountVS"/>
+  <title value="Graded Amount VS"/>
   <status value="draft"/>
-  <date value="2019-11-27T00:00:00-05:00"/>
+  <date value="2019-12-03T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

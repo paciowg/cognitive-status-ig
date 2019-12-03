@@ -15,9 +15,9 @@
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "ImageMimeTypeCS"];
-  fhir:CodeSystem.title [ fhir:value "ImageMimeTypeCS"];
+  fhir:CodeSystem.title [ fhir:value "Image Mime Type CS"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2019-11-27T00:00:00-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2019-12-03T00:00:00+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:CodeSystem.contact [
      fhir:index 0;

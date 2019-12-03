@@ -10,7 +10,7 @@
   <name value="PACIO_Cognitive_Status"/>
   <title value="PACIO Cognitive Status"/>
   <status value="draft"/>
-  <date value="2019-11-27T15:12:56-05:00"/>
+  <date value="2019-12-03T23:20:33+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -25,6 +25,11 @@
   <packageId value="hl7.fhir.us.PACIO-cognitive-status"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.0.0"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="Profiles in this Implementation Guide"/>
@@ -40,7 +45,7 @@
       <reference>
         <reference value="StructureDefinition/pacio-cs-BundledCognitiveStatus"/>
       </reference>
-      <name value="pacio-cs-BundledCognitiveStatus"/>
+      <name value="Bundled Cognitive Status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -53,7 +58,7 @@
       <reference>
         <reference value="StructureDefinition/pacio-cs-CognitiveStatus"/>
       </reference>
-      <name value="pacio-cs-CognitiveStatus"/>
+      <name value="Cognitive Status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -66,7 +71,7 @@
       <reference>
         <reference value="ValueSet/shr-core-AgeGroupVS"/>
       </reference>
-      <name value="AgeGroupVS"/>
+      <name value="Age Group VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -79,7 +84,7 @@
       <reference>
         <reference value="ValueSet/shr-core-AnatomicalDirectionVS"/>
       </reference>
-      <name value="AnatomicalDirectionVS"/>
+      <name value="Anatomical Direction VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -92,7 +97,7 @@
       <reference>
         <reference value="ValueSet/shr-core-BodyLocationVS"/>
       </reference>
-      <name value="BodyLocationVS"/>
+      <name value="Body Location VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -105,7 +110,7 @@
       <reference>
         <reference value="ValueSet/shr-core-ClockFaceDirectionVS"/>
       </reference>
-      <name value="ClockFaceDirectionVS"/>
+      <name value="Clock Face Direction VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -118,7 +123,7 @@
       <reference>
         <reference value="ValueSet/shr-core-ConditionStatusTrendVS"/>
       </reference>
-      <name value="ConditionStatusTrendVS"/>
+      <name value="Condition Status Trend VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -131,7 +136,7 @@
       <reference>
         <reference value="ValueSet/shr-core-DetectedNotDetectedVS"/>
       </reference>
-      <name value="DetectedNotDetectedVS"/>
+      <name value="Detected Not Detected VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -144,7 +149,7 @@
       <reference>
         <reference value="ValueSet/shr-core-GestationalTimePeriodVS"/>
       </reference>
-      <name value="GestationalTimePeriodVS"/>
+      <name value="Gestational Time Period VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -157,7 +162,7 @@
       <reference>
         <reference value="ValueSet/shr-core-GradedAmountVS"/>
       </reference>
-      <name value="GradedAmountVS"/>
+      <name value="Graded Amount VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -170,7 +175,7 @@
       <reference>
         <reference value="ValueSet/shr-core-GradedFrequencyVS"/>
       </reference>
-      <name value="GradedFrequencyVS"/>
+      <name value="Graded Frequency VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -183,7 +188,7 @@
       <reference>
         <reference value="ValueSet/shr-core-GradedPortionVS"/>
       </reference>
-      <name value="GradedPortionVS"/>
+      <name value="Graded Portion VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -196,7 +201,7 @@
       <reference>
         <reference value="ValueSet/shr-core-ImageMimeTypeVS"/>
       </reference>
-      <name value="ImageMimeTypeVS"/>
+      <name value="Image Mime Type VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -209,7 +214,7 @@
       <reference>
         <reference value="ValueSet/shr-core-LandmarkTypeVS"/>
       </reference>
-      <name value="LandmarkTypeVS"/>
+      <name value="Landmark Type VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -222,7 +227,7 @@
       <reference>
         <reference value="ValueSet/shr-core-LanguageQualifierVS"/>
       </reference>
-      <name value="LanguageQualifierVS"/>
+      <name value="Language Qualifier VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -235,7 +240,7 @@
       <reference>
         <reference value="ValueSet/shr-core-LateralityVS"/>
       </reference>
-      <name value="LateralityVS"/>
+      <name value="Laterality VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -248,7 +253,7 @@
       <reference>
         <reference value="ValueSet/shr-core-LowerBoundTypeVS"/>
       </reference>
-      <name value="LowerBoundTypeVS"/>
+      <name value="Lower Bound Type VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -261,7 +266,7 @@
       <reference>
         <reference value="ValueSet/shr-core-OrientationVS"/>
       </reference>
-      <name value="OrientationVS"/>
+      <name value="Orientation VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -274,7 +279,7 @@
       <reference>
         <reference value="ValueSet/shr-core-PerformanceGradingScaleVS"/>
       </reference>
-      <name value="PerformanceGradingScaleVS"/>
+      <name value="Performance Grading Scale VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -287,7 +292,7 @@
       <reference>
         <reference value="ValueSet/shr-core-PositiveNegativeVS"/>
       </reference>
-      <name value="PositiveNegativeVS"/>
+      <name value="Positive Negative VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -300,7 +305,7 @@
       <reference>
         <reference value="ValueSet/shr-core-SettingVS"/>
       </reference>
-      <name value="SettingVS"/>
+      <name value="Setting VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -313,7 +318,7 @@
       <reference>
         <reference value="ValueSet/shr-core-StatisticTypeVS"/>
       </reference>
-      <name value="StatisticTypeVS"/>
+      <name value="Statistic Type VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -326,7 +331,7 @@
       <reference>
         <reference value="ValueSet/shr-core-UnitsOfLengthVS"/>
       </reference>
-      <name value="UnitsOfLengthVS"/>
+      <name value="Units Of Length VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -339,7 +344,7 @@
       <reference>
         <reference value="ValueSet/shr-core-UpperBoundTypeVS"/>
       </reference>
-      <name value="UpperBoundTypeVS"/>
+      <name value="Upper Bound Type VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -352,7 +357,7 @@
       <reference>
         <reference value="ValueSet/shr-core-YesNoUnknownVS"/>
       </reference>
-      <name value="YesNoUnknownVS"/>
+      <name value="Yes No Unknown VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -365,7 +370,7 @@
       <reference>
         <reference value="ValueSet/shr-core-YesNoVS"/>
       </reference>
-      <name value="YesNoVS"/>
+      <name value="Yes No VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -378,7 +383,7 @@
       <reference>
         <reference value="CodeSystem/shr-core-ImageMimeTypeCS"/>
       </reference>
-      <name value="ImageMimeTypeCS"/>
+      <name value="Image Mime Type CS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -391,7 +396,7 @@
       <reference>
         <reference value="CodeSystem/shr-core-LanguageQualifierCS"/>
       </reference>
-      <name value="LanguageQualifierCS"/>
+      <name value="Language Qualifier CS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -404,7 +409,7 @@
       <reference>
         <reference value="CodeSystem/shr-core-PerformanceGradingScaleCS"/>
       </reference>
-      <name value="PerformanceGradingScaleCS"/>
+      <name value="Performance Grading Scale CS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -417,7 +422,7 @@
       <reference>
         <reference value="CodeSystem/shr-core-SettingCS"/>
       </reference>
-      <name value="SettingCS"/>
+      <name value="Setting CS"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
