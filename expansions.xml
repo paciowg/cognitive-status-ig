@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1d2bdf29-a82f-45df-b3cf-5aa951dbb690"/>
+  <id value="0bbd0fea-5499-4ec5-bf0f-7771c23f2609"/>
   <meta>
-    <lastUpdated value="2019-12-03T23:20:33.342+00:00"/>
+    <lastUpdated value="2019-12-04T15:47:23.962+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -433,7 +433,7 @@
         <name value="AnatomicalDirectionVS"/>
         <title value="Anatomical Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -447,8 +447,8 @@
         </contact>
         <description value="Terms that specify anatomical direction."/>
         <expansion>
-          <identifier value="urn:uuid:539a7cc5-c694-495c-bcaa-c5ade3789edf"/>
-          <timestamp value="2019-12-03T23:20:39+00:00"/>
+          <identifier value="urn:uuid:5c0a42c2-f0a1-41e1-8f13-c6b83c70306f"/>
+          <timestamp value="2019-12-04T15:47:29+00:00"/>
           <total value="49"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8746,7 +8746,7 @@
         <name value="BodyLocationVS"/>
         <title value="Body Location VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -8766,8 +8766,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:6b650e7d-00cb-4bbd-9856-1561143817b9"/>
-          <timestamp value="2019-12-03T23:20:40+00:00"/>
+          <identifier value="urn:uuid:e9d338b3-32d6-49e2-81f1-4a7a6374ce82"/>
+          <timestamp value="2019-12-04T15:47:29+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14012,7 +14012,7 @@
         <name value="ClockFaceDirectionVS"/>
         <title value="Clock Face Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14029,8 +14029,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d41160d4-8252-4983-a222-e2fca9927c5f"/>
-          <timestamp value="2019-12-03T23:21:14+00:00"/>
+          <identifier value="urn:uuid:bbd72e80-3380-4bcd-b126-91ca1b93bf99"/>
+          <timestamp value="2019-12-04T15:48:04+00:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14251,7 +14251,7 @@
         <name value="ConditionStatusTrendVS"/>
         <title value="Condition Status Trend VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14265,8 +14265,8 @@
         </contact>
         <description value="Standardized value set that describes the trend or status of a disease, condition, or ability. Based on LOINC answer lists LL2751-7 and LL4721-8. The value&#xA0;SNOMED-CT 260415000 (Not Detected) should be used to express No Evidence of Disease (NED), condition resolved, or full remission."/>
         <expansion>
-          <identifier value="urn:uuid:3d0c8702-91d7-4de0-a94b-40022f26ada5"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:879f0f12-70ea-4894-9ac5-4236442eae80"/>
+          <timestamp value="2019-12-04T15:48:05+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14381,7 +14381,7 @@
         <name value="DetectedNotDetectedVS"/>
         <title value="Detected Not Detected VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14395,8 +14395,8 @@
         </contact>
         <description value="Value set consisting of the answers Detected (Present) and NotDetected (Absent). The terms detected and not detected are preferred because they reflect outcomes of experimental observation, while present and absent suggest ground truth. This value set reconciles or combines LOINC answer lists LL956-4, LL750-1, LL744-4,  LL955-6, LL3950-4, LL3250-9, LL2872-1, LL2410-0, LL2355-7."/>
         <expansion>
-          <identifier value="urn:uuid:a34c608f-30d5-4c33-91b3-7763bb908964"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:d961810d-161e-4fe4-80bb-0746339d74de"/>
+          <timestamp value="2019-12-04T15:48:05+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14525,7 +14525,7 @@
         <name value="GradedAmountVS"/>
         <title value="Graded Amount VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14539,8 +14539,8 @@
         </contact>
         <description value="A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate."/>
         <expansion>
-          <identifier value="urn:uuid:165b3883-a091-4b51-82f9-bccdadf1e4b8"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:14367032-07fb-4f1c-addb-52486ad9f3cd"/>
+          <timestamp value="2019-12-04T15:48:05+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14692,7 +14692,7 @@
         <name value="GradedFrequencyVS"/>
         <title value="Graded Frequency VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14706,8 +14706,8 @@
         </contact>
         <description value="Answers to &#39;how often&#39; questions. A 5-value qualitative scale of frequency of an event equivalent to LL1016-6, LL1024-0, LL346-8."/>
         <expansion>
-          <identifier value="urn:uuid:dca5a318-7b9a-45e2-a843-4169457b3aab"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:ca345791-099a-4b28-afa8-78d95a517aab"/>
+          <timestamp value="2019-12-04T15:48:06+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14856,7 +14856,7 @@
         <name value="GradedPortionVS"/>
         <title value="Graded Portion VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14870,8 +14870,8 @@
         </contact>
         <description value="Answers to &#39;how much of&#39; questions, such as &#39;how much of the time do/did you...&#39; A 5-value qualitative scale, equivalent to LL2095-9, LL1017-4"/>
         <expansion>
-          <identifier value="urn:uuid:85d140ea-0bec-4b3f-afd5-b2140781ca1e"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:e9acd1ce-09bf-4083-97f2-871c19dd531f"/>
+          <timestamp value="2019-12-04T15:48:06+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -15007,7 +15007,7 @@
         <name value="ImageMimeTypeVS"/>
         <title value="Image Mime Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -15021,8 +15021,8 @@
         </contact>
         <description value="Mime types that apply to photographic images."/>
         <expansion>
-          <identifier value="urn:uuid:dddf1756-895f-4b0f-935a-eb2d0d1bc008"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:94710b95-45ab-4633-a09f-ac5cf209693b"/>
+          <timestamp value="2019-12-04T15:48:06+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -23149,7 +23149,7 @@
         <name value="LandmarkTypeVS"/>
         <title value="Landmark Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -23169,8 +23169,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:b1b69f5c-5eab-4a54-861f-96e5d49b2329"/>
-          <timestamp value="2019-12-03T23:21:15+00:00"/>
+          <identifier value="urn:uuid:0c47719a-566e-41e1-872c-c8be398b5be7"/>
+          <timestamp value="2019-12-04T15:48:06+00:00"/>
           <total value="1006"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28321,7 +28321,7 @@
         <name value="LanguageQualifierVS"/>
         <title value="Language Qualifier VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28335,8 +28335,8 @@
         </contact>
         <description value="A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way."/>
         <expansion>
-          <identifier value="urn:uuid:579a631b-e0f4-493c-bfc1-9e779fa78af7"/>
-          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <identifier value="urn:uuid:ad1337bd-ebf0-4b0e-ad71-c436489391ec"/>
+          <timestamp value="2019-12-04T15:48:41+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28449,7 +28449,7 @@
         <name value="LateralityVS"/>
         <title value="Laterality VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28463,8 +28463,8 @@
         </contact>
         <description value="Terms that specify the side of the body. The laterality value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.&#xA;&#xA;+ Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.&#xA;+ Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.&#xA;+ Relation to landmark: The location relative to a landmark is specified by:&#xA;- Establishing the location and type of landmark using a body site code and optional laterality/orientation, and&#xA;- Specifying the direction and distance from the landmark to the body location.&#xA;&#xA;Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR&#39;s stand-alone BodySite (aka BodyStructure in r4) which &#39;is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient&#39; (FHIR 3.5)."/>
         <expansion>
-          <identifier value="urn:uuid:4225c3c1-d422-41d4-8c0d-16291a3a1fa1"/>
-          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <identifier value="urn:uuid:7cdf94ff-5e38-4b37-bcbb-21f3807e5227"/>
+          <timestamp value="2019-12-04T15:48:41+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28548,7 +28548,7 @@
         <name value="LowerBoundTypeVS"/>
         <title value="Lower Bound Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28562,8 +28562,8 @@
         </contact>
         <description value="Indicates the actual value is gt (&gt;) or gte (&gt;=) the given value."/>
         <expansion>
-          <identifier value="urn:uuid:c6e7dbf2-74b7-464a-86ee-603fc4607dd2"/>
-          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <identifier value="urn:uuid:a7693a49-3fbc-4e63-ae3a-81105466b2b4"/>
+          <timestamp value="2019-12-04T15:48:41+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29014,7 +29014,7 @@
         <name value="AnatomicalDirectionVS"/>
         <title value="Anatomical Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29028,8 +29028,8 @@
         </contact>
         <description value="Terms that specify anatomical direction."/>
         <expansion>
-          <identifier value="urn:uuid:539a7cc5-c694-495c-bcaa-c5ade3789edf"/>
-          <timestamp value="2019-12-03T23:20:39+00:00"/>
+          <identifier value="urn:uuid:5c0a42c2-f0a1-41e1-8f13-c6b83c70306f"/>
+          <timestamp value="2019-12-04T15:47:29+00:00"/>
           <total value="49"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29367,7 +29367,7 @@
         <name value="PerformanceGradingScaleVS"/>
         <title value="Performance Grading Scale VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29381,8 +29381,8 @@
         </contact>
         <description value="A simple performance grading scale. Also useful for grading quality and knowledge."/>
         <expansion>
-          <identifier value="urn:uuid:d264c94c-9dd6-4cd5-8743-69b6c77f6092"/>
-          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <identifier value="urn:uuid:0b0bef6b-c992-4156-bb21-a455bff9070c"/>
+          <timestamp value="2019-12-04T15:48:41+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29488,7 +29488,7 @@
         <name value="PositiveNegativeVS"/>
         <title value="Positive Negative VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29502,8 +29502,8 @@
         </contact>
         <description value="Interpretation of a test result as positive, negative, equivocal, or indeterminate. Consolidates LOINC answer lists LL360-9, LL2329-2, LL2038-9, LL2021-5, LL2010-8, LL2009-0."/>
         <expansion>
-          <identifier value="urn:uuid:715d4a21-53ad-4a33-9e14-eea89e7ab4eb"/>
-          <timestamp value="2019-12-03T23:21:49+00:00"/>
+          <identifier value="urn:uuid:6987815b-7c1a-46b4-a618-800f0785c35b"/>
+          <timestamp value="2019-12-04T15:48:41+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29848,7 +29848,7 @@
         <name value="SettingVS"/>
         <title value="Setting VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29862,8 +29862,8 @@
         </contact>
         <description value="What type of place is found at a given location. More than one descriptor may be applicable."/>
         <expansion>
-          <identifier value="urn:uuid:7e395704-a07f-44f7-a9de-b9ab16a6d764"/>
-          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <identifier value="urn:uuid:220d8c2c-dd23-49f5-b9fa-541fff2bd03f"/>
+          <timestamp value="2019-12-04T15:48:41+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30119,7 +30119,7 @@
         <name value="UnitsOfLengthVS"/>
         <title value="Units Of Length VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30133,8 +30133,8 @@
         </contact>
         <description value="Units of measure related to length or distance."/>
         <expansion>
-          <identifier value="urn:uuid:f84e13dd-db11-43ae-8917-a7c4ee4a72a9"/>
-          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <identifier value="urn:uuid:915a1f35-d5bf-4bc4-8a5e-db5a84c816e1"/>
+          <timestamp value="2019-12-04T15:48:42+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30238,7 +30238,7 @@
         <name value="UpperBoundTypeVS"/>
         <title value="Upper Bound Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30252,8 +30252,8 @@
         </contact>
         <description value="Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value."/>
         <expansion>
-          <identifier value="urn:uuid:77bb2dcb-8e6f-4e1b-8e2d-66f0e2dc82b8"/>
-          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <identifier value="urn:uuid:9c0e57a8-f93c-4024-a637-005339f52d40"/>
+          <timestamp value="2019-12-04T15:48:42+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30336,7 +30336,7 @@
         <name value="YesNoUnknownVS"/>
         <title value="Yes No Unknown VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30350,8 +30350,8 @@
         </contact>
         <description value="A value set containing yes, no, and unknown."/>
         <expansion>
-          <identifier value="urn:uuid:89f1b91a-e2d3-4570-bf33-f52fcc958f0e"/>
-          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <identifier value="urn:uuid:c3ea34ea-9140-449c-992b-825a21d187fc"/>
+          <timestamp value="2019-12-04T15:48:42+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30435,7 +30435,7 @@
         <name value="YesNoVS"/>
         <title value="Yes No VS"/>
         <status value="draft"/>
-        <date value="2019-12-03T00:00:00+00:00"/>
+        <date value="2019-12-04T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30449,8 +30449,8 @@
         </contact>
         <description value="Value set indicating yes or no (values drawn from Snomed CT), equivalent to LL361-7."/>
         <expansion>
-          <identifier value="urn:uuid:7a997f92-38b2-4e9f-94a8-b00210bbb198"/>
-          <timestamp value="2019-12-03T23:21:50+00:00"/>
+          <identifier value="urn:uuid:c79c330e-16b7-46d9-8b99-17cbe0acd90a"/>
+          <timestamp value="2019-12-04T15:48:42+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
