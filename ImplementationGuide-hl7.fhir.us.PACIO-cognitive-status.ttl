@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Cognitive_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-12-05T13:10:35+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-05T21:20:00+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
