@@ -21,7 +21,7 @@ Note that BodyLocation is a data type (a reusable structure), not a stand-alone 
   <name value="OrientationVS"/>
   <title value="Orientation VS"/>
   <status value="draft"/>
-  <date value="2019-12-04T00:00:00+00:00"/>
+  <date value="2019-12-05T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0bbd0fea-5499-4ec5-bf0f-7771c23f2609",
+  "id" : "9cfb69c0-b997-4e4f-bda0-b2265404951d",
   "meta" : {
-    "lastUpdated" : "2019-12-04T15:47:23.962+00:00"
+    "lastUpdated" : "2019-12-05T13:10:35.329+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "AnatomicalDirectionVS",
       "title" : "Anatomical Direction VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -33,8 +33,8 @@
       }],
       "description" : "Terms that specify anatomical direction.",
       "expansion" : {
-        "identifier" : "urn:uuid:5c0a42c2-f0a1-41e1-8f13-c6b83c70306f",
-        "timestamp" : "2019-12-04T15:47:29+00:00",
+        "identifier" : "urn:uuid:11436aeb-a4f2-4cd8-814e-524e10c957c5",
+        "timestamp" : "2019-12-05T13:10:42+00:00",
         "total" : 49,
         "parameter" : [{
           "name" : "excludeNested",
@@ -310,7 +310,7 @@
       "name" : "BodyLocationVS",
       "title" : "Body Location VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -332,8 +332,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:e9d338b3-32d6-49e2-81f1-4a7a6374ce82",
-        "timestamp" : "2019-12-04T15:47:29+00:00",
+        "identifier" : "urn:uuid:6418da19-4891-40d0-9892-5aa8ff7e5798",
+        "timestamp" : "2019-12-05T13:10:42+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5364,7 +5364,7 @@
       "name" : "ClockFaceDirectionVS",
       "title" : "Clock Face Direction VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5382,8 +5382,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:bbd72e80-3380-4bcd-b126-91ca1b93bf99",
-        "timestamp" : "2019-12-04T15:48:04+00:00",
+        "identifier" : "urn:uuid:ff4f03a0-a617-4afa-8fec-6b6675136b36",
+        "timestamp" : "2019-12-05T13:11:18+00:00",
         "total" : 24,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5534,7 +5534,7 @@
       "name" : "ConditionStatusTrendVS",
       "title" : "Condition Status Trend VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5548,8 +5548,8 @@
       }],
       "description" : "Standardized value set that describes the trend or status of a disease, condition, or ability. Based on LOINC answer lists LL2751-7 and LL4721-8. The value SNOMED-CT 260415000 (Not Detected) should be used to express No Evidence of Disease (NED), condition resolved, or full remission.",
       "expansion" : {
-        "identifier" : "urn:uuid:879f0f12-70ea-4894-9ac5-4236442eae80",
-        "timestamp" : "2019-12-04T15:48:05+00:00",
+        "identifier" : "urn:uuid:5f447619-356b-42d7-97fc-bff9c13ddf95",
+        "timestamp" : "2019-12-05T13:11:20+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5610,7 +5610,7 @@
       "name" : "DetectedNotDetectedVS",
       "title" : "Detected Not Detected VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5624,8 +5624,8 @@
       }],
       "description" : "Value set consisting of the answers Detected (Present) and NotDetected (Absent). The terms detected and not detected are preferred because they reflect outcomes of experimental observation, while present and absent suggest ground truth. This value set reconciles or combines LOINC answer lists LL956-4, LL750-1, LL744-4,  LL955-6, LL3950-4, LL3250-9, LL2872-1, LL2410-0, LL2355-7.",
       "expansion" : {
-        "identifier" : "urn:uuid:d961810d-161e-4fe4-80bb-0746339d74de",
-        "timestamp" : "2019-12-04T15:48:05+00:00",
+        "identifier" : "urn:uuid:b6c2dd78-0103-4f32-b810-d66327898128",
+        "timestamp" : "2019-12-05T13:11:20+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5676,7 +5676,7 @@
       "name" : "GradedAmountVS",
       "title" : "Graded Amount VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5690,8 +5690,8 @@
       }],
       "description" : "A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.",
       "expansion" : {
-        "identifier" : "urn:uuid:14367032-07fb-4f1c-addb-52486ad9f3cd",
-        "timestamp" : "2019-12-04T15:48:05+00:00",
+        "identifier" : "urn:uuid:9eb84da5-8d8d-4019-9cbc-17e0f9fa98d6",
+        "timestamp" : "2019-12-05T13:11:21+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5757,7 +5757,7 @@
       "name" : "GradedFrequencyVS",
       "title" : "Graded Frequency VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5771,8 +5771,8 @@
       }],
       "description" : "Answers to 'how often' questions. A 5-value qualitative scale of frequency of an event equivalent to LL1016-6, LL1024-0, LL346-8.",
       "expansion" : {
-        "identifier" : "urn:uuid:ca345791-099a-4b28-afa8-78d95a517aab",
-        "timestamp" : "2019-12-04T15:48:06+00:00",
+        "identifier" : "urn:uuid:91149c62-fbc1-4226-9e03-fa8f98a7a725",
+        "timestamp" : "2019-12-05T13:11:21+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5843,7 +5843,7 @@
       "name" : "GradedPortionVS",
       "title" : "Graded Portion VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5857,8 +5857,8 @@
       }],
       "description" : "Answers to 'how much of' questions, such as 'how much of the time do/did you...' A 5-value qualitative scale, equivalent to LL2095-9, LL1017-4",
       "expansion" : {
-        "identifier" : "urn:uuid:e9acd1ce-09bf-4083-97f2-871c19dd531f",
-        "timestamp" : "2019-12-04T15:48:06+00:00",
+        "identifier" : "urn:uuid:543eef44-db2d-488b-8364-d96d7e0cca99",
+        "timestamp" : "2019-12-05T13:11:21+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5924,7 +5924,7 @@
       "name" : "ImageMimeTypeVS",
       "title" : "Image Mime Type VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -5938,8 +5938,8 @@
       }],
       "description" : "Mime types that apply to photographic images.",
       "expansion" : {
-        "identifier" : "urn:uuid:94710b95-45ab-4633-a09f-ac5cf209693b",
-        "timestamp" : "2019-12-04T15:48:06+00:00",
+        "identifier" : "urn:uuid:087bf54d-a8c4-4949-8b8a-799a561b5de1",
+        "timestamp" : "2019-12-05T13:11:22+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5996,7 +5996,7 @@
       "name" : "LandmarkTypeVS",
       "title" : "Landmark Type VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -6018,8 +6018,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:0c47719a-566e-41e1-872c-c8be398b5be7",
-        "timestamp" : "2019-12-04T15:48:06+00:00",
+        "identifier" : "urn:uuid:4ae9c4b1-31f6-4397-9aef-88379e73a6fd",
+        "timestamp" : "2019-12-05T13:11:22+00:00",
         "total" : 1006,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11084,7 +11084,7 @@
       "name" : "LanguageQualifierVS",
       "title" : "Language Qualifier VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11098,8 +11098,8 @@
       }],
       "description" : "A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.",
       "expansion" : {
-        "identifier" : "urn:uuid:ad1337bd-ebf0-4b0e-ad71-c436489391ec",
-        "timestamp" : "2019-12-04T15:48:41+00:00",
+        "identifier" : "urn:uuid:7cf91ea3-b12f-4c3b-a1c0-8459b72dd42c",
+        "timestamp" : "2019-12-05T13:12:03+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11166,7 +11166,7 @@
       "name" : "LateralityVS",
       "title" : "Laterality VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11180,8 +11180,8 @@
       }],
       "description" : "Terms that specify the side of the body. The laterality value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.\n\n+ Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.\n+ Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.\n+ Relation to landmark: The location relative to a landmark is specified by:\n- Establishing the location and type of landmark using a body site code and optional laterality/orientation, and\n- Specifying the direction and distance from the landmark to the body location.\n\nNote that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR's stand-alone BodySite (aka BodyStructure in r4) which 'is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient' (FHIR 3.5).",
       "expansion" : {
-        "identifier" : "urn:uuid:7cdf94ff-5e38-4b37-bcbb-21f3807e5227",
-        "timestamp" : "2019-12-04T15:48:41+00:00",
+        "identifier" : "urn:uuid:61f9c9f2-caf6-4e1e-8fb3-94567cd0f5d2",
+        "timestamp" : "2019-12-05T13:12:03+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11227,7 +11227,7 @@
       "name" : "LowerBoundTypeVS",
       "title" : "Lower Bound Type VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11241,8 +11241,8 @@
       }],
       "description" : "Indicates the actual value is gt (>) or gte (>=) the given value.",
       "expansion" : {
-        "identifier" : "urn:uuid:a7693a49-3fbc-4e63-ae3a-81105466b2b4",
-        "timestamp" : "2019-12-04T15:48:41+00:00",
+        "identifier" : "urn:uuid:8315c844-3002-4e29-9c29-12f7a2f0b2df",
+        "timestamp" : "2019-12-05T13:12:04+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11279,7 +11279,7 @@
       "name" : "AnatomicalDirectionVS",
       "title" : "Anatomical Direction VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11293,8 +11293,8 @@
       }],
       "description" : "Terms that specify anatomical direction.",
       "expansion" : {
-        "identifier" : "urn:uuid:5c0a42c2-f0a1-41e1-8f13-c6b83c70306f",
-        "timestamp" : "2019-12-04T15:47:29+00:00",
+        "identifier" : "urn:uuid:11436aeb-a4f2-4cd8-814e-524e10c957c5",
+        "timestamp" : "2019-12-05T13:10:42+00:00",
         "total" : 49,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11570,7 +11570,7 @@
       "name" : "PerformanceGradingScaleVS",
       "title" : "Performance Grading Scale VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11584,8 +11584,8 @@
       }],
       "description" : "A simple performance grading scale. Also useful for grading quality and knowledge.",
       "expansion" : {
-        "identifier" : "urn:uuid:0b0bef6b-c992-4156-bb21-a455bff9070c",
-        "timestamp" : "2019-12-04T15:48:41+00:00",
+        "identifier" : "urn:uuid:135b6dfa-a027-4d6f-9cb8-6dc7a710fe8b",
+        "timestamp" : "2019-12-05T13:12:04+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11637,7 +11637,7 @@
       "name" : "PositiveNegativeVS",
       "title" : "Positive Negative VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11651,8 +11651,8 @@
       }],
       "description" : "Interpretation of a test result as positive, negative, equivocal, or indeterminate. Consolidates LOINC answer lists LL360-9, LL2329-2, LL2038-9, LL2021-5, LL2010-8, LL2009-0.",
       "expansion" : {
-        "identifier" : "urn:uuid:6987815b-7c1a-46b4-a618-800f0785c35b",
-        "timestamp" : "2019-12-04T15:48:41+00:00",
+        "identifier" : "urn:uuid:be14b607-deea-4279-8286-88e19a9705bb",
+        "timestamp" : "2019-12-05T13:12:04+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11703,7 +11703,7 @@
       "name" : "SettingVS",
       "title" : "Setting VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11717,8 +11717,8 @@
       }],
       "description" : "What type of place is found at a given location. More than one descriptor may be applicable.",
       "expansion" : {
-        "identifier" : "urn:uuid:220d8c2c-dd23-49f5-b9fa-541fff2bd03f",
-        "timestamp" : "2019-12-04T15:48:41+00:00",
+        "identifier" : "urn:uuid:9e2d0ff3-0422-45a3-be49-b071c232af3d",
+        "timestamp" : "2019-12-05T13:12:04+00:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11915,7 +11915,7 @@
       "name" : "UnitsOfLengthVS",
       "title" : "Units Of Length VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -11929,8 +11929,8 @@
       }],
       "description" : "Units of measure related to length or distance.",
       "expansion" : {
-        "identifier" : "urn:uuid:915a1f35-d5bf-4bc4-8a5e-db5a84c816e1",
-        "timestamp" : "2019-12-04T15:48:42+00:00",
+        "identifier" : "urn:uuid:1deb4ca2-81d6-4ce1-a326-5a8e2273122e",
+        "timestamp" : "2019-12-05T13:12:04+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -11996,7 +11996,7 @@
       "name" : "UpperBoundTypeVS",
       "title" : "Upper Bound Type VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -12010,8 +12010,8 @@
       }],
       "description" : "Indicates the actual value is lt (<) or lte (<=) the given value.",
       "expansion" : {
-        "identifier" : "urn:uuid:9c0e57a8-f93c-4024-a637-005339f52d40",
-        "timestamp" : "2019-12-04T15:48:42+00:00",
+        "identifier" : "urn:uuid:90bd464b-02e8-4e50-b21d-eb5fef43632c",
+        "timestamp" : "2019-12-05T13:12:05+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12048,7 +12048,7 @@
       "name" : "YesNoUnknownVS",
       "title" : "Yes No Unknown VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -12062,8 +12062,8 @@
       }],
       "description" : "A value set containing yes, no, and unknown.",
       "expansion" : {
-        "identifier" : "urn:uuid:c3ea34ea-9140-449c-992b-825a21d187fc",
-        "timestamp" : "2019-12-04T15:48:42+00:00",
+        "identifier" : "urn:uuid:9845f346-8926-4ea9-be62-c97996d6571b",
+        "timestamp" : "2019-12-05T13:12:05+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12109,7 +12109,7 @@
       "name" : "YesNoVS",
       "title" : "Yes No VS",
       "status" : "draft",
-      "date" : "2019-12-04T00:00:00+00:00",
+      "date" : "2019-12-05T00:00:00+00:00",
       "publisher" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
       "contact" : [{
         "telecom" : [{
@@ -12123,8 +12123,8 @@
       }],
       "description" : "Value set indicating yes or no (values drawn from Snomed CT), equivalent to LL361-7.",
       "expansion" : {
-        "identifier" : "urn:uuid:c79c330e-16b7-46d9-8b99-17cbe0acd90a",
-        "timestamp" : "2019-12-04T15:48:42+00:00",
+        "identifier" : "urn:uuid:8edf1f76-3e23-41c8-8365-f014bec62f42",
+        "timestamp" : "2019-12-05T13:12:05+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
