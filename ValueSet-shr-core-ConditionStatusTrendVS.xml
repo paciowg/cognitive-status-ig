@@ -8,12 +8,12 @@
 <p>Standardized value set that describes the trend or status of a disease, condition, or ability. Based on LOINC answer lists LL2751-7 and LL4721-8. The value SNOMED-CT 260415000 (Not Detected) should be used to express No Evidence of Disease (NED), condition resolved, or full remission.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ConditionStatusTrendVS"/>
   <version value="0.1.0"/>
   <name value="ConditionStatusTrendVS"/>
   <title value="Condition Status Trend VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

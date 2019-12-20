@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "shr-core-LanguageQualifierCS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>LanguageQualifierCS CodeSystem</b></p>\n<p>A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.</p>\n</div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "LanguageQualifierCS"];
   fhir:CodeSystem.title [ fhir:value "Language Qualifier CS"];
   fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.date [ fhir:value "2019-12-05T00:00:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2019-12-20T00:00:00+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -79,9 +79,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS.ttl> .
 
 # -------------------------------------------------------------------------------------
 

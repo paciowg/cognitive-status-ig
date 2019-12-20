@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e121d578-1e99-4866-9430-449e9a72a351"/>
+  <id value="6335b5f6-65f2-457d-ab6f-42d4ba5659aa"/>
   <meta>
-    <lastUpdated value="2019-12-05T21:20:00.703+00:00"/>
+    <lastUpdated value="2019-12-20T12:18:32.610+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/AnatomicalDirectionVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-AnatomicalDirectionVS"/>
@@ -428,12 +428,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/AnatomicalDirectionVS"/>
         <version value="0.1.0"/>
         <name value="AnatomicalDirectionVS"/>
         <title value="Anatomical Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -447,8 +447,8 @@
         </contact>
         <description value="Terms that specify anatomical direction."/>
         <expansion>
-          <identifier value="urn:uuid:e0ad05b3-244b-46b9-81df-94a9effb1f1c"/>
-          <timestamp value="2019-12-05T21:20:07+00:00"/>
+          <identifier value="urn:uuid:faa22b6b-03c6-49b2-a010-8c863f11b7bd"/>
+          <timestamp value="2019-12-20T12:18:42+00:00"/>
           <total value="49"/>
           <parameter>
             <name value="excludeNested"/>
@@ -712,7 +712,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/BodyLocationVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-BodyLocationVS"/>
@@ -8741,12 +8741,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/BodyLocationVS"/>
         <version value="0.1.0"/>
         <name value="BodyLocationVS"/>
         <title value="Body Location VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -8766,8 +8766,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:880e9d1c-d2c4-4206-aaad-bf67862993c7"/>
-          <timestamp value="2019-12-05T21:20:07+00:00"/>
+          <identifier value="urn:uuid:9260ca52-b3da-4c09-9006-27dfc6ac8ff2"/>
+          <timestamp value="2019-12-20T12:18:42+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13786,7 +13786,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ClockFaceDirectionVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-ClockFaceDirectionVS"/>
@@ -14007,12 +14007,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ClockFaceDirectionVS"/>
         <version value="0.1.0"/>
         <name value="ClockFaceDirectionVS"/>
         <title value="Clock Face Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14029,8 +14029,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5b7fd4ab-9d52-4af8-a1aa-e74cf7a24699"/>
-          <timestamp value="2019-12-05T21:20:44+00:00"/>
+          <identifier value="urn:uuid:81f38d57-5232-4bbf-857d-3ef7364d6f4b"/>
+          <timestamp value="2019-12-20T12:19:39+00:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14169,7 +14169,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ConditionStatusTrendVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-ConditionStatusTrendVS"/>
@@ -14246,12 +14246,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ConditionStatusTrendVS"/>
         <version value="0.1.0"/>
         <name value="ConditionStatusTrendVS"/>
         <title value="Condition Status Trend VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14265,8 +14265,8 @@
         </contact>
         <description value="Standardized value set that describes the trend or status of a disease, condition, or ability. Based on LOINC answer lists LL2751-7 and LL4721-8. The value&#xA0;SNOMED-CT 260415000 (Not Detected) should be used to express No Evidence of Disease (NED), condition resolved, or full remission."/>
         <expansion>
-          <identifier value="urn:uuid:7aa371d8-3380-4be0-9be2-0f1a211e6570"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:bd1fcfd6-95c5-4235-81ac-cf304a3c297a"/>
+          <timestamp value="2019-12-20T12:19:40+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14315,7 +14315,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/DetectedNotDetectedVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-DetectedNotDetectedVS"/>
@@ -14376,12 +14376,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/DetectedNotDetectedVS"/>
         <version value="0.1.0"/>
         <name value="DetectedNotDetectedVS"/>
         <title value="Detected Not Detected VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14395,8 +14395,8 @@
         </contact>
         <description value="Value set consisting of the answers Detected (Present) and NotDetected (Absent). The terms detected and not detected are preferred because they reflect outcomes of experimental observation, while present and absent suggest ground truth. This value set reconciles or combines LOINC answer lists LL956-4, LL750-1, LL744-4,  LL955-6, LL3950-4, LL3250-9, LL2872-1, LL2410-0, LL2355-7."/>
         <expansion>
-          <identifier value="urn:uuid:9c0757db-7ebd-4c02-8476-599bb731f9e1"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:0dd8f3e3-3dbb-4e2d-8b18-61d69c854191"/>
+          <timestamp value="2019-12-20T12:19:41+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14435,7 +14435,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedAmountVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-GradedAmountVS"/>
@@ -14520,12 +14520,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedAmountVS"/>
         <version value="0.1.0"/>
         <name value="GradedAmountVS"/>
         <title value="Graded Amount VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14539,8 +14539,8 @@
         </contact>
         <description value="A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate."/>
         <expansion>
-          <identifier value="urn:uuid:772db901-7a16-45b7-bbd5-13bddd03a62e"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:bd49f0e3-0fdd-4986-a6b0-11ec24112b02"/>
+          <timestamp value="2019-12-20T12:19:41+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14594,7 +14594,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedFrequencyVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-GradedFrequencyVS"/>
@@ -14687,12 +14687,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedFrequencyVS"/>
         <version value="0.1.0"/>
         <name value="GradedFrequencyVS"/>
         <title value="Graded Frequency VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14706,8 +14706,8 @@
         </contact>
         <description value="Answers to &#39;how often&#39; questions. A 5-value qualitative scale of frequency of an event equivalent to LL1016-6, LL1024-0, LL346-8."/>
         <expansion>
-          <identifier value="urn:uuid:a488f97d-bc11-47ce-a1ed-fe3cc941d61b"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:66cd8178-8f34-46a1-a227-48c0398e383f"/>
+          <timestamp value="2019-12-20T12:19:41+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14766,7 +14766,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedPortionVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-GradedPortionVS"/>
@@ -14851,12 +14851,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedPortionVS"/>
         <version value="0.1.0"/>
         <name value="GradedPortionVS"/>
         <title value="Graded Portion VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -14870,8 +14870,8 @@
         </contact>
         <description value="Answers to &#39;how much of&#39; questions, such as &#39;how much of the time do/did you...&#39; A 5-value qualitative scale, equivalent to LL2095-9, LL1017-4"/>
         <expansion>
-          <identifier value="urn:uuid:1725d178-5d6f-40f8-94a3-f613363ab9cf"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:1ebc7e8f-6a48-484c-9f1f-c90fb6a686f0"/>
+          <timestamp value="2019-12-20T12:19:41+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14925,7 +14925,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ImageMimeTypeVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-ImageMimeTypeVS"/>
@@ -14933,10 +14933,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS version 0.1.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS version 0.1.0</p>
             <p>All codes from system 
               <a href="CodeSystem-shr-core-ImageMimeTypeCS.html">
-                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS</code>
+                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS</code>
               </a>
             </p>
             <table class="codes">
@@ -14953,7 +14953,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-ImageMimeTypeCS-image-bmp"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-ImageMimeTypeCS-image-bmp"> </a>
                   <a href="CodeSystem-shr-core-ImageMimeTypeCS.html#shr-core-ImageMimeTypeCS-image.47bmp">image/bmp</a>
                 </td>
                 <td>.bmp</td>
@@ -14961,7 +14961,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-ImageMimeTypeCS-image-gif"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-ImageMimeTypeCS-image-gif"> </a>
                   <a href="CodeSystem-shr-core-ImageMimeTypeCS.html#shr-core-ImageMimeTypeCS-image.47gif">image/gif</a>
                 </td>
                 <td>.gif</td>
@@ -14969,7 +14969,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-ImageMimeTypeCS-image-jpeg"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-ImageMimeTypeCS-image-jpeg"> </a>
                   <a href="CodeSystem-shr-core-ImageMimeTypeCS.html#shr-core-ImageMimeTypeCS-image.47jpeg">image/jpeg</a>
                 </td>
                 <td>.jpeg</td>
@@ -14977,7 +14977,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-ImageMimeTypeCS-image-png"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-ImageMimeTypeCS-image-png"> </a>
                   <a href="CodeSystem-shr-core-ImageMimeTypeCS.html#shr-core-ImageMimeTypeCS-image.47png">image/png</a>
                 </td>
                 <td>.png</td>
@@ -14985,7 +14985,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-ImageMimeTypeCS-image-svg-xml"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-ImageMimeTypeCS-image-svg-xml"> </a>
                   <a href="CodeSystem-shr-core-ImageMimeTypeCS.html#shr-core-ImageMimeTypeCS-image.47svg.43xml">image/svg+xml</a>
                 </td>
                 <td>.svg</td>
@@ -14993,7 +14993,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-ImageMimeTypeCS-image-tiff"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-ImageMimeTypeCS-image-tiff"> </a>
                   <a href="CodeSystem-shr-core-ImageMimeTypeCS.html#shr-core-ImageMimeTypeCS-image.47tiff">image/tiff</a>
                 </td>
                 <td>.tiff</td>
@@ -15002,12 +15002,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ImageMimeTypeVS"/>
         <version value="0.1.0"/>
         <name value="ImageMimeTypeVS"/>
         <title value="Image Mime Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -15021,8 +15021,8 @@
         </contact>
         <description value="Mime types that apply to photographic images."/>
         <expansion>
-          <identifier value="urn:uuid:b02ca7d5-b78b-42d1-a5e7-6240b11e66a1"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:9d2d84ef-d60c-46de-a076-4d397d046126"/>
+          <timestamp value="2019-12-20T12:19:42+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -15030,35 +15030,35 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS|0.1.0"/>
+            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
             <code value="image/bmp"/>
             <display value=".bmp"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
             <code value="image/gif"/>
             <display value=".gif"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
             <code value="image/jpeg"/>
             <display value=".jpeg"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
             <code value="image/png"/>
             <display value=".png"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
             <code value="image/svg+xml"/>
             <display value=".svg"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
             <code value="image/tiff"/>
             <display value=".tiff"/>
           </contains>
@@ -15067,7 +15067,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LandmarkTypeVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LandmarkTypeVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-LandmarkTypeVS"/>
@@ -23144,12 +23144,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LandmarkTypeVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LandmarkTypeVS"/>
         <version value="0.1.0"/>
         <name value="LandmarkTypeVS"/>
         <title value="Landmark Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -23169,8 +23169,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4eb0d23e-79cc-4ca1-8d5f-75e278891870"/>
-          <timestamp value="2019-12-05T21:20:46+00:00"/>
+          <identifier value="urn:uuid:9fb17312-3a07-4e28-a7e8-80f539011fa5"/>
+          <timestamp value="2019-12-20T12:19:42+00:00"/>
           <total value="1006"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28223,7 +28223,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LanguageQualifierVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-LanguageQualifierVS"/>
@@ -28231,10 +28231,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 8 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS version 0.1.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS version 0.1.0</p>
             <p>All codes from system 
               <a href="CodeSystem-shr-core-LanguageQualifierCS.html">
-                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS</code>
+                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS</code>
               </a>
             </p>
             <table class="codes">
@@ -28251,7 +28251,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-preferred-spoken"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-preferred-spoken"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-preferred_spoken">preferred_spoken</a>
                 </td>
                 <td>Preferred language</td>
@@ -28259,7 +28259,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-secondary-spoken"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-secondary-spoken"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-secondary_spoken">secondary_spoken</a>
                 </td>
                 <td>Secondary language</td>
@@ -28267,7 +28267,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-apraxia"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-apraxia"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-apraxia">apraxia</a>
                 </td>
                 <td>Difficulty speaking due to motor disorder</td>
@@ -28275,7 +28275,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-aphasia"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-aphasia"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-aphasia">aphasia</a>
                 </td>
                 <td>Difficulty in speaking, listening, reading, and writing</td>
@@ -28283,7 +28283,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-signs"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-signs"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-signs">signs</a>
                 </td>
                 <td>Uses sign language</td>
@@ -28291,7 +28291,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-braille"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-braille"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-braille">braille</a>
                 </td>
                 <td>Reads using braille</td>
@@ -28299,7 +28299,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-lipreads"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-lipreads"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-lipreads">lipreads</a>
                 </td>
                 <td>Uses lipreading (speechreading)</td>
@@ -28307,7 +28307,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-LanguageQualifierCS-aac"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-LanguageQualifierCS-aac"> </a>
                   <a href="CodeSystem-shr-core-LanguageQualifierCS.html#shr-core-LanguageQualifierCS-aac">aac</a>
                 </td>
                 <td>Uses augmentative and alternative communication</td>
@@ -28316,12 +28316,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LanguageQualifierVS"/>
         <version value="0.1.0"/>
         <name value="LanguageQualifierVS"/>
         <title value="Language Qualifier VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28335,8 +28335,8 @@
         </contact>
         <description value="A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way."/>
         <expansion>
-          <identifier value="urn:uuid:80758e1e-b98c-4982-a5cd-fa35b9934b0f"/>
-          <timestamp value="2019-12-05T21:21:23+00:00"/>
+          <identifier value="urn:uuid:51fc655c-7017-4783-b539-a4396003b06b"/>
+          <timestamp value="2019-12-20T12:20:39+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28344,45 +28344,45 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS|0.1.0"/>
+            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="preferred_spoken"/>
             <display value="Preferred language"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="secondary_spoken"/>
             <display value="Secondary language"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="apraxia"/>
             <display value="Difficulty speaking due to motor disorder"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="aphasia"/>
             <display value="Difficulty in speaking, listening, reading, and writing"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="signs"/>
             <display value="Uses sign language"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="braille"/>
             <display value="Reads using braille"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="lipreads"/>
             <display value="Uses lipreading (speechreading)"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
             <code value="aac"/>
             <display value="Uses augmentative and alternative communication"/>
           </contains>
@@ -28391,7 +28391,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LateralityVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-LateralityVS"/>
@@ -28444,12 +28444,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LateralityVS"/>
         <version value="0.1.0"/>
         <name value="LateralityVS"/>
         <title value="Laterality VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28463,8 +28463,8 @@
         </contact>
         <description value="Terms that specify the side of the body. The laterality value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.&#xA;&#xA;+ Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.&#xA;+ Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.&#xA;+ Relation to landmark: The location relative to a landmark is specified by:&#xA;- Establishing the location and type of landmark using a body site code and optional laterality/orientation, and&#xA;- Specifying the direction and distance from the landmark to the body location.&#xA;&#xA;Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR&#39;s stand-alone BodySite (aka BodyStructure in r4) which &#39;is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient&#39; (FHIR 3.5)."/>
         <expansion>
-          <identifier value="urn:uuid:637fcd0d-4356-4ba3-a9ab-49cf7a2123ce"/>
-          <timestamp value="2019-12-05T21:21:23+00:00"/>
+          <identifier value="urn:uuid:b2b4a9bd-4934-4286-b9dd-45b0eb80ed21"/>
+          <timestamp value="2019-12-20T12:20:39+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28498,7 +28498,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LowerBoundTypeVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-LowerBoundTypeVS"/>
@@ -28543,12 +28543,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LowerBoundTypeVS"/>
         <version value="0.1.0"/>
         <name value="LowerBoundTypeVS"/>
         <title value="Lower Bound Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -28562,8 +28562,8 @@
         </contact>
         <description value="Indicates the actual value is gt (&gt;) or gte (&gt;=) the given value."/>
         <expansion>
-          <identifier value="urn:uuid:980be2d3-109e-4915-9ea9-99e7a9dd4d71"/>
-          <timestamp value="2019-12-05T21:21:23+00:00"/>
+          <identifier value="urn:uuid:16786545-0a20-4415-8354-bba28e4cebd9"/>
+          <timestamp value="2019-12-20T12:20:39+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -28588,7 +28588,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/AnatomicalDirectionVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-AnatomicalDirectionVS"/>
@@ -29009,12 +29009,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/AnatomicalDirectionVS"/>
         <version value="0.1.0"/>
         <name value="AnatomicalDirectionVS"/>
         <title value="Anatomical Direction VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29028,8 +29028,8 @@
         </contact>
         <description value="Terms that specify anatomical direction."/>
         <expansion>
-          <identifier value="urn:uuid:e0ad05b3-244b-46b9-81df-94a9effb1f1c"/>
-          <timestamp value="2019-12-05T21:20:07+00:00"/>
+          <identifier value="urn:uuid:faa22b6b-03c6-49b2-a010-8c863f11b7bd"/>
+          <timestamp value="2019-12-20T12:18:42+00:00"/>
           <total value="49"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29293,7 +29293,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/PerformanceGradingScaleVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-PerformanceGradingScaleVS"/>
@@ -29301,10 +29301,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS version 0.1.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS version 0.1.0</p>
             <p>All codes from system 
               <a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html">
-                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS</code>
+                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS</code>
               </a>
             </p>
             <table class="codes">
@@ -29321,7 +29321,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-PerformanceGradingScaleCS-excellent"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-PerformanceGradingScaleCS-excellent"> </a>
                   <a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html#shr-core-PerformanceGradingScaleCS-excellent">excellent</a>
                 </td>
                 <td>Excellent</td>
@@ -29329,7 +29329,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-PerformanceGradingScaleCS-very-good"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-PerformanceGradingScaleCS-very-good"> </a>
                   <a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html#shr-core-PerformanceGradingScaleCS-very_good">very_good</a>
                 </td>
                 <td>Very good</td>
@@ -29337,7 +29337,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-PerformanceGradingScaleCS-good"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-PerformanceGradingScaleCS-good"> </a>
                   <a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html#shr-core-PerformanceGradingScaleCS-good">good</a>
                 </td>
                 <td>Good</td>
@@ -29345,7 +29345,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-PerformanceGradingScaleCS-fair"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-PerformanceGradingScaleCS-fair"> </a>
                   <a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html#shr-core-PerformanceGradingScaleCS-fair">fair</a>
                 </td>
                 <td>Fair</td>
@@ -29353,7 +29353,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-PerformanceGradingScaleCS-poor"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-PerformanceGradingScaleCS-poor"> </a>
                   <a href="CodeSystem-shr-core-PerformanceGradingScaleCS.html#shr-core-PerformanceGradingScaleCS-poor">poor</a>
                 </td>
                 <td>Poor</td>
@@ -29362,12 +29362,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/PerformanceGradingScaleVS"/>
         <version value="0.1.0"/>
         <name value="PerformanceGradingScaleVS"/>
         <title value="Performance Grading Scale VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29381,8 +29381,8 @@
         </contact>
         <description value="A simple performance grading scale. Also useful for grading quality and knowledge."/>
         <expansion>
-          <identifier value="urn:uuid:d6e0f2d0-0c6d-4d87-a1a1-fcd93fc0030a"/>
-          <timestamp value="2019-12-05T21:21:23+00:00"/>
+          <identifier value="urn:uuid:a7266400-02f5-4199-b54e-d8ebd74e0885"/>
+          <timestamp value="2019-12-20T12:20:39+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29390,30 +29390,30 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS|0.1.0"/>
+            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS"/>
             <code value="excellent"/>
             <display value="Excellent"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS"/>
             <code value="very_good"/>
             <display value="Very good"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS"/>
             <code value="good"/>
             <display value="Good"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS"/>
             <code value="fair"/>
             <display value="Fair"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS"/>
             <code value="poor"/>
             <display value="Poor"/>
           </contains>
@@ -29422,7 +29422,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/PositiveNegativeVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-PositiveNegativeVS"/>
@@ -29483,12 +29483,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/PositiveNegativeVS"/>
         <version value="0.1.0"/>
         <name value="PositiveNegativeVS"/>
         <title value="Positive Negative VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29502,8 +29502,8 @@
         </contact>
         <description value="Interpretation of a test result as positive, negative, equivocal, or indeterminate. Consolidates LOINC answer lists LL360-9, LL2329-2, LL2038-9, LL2021-5, LL2010-8, LL2009-0."/>
         <expansion>
-          <identifier value="urn:uuid:114ee66a-d15a-4a9d-b702-7df4108f2af6"/>
-          <timestamp value="2019-12-05T21:21:23+00:00"/>
+          <identifier value="urn:uuid:bd5221e9-a8de-43db-a0ad-6464c7e9e761"/>
+          <timestamp value="2019-12-20T12:20:39+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29542,7 +29542,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-SettingVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/SettingVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-SettingVS"/>
@@ -29550,10 +29550,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 34 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS version 0.1.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS version 0.1.0</p>
             <p>All codes from system 
               <a href="CodeSystem-shr-core-SettingCS.html">
-                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS</code>
+                <code>http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS</code>
               </a>
             </p>
             <table class="codes">
@@ -29570,7 +29570,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-work"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-work"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-work">work</a>
                 </td>
                 <td>At or during work, in a workplace setting.</td>
@@ -29578,7 +29578,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-home"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-home"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-home">home</a>
                 </td>
                 <td>At home</td>
@@ -29586,7 +29586,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-residental"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-residental"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-residental">residental</a>
                 </td>
                 <td>In a residential setting</td>
@@ -29594,7 +29594,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-school"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-school"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-school">school</a>
                 </td>
                 <td>A primary or secondary school</td>
@@ -29602,7 +29602,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-vehicle"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-vehicle"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-vehicle">vehicle</a>
                 </td>
                 <td>In a parked or moving vehicle</td>
@@ -29610,7 +29610,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-office"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-office"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-office">office</a>
                 </td>
                 <td>An non-manufacturing, indoor business setting</td>
@@ -29618,7 +29618,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-factory"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-factory"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-factory">factory</a>
                 </td>
                 <td>A manufacturing-oriented business setting</td>
@@ -29626,7 +29626,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-business"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-business"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-business">business</a>
                 </td>
                 <td>A place of business</td>
@@ -29634,7 +29634,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-restaurant"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-restaurant"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-restaurant">restaurant</a>
                 </td>
                 <td>A setting where food is served</td>
@@ -29642,7 +29642,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-food-prep"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-food-prep"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-food_prep">food_prep</a>
                 </td>
                 <td>A place where food is prepared</td>
@@ -29650,7 +29650,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-worksite"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-worksite"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-worksite">worksite</a>
                 </td>
                 <td>Workplace that is primarily outdoors</td>
@@ -29658,7 +29658,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-manufacturing"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-manufacturing"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-manufacturing">manufacturing</a>
                 </td>
                 <td>A setting where manufacturing takes place</td>
@@ -29666,7 +29666,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-owned"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-owned"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-owned">owned</a>
                 </td>
                 <td>A building or residence that is owned</td>
@@ -29674,7 +29674,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-rental"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-rental"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-rental">rental</a>
                 </td>
                 <td>A building or residence that is rented</td>
@@ -29682,7 +29682,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-dorm"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-dorm"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-dorm">dorm</a>
                 </td>
                 <td>Shared (unassisted) living residence, such as a dormitory or fraternity</td>
@@ -29690,7 +29690,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-foster"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-foster"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-foster">foster</a>
                 </td>
                 <td>Foster care group home</td>
@@ -29698,7 +29698,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-assisted"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-assisted"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-assisted">assisted</a>
                 </td>
                 <td>Assisted living or independent living facility</td>
@@ -29706,7 +29706,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-snf"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-snf"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-snf">snf</a>
                 </td>
                 <td>Skilled nursing facility or other Long-Term Care</td>
@@ -29714,7 +29714,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-shelter"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-shelter"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-shelter">shelter</a>
                 </td>
                 <td>Homeless or other type of shelter</td>
@@ -29722,7 +29722,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-hotel"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-hotel"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-hotel">hotel</a>
                 </td>
                 <td>Hotel or motel</td>
@@ -29730,7 +29730,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-psh"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-psh"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-psh">psh</a>
                 </td>
                 <td>Permanent supportive housing for formerly homeless persons (such as SHP, S+C, or SRO Mod Rehab)</td>
@@ -29738,7 +29738,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-psych"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-psych"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-psych">psych</a>
                 </td>
                 <td>Psychiatric hospital or other psychiatric facility</td>
@@ -29746,7 +29746,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-detox"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-detox"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-detox">detox</a>
                 </td>
                 <td>Substance abuse treatment facility or detox center</td>
@@ -29754,7 +29754,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-prison"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-prison"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-prison">prison</a>
                 </td>
                 <td>Individual resides in a correctional facility, state hospital, jail, prison, youth authority facility, juvenile hall, boot camp or Boys Ranch.</td>
@@ -29762,7 +29762,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-transition"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-transition"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-transition">transition</a>
                 </td>
                 <td>Transitional housing, residential provier program, or any type of halfway house</td>
@@ -29770,7 +29770,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-squat"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-squat"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-squat">squat</a>
                 </td>
                 <td>A homeless camp, abandoned building, shantytown, bus/train/subway station/airport, or squatter area</td>
@@ -29778,7 +29778,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-outdoors"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-outdoors"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-outdoors">outdoors</a>
                 </td>
                 <td>Outside of any shelter, e.g., on a street</td>
@@ -29786,7 +29786,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-agricultural"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-agricultural"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-agricultural">agricultural</a>
                 </td>
                 <td>Agricultural setting</td>
@@ -29794,7 +29794,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-farm"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-farm"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-farm">farm</a>
                 </td>
                 <td>A farm with livestock</td>
@@ -29802,7 +29802,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-battlefield"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-battlefield"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-battlefield">battlefield</a>
                 </td>
                 <td>On a battlefield</td>
@@ -29810,7 +29810,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-deployed"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-deployed"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-deployed">deployed</a>
                 </td>
                 <td>Deployed to a military camp or area</td>
@@ -29818,7 +29818,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-ship"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-ship"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-ship">ship</a>
                 </td>
                 <td>On a boat</td>
@@ -29826,7 +29826,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-airplane"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-airplane"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-airplane">airplane</a>
                 </td>
                 <td>On an airplane</td>
@@ -29834,7 +29834,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-CodeSystem-shr-core-SettingCS-submarine"> </a>
+                  <a name="http---hl7.org-fhir-us-PACIO-cognitive-status-shr-core-cs-SettingCS-submarine"> </a>
                   <a href="CodeSystem-shr-core-SettingCS.html#shr-core-SettingCS-submarine">submarine</a>
                 </td>
                 <td>Aboard a submarine</td>
@@ -29843,12 +29843,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-SettingVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/SettingVS"/>
         <version value="0.1.0"/>
         <name value="SettingVS"/>
         <title value="Setting VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -29862,8 +29862,8 @@
         </contact>
         <description value="What type of place is found at a given location. More than one descriptor may be applicable."/>
         <expansion>
-          <identifier value="urn:uuid:56482766-313a-4d51-85c3-c87ba847995e"/>
-          <timestamp value="2019-12-05T21:21:23+00:00"/>
+          <identifier value="urn:uuid:66ba8cbe-d3f5-4dc1-9735-268504d3f531"/>
+          <timestamp value="2019-12-20T12:20:39+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29871,175 +29871,175 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS|0.1.0"/>
+            <valueUri value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="work"/>
             <display value="At or during work, in a workplace setting."/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="home"/>
             <display value="At home"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="residental"/>
             <display value="In a residential setting"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="school"/>
             <display value="A primary or secondary school"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="vehicle"/>
             <display value="In a parked or moving vehicle"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="office"/>
             <display value="An non-manufacturing, indoor business setting"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="factory"/>
             <display value="A manufacturing-oriented business setting"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="business"/>
             <display value="A place of business"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="restaurant"/>
             <display value="A setting where food is served"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="food_prep"/>
             <display value="A place where food is prepared"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="worksite"/>
             <display value="Workplace that is primarily outdoors"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="manufacturing"/>
             <display value="A setting where manufacturing takes place"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="owned"/>
             <display value="A building or residence that is owned"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="rental"/>
             <display value="A building or residence that is rented"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="dorm"/>
             <display value="Shared (unassisted) living residence, such as a dormitory or fraternity"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="foster"/>
             <display value="Foster care group home"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="assisted"/>
             <display value="Assisted living or independent living facility"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="snf"/>
             <display value="Skilled nursing facility or other Long-Term Care"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="shelter"/>
             <display value="Homeless or other type of shelter"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="hotel"/>
             <display value="Hotel or motel"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="psh"/>
             <display value="Permanent supportive housing for formerly homeless persons (such as SHP, S+C, or SRO Mod Rehab)"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="psych"/>
             <display value="Psychiatric hospital or other psychiatric facility"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="detox"/>
             <display value="Substance abuse treatment facility or detox center"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="prison"/>
             <display value="Individual resides in a correctional facility, state hospital, jail, prison, youth authority facility, juvenile hall, boot camp or Boys Ranch."/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="transition"/>
             <display value="Transitional housing, residential provier program, or any type of halfway house"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="squat"/>
             <display value="A homeless camp, abandoned building, shantytown, bus/train/subway station/airport, or squatter area"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="outdoors"/>
             <display value="Outside of any shelter, e.g., on a street"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="agricultural"/>
             <display value="Agricultural setting"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="farm"/>
             <display value="A farm with livestock"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="battlefield"/>
             <display value="On a battlefield"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="deployed"/>
             <display value="Deployed to a military camp or area"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="ship"/>
             <display value="On a boat"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="airplane"/>
             <display value="On an airplane"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+            <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
             <code value="submarine"/>
             <display value="Aboard a submarine"/>
           </contains>
@@ -30048,7 +30048,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/UnitsOfLengthVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-UnitsOfLengthVS"/>
@@ -30114,12 +30114,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/UnitsOfLengthVS"/>
         <version value="0.1.0"/>
         <name value="UnitsOfLengthVS"/>
         <title value="Units Of Length VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30133,8 +30133,8 @@
         </contact>
         <description value="Units of measure related to length or distance."/>
         <expansion>
-          <identifier value="urn:uuid:d4162504-6e11-4461-8a14-bc1eb55ceb85"/>
-          <timestamp value="2019-12-05T21:21:24+00:00"/>
+          <identifier value="urn:uuid:16fde81d-4a74-4e58-8bbd-a7c57e5e81b4"/>
+          <timestamp value="2019-12-20T12:20:40+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30188,7 +30188,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/UpperBoundTypeVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-UpperBoundTypeVS"/>
@@ -30233,12 +30233,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/UpperBoundTypeVS"/>
         <version value="0.1.0"/>
         <name value="UpperBoundTypeVS"/>
         <title value="Upper Bound Type VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30252,8 +30252,8 @@
         </contact>
         <description value="Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value."/>
         <expansion>
-          <identifier value="urn:uuid:ec55a81a-cdf4-4446-9852-c5cc41cc4748"/>
-          <timestamp value="2019-12-05T21:21:24+00:00"/>
+          <identifier value="urn:uuid:082a33da-1671-4781-8b33-42f7b130b218"/>
+          <timestamp value="2019-12-20T12:20:40+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30278,7 +30278,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/YesNoUnknownVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-YesNoUnknownVS"/>
@@ -30331,12 +30331,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/YesNoUnknownVS"/>
         <version value="0.1.0"/>
         <name value="YesNoUnknownVS"/>
         <title value="Yes No Unknown VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30350,8 +30350,8 @@
         </contact>
         <description value="A value set containing yes, no, and unknown."/>
         <expansion>
-          <identifier value="urn:uuid:627e2e20-669c-4eb2-a98e-50bcff3da84d"/>
-          <timestamp value="2019-12-05T21:21:24+00:00"/>
+          <identifier value="urn:uuid:93507c6d-e6c8-4286-b3f4-d388e2f88b11"/>
+          <timestamp value="2019-12-20T12:20:40+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -30385,7 +30385,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS"/>
+    <fullUrl value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/YesNoVS"/>
     <resource>
       <ValueSet>
         <id value="shr-core-YesNoVS"/>
@@ -30430,12 +30430,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS"/>
+        <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/YesNoVS"/>
         <version value="0.1.0"/>
         <name value="YesNoVS"/>
         <title value="Yes No VS"/>
         <status value="draft"/>
-        <date value="2019-12-05T00:00:00+00:00"/>
+        <date value="2019-12-20T00:00:00+00:00"/>
         <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
         <contact>
           <telecom>
@@ -30449,8 +30449,8 @@
         </contact>
         <description value="Value set indicating yes or no (values drawn from Snomed CT), equivalent to LL361-7."/>
         <expansion>
-          <identifier value="urn:uuid:d68337ac-1497-406d-9dc2-85339523a187"/>
-          <timestamp value="2019-12-05T21:21:24+00:00"/>
+          <identifier value="urn:uuid:29556a28-006a-4868-8e4f-5424bdde9cf0"/>
+          <timestamp value="2019-12-20T12:20:40+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

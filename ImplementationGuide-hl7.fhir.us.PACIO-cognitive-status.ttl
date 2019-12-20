@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status> a fhir:ImplementationGuide;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "hl7.fhir.us.PACIO-cognitive-status"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIO_Cognitive_Status</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIO_Cognitive_Status</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status"];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Cognitive_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-12-05T21:20:00+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-20T12:18:32+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -64,7 +64,7 @@
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-cs-BundledCognitiveStatus.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cs-BundledCognitiveStatus" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundled Cognitive Status" ];
@@ -81,7 +81,7 @@
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-cs-CognitiveStatus.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cs-CognitiveStatus" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cognitive Status" ];
@@ -98,7 +98,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-AgeGroupVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AgeGroupVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AgeGroupVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-AgeGroupVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age Group VS" ];
@@ -115,7 +115,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-AnatomicalDirectionVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-AnatomicalDirectionVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Direction VS" ];
@@ -132,7 +132,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-BodyLocationVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-BodyLocationVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-BodyLocationVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Location VS" ];
@@ -149,7 +149,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-ClockFaceDirectionVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ClockFaceDirectionVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Clock Face Direction VS" ];
@@ -166,7 +166,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-ConditionStatusTrendVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ConditionStatusTrendVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Status Trend VS" ];
@@ -183,7 +183,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-DetectedNotDetectedVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-DetectedNotDetectedVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected VS" ];
@@ -200,7 +200,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GestationalTimePeriodVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GestationalTimePeriodVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gestational Time Period VS" ];
@@ -217,7 +217,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GradedAmountVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedAmountVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedAmountVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Amount VS" ];
@@ -234,7 +234,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GradedFrequencyVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedFrequencyVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedFrequencyVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Frequency VS" ];
@@ -251,7 +251,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GradedPortionVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedPortionVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedPortionVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Portion VS" ];
@@ -268,7 +268,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-ImageMimeTypeVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ImageMimeTypeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Image Mime Type VS" ];
@@ -285,7 +285,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LandmarkTypeVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LandmarkTypeVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LandmarkTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LandmarkTypeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Landmark Type VS" ];
@@ -302,7 +302,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LanguageQualifierVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LanguageQualifierVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LanguageQualifierVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Qualifier VS" ];
@@ -319,7 +319,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LateralityVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LateralityVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LateralityVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality VS" ];
@@ -336,7 +336,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LowerBoundTypeVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LowerBoundTypeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lower Bound Type VS" ];
@@ -353,7 +353,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-OrientationVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-OrientationVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-OrientationVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-OrientationVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Orientation VS" ];
@@ -370,7 +370,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-PerformanceGradingScaleVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-PerformanceGradingScaleVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Performance Grading Scale VS" ];
@@ -387,7 +387,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-PositiveNegativeVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PositiveNegativeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-PositiveNegativeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Positive Negative VS" ];
@@ -404,7 +404,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-SettingVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-SettingVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-SettingVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-SettingVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting VS" ];
@@ -421,7 +421,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-StatisticTypeVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-StatisticTypeVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-StatisticTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-StatisticTypeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Statistic Type VS" ];
@@ -438,7 +438,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-UnitsOfLengthVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-UnitsOfLengthVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Units Of Length VS" ];
@@ -455,7 +455,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-UpperBoundTypeVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-UpperBoundTypeVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Upper Bound Type VS" ];
@@ -472,7 +472,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-YesNoUnknownVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoUnknownVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-YesNoUnknownVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown VS" ];
@@ -489,7 +489,7 @@
          fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-YesNoVS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoVS>;
          fhir:Reference.reference [ fhir:value "ValueSet/shr-core-YesNoVS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No VS" ];
@@ -506,7 +506,7 @@
          fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-ImageMimeTypeCS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-ImageMimeTypeCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Image Mime Type CS" ];
@@ -523,7 +523,7 @@
          fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-LanguageQualifierCS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-LanguageQualifierCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Qualifier CS" ];
@@ -540,7 +540,7 @@
          fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-PerformanceGradingScaleCS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-PerformanceGradingScaleCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Performance Grading Scale CS" ];
@@ -557,7 +557,7 @@
          fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-SettingCS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS>;
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-SettingCS>;
          fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-SettingCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting CS" ];
@@ -570,71 +570,71 @@
      ]
   ] .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AgeGroupVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AgeGroupVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-BodyLocationVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-BodyLocationVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedAmountVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedFrequencyVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedFrequencyVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedPortionVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LandmarkTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LandmarkTypeVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LanguageQualifierVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LateralityVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-OrientationVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-OrientationVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PositiveNegativeVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-SettingVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-SettingVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-StatisticTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-StatisticTypeVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoUnknownVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoUnknownVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-YesNoVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoVS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-SettingCS> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status.ttl> .
 
 # -------------------------------------------------------------------------------------
 

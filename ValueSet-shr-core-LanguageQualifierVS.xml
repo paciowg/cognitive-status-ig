@@ -8,12 +8,12 @@
 <p>A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LanguageQualifierVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LanguageQualifierVS"/>
   <version value="0.1.0"/>
   <name value="LanguageQualifierVS"/>
   <title value="Language Qualifier VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -28,7 +28,7 @@
   <description value="A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way."/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS"/>
+      <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/LanguageQualifierCS"/>
       <concept>
         <code value="preferred_spoken"/>
         <display value="Preferred language"/>

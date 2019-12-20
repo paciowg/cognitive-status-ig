@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>GradedPortionVS ValueSet</b></p>\n<p>Answers to 'how much of' questions, such as 'how much of the time do/did you...' A 5-value qualitative scale, equivalent to LL2095-9, LL1017-4</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedPortionVS",
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedPortionVS",
   "version": "0.1.0",
   "name": "GradedPortionVS",
   "title": "Graded Portion VS",
   "status": "draft",
-  "date": "2019-12-05T00:00:00+00:00",
+  "date": "2019-12-20T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {

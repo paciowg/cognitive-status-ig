@@ -16,12 +16,12 @@
 </pre></p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus"/>
+  <url value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus"/>
   <version value="0.1.0"/>
   <name value="BundledCognitiveStatus"/>
   <title value="Bundled Cognitive Status"/>
   <status value="active"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

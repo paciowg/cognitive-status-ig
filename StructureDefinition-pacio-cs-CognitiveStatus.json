@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 0..0\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n</pre></p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
+  "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
   "version": "0.1.0",
   "name": "CognitiveStatus",
   "title": "Cognitive Status",
   "status": "active",
-  "date": "2019-12-05T00:00:00+00:00",
+  "date": "2019-12-20T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {

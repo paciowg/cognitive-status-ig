@@ -6,11 +6,11 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus",
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus",
         "title": "Bundled Cognitive Status"
       },
       {
-        "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
+        "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
         "title": "Cognitive Status"
       }
     ]

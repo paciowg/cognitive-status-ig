@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>PerformanceGradingScaleCS CodeSystem</b></p>\n<p>A simple performance grading scale. Also useful for grading quality and knowledge.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS",
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/PerformanceGradingScaleCS",
   "version": "0.1.0",
   "name": "PerformanceGradingScaleCS",
   "title": "Performance Grading Scale CS",
   "status": "draft",
-  "date": "2019-12-05T00:00:00+00:00",
+  "date": "2019-12-20T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {

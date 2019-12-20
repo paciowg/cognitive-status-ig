@@ -8,12 +8,12 @@
 <p>Value set consisting of the answers Detected (Present) and NotDetected (Absent). The terms detected and not detected are preferred because they reflect outcomes of experimental observation, while present and absent suggest ground truth. This value set reconciles or combines LOINC answer lists LL956-4, LL750-1, LL744-4,  LL955-6, LL3950-4, LL3250-9, LL2872-1, LL2410-0, LL2355-7.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/DetectedNotDetectedVS"/>
   <version value="0.1.0"/>
   <name value="DetectedNotDetectedVS"/>
   <title value="Detected Not Detected VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

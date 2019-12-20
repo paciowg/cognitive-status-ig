@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.PACIO-cognitive-status"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PACIO_Cognitive_Status</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PACIO_Cognitive_Status</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status</pre></div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status"/>
+  <url value="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status"/>
   <version value="0.1.0"/>
   <name value="PACIO_Cognitive_Status"/>
   <title value="PACIO Cognitive Status"/>
   <status value="draft"/>
-  <date value="2019-12-05T21:20:00+00:00"/>
+  <date value="2019-12-20T12:18:32+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

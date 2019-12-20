@@ -16,12 +16,12 @@
 Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR's stand-alone BodySite (aka BodyStructure in r4) which 'is not ... intended for describing the type of anatomical location but rather a specific body site on a specific patient' (FHIR 3.5).</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LateralityVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LateralityVS"/>
   <version value="0.1.0"/>
   <name value="LateralityVS"/>
   <title value="Laterality VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

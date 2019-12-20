@@ -8,12 +8,12 @@
 <p>Indicates the actual value is gt (&gt;) or gte (&gt;=) the given value.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/LowerBoundTypeVS"/>
   <version value="0.1.0"/>
   <name value="LowerBoundTypeVS"/>
   <title value="Lower Bound Type VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

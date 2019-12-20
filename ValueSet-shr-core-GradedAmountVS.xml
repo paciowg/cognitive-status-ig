@@ -8,12 +8,12 @@
 <p>A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-GradedAmountVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/GradedAmountVS"/>
   <version value="0.1.0"/>
   <name value="GradedAmountVS"/>
   <title value="Graded Amount VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

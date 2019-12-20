@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>PositiveNegativeVS ValueSet</b></p>\n<p>Interpretation of a test result as positive, negative, equivocal, or indeterminate. Consolidates LOINC answer lists LL360-9, LL2329-2, LL2038-9, LL2021-5, LL2010-8, LL2009-0.</p>\n</div>"
   },
-  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-PositiveNegativeVS",
+  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/PositiveNegativeVS",
   "version": "0.1.0",
   "name": "PositiveNegativeVS",
   "title": "Positive Negative VS",
   "status": "draft",
-  "date": "2019-12-05T00:00:00+00:00",
+  "date": "2019-12-20T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {

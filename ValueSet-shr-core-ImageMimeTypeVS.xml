@@ -8,12 +8,12 @@
 <p>Mime types that apply to photographic images.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/ImageMimeTypeVS"/>
   <version value="0.1.0"/>
   <name value="ImageMimeTypeVS"/>
   <title value="Image Mime Type VS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -28,7 +28,7 @@
   <description value="Mime types that apply to photographic images."/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS"/>
+      <system value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/ImageMimeTypeCS"/>
       <concept>
         <code value="image/bmp"/>
         <display value=".bmp"/>

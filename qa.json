@@ -1,9 +1,9 @@
 {
-  "url": "http://hl7.org/fhir/us/PACIO-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status-0.1.0",
+  "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ImplementationGuide/hl7.fhir.us.PACIO-cognitive-status-0.1.0",
   "name": "PACIO_Cognitive_Status",
   "package-id": "hl7.fhir.us.PACIO-cognitive-status",
   "ig-ver": "0.1.0",
-  "date": "Thu, 05 Dec, 2019 21:20:00 +0000",
+  "date": "Fri, 20 Dec, 2019 12:18:32 +0000",
   "errs": 6,
   "warnings": 0,
   "hints": 0,

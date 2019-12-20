@@ -8,12 +8,12 @@
 <p>What type of place is found at a given location. More than one descriptor may be applicable.</p>
 </div>
   </text>
-  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/CodeSystem/shr-core-SettingCS"/>
+  <url value="http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/cs/SettingCS"/>
   <version value="0.1.0"/>
   <name value="SettingCS"/>
   <title value="Setting CS"/>
   <status value="draft"/>
-  <date value="2019-12-05T00:00:00+00:00"/>
+  <date value="2019-12-20T00:00:00+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>

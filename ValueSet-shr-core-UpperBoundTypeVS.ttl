@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS> a fhir:ValueSet;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "shr-core-UpperBoundTypeVS"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<p><b>UpperBoundTypeVS ValueSet</b></p>\n<p>Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value.</p>\n</div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS"];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/PACIO-cognitive-status/shr/core/vs/UpperBoundTypeVS"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "UpperBoundTypeVS"];
   fhir:ValueSet.title [ fhir:value "Upper Bound Type VS"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2019-12-05T00:00:00+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2019-12-20T00:00:00+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -50,9 +50,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/PACIO-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS.ttl> .
 
 # -------------------------------------------------------------------------------------
 
