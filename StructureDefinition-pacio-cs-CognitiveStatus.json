@@ -3,14 +3,14 @@
   "id": "pacio-cs-CognitiveStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 0..0\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 1..1\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
   "version": "0.1.0",
   "name": "CognitiveStatus",
   "title": "Cognitive Status",
   "status": "active",
-  "date": "2019-12-20T00:00:00+00:00",
+  "date": "2020-01-07T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -1195,8 +1195,8 @@
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "comment": "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.",
         "requirements": "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Observation.value[x]",
           "min": 0,
@@ -2742,8 +2742,8 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "min": 0,
-        "max": "0"
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.dataAbsentReason",

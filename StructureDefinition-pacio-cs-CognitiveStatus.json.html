@@ -152,14 +152,14 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">id</a>" : "pacio-cs-CognitiveStatus",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n  &lt;p&gt;&lt;b&gt;CognitiveStatus Profile&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;An exchange of cognitive status information.&lt;/p&gt;\n  &lt;p&gt;&lt;b&gt;Mapping Summary&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;&lt;pre&gt;pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 0..0\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n&lt;/pre&gt;&lt;/p&gt;\n&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n  &lt;p&gt;&lt;b&gt;CognitiveStatus Profile&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;An exchange of cognitive status information.&lt;/p&gt;\n  &lt;p&gt;&lt;b&gt;Mapping Summary&lt;/b&gt;&lt;/p&gt;\n  &lt;p&gt;&lt;pre&gt;pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 1..1\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n&lt;/pre&gt;&lt;/p&gt;\n&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a>" : "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a>" : "0.1.0",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "CognitiveStatus",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "Cognitive Status",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2019-12-20T00:00:00+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2020-01-07T00:00:00+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -1344,8 +1344,8 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>" : "The information determined as a result of making the observation, if the information has a simple value.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>" : "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "0",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">base</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.path">path</a>" : "Observation.value[x]",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.min">min</a>" : 0,
@@ -2891,8 +2891,8 @@
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Observation.value[x]",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a>" : "Observation.value[x]",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 0,
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "0"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a>" : 1,
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">max</a>" : "1"
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">id</a>" : "Observation.dataAbsentReason",
@@ -2938,7 +2938,7 @@
       &copy;2019+
       <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare/">HL7 Patient Care WG and Community-Based Care and Privacy WG</a>.
       Package hl7.fhir.us.PACIO-cognitive-status#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-      Generated <span title="Fri, Dec 20, 2019 12:18+0000">2019-12-20</span>.
+      Generated <span title="Tue, Jan 7, 2020 16:35+0000">2020-01-07</span>.
       <br/>
       <span style="color: #FFFF77">
         Links:

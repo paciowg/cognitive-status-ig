@@ -2,8 +2,8 @@
 =========================================
 
 err = 6, warn = 0, info = 0
-IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.30-SNAPSHOT
-Generated Fri Dec 20 12:20:48 UTC 2019. FHIR version 4.0.1 for hl7.fhir.us.PACIO-cognitive-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.37-SNAPSHOT
+Generated Tue Jan 07 16:38:34 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-cognitive-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
  /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-ImageMimeTypeCS : 0 / 0

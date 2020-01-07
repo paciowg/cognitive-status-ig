@@ -3,7 +3,7 @@
   "name": "PACIO_Cognitive_Status",
   "package-id": "hl7.fhir.us.PACIO-cognitive-status",
   "ig-ver": "0.1.0",
-  "date": "Fri, 20 Dec, 2019 12:18:32 +0000",
+  "date": "Tue, 07 Jan, 2020 16:35:06 +0000",
   "errs": 6,
   "warnings": 0,
   "hints": 0,

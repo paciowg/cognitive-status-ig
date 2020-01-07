@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "pacio-cs-CognitiveStatus"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 0..0\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n</pre></p>\n</div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 1..1\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n</pre></p>\n</div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "CognitiveStatus"];
   fhir:StructureDefinition.title [ fhir:value "Cognitive Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2019-12-20T00:00:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-01-07T00:00:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1324,8 +1324,8 @@
        fhir:ElementDefinition.definition [ fhir:value "The information determined as a result of making the observation, if the information has a simple value." ];
        fhir:ElementDefinition.comment [ fhir:value "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below." ];
        fhir:ElementDefinition.requirements [ fhir:value "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Observation.value[x]" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -2956,8 +2956,8 @@
        fhir:index 7;
        fhir:Element.id [ fhir:value "Observation.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.value[x]" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
        fhir:index 8;
        fhir:Element.id [ fhir:value "Observation.dataAbsentReason" ];
