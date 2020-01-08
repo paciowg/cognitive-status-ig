@@ -10,7 +10,7 @@
   <name value="PACIO_Cognitive_Status"/>
   <title value="PACIO Cognitive Status"/>
   <status value="draft"/>
-  <date value="2020-01-07T16:35:06+00:00"/>
+  <date value="2020-01-08T16:52:33+00:00"/>
   <publisher value="HL7 Patient Care WG and Community-Based Care and Privacy WG"/>
   <contact>
     <telecom>
@@ -37,6 +37,71 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-AccessionIdentifier.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-AccessionIdentifier"/>
+      </reference>
+      <name value="Accession Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ActionRequest.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ActionRequest"/>
+      </reference>
+      <name value="Action Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ActionStatement.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ActionStatement"/>
+      </reference>
+      <name value="Action Statement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Annotation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Annotation"/>
+      </reference>
+      <name value="Annotation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Appointment.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Appointment"/>
+      </reference>
+      <name value="Appointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -46,6 +111,19 @@
         <reference value="StructureDefinition/pacio-cs-BundledCognitiveStatus"/>
       </reference>
       <name value="Bundled Cognitive Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-CarePlan.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-CarePlan"/>
+      </reference>
+      <name value="Care Plan"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -63,15 +141,1055 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-AgeGroupVS.html"/>
+        <valueUri value="StructureDefinition-obf-Composition.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-AgeGroupVS"/>
+        <reference value="StructureDefinition/obf-Composition"/>
       </reference>
-      <name value="Age Group VS"/>
+      <name value="Composition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Condition.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Condition"/>
+      </reference>
+      <name value="Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Coverage.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Coverage"/>
+      </reference>
+      <name value="Coverage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Device.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Device"/>
+      </reference>
+      <name value="Device"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-DiagnosticReport.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-DiagnosticReport"/>
+      </reference>
+      <name value="Diagnostic Report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-DocumentReference.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-DocumentReference"/>
+      </reference>
+      <name value="Document Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Dosage.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Dosage"/>
+      </reference>
+      <name value="Dosage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Duration.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Duration"/>
+      </reference>
+      <name value="Duration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Encounter.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Encounter"/>
+      </reference>
+      <name value="Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Endpoint.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Endpoint"/>
+      </reference>
+      <name value="Endpoint"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-EpisodeOfCare.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-EpisodeOfCare"/>
+      </reference>
+      <name value="Episode Of Care"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Group.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Group"/>
+      </reference>
+      <name value="Group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-HealthcareService.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-HealthcareService"/>
+      </reference>
+      <name value="Healthcare Service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Location.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Location"/>
+      </reference>
+      <name value="Location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Media.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Media"/>
+      </reference>
+      <name value="Media"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Medication.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Medication"/>
+      </reference>
+      <name value="Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-MedicationAdministration.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationAdministration"/>
+      </reference>
+      <name value="Medication Administration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-MedicationDispense.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationDispense"/>
+      </reference>
+      <name value="Medication Dispense"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-MedicationRequest.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationRequest"/>
+      </reference>
+      <name value="Medication Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-MedicationStatement.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationStatement"/>
+      </reference>
+      <name value="Medication Statement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Money.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Money"/>
+      </reference>
+      <name value="Money"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-NationalProviderIdentifier.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-NationalProviderIdentifier"/>
+      </reference>
+      <name value="National Provider Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Observation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Observation"/>
+      </reference>
+      <name value="Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Organization.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Organization"/>
+      </reference>
+      <name value="Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Patient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Patient"/>
+      </reference>
+      <name value="Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Practitioner"/>
+      </reference>
+      <name value="Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-PractitionerRole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-PractitionerRole"/>
+      </reference>
+      <name value="Practitioner Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Procedure.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Procedure"/>
+      </reference>
+      <name value="Procedure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ProcedureRequest.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ProcedureRequest"/>
+      </reference>
+      <name value="Procedure Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-QuestionnaireResponse.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-QuestionnaireResponse"/>
+      </reference>
+      <name value="Questionnaire Response"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ReferralRequest.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ReferralRequest"/>
+      </reference>
+      <name value="Referral Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-RelatedPerson.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-RelatedPerson"/>
+      </reference>
+      <name value="Related Person"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ResearchStudy.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ResearchStudy"/>
+      </reference>
+      <name value="Research Study"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ResearchSubject.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ResearchSubject"/>
+      </reference>
+      <name value="Research Subject"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-SampledData.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-SampledData"/>
+      </reference>
+      <name value="Sampled Data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ServiceRequest.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ServiceRequest"/>
+      </reference>
+      <name value="Service Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Specimen.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Specimen"/>
+      </reference>
+      <name value="Specimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Substance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Substance"/>
+      </reference>
+      <name value="Substance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-TaxIdentificationNumber.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-TaxIdentificationNumber"/>
+      </reference>
+      <name value="Tax Identification Number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Timing.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Timing"/>
+      </reference>
+      <name value="Timing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-AnatomicalOrientation-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-AnatomicalOrientation-extension"/>
+      </reference>
+      <name value="Anatomical Orientation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Annotation-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Annotation-extension"/>
+      </reference>
+      <name value="Annotation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-AppointmentReasonReference-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-AppointmentReasonReference-extension"/>
+      </reference>
+      <name value="Appointment Reason Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-BasedOn-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-BasedOn-extension"/>
+      </reference>
+      <name value="Based On"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-CareContext-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-CareContext-extension"/>
+      </reference>
+      <name value="Care Context"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Category-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Category-extension"/>
+      </reference>
+      <name value="Category"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Code-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Code-extension"/>
+      </reference>
+      <name value="Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-CommentOrDescription-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-CommentOrDescription-extension"/>
+      </reference>
+      <name value="Comment Or Description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Comparator-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Comparator-extension"/>
+      </reference>
+      <name value="Comparator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-DiagnosisCode-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-DiagnosisCode-extension"/>
+      </reference>
+      <name value="Diagnosis Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Dosage-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Dosage-extension"/>
+      </reference>
+      <name value="Dosage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-DoseSequenceNumber-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-DoseSequenceNumber-extension"/>
+      </reference>
+      <name value="Dose Sequence Number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ExpectedPerformanceTime-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ExpectedPerformanceTime-extension"/>
+      </reference>
+      <name value="Expected Performance Time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ExpectedPerformer-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ExpectedPerformer-extension"/>
+      </reference>
+      <name value="Expected Performer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ExpectedPerformerType-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ExpectedPerformerType-extension"/>
+      </reference>
+      <name value="Expected Performer Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-HandlingRisk-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-HandlingRisk-extension"/>
+      </reference>
+      <name value="Handling Risk"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Identifier-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Identifier-extension"/>
+      </reference>
+      <name value="Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Indication-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Indication-extension"/>
+      </reference>
+      <name value="Indication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Laterality-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Laterality-extension"/>
+      </reference>
+      <name value="Laterality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-MedicationCodeOrReference-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-MedicationCodeOrReference-extension"/>
+      </reference>
+      <name value="Medication Code Or Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Method-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Method-extension"/>
+      </reference>
+      <name value="Method"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Number-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Number-extension"/>
+      </reference>
+      <name value="Number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension"/>
+      </reference>
+      <name value="Occurrence Time Or Period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-OnBehalfOf-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-OnBehalfOf-extension"/>
+      </reference>
+      <name value="On Behalf Of"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-PartOf-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-PartOf-extension"/>
+      </reference>
+      <name value="Part Of"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Participation-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Participation-extension"/>
+      </reference>
+      <name value="Participation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-PatientInstruction-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-PatientInstruction-extension"/>
+      </reference>
+      <name value="Patient Instruction"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-PriorityCode-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-PriorityCode-extension"/>
+      </reference>
+      <name value="Priority Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ReasonCode-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ReasonCode-extension"/>
+      </reference>
+      <name value="Reason Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-ReasonReference-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-ReasonReference-extension"/>
+      </reference>
+      <name value="Reason Reference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-RelationToLandmark-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-RelationToLandmark-extension"/>
+      </reference>
+      <name value="Relation To Landmark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-RequestIntent-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-RequestIntent-extension"/>
+      </reference>
+      <name value="Request Intent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Requester-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Requester-extension"/>
+      </reference>
+      <name value="Requester"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-SpecialHandling-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-SpecialHandling-extension"/>
+      </reference>
+      <name value="Special Handling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-SpecimenTreatment-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-SpecimenTreatment-extension"/>
+      </reference>
+      <name value="Specimen Treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-StatementDateTime-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-StatementDateTime-extension"/>
+      </reference>
+      <name value="Statement Date Time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-Status-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-Status-extension"/>
+      </reference>
+      <name value="Status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-SubjectOfRecord-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-SubjectOfRecord-extension"/>
+      </reference>
+      <name value="Subject Of Record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-TerminationReason-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-TerminationReason-extension"/>
+      </reference>
+      <name value="Termination Reason"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-TreatmentIntent-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-TreatmentIntent-extension"/>
+      </reference>
+      <name value="Treatment Intent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-obf-datatype-Units-extension.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/obf-datatype-Units-extension"/>
+      </reference>
+      <name value="Units"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -79,10 +1197,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-AnatomicalDirectionVS.html"/>
+        <valueUri value="ValueSet-obf-datatype-AnatomicalDirectionVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-AnatomicalDirectionVS"/>
+        <reference value="ValueSet/obf-datatype-AnatomicalDirectionVS"/>
       </reference>
       <name value="Anatomical Direction VS"/>
       <exampleBoolean value="false"/>
@@ -92,12 +1210,12 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-BodyLocationVS.html"/>
+        <valueUri value="ValueSet-obf-datatype-AnatomicalOrientationVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-BodyLocationVS"/>
+        <reference value="ValueSet/obf-datatype-AnatomicalOrientationVS"/>
       </reference>
-      <name value="Body Location VS"/>
+      <name value="Anatomical Orientation VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -105,12 +1223,12 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-ClockFaceDirectionVS.html"/>
+        <valueUri value="ValueSet-pacio-cs-CognitiveStatusQuestionVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-ClockFaceDirectionVS"/>
+        <reference value="ValueSet/pacio-cs-CognitiveStatusQuestionVS"/>
       </reference>
-      <name value="Clock Face Direction VS"/>
+      <name value="Cognitive Status Question VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -118,101 +1236,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-ConditionStatusTrendVS.html"/>
+        <valueUri value="ValueSet-obf-datatype-LandmarkTypeVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-ConditionStatusTrendVS"/>
-      </reference>
-      <name value="Condition Status Trend VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-DetectedNotDetectedVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-DetectedNotDetectedVS"/>
-      </reference>
-      <name value="Detected Not Detected VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-GestationalTimePeriodVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-GestationalTimePeriodVS"/>
-      </reference>
-      <name value="Gestational Time Period VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-GradedAmountVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-GradedAmountVS"/>
-      </reference>
-      <name value="Graded Amount VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-GradedFrequencyVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-GradedFrequencyVS"/>
-      </reference>
-      <name value="Graded Frequency VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-GradedPortionVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-GradedPortionVS"/>
-      </reference>
-      <name value="Graded Portion VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-ImageMimeTypeVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-ImageMimeTypeVS"/>
-      </reference>
-      <name value="Image Mime Type VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-LandmarkTypeVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-LandmarkTypeVS"/>
+        <reference value="ValueSet/obf-datatype-LandmarkTypeVS"/>
       </reference>
       <name value="Landmark Type VS"/>
       <exampleBoolean value="false"/>
@@ -222,12 +1249,12 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-LanguageQualifierVS.html"/>
+        <valueUri value="ValueSet-obf-ResearchSubjectTerminationReasonVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-LanguageQualifierVS"/>
+        <reference value="ValueSet/obf-ResearchSubjectTerminationReasonVS"/>
       </reference>
-      <name value="Language Qualifier VS"/>
+      <name value="Research Subject Termination Reason VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -235,75 +1262,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-LateralityVS.html"/>
+        <valueUri value="ValueSet-obf-datatype-SettingVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-LateralityVS"/>
-      </reference>
-      <name value="Laterality VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-LowerBoundTypeVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-LowerBoundTypeVS"/>
-      </reference>
-      <name value="Lower Bound Type VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-OrientationVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-OrientationVS"/>
-      </reference>
-      <name value="Orientation VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-PerformanceGradingScaleVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-PerformanceGradingScaleVS"/>
-      </reference>
-      <name value="Performance Grading Scale VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-PositiveNegativeVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-PositiveNegativeVS"/>
-      </reference>
-      <name value="Positive Negative VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-SettingVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-SettingVS"/>
+        <reference value="ValueSet/obf-datatype-SettingVS"/>
       </reference>
       <name value="Setting VS"/>
       <exampleBoolean value="false"/>
@@ -313,12 +1275,12 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-StatisticTypeVS.html"/>
+        <valueUri value="ValueSet-obf-StudyArmTypeVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-StatisticTypeVS"/>
+        <reference value="ValueSet/obf-StudyArmTypeVS"/>
       </reference>
-      <name value="Statistic Type VS"/>
+      <name value="Study Arm Type VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -326,51 +1288,51 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-UnitsOfLengthVS.html"/>
+        <valueUri value="ValueSet-obf-TreatmentIntentVS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-UnitsOfLengthVS"/>
+        <reference value="ValueSet/obf-TreatmentIntentVS"/>
+      </reference>
+      <name value="Treatment Intent VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-obf-TreatmentTerminationReasonVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/obf-TreatmentTerminationReasonVS"/>
+      </reference>
+      <name value="Treatment Termination Reason VS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-obf-datatype-UnitsOfLengthVS.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/obf-datatype-UnitsOfLengthVS"/>
       </reference>
       <name value="Units Of Length VS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-UpperBoundTypeVS.html"/>
+        <valueUri value="CodeSystem-obf-ResearchSubjectTerminationReasonCS.html"/>
       </extension>
       <reference>
-        <reference value="ValueSet/shr-core-UpperBoundTypeVS"/>
+        <reference value="CodeSystem/obf-ResearchSubjectTerminationReasonCS"/>
       </reference>
-      <name value="Upper Bound Type VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-YesNoUnknownVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-YesNoUnknownVS"/>
-      </reference>
-      <name value="Yes No Unknown VS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-shr-core-YesNoVS.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/shr-core-YesNoVS"/>
-      </reference>
-      <name value="Yes No VS"/>
+      <name value="Research Subject Termination Reason CS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -378,49 +1340,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-shr-core-ImageMimeTypeCS.html"/>
+        <valueUri value="CodeSystem-obf-datatype-SettingCS.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/shr-core-ImageMimeTypeCS"/>
-      </reference>
-      <name value="Image Mime Type CS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-shr-core-LanguageQualifierCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/shr-core-LanguageQualifierCS"/>
-      </reference>
-      <name value="Language Qualifier CS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-shr-core-PerformanceGradingScaleCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/shr-core-PerformanceGradingScaleCS"/>
-      </reference>
-      <name value="Performance Grading Scale CS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-shr-core-SettingCS.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/shr-core-SettingCS"/>
+        <reference value="CodeSystem/obf-datatype-SettingCS"/>
       </reference>
       <name value="Setting CS"/>
       <exampleBoolean value="false"/>

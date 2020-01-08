@@ -3,14 +3,14 @@
   "id": "pacio-cs-CognitiveStatus",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  constrain category to 1..*\n  constrain subject to 1..1\n  constrain code to 1..1\n  constrain focus to 0..0\n  constrain effective[x] to 1..1\n  constrain issued to 0..0\n  constrain performer to 1..1\n  constrain value[x] to 1..1\n  constrain dataAbsentReason to 0..0\n  constrain specimen to 0..0\n  constrain referenceRange to 0..0\n  constrain component.code to 1..1\n</pre></p>\n</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <p><b>CognitiveStatus Profile</b></p>\n  <p>An exchange of cognitive status information.</p>\n  <p><b>Mapping Summary</b></p>\n  <p><pre>pacio-cs.CognitiveStatus maps to Observation:\n  Language maps to language\n  ImplicitRules maps to implicitRules\n  Metadata.VersionId maps to meta.versionId\n  Metadata.SourceSystem maps to meta.source\n  Metadata.Profile maps to meta.profile\n  Metadata.LastUpdated maps to meta.lastUpdated\n  Metadata.SecurityLabel maps to meta.security\n  Metadata.Tag maps to meta.tag\n  Narrative maps to text\n  Identifier maps to identifier\n  ObservationBasedOn maps to basedOn\n  ObservationPartOf maps to partOf\n  Status maps to status\n  Category maps to category\n  Code maps to code\n  ObservationSubjectOfRecord maps to subject\n  FocalSubject maps to focus\n  CareContext maps to encounter\n  RelevantTime maps to effective[x] // Add Types Timing, instant\n  StatementDateTime maps to issued\n  Performer maps to performer // Added Target Types PractitionerRole, CareTeam\n  DataValue maps to value[x] // Add Type integer, remove Type Attachment\n  DataAbsentReason maps to dataAbsentReason\n  Interpretation maps to interpretation\n  Annotation maps to note\n  BodyLocation.Code maps to bodySite\n  BodyLocation.Laterality maps to bodySite.extension\n  BodyLocation.AnatomicalOrientation maps to bodySite.extension\n  BodyLocation.RelationToLandmark maps to bodySite.extension\n  Method maps to method\n  Specimen maps to specimen\n  Device maps to device\n  ReferenceRange maps to referenceRange\n  ReferenceRange.LowerBound maps to referenceRange.low\n  ReferenceRange.UpperBound maps to referenceRange.high\n  ReferenceRange.Type maps to referenceRange.type\n  ReferenceRange.ApplicableSubpopulation maps to referenceRange.appliesTo\n  ReferenceRange.ApplicableAgeRange maps to referenceRange.age\n  ReferenceRange.Text maps to referenceRange.text\n  PanelMembers.Observation maps to hasMember (slice on = $this.resolve().code.coding.code; slice strategy = includes)\n  ObservationDerivedFrom maps to derivedFrom\n  Components.ObservationComponent maps to component (slice on = code.coding.code; slice strategy = includes)\n  Components.ObservationComponent.Code maps to component.code\n  Components.ObservationComponent.DataValue maps to component.value[x]\n  Components.ObservationComponent.DataAbsentReason maps to component.dataAbsentReason\n  Components.ObservationComponent.Interpretation maps to component.interpretation\n  Components.ObservationComponent.ReferenceRange maps to component.referenceRange\n  Components.ObservationComponent.ReferenceRange.LowerBound maps to component.referenceRange.low\n  Components.ObservationComponent.ReferenceRange.UpperBound maps to component.referenceRange.high\n  Components.ObservationComponent.ReferenceRange.Type maps to component.referenceRange.type\n  Components.ObservationComponent.ReferenceRange.ApplicableSubpopulation maps to component.referenceRange.appliesTo\n  Components.ObservationComponent.ReferenceRange.ApplicableAgeRange maps to component.referenceRange.age\n  Components.ObservationComponent.ReferenceRange.Text maps to component.referenceRange.text\n</pre></p>\n</div>"
   },
   "url": "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus",
   "version": "0.1.0",
   "name": "CognitiveStatus",
   "title": "Cognitive Status",
   "status": "active",
-  "date": "2020-01-07T00:00:00+00:00",
+  "date": "2020-01-08T00:00:00+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -561,12 +561,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CarePlan",
-              "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
-              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-              "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationRequest",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ServiceRequest",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ProcedureRequest",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReferralRequest"
             ]
           }
         ],
@@ -600,8 +598,8 @@
       {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
-        "short": "Part of referenced event",
-        "definition": "A larger event of which this particular Observation is a component or step.  For example,  an observation as part of a procedure.",
+        "short": "A larger event of which this particular Observation is a component or step. For example, an observation as part of a procedure.",
+        "definition": "A larger event of which this particular Observation is a component or step. For example, an observation as part of a procedure.",
         "comment": "To link an Observation to an Encounter use `encounter`.  See the  [Notes](observation.html#obsgrouping) below for guidance on referencing another Observation.",
         "alias": [
           "Container"
@@ -617,12 +615,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-              "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
-              "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-              "http://hl7.org/fhir/StructureDefinition/Procedure",
-              "http://hl7.org/fhir/StructureDefinition/Immunization",
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationAdministration",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationStatement",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Procedure"
             ]
           }
         ],
@@ -732,8 +727,8 @@
         "definition": "A code that classifies the general type of observation being made.",
         "comment": "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
         "requirements": "Used for filtering what observations are retrieved and displayed.",
-        "min": 1,
-        "max": "*",
+        "min": 0,
+        "max": "1",
         "base": {
           "path": "Observation.category",
           "min": 0,
@@ -763,7 +758,7 @@
               "valueString": "ObservationCategory"
             }
           ],
-          "strength": "preferred",
+          "strength": "extensible",
           "description": "Codes for high level observation categories.",
           "valueSet": "http://hl7.org/fhir/ValueSet/observation-category"
         },
@@ -810,18 +805,12 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
+        "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ObservationCode"
-            }
-          ],
-          "strength": "example",
-          "description": "Codes identifying names of simple observations.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/observation-codes"
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/PACIO-cognitive-status/pacio-cs/vs/CognitiveStatusQuestionVS"
         },
         "mapping": [
           {
@@ -853,8 +842,8 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "short": "Who and/or what the observation is about",
-        "definition": "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.",
+        "short": "The subject of an observation",
+        "definition": "The subject of an observation.",
         "comment": "One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.",
         "requirements": "Observations have no value if you don't know who or what they're about.",
         "min": 1,
@@ -868,10 +857,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient"
             ]
           }
         ],
@@ -989,7 +975,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Encounter"
             ]
           }
         ],
@@ -1025,8 +1011,8 @@
         ]
       },
       {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
         "short": "Clinically relevant time/time-period for observation",
         "definition": "The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.",
         "comment": "At least a date should be present unless this observation is a historical report.  For recording imprecise or \"fuzzy\" times (For example, a blood glucose measurement taken \"after breakfast\") use the [Timing](datatypes.html#timing) datatype which allow the measurement to be tied to regular life events.",
@@ -1034,7 +1020,7 @@
         "alias": [
           "Occurrence"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Observation.effective[x]",
@@ -1044,15 +1030,6 @@
         "type": [
           {
             "code": "dateTime"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "instant"
           }
         ],
         "constraint": [
@@ -1093,7 +1070,7 @@
         "definition": "The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified.",
         "comment": "For Observations that don’t require review and verification, it may be the same as the [`lastUpdated` ](resource-definitions.html#Meta.lastUpdated) time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that doesn’t require the new version to be reviewed and verified again.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Observation.issued",
           "min": 0,
@@ -1138,7 +1115,7 @@
         "definition": "Who was responsible for asserting the observed value as \"true\".",
         "requirements": "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
         "min": 1,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Observation.performer",
           "min": 0,
@@ -1148,12 +1125,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Practitioner",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Organization",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-RelatedPerson"
             ]
           }
         ],
@@ -1189,8 +1164,8 @@
         ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "short": "Actual result",
         "definition": "The information determined as a result of making the observation, if the information has a simple value.",
         "comment": "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below.",
@@ -1204,37 +1179,7 @@
         },
         "type": [
           {
-            "code": "Quantity"
-          },
-          {
             "code": "CodeableConcept"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
           }
         ],
         "condition": [
@@ -1279,7 +1224,7 @@
         "comment": "Null or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  \"detected\", \"not detected\", \"inconclusive\", or  \"specimen unsatisfactory\".   \n\nThe alternate way is to use the value element for actual observations and use the explicit dataAbsentReason element to record exceptional values.  For example, the dataAbsentReason code \"error\" could be used when the measurement was not completed. Note that an observation may only be reported if there are values to report. For example differential cell counts values may be reported only when > 0.  Because of these options, use-case agreements are required to interpret general observations for null or exceptional values.",
         "requirements": "For many results it is necessary to handle exceptional values in measurements.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Observation.dataAbsentReason",
           "min": 0,
@@ -1338,7 +1283,7 @@
           "Abnormal Flag"
         ],
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "Observation.interpretation",
           "min": 0,
@@ -1407,7 +1352,10 @@
         },
         "type": [
           {
-            "code": "Annotation"
+            "code": "Annotation",
+            "profile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation"
+            ]
           }
         ],
         "constraint": [
@@ -1440,7 +1388,7 @@
         "definition": "Indicates the site on the subject's body where the observation was made (i.e. the target site).",
         "comment": "Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.   \n\nIf the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension[ bodySite](extension-bodysite.html).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Observation.bodySite",
           "min": 0,
@@ -1470,7 +1418,7 @@
               "valueString": "BodySite"
             }
           ],
-          "strength": "example",
+          "strength": "preferred",
           "description": "Codes describing anatomical locations. May include laterality.",
           "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
         },
@@ -1553,7 +1501,7 @@
         "definition": "The specimen that was used when this observation was made.",
         "comment": "Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Observation.specimen",
           "min": 0,
@@ -1563,7 +1511,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Specimen"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Specimen"
             ]
           }
         ],
@@ -1615,8 +1563,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/DeviceMetric"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Device"
             ]
           }
         ],
@@ -1966,7 +1913,7 @@
               "valueString": "ObservationRangeMeaning"
             }
           ],
-          "strength": "preferred",
+          "strength": "extensible",
           "description": "Code for the meaning of a reference range.",
           "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
         },
@@ -2023,7 +1970,7 @@
               "valueString": "ObservationRangeType"
             }
           ],
-          "strength": "example",
+          "strength": "extensible",
           "description": "Codes identifying the population the reference range applies to.",
           "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
         },
@@ -2136,9 +2083,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"
             ]
           }
         ],
@@ -2182,12 +2127,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-              "http://hl7.org/fhir/StructureDefinition/Media",
-              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"
             ]
           }
         ],
@@ -2222,7 +2165,7 @@
         "comment": "For a discussion on the ways Observations can be assembled in groups together see [Notes](observation.html#notes) below.",
         "requirements": "Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation.",
         "min": 0,
-        "max": "*",
+        "max": "0",
         "base": {
           "path": "Observation.component",
           "min": 0,
@@ -2478,19 +2421,16 @@
             "code": "string"
           },
           {
-            "code": "boolean"
-          },
-          {
-            "code": "integer"
-          },
-          {
             "code": "Range"
           },
           {
             "code": "Ratio"
           },
           {
-            "code": "SampledData"
+            "code": "SampledData",
+            "profile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-SampledData"
+            ]
           },
           {
             "code": "time"
@@ -2667,7 +2607,11 @@
           "min": 0,
           "max": "*"
         },
-        "contentReference": "#Observation.referenceRange",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
         "constraint": [
           {
             "key": "ele-1",
@@ -2690,6 +2634,425 @@
             "map": "outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]"
           }
         ]
+      },
+      {
+        "id": "Observation.component.referenceRange.id",
+        "path": "Observation.component.referenceRange.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.extension",
+        "path": "Observation.component.referenceRange.extension",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.modifierExtension",
+        "path": "Observation.component.referenceRange.modifierExtension",
+        "short": "Extensions that cannot be ignored even if unrecognized",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "requirements": "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](extensibility.html#modifierExtension).",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BackboneElement.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": true,
+        "isModifierReason": "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.low",
+        "path": "Observation.component.referenceRange.low",
+        "short": "Low Range, if relevant",
+        "definition": "The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9). If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is <=2.3).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.referenceRange.low",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "condition": [
+          "obs-3"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX-7"
+          },
+          {
+            "identity": "rim",
+            "map": "value:IVL_PQ.low"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.high",
+        "path": "Observation.component.referenceRange.high",
+        "short": "High Range, if relevant",
+        "definition": "The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is >=5 - <=9). If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is >= 2.3).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.referenceRange.high",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "condition": [
+          "obs-3"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX-7"
+          },
+          {
+            "identity": "rim",
+            "map": "value:IVL_PQ.high"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.type",
+        "path": "Observation.component.referenceRange.type",
+        "short": "Reference range qualifier",
+        "definition": "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.",
+        "comment": "This SHOULD be populated if there is more than one range.  If this element is not present then the normal range is assumed.",
+        "requirements": "Need to be able to say what kind of reference range this is - normal, recommended, therapeutic, etc.,  - for proper interpretation.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.referenceRange.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeMeaning"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Code for the meaning of a reference range.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+        },
+        "mapping": [
+          {
+            "identity": "sct-concept",
+            "map": "< 260245000 |Findings values| OR  \r< 365860008 |General clinical state finding| \rOR \r< 250171008 |Clinical history or observation findings| OR  \r< 415229000 |Racial group| OR \r< 365400002 |Finding of puberty stage| OR\r< 443938003 |Procedure carried out on subject|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX-10"
+          },
+          {
+            "identity": "rim",
+            "map": "interpretationCode"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.appliesTo",
+        "path": "Observation.component.referenceRange.appliesTo",
+        "short": "Reference range population",
+        "definition": "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.  Multiple `appliesTo`  are interpreted as an \"AND\" of the target populations.  For example, to represent a target population of African American females, both a code of female and a code for African American would be used.",
+        "comment": "This SHOULD be populated if there is more than one range.  If this element is not present then the normal population is assumed.",
+        "requirements": "Need to be able to identify the target population for proper interpretation.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Observation.referenceRange.appliesTo",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes identifying the population the reference range applies to.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+        },
+        "mapping": [
+          {
+            "identity": "sct-concept",
+            "map": "< 260245000 |Findings values| OR  \r< 365860008 |General clinical state finding| \rOR \r< 250171008 |Clinical history or observation findings| OR  \r< 415229000 |Racial group| OR \r< 365400002 |Finding of puberty stage| OR\r< 443938003 |Procedure carried out on subject|"
+          },
+          {
+            "identity": "v2",
+            "map": "OBX-10"
+          },
+          {
+            "identity": "rim",
+            "map": "interpretationCode"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.age",
+        "path": "Observation.component.referenceRange.age",
+        "short": "Applicable age range, if relevant",
+        "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
+        "requirements": "Some analytes vary greatly over age.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.referenceRange.age",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "outboundRelationship[typeCode=PRCN].targetObservationCriterion[code=\"age\"].value"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange.text",
+        "path": "Observation.component.referenceRange.text",
+        "short": "Text based reference range in an observation",
+        "definition": "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of \"normals\".",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Observation.referenceRange.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "OBX-7"
+          },
+          {
+            "identity": "rim",
+            "map": "value:ST"
+          }
+        ]
       }
     ]
   },
@@ -2704,16 +3067,77 @@
         "isSummary": false
       },
       {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationRequest",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ServiceRequest",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ProcedureRequest",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReferralRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.partOf",
+        "path": "Observation.partOf",
+        "short": "A larger event of which this particular Observation is a component or step. For example, an observation as part of a procedure.",
+        "definition": "A larger event of which this particular Observation is a component or step. For example, an observation as part of a procedure.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationAdministration",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationStatement",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Procedure"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.category",
         "path": "Observation.category",
-        "min": 1,
-        "max": "*"
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCategory"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes for high level observation categories.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-category"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/us/PACIO-cognitive-status/pacio-cs/vs/CognitiveStatusQuestionVS"
+        }
       },
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
+        "short": "The subject of an observation",
+        "definition": "The subject of an observation.",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.focus",
@@ -2722,46 +3146,251 @@
         "max": "0"
       },
       {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "min": 1,
-        "max": "1"
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Encounter"
+            ]
+          }
+        ]
       },
       {
-        "id": "Observation.issued",
-        "path": "Observation.issued",
-        "min": 0,
-        "max": "0"
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       },
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "min": 1,
-        "max": "1"
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Practitioner",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Organization",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-RelatedPerson"
+            ]
+          }
+        ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "min": 0,
         "max": "1"
       },
       {
-        "id": "Observation.dataAbsentReason",
-        "path": "Observation.dataAbsentReason",
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "type": [
+          {
+            "code": "Annotation",
+            "profile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
         "min": 0,
-        "max": "0"
+        "max": "0",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BodySite"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Codes describing anatomical locations. May include laterality.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
+        }
       },
       {
         "id": "Observation.specimen",
         "path": "Observation.specimen",
-        "min": 0,
-        "max": "0"
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Device"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
         "min": 0,
         "max": "0"
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeMeaning"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Code for the meaning of a reference range.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo",
+        "path": "Observation.referenceRange.appliesTo",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes identifying the population the reference range applies to.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+        }
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse",
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "SampledData",
+            "profile": [
+              "http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-SampledData"
+            ]
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.referenceRange",
+        "path": "Observation.component.referenceRange"
+      },
+      {
+        "id": "Observation.component.referenceRange.type",
+        "path": "Observation.component.referenceRange.type",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeMeaning"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Code for the meaning of a reference range.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning"
+        }
+      },
+      {
+        "id": "Observation.component.referenceRange.appliesTo",
+        "path": "Observation.component.referenceRange.appliesTo",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationRangeType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Codes identifying the population the reference range applies to.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-appliesto"
+        }
       }
     ]
   }

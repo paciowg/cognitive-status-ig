@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIO_Cognitive_Status"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-01-07T16:35:06+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-01-08T16:52:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care WG and Community-Based Care and Privacy WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -57,6 +57,91 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-AccessionIdentifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-AccessionIdentifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-AccessionIdentifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Accession Identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ActionRequest.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ActionRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ActionRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Action Request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ActionStatement.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ActionStatement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ActionStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Action Statement" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Annotation.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Annotation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Annotation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Appointment.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Appointment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Appointment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Appointment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
@@ -70,7 +155,24 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundled Cognitive Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-CarePlan.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-CarePlan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-CarePlan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Plan" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -87,466 +189,1554 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cognitive Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-AgeGroupVS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AgeGroupVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-AgeGroupVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age Group VS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-AnatomicalDirectionVS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-AnatomicalDirectionVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Direction VS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-BodyLocationVS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-BodyLocationVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-BodyLocationVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Location VS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-ClockFaceDirectionVS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ClockFaceDirectionVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Clock Face Direction VS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-ConditionStatusTrendVS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ConditionStatusTrendVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Status Trend VS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-DetectedNotDetectedVS.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-DetectedNotDetectedVS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected VS" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
        fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GestationalTimePeriodVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Composition.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GestationalTimePeriodVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Composition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Composition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gestational Time Period VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GradedAmountVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Condition.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedAmountVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedAmountVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Condition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Amount VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GradedFrequencyVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Coverage.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedFrequencyVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedFrequencyVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Coverage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Coverage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Frequency VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-GradedPortionVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Device.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedPortionVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-GradedPortionVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Device>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Device" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Graded Portion VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-ImageMimeTypeVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-DiagnosticReport.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-ImageMimeTypeVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DiagnosticReport>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-DiagnosticReport" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Image Mime Type VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LandmarkTypeVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-DocumentReference.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LandmarkTypeVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LandmarkTypeVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-DocumentReference" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Landmark Type VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Document Reference" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LanguageQualifierVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Dosage.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LanguageQualifierVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LanguageQualifierVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Dosage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Dosage" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Qualifier VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dosage" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LateralityVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Duration.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LateralityVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LateralityVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Duration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Duration" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Duration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-LowerBoundTypeVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Encounter.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-LowerBoundTypeVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Encounter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lower Bound Type VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-OrientationVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Endpoint.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-OrientationVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-OrientationVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Endpoint>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Endpoint" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Orientation VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Endpoint" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-PerformanceGradingScaleVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-EpisodeOfCare.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-PerformanceGradingScaleVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-EpisodeOfCare>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-EpisodeOfCare" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Performance Grading Scale VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Episode Of Care" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-PositiveNegativeVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Group.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PositiveNegativeVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-PositiveNegativeVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Group>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Group" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Positive Negative VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-SettingVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-HealthcareService.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-SettingVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-SettingVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-HealthcareService>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-HealthcareService" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Healthcare Service" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-StatisticTypeVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Location.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-StatisticTypeVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-StatisticTypeVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Location" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Statistic Type VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Location" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-UnitsOfLengthVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Media.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-UnitsOfLengthVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Media" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Units Of Length VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Media" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-UpperBoundTypeVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Medication.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-UpperBoundTypeVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Medication" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Upper Bound Type VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-YesNoUnknownVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-MedicationAdministration.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoUnknownVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-YesNoUnknownVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationAdministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-MedicationAdministration" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Administration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "ValueSet-shr-core-YesNoVS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-MedicationDispense.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoVS>;
-         fhir:Reference.reference [ fhir:value "ValueSet/shr-core-YesNoVS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationDispense>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-MedicationDispense" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No VS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Dispense" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-ImageMimeTypeCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-MedicationRequest.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-ImageMimeTypeCS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-MedicationRequest" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Image Mime Type CS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Request" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-LanguageQualifierCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-MedicationStatement.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-LanguageQualifierCS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationStatement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-MedicationStatement" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Qualifier CS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Statement" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-PerformanceGradingScaleCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Money.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-PerformanceGradingScaleCS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Money>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Money" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Performance Grading Scale CS" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Money" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-NationalProviderIdentifier.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-NationalProviderIdentifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-NationalProviderIdentifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "National Provider Identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Observation.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Organization.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Patient.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Practitioner.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-PractitionerRole.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-PractitionerRole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner Role" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Procedure.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Procedure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ProcedureRequest.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ProcedureRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ProcedureRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedure Request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-QuestionnaireResponse.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Questionnaire Response" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ReferralRequest.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReferralRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ReferralRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referral Request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-RelatedPerson.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-RelatedPerson>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-RelatedPerson" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Related Person" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ResearchStudy.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ResearchStudy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Study" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ResearchSubject.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ResearchSubject>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-SampledData.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-SampledData>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-SampledData" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sampled Data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ServiceRequest.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ServiceRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Service Request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Specimen.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Specimen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Substance.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Substance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Substance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Substance" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-TaxIdentificationNumber.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-TaxIdentificationNumber>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-TaxIdentificationNumber" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tax Identification Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Timing.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Timing>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Timing" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Timing" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-AnatomicalOrientation-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-AnatomicalOrientation-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-AnatomicalOrientation-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Orientation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Annotation-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Annotation-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Annotation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-AppointmentReasonReference-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-AppointmentReasonReference-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-AppointmentReasonReference-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Appointment Reason Reference" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-BasedOn-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-BasedOn-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-BasedOn-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Based On" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-CareContext-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-CareContext-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-CareContext-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Care Context" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Category-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Category-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Category-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Code-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Code-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Code-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-CommentOrDescription-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-CommentOrDescription-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-CommentOrDescription-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Comment Or Description" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Comparator-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Comparator-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Comparator-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Comparator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-DiagnosisCode-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DiagnosisCode-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-DiagnosisCode-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Dosage-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Dosage-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Dosage-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dosage" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-DoseSequenceNumber-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DoseSequenceNumber-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-DoseSequenceNumber-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose Sequence Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ExpectedPerformanceTime-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ExpectedPerformanceTime-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ExpectedPerformanceTime-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Expected Performance Time" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ExpectedPerformer-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ExpectedPerformer-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ExpectedPerformer-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Expected Performer" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ExpectedPerformerType-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ExpectedPerformerType-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ExpectedPerformerType-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Expected Performer Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-HandlingRisk-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-HandlingRisk-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-HandlingRisk-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Handling Risk" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Identifier-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Identifier-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Identifier-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Indication-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Indication-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Indication-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Indication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Laterality-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Laterality-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Laterality-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laterality" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-MedicationCodeOrReference-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationCodeOrReference-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-MedicationCodeOrReference-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Code Or Reference" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Method-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Method-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Method-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Method" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Number-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Number-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Number-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Occurrence Time Or Period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-OnBehalfOf-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-OnBehalfOf-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-OnBehalfOf-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "On Behalf Of" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-PartOf-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-PartOf-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-PartOf-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Part Of" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Participation-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Participation-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Participation-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Participation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-PatientInstruction-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-PatientInstruction-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-PatientInstruction-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Instruction" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-PriorityCode-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-PriorityCode-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-PriorityCode-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Priority Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ReasonCode-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReasonCode-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ReasonCode-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reason Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-ReasonReference-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReasonReference-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-ReasonReference-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reason Reference" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-RelationToLandmark-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-RelationToLandmark-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-RelationToLandmark-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Relation To Landmark" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-RequestIntent-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-RequestIntent-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-RequestIntent-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Request Intent" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Requester-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Requester-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Requester-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Requester" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-SpecialHandling-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-SpecialHandling-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-SpecialHandling-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Special Handling" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-SpecimenTreatment-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-SpecimenTreatment-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-SpecimenTreatment-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen Treatment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-StatementDateTime-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-StatementDateTime-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-StatementDateTime-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Statement Date Time" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-Status-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Status-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-Status-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-SubjectOfRecord-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-SubjectOfRecord-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-SubjectOfRecord-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Subject Of Record" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-TerminationReason-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-TerminationReason-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-TerminationReason-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Termination Reason" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-TreatmentIntent-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-TreatmentIntent-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-TreatmentIntent-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Treatment Intent" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-obf-datatype-Units-extension.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Units-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/obf-datatype-Units-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Units" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-datatype-AnatomicalDirectionVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-AnatomicalDirectionVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-datatype-AnatomicalDirectionVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Direction VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-datatype-AnatomicalOrientationVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-AnatomicalOrientationVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-datatype-AnatomicalOrientationVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Orientation VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-pacio-cs-CognitiveStatusQuestionVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/pacio-cs-CognitiveStatusQuestionVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pacio-cs-CognitiveStatusQuestionVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cognitive Status Question VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-datatype-LandmarkTypeVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-LandmarkTypeVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-datatype-LandmarkTypeVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Landmark Type VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-ResearchSubjectTerminationReasonVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-ResearchSubjectTerminationReasonVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-ResearchSubjectTerminationReasonVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject Termination Reason VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-datatype-SettingVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-SettingVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-datatype-SettingVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-StudyArmTypeVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-StudyArmTypeVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-StudyArmTypeVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Study Arm Type VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-TreatmentIntentVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-TreatmentIntentVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-TreatmentIntentVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Treatment Intent VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-TreatmentTerminationReasonVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-TreatmentTerminationReasonVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-TreatmentTerminationReasonVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Treatment Termination Reason VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-obf-datatype-UnitsOfLengthVS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-UnitsOfLengthVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/obf-datatype-UnitsOfLengthVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Units Of Length VS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -554,11 +1744,28 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "CodeSystem-shr-core-SettingCS.html" ]
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-obf-ResearchSubjectTerminationReasonCS.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-SettingCS>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/shr-core-SettingCS" ]
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-ResearchSubjectTerminationReasonCS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/obf-ResearchSubjectTerminationReasonCS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Subject Termination Reason CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-obf-datatype-SettingCS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-datatype-SettingCS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/obf-datatype-SettingCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Setting CS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
@@ -570,65 +1777,207 @@
      ]
   ] .
 
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-AccessionIdentifier> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ActionRequest> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ActionStatement> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Appointment> a fhir:us .
+
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-BundledCognitiveStatus> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-CarePlan> a fhir:us .
 
 <http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/pacio-cs-CognitiveStatus> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AgeGroupVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Composition> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-AnatomicalDirectionVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Condition> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-BodyLocationVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Coverage> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ClockFaceDirectionVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Device> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ConditionStatusTrendVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DiagnosticReport> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-DetectedNotDetectedVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DocumentReference> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GestationalTimePeriodVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Dosage> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedAmountVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Duration> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedFrequencyVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Encounter> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-GradedPortionVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Endpoint> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-ImageMimeTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-EpisodeOfCare> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LandmarkTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Group> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LanguageQualifierVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-HealthcareService> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LateralityVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Location> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-LowerBoundTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Media> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-OrientationVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Medication> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PerformanceGradingScaleVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationAdministration> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-PositiveNegativeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationDispense> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-SettingVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationRequest> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-StatisticTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationStatement> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UnitsOfLengthVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Money> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-UpperBoundTypeVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-NationalProviderIdentifier> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoUnknownVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Observation> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/shr-core-YesNoVS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Organization> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-ImageMimeTypeCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Patient> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-LanguageQualifierCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Practitioner> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-PerformanceGradingScaleCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-PractitionerRole> a fhir:us .
 
-<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/shr-core-SettingCS> a fhir:us .
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Procedure> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ProcedureRequest> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-QuestionnaireResponse> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReferralRequest> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-RelatedPerson> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ResearchStudy> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ResearchSubject> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-SampledData> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ServiceRequest> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Specimen> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Substance> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-TaxIdentificationNumber> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Timing> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-AnatomicalOrientation-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Annotation-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-AppointmentReasonReference-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-BasedOn-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-CareContext-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Category-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Code-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-CommentOrDescription-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Comparator-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DiagnosisCode-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Dosage-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-DoseSequenceNumber-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ExpectedPerformanceTime-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ExpectedPerformer-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ExpectedPerformerType-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-HandlingRisk-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Identifier-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Indication-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Laterality-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-MedicationCodeOrReference-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Method-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Number-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-OnBehalfOf-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-PartOf-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Participation-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-PatientInstruction-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-PriorityCode-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReasonCode-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-ReasonReference-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-RelationToLandmark-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-RequestIntent-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Requester-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-SpecialHandling-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-SpecimenTreatment-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-StatementDateTime-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-Status-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-SubjectOfRecord-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-TerminationReason-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-TreatmentIntent-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/StructureDefinition/obf-datatype-Units-extension> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-AnatomicalDirectionVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-AnatomicalOrientationVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/pacio-cs-CognitiveStatusQuestionVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-LandmarkTypeVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-ResearchSubjectTerminationReasonVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-SettingVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-StudyArmTypeVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-TreatmentIntentVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-TreatmentTerminationReasonVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/ValueSet/obf-datatype-UnitsOfLengthVS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-ResearchSubjectTerminationReasonCS> a fhir:us .
+
+<http://hl7.org/fhir/us/PACIO-functional-cognitive-status/CodeSystem/obf-datatype-SettingCS> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

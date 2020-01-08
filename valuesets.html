@@ -141,165 +141,85 @@
   </thead>
   <tbody>
     <tr>
-          <td><a href="ValueSet-shr-core-AgeGroupVS.html">Age Group VS</a></td>
-          <td><p>Descriptions of life periods such as</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-AnatomicalDirectionVS.html">Anatomical Direction VS</a></td>
+          <td><a href="ValueSet-obf-datatype-AnatomicalDirectionVS.html">Anatomical Direction VS</a></td>
           <td><p>Terms that specify anatomical direction.</p>
 </td>
         </tr>
         <tr>
-          <td><a href="ValueSet-shr-core-BodyLocationVS.html">Body Location VS</a></td>
-          <td><p>Codes that describe normal and pathologic anatomic systems, regions, cavities, and spaces. The code set includes codes from the SNOMED CT hierarchy descending from 123037004 ‘Body Structure’.</p>
-
-<p>Body location is a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
-
-<ul>
-  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
-  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
-  <li>Relation to landmark: The location relative to a landmark is specified by:</li>
-  <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
-  <li>Specifying the direction and distance from the landmark to the body location.</li>
-</ul>
-
-<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-ClockFaceDirectionVS.html">Clock Face Direction VS</a></td>
-          <td><p>The relative direction of an object described using the analogy of a 12-hour clock to describe angles and directions. One imagines a clock face lying either upright or flat in front of oneself, and identifies the twelve hour markings with the directions in which they point.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-ConditionStatusTrendVS.html">Condition Status Trend VS</a></td>
-          <td><p>Standardized value set that describes the trend or status of a disease, condition, or ability. Based on LOINC answer lists LL2751-7 and LL4721-8. The value SNOMED-CT 260415000 (Not Detected) should be used to express No Evidence of Disease (NED), condition resolved, or full remission.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-DetectedNotDetectedVS.html">Detected Not Detected VS</a></td>
-          <td><p>Value set consisting of the answers Detected (Present) and NotDetected (Absent). The terms detected and not detected are preferred because they reflect outcomes of experimental observation, while present and absent suggest ground truth. This value set reconciles or combines LOINC answer lists LL956-4, LL750-1, LL744-4,  LL955-6, LL3950-4, LL3250-9, LL2872-1, LL2410-0, LL2355-7.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-GestationalTimePeriodVS.html">Gestational Time Period VS</a></td>
-          <td><p>Time periods of pregnancy</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-GradedAmountVS.html">Graded Amount VS</a></td>
-          <td><p>A set of codes that give a qualitative description of the amount of something, for example, the volume of wound exudate.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-GradedFrequencyVS.html">Graded Frequency VS</a></td>
-          <td><p>Answers to ‘how often’ questions. A 5-value qualitative scale of frequency of an event equivalent to LL1016-6, LL1024-0, LL346-8.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-GradedPortionVS.html">Graded Portion VS</a></td>
-          <td><p>Answers to ‘how much of’ questions, such as ‘how much of the time do/did you…’ A 5-value qualitative scale, equivalent to LL2095-9, LL1017-4</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-ImageMimeTypeVS.html">Image Mime Type VS</a></td>
-          <td><p>Mime types that apply to photographic images.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-LandmarkTypeVS.html">Landmark Type VS</a></td>
-          <td><p>The type of feature that constitutes the landmark, for example, particularly if the landmark is an acquired body structure or physical object. The landmark type value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
-
-<ul>
-  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
-  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
-  <li>Relation to landmark: The location relative to a landmark is specified by:</li>
-  <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
-  <li>Specifying the direction and distance from the landmark to the body location.</li>
-</ul>
-
-<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-LanguageQualifierVS.html">Language Qualifier VS</a></td>
-          <td><p>A code indicating whether the language is preferred, secondary, or practiced in an unconventional or limited way.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-LateralityVS.html">Laterality VS</a></td>
-          <td><p>Terms that specify the side of the body. The laterality value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
-
-<ul>
-  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
-  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
-  <li>Relation to landmark: The location relative to a landmark is specified by:</li>
-  <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
-  <li>Specifying the direction and distance from the landmark to the body location.</li>
-</ul>
-
-<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-LowerBoundTypeVS.html">Lower Bound Type VS</a></td>
-          <td><p>Indicates the actual value is gt (&gt;) or gte (&gt;=) the given value.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-OrientationVS.html">Orientation VS</a></td>
+          <td><a href="ValueSet-obf-datatype-AnatomicalOrientationVS.html">Anatomical Orientation VS</a></td>
           <td><p>Terms that specify anatomical orientation. The orientation value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
 
 <ul>
   <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
   <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
-  <li>Relation to landmark: The location relative to a landmark is specified by:</li>
-  <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
-  <li>Specifying the direction and distance from the landmark to the body location.</li>
+  <li>Relation to landmark: The location relative to a landmark is specified by:
+    <ol>
+      <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
+      <li>Specifying the direction and distance from the landmark to the body location.</li>
+    </ol>
+  </li>
 </ul>
 
 <p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
 </td>
         </tr>
         <tr>
-          <td><a href="ValueSet-shr-core-PerformanceGradingScaleVS.html">Performance Grading Scale VS</a></td>
-          <td><p>A simple performance grading scale. Also useful for grading quality and knowledge.</p>
+          <td><a href="ValueSet-pacio-cs-CognitiveStatusQuestionVS.html">Cognitive Status Question VS</a></td>
+          <td><p>LOINC codes for cognitive status questions</p>
 </td>
         </tr>
         <tr>
-          <td><a href="ValueSet-shr-core-PositiveNegativeVS.html">Positive Negative VS</a></td>
-          <td><p>Interpretation of a test result as positive, negative, equivocal, or indeterminate. Consolidates LOINC answer lists LL360-9, LL2329-2, LL2038-9, LL2021-5, LL2010-8, LL2009-0.</p>
+          <td><a href="ValueSet-obf-datatype-LandmarkTypeVS.html">Landmark Type VS</a></td>
+          <td><p>The type of feature that constitutes the landmark, for example, particularly if the landmark is an acquired body structure or physical object. The landmark type value set is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
+
+<ul>
+  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
+  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
+  <li>Relation to landmark: The location relative to a landmark is specified by:
+    <ol>
+      <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
+      <li>Specifying the direction and distance from the landmark to the body location.</li>
+    </ol>
+  </li>
+</ul>
+
+<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
 </td>
         </tr>
         <tr>
-          <td><a href="ValueSet-shr-core-SettingVS.html">Setting VS</a></td>
+          <td><a href="ValueSet-obf-ResearchSubjectTerminationReasonVS.html">Research Subject Termination Reason VS</a></td>
+          <td><p>The reason for a research subject leaving a research study.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="ValueSet-obf-datatype-SettingVS.html">Setting VS</a></td>
           <td><p>What type of place is found at a given location. More than one descriptor may be applicable.</p>
 </td>
         </tr>
         <tr>
-          <td><a href="ValueSet-shr-core-StatisticTypeVS.html">Statistic Type VS</a></td>
-          <td><p>How to interpret a reported quantity, i.e, whether the quantity is an maximum, minimum, mean, median, etc.</p>
+          <td><a href="ValueSet-obf-StudyArmTypeVS.html">Study Arm Type VS</a></td>
+          <td><p>The role of each arm in the clinical trial.</p>
+
+<p>FHIR is currently unable to handle values from NCI Thesaurus, so no values are listed in the Expansion, below. The values ARE in the downloads. For convenience, here is a listing of values in this value set:
+NCIT#C94487     ‘Intervention Group’
+NCIT#C68609     ‘Active Comparator’
+NCIT#C49648     ‘Placebo Control’
+NCIT#C116527    ‘Sham Intervention’</p>
 </td>
         </tr>
         <tr>
-          <td><a href="ValueSet-shr-core-UnitsOfLengthVS.html">Units Of Length VS</a></td>
+          <td><a href="ValueSet-obf-TreatmentIntentVS.html">Treatment Intent VS</a></td>
+          <td><p>The purpose of a treatment. The value set includes ‘curative’ and ‘palliative’. Curative is defined as any treatment meant to reduce or control a disease process, even if a ‘cure’ is not anticipated. Palliative includes treatments meant to reduce symptoms and side effects, such as antiemetics.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="ValueSet-obf-TreatmentTerminationReasonVS.html">Treatment Termination Reason VS</a></td>
+          <td><p>Values used to describe the reasons for stopping a treatment. Includes code for ‘treatment completed’ as well as codes for unplanned (early) stoppage. Applies to medications and other treatments that take place over a period of time, such as radiation treatments.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="ValueSet-obf-datatype-UnitsOfLengthVS.html">Units Of Length VS</a></td>
           <td><p>Units of measure related to length or distance.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-UpperBoundTypeVS.html">Upper Bound Type VS</a></td>
-          <td><p>Indicates the actual value is lt (&lt;) or lte (&lt;=) the given value.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-YesNoUnknownVS.html">Yes No Unknown VS</a></td>
-          <td><p>A value set containing yes, no, and unknown.</p>
-</td>
-        </tr>
-        <tr>
-          <td><a href="ValueSet-shr-core-YesNoVS.html">Yes No VS</a></td>
-          <td><p>Value set indicating yes or no (values drawn from Snomed CT), equivalent to LL361-7.</p>
 </td>
         </tr>
         
@@ -321,8 +241,163 @@
   </thead>
   <tbody>
     <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/address-type">AddressType</a></td>
+        <td><p>The type of an address (physical / postal).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/address-use">AddressUse</a></td>
+        <td><p>The use of an address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/administrative-gender">AdministrativeGender</a></td>
+        <td><p>The gender of a person used for administrative purposes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/administrative-gender">AdministrativeGender</a></td>
+        <td><p>The gender of a person used for administrative purposes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/administrative-gender">AdministrativeGender</a></td>
+        <td><p>The gender of a person used for administrative purposes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-admit-source">AdmitSource</a></td>
+        <td><p>This value set defines a set of codes that can be used to indicate from where the patient came in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/security-labels">All Security Labels</a></td>
+        <td><p>A single value set for all security labels defined by FHIR.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/appointment-cancellation-reason">AppointmentCancellationReason</a></td>
+        <td><p>This example value set defines a set of reasons for the cancellation of an appointment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/appointmentstatus">AppointmentStatus</a></td>
+        <td><p>The free/busy status of an appointment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/care-plan-activity-kind">CarePlanActivityKind</a></td>
+        <td><p>Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/care-plan-activity-outcome">CarePlanActivityOutcome</a></td>
+        <td><p>Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/care-plan-activity-status">CarePlanActivityStatus</a></td>
+        <td><p>Codes that reflect the current state of a care plan activity within its overall life cycle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/care-plan-category">CarePlanCategory</a></td>
+        <td><p>Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/care-plan-intent">CarePlanIntent</a></td>
+        <td><p>Codes indicating the degree of authority/intentionality associated with a care plan.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/languages">CommonLanguages</a></td>
         <td><p>This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/duration-units">CommonUCUMCodesForDuration</a></td>
+        <td><p>Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/composition-attestation-mode">CompositionAttestationMode</a></td>
+        <td><p>The way in which a person authenticated a composition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/composition-status">CompositionStatus</a></td>
+        <td><p>The workflow/clinical status of the composition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/composition-status">CompositionStatus</a></td>
+        <td><p>The workflow/clinical status of the composition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-severity">Condition/DiagnosisSeverity</a></td>
+        <td><p>Preferred value set for Condition/Diagnosis severity grading.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-code">Condition/Problem/DiagnosisCodes</a></td>
+        <td><p>Example value set for Condition/Problem/Diagnosis codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-clinical">ConditionClinicalStatusCodes</a></td>
+        <td><p>Preferred value set for Condition Clinical Status.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-stage">ConditionStage</a></td>
+        <td><p>Example value set for stages of cancer and other conditions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-stage-type">ConditionStageType</a></td>
+        <td><p>Example value set for the type of stages of cancer and other conditions</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-ver-status">ConditionVerificationStatus</a></td>
+        <td><p>The verification status to support or decline the clinical status of the condition or diagnosis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/contactentity-type">ContactEntityType</a></td>
+        <td><p>This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/contact-point-system">ContactPointSystem</a></td>
+        <td><p>Telecommunications form for contact point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/contact-point-use">ContactPointUse</a></td>
+        <td><p>Use of contact point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/coverage-class">CoverageClassCodes</a></td>
+        <td><p>This value set includes Coverage Class codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/coverage-copay-type">CoverageCopayTypeCodes</a></td>
+        <td><p>This value set includes sample Coverage Copayment Type codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/coverage-type">CoverageTypeAndSelf-PayCodes</a></td>
+        <td><p>This value set includes Coverage Type codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/currencies">Currencies</a></td>
+        <td><p>Currency codes from ISO 4217 (see https://www.iso.org/iso-4217-currency-codes.html)</p>
 </td>
       </tr>
       <tr>
@@ -331,8 +406,315 @@
 </td>
       </tr>
       <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/days-of-week">DaysOfWeek</a></td>
+        <td><p>The days of the week.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/days-of-week">DaysOfWeek</a></td>
+        <td><p>The days of the week.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/device-nametype">DeviceNameType</a></td>
+        <td><p>The type of name the device is referred by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/diagnosis-role">DiagnosisRole</a></td>
+        <td><p>This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/diagnostic-report-status">DiagnosticReportStatus</a></td>
+        <td><p>The status of the diagnostic report.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-diet">Diet</a></td>
+        <td><p>This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition">DischargeDisposition</a></td>
+        <td><p>This value set defines a set of codes that can be used to where the patient left the hospital.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/document-classcodes">DocumentClassValueSet</a></td>
+        <td><p>This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/formatcodes">DocumentReferenceFormatCodeSet</a></td>
+        <td><p>The value set is defined to be the set of format codes defined by the IHE Technical Framework, and also including additional format codes defined by the    HL7. The value set is listed in HITSP C80 Table 2-153 Format Code Value Set Definition,    with additions published later by IHE as published    at http://wiki.ihe.net/index.php?title=IHE_Format_Codes   and with additions published later by HL7 as published at https://confluence.hl7.org/display/SD/Format+Codes+for+IHE+XDS.   This is the code specifying the technical format of the document. Along with the typeCode,    it should provide sufficient information to allow any potential document consumer to know    if it will be able to process the document. The code shall be sufficiently specific to    ensure processing/display by identifying a document encoding, structure and template. The actual list of codes here is incomplete</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/document-reference-status">DocumentReferenceStatus</a></td>
+        <td><p>The status of the document reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/document-relationship-type">DocumentRelationshipType</a></td>
+        <td><p>The type of relationship between documents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/document-relationship-type">DocumentRelationshipType</a></td>
+        <td><p>The type of relationship between documents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/doc-section-codes">DocumentSectionCodes</a></td>
+        <td><p>Document section codes (LOINC codes used in CCDA sections).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/dose-rate-type">DoseAndRateType</a></td>
+        <td><p>The kind of dose or rate specified.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-location-status">EncounterLocationStatus</a></td>
+        <td><p>The status of the location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-reason">EncounterReasonCodes</a></td>
+        <td><p>This examples value set defines the set of codes that can be used to indicate reasons for an encounter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-status">EncounterStatus</a></td>
+        <td><p>Current state of the encounter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/endpoint-connection-type">EndpointConnectionType</a></td>
+        <td><p>This is an example value set defined by the FHIR project, that could be used to represent possible connection type profile values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/endpoint-payload-type">EndpointPayloadType</a></td>
+        <td><p>This is an example value set defined by the FHIR project, that could be used to represent possible payload document types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/endpoint-status">EndpointStatus</a></td>
+        <td><p>The status of the endpoint.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/episode-of-care-status">EpisodeOfCareStatus</a></td>
+        <td><p>The status of the episode of care.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/episodeofcare-type">EpisodeOfCareType</a></td>
+        <td><p>This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
+        <td><p>Codes identifying the lifecycle stage of an event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
+        <td><p>Codes identifying the lifecycle stage of an event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/event-timing">EventTiming</a></td>
+        <td><p>Real world event relating to the schedule.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/coverage-financial-exception">ExampleCoverageFinancialExceptionCodes</a></td>
+        <td><p>This value set includes Example Coverage Financial Exception Codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/device-status">FHIRDeviceStatus</a></td>
+        <td><p>The availability status of the device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/device-status-reason">FHIRDeviceStatusReason</a></td>
+        <td><p>The availability status reason of the device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/device-kind">FHIRDeviceTypes</a></td>
+        <td><p>Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/doc-typecodes">FHIRDocumentTypeCodes</a></td>
+        <td><p>FHIR Document Codes - all LOINC codes where scale type = ‘DOC’.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/specimen-collection-method">FHIRSpecimenCollectionMethod</a></td>
+        <td><p>This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/substance-status">FHIRSubstanceStatus</a></td>
+        <td><p>A code to indicate if the substance is actively used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/c80-facilitycodes">FacilityTypeCodeValueSet</a></td>
+        <td><p>This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/fm-status">FinancialResourceStatusCodes</a></td>
+        <td><p>This value set includes Status codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/group-type">GroupType</a></td>
+        <td><p>Types of resources that are part of group.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/identifier-type">Identifier Type Codes</a></td>
+        <td><p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/identifier-use">IdentifierUse</a></td>
+        <td><p>Identifies the purpose for this identifier, if known .</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/identifier-use">IdentifierUse</a></td>
+        <td><p>Identifies the purpose for this identifier, if known .</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/jurisdiction">Jurisdiction ValueSet</a></td>
+        <td><p>This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.</p>
+
+<p>Note: The codes for countries and country subdivisions are taken from    <a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166</a>    while the codes for “supra-national” regions are from    <a href="http://unstats.un.org/unsd/methods/m49/m49.htm">UN Standard country or area codes for statistical use (M49)</a>.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/observation-codes">LOINCCodes</a></td>
         <td><p>This value set includes all LOINC codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-simple-language.html">LanguageCodesWithLanguageAndOptionallyARegionModifier</a></td>
+        <td><p>This value set includes codes from <a href="http://tools.ietf.org/html/bcp47">BCP-47</a>. This value set matches the ONC 2015 Edition LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to <a href="https://tools.ietf.org/html/rfc5646">RFC 5646</a>, however only the language codes are required, all other elements are optional.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/bodysite-laterality">Laterality</a></td>
+        <td><p>Laterality: SNOMED-CT concepts for ‘left’, ‘right’, and ‘bilateral’</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/link-type">LinkType</a></td>
+        <td><p>The type of link between this patient resource and another patient resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/list-empty-reason">ListEmptyReasons</a></td>
+        <td><p>General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/list-mode">ListMode</a></td>
+        <td><p>The processing mode that applies to this list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/list-order">ListOrderCodes</a></td>
+        <td><p>Base values for the order of the items in a list resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/location-mode">LocationMode</a></td>
+        <td><p>Indicates whether a resource instance represents a specific location or a class of locations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/location-status">LocationStatus</a></td>
+        <td><p>Indicates whether the location is still in use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/location-physical-type">LocationType</a></td>
+        <td><p>This example value set defines a set of codes that can be used to indicate the physical form of the Location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/marital-status">Marital Status Codes</a></td>
+        <td><p>This value set defines the set of codes that can be used to indicate the marital status of a person.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/media-view">MediaCollectionView/Projection</a></td>
+        <td><p>Codes defined in SNOMED CT that can be used to record Media Recording views.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/media-modality">MediaModality</a></td>
+        <td><p>Detailed information about the type of the image - its kind, purpose, or the kind of equipment used to generate it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/media-type">MediaType</a></td>
+        <td><p>Codes for high level media categories.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-status">Medication Status Codes</a></td>
+        <td><p>Medication Status Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-statement-status">Medication Status Codes</a></td>
+        <td><p>Medication Status Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-statement-category">Medication usage category codes</a></td>
+        <td><p>Medication Status Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-admin-category">MedicationAdministration Category Codes</a></td>
+        <td><p>MedicationAdministration Category Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-admin-status">MedicationAdministration Status Codes</a></td>
+        <td><p>MedicationAdministration Status Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/mimetypes">Mime Types</a></td>
+        <td><p>This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/mimetypes">Mime Types</a></td>
+        <td><p>This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/name-use">NameUse</a></td>
+        <td><p>The use of a human name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-narrative-status.html">NarrativeStatus</a></td>
+        <td><p>The US Core Narrative Status Value Set limits the text status for the resource narrative.</p>
 </td>
       </tr>
       <tr>
@@ -370,8 +752,449 @@
 </td>
       </tr>
       <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/organization-type">OrganizationType</a></td>
+        <td><p>This example value set defines a set of codes that can be used to indicate a type of organization.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/participantrequired">ParticipantRequired</a></td>
+        <td><p>Is the Participant required to attend the appointment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/participant-role">ParticipantRoles</a></td>
+        <td><p>Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-participant-type">ParticipantType</a></td>
+        <td><p>This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/participationstatus">ParticipationStatus</a></td>
+        <td><p>The Participation status of an appointment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/patient-contactrelationship">PatientContactRelationship</a></td>
+        <td><p>The nature of the relationship between the patient and the contact person.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype">PatientRelationshipType</a></td>
+        <td><p>A set of codes that can be used to indicate the relationship between a Patient and a Related Person.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/c80-practice-codes">PracticeSettingCodeValueSet</a></td>
+        <td><p>This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/practitioner-role">PractitionerRole</a></td>
+        <td><p>This example value set defines a set of codes that can be used to indicate the role of a Practitioner.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/procedure-category">ProcedureCategoryCodes(SNOMEDCT)</a></td>
+        <td><p>Procedure Category code: A selection of relevant SNOMED CT codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/procedure-code">ProcedureCodes(SNOMEDCT)</a></td>
+        <td><p>Procedure Code: All SNOMED CT procedure codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/device-action">ProcedureDeviceActionCodes</a></td>
+        <td><p>Example codes indicating the change that happened to the device during the procedure.  Note that these are in no way complete and might not even be appropriate for some uses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/procedure-followup">ProcedureFollowUpCodes(SNOMEDCT)</a></td>
+        <td><p>Procedure follow up codes: A selection of SNOMED CT codes relevant to procedure follow up.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason">ProcedureNotPerformedReason(SNOMED-CT)</a></td>
+        <td><p>Situation codes describing the reason that a procedure, which might otherwise be expected, was not performed, or a procedure that was started and was not completed. Consists of SNOMED CT codes, children of procedure contraindicated (183932001), procedure discontinued (416406003), procedure not done (416237000), procedure not indicated (428119001), procedure not offered (416064006), procedure not wanted (416432009), procedure refused (183944003), and procedure stopped (394908001).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/procedure-outcome">ProcedureOutcomeCodes(SNOMEDCT)</a></td>
+        <td><p>Procedure Outcome code: A selection of relevant SNOMED CT codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/performer-role">ProcedurePerformerRoleCodes</a></td>
+        <td><p>This example value set defines the set of codes that can be used to indicate a role of a procedure performer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/procedure-reason">ProcedureReasonCodes</a></td>
+        <td><p>This example value set defines the set of codes that can be used to indicate a reason for a procedure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/program">Program</a></td>
+        <td><p>This value set defines an example set of codes that could be can be used to classify groupings of service-types/specialties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/quantity-comparator">QuantityComparator</a></td>
+        <td><p>How the Quantity should be understood and represented.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/quantity-comparator">QuantityComparator</a></td>
+        <td><p>How the Quantity should be understood and represented.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/questionnaire-answers">QuestionnaireAnswerCodes</a></td>
+        <td><p>Example list of codes for answers to questions. (Not complete or necessarily appropriate.)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/questionnaire-answers-status">QuestionnaireResponseStatus</a></td>
+        <td><p>Lifecycle status of the questionnaire response.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/reason-medication-given-codes">ReasonMedicationGivenCodes</a></td>
+        <td><p>This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-referral-method">ReferralMethod</a></td>
+        <td><p>The methods of referral can be used when referring to a specific HealthCareService resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/request-intent">RequestIntent</a></td>
+        <td><p>Codes indicating the degree of authority/intentionality associated with a request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/request-priority">RequestPriority</a></td>
+        <td><p>The clinical priority of a diagnostic order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/request-priority">RequestPriority</a></td>
+        <td><p>The clinical priority of a diagnostic order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/request-status">RequestStatus</a></td>
+        <td><p>Codes identifying the lifecycle stage of a request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/request-status">RequestStatus</a></td>
+        <td><p>Codes identifying the lifecycle stage of a request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/research-study-objective-type">ResearchStudyObjectiveType</a></td>
+        <td><p>Codes for the kind of study objective.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/research-study-phase">ResearchStudyPhase</a></td>
+        <td><p>Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/research-study-prim-purp-type">ResearchStudyPrimaryPurposeType</a></td>
+        <td><p>Codes for the main intent of the study.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/research-study-reason-stopped">ResearchStudyReasonStopped</a></td>
+        <td><p>Codes for why the study ended prematurely.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/research-study-status">ResearchStudyStatus</a></td>
+        <td><p>Codes that convey the current status of the research study.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/research-subject-status">ResearchSubjectStatus</a></td>
+        <td><p>Indicates the progression of a study subject through a study.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/additional-instruction-codes">SNOMEDCTAdditionalDosageInstructions</a></td>
+        <td><p>This value set includes all SNOMED CT Additional Dosage Instructions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/administration-method-codes">SNOMEDCTAdministrationMethodCodes</a></td>
+        <td><p>This value set includes some method codes from SNOMED CT - provided as an exemplar</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/approach-site-codes">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a></td>
+        <td><p>This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/body-site">SNOMEDCTBodyStructures</a></td>
         <td><p>This value set includes all codes from <a href="http://snomed.info/sct">SNOMED CT</a> where concept is-a 442083009 (Anatomical or acquired body site (body structure)).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/clinical-findings">SNOMEDCTClinicalFindings</a></td>
+        <td><p>This value set includes all the “Clinical finding” <a href="http://snomed.info/sct">SNOMED CT</a> codes - concepts where concept is-a 404684003 (Clinical finding (finding)).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/reason-medication-status-codes">SNOMEDCTDrugTherapyStatusCodes</a></td>
+        <td><p>This value set includes some taken and not taken reason codes from SNOMED CT - provided as an exemplar</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-form-codes">SNOMEDCTFormCodes</a></td>
+        <td><p>This value set includes all dose form codes from SNOMED CT - provided as an exemplar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-as-needed-reason">SNOMEDCTMedicationAsNeededReasonCodes</a></td>
+        <td><p>This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medication-codes">SNOMEDCTMedicationCodes</a></td>
+        <td><p>This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/reason-medication-not-given-codes">SNOMEDCTReasonMedicationNotGivenCodes</a></td>
+        <td><p>This value set includes all medication refused, medication not administered, and non-administration of necessary drug or medicine codes from SNOMED CT - provided as an exemplar value set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/route-codes">SNOMEDCTRouteCodes</a></td>
+        <td><p>This value set includes all Route codes from SNOMED CT - provided as an exemplar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-category">ServiceCategory</a></td>
+        <td><p>This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-provision-conditions">ServiceProvisionConditions</a></td>
+        <td><p>The code(s) that detail the conditions under which the healthcare service is available/offered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/servicerequest-category">ServiceRequestCategoryCodes</a></td>
+        <td><p>An example value set of SNOMED CT concepts that can classify a requested service</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/service-type">ServiceType</a></td>
+        <td><p>This value set defines an example set of codes of service-types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-special-arrangements">SpecialArrangements</a></td>
+        <td><p>This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/encounter-special-courtesy">SpecialCourtesy</a></td>
+        <td><p>This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/specimen-container-type">SpecimenContainerType</a></td>
+        <td><table>
+  <tbody>
+    <tr>
+      <td>Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008</td>
+      <td>Device for body fluid and tissue collection/transfer/processing (physical object)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/specimen-processing-procedure">SpecimenProcessingProcedure</a></td>
+        <td><p>The technique that is used to perform the process or preserve the specimen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/specimen-status">SpecimenStatus</a></td>
+        <td><p>Codes providing the status/availability of a specimen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/subscriber-relationship">SubscriberRelationshipCodes</a></td>
+        <td><p>This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/substance-category">SubstanceCategoryCodes</a></td>
+        <td><p>Substance category codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/substance-code">SubstanceCode</a></td>
+        <td><p>This value set contains concept codes for specific substances. It includes codes from <a href="http://snomed.info/sct">SNOMED</a> where concept is-a 105590001 (Substance (substance)) and where concept is-a 373873005 (Pharmaceutical / biologic product (product))</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/timing-abbreviation">TimingAbbreviation</a></td>
+        <td><p>Code for a known / defined timing pattern.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/udi-entry-type">UDIEntryType</a></td>
+        <td><p>Codes to identify how UDI data was entered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-condition-category.html">USCoreConditionCategoryCodes</a></td>
+        <td><p>The US core Condition Category Codes support the separate concepts of problems and health concerns in Condition.category in order for API consumers to be able to separate health concerns and problems. However this is not mandatory for 2015 certification</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-diagnosticreport-category.html">USCoreDiagnosticReportCategory</a></td>
+        <td><p>The US Core Diagnostic Report Category Value Set is a ‘starter set’ of categories supported for fetching and Diagnostic Reports and notes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-diagnosticreport-report-and-note-codes.html">USCoreDiagnosticreportReportAndNoteCodes</a></td>
+        <td><p>This value set currently contains all of LOINC. The codes selected should represent discrete and narrative diagnostic observations and reports</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-documentreference-category.html">USCoreDocumentReferenceCategory</a></td>
+        <td><p>The US Core DocumentReferences Category Value Set is a ‘starter set’ of categories supported for fetching and storing clinical notes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-documentreference-type.html">USCoreDocumentReferenceType</a></td>
+        <td><p>The US Core DocumentReference Type Value Set includes all LOINC  values whose SCALE is DOC in the LOINC database and the HL7 v3 Code System NullFlavor concept ‘unknown’</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-encounter-type.html">USCoreEncounterType</a></td>
+        <td><p>The type of encounter: a specific code indicating type of service provided, from CPT</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-medication-codes.html">USCoreMedicationCodes</a></td>
+        <td><p>All prescribable medication formulations represented using  either a ‘generic’ or ‘brand-specific’ concept. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack), SCDG (semantic clinical drug group), SBDG (semantic brand drug group), SCDF (semantic clinical drug form), or SBDF (semantic brand drug form)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-problem.html">USCoreProblem</a></td>
+        <td><p>This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient’s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient’s healthcare (e.g., signs, symptoms, and defined conditions)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-procedure-code.html">USCoreProcedureCodes</a></td>
+        <td><p>This example value set defines a set of codes that can be used to indicate the type of procedure: a specific code indicating type of procedure performed, from CPT or SNOMED CT.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/units-of-time">UnitsOfTime</a></td>
+        <td><p>A unit of time (units from UCUM).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.hl7.org/fhir/us/core/ValueSet-us-core-usps-state.html">UspsTwoLetterAlphabeticCodes</a></td>
+        <td><p>This value set defines two letter USPS alphabetic codes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/valueset-languages.html">http://hl7.org/fhir/valueset-languages.html</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0092">http://terminology.hl7.org/ValueSet/v2-0092</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0116">http://terminology.hl7.org/ValueSet/v2-0116</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0276">http://terminology.hl7.org/ValueSet/v2-0276</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0371">http://terminology.hl7.org/ValueSet/v2-0371</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0487">http://terminology.hl7.org/ValueSet/v2-0487</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0493">http://terminology.hl7.org/ValueSet/v2-0493</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-0916">http://terminology.hl7.org/ValueSet/v2-0916</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v2-2.7-0360">http://terminology.hl7.org/ValueSet/v2-2.7-0360</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ActCode">http://terminology.hl7.org/ValueSet/v3-ActCode</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode">http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ActPriority">http://terminology.hl7.org/ValueSet/v3-ActPriority</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode">http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification">http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType">http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason">http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy">medicationRequest Course of Therapy Codes</a></td>
+        <td><p>MedicationRequest Course of Therapy Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medicationrequest-intent">medicationRequest Intent</a></td>
+        <td><p>MedicationRequest Intent Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason">medicationRequest Status Reason Codes</a></td>
+        <td><p>MedicationRequest Status Reason Codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/medicationrequest-status">medicationrequest Status</a></td>
+        <td><p>MedicationRequest Status Codes</p>
 </td>
       </tr>
       
@@ -399,7 +1222,7 @@
       &copy;2019+
       <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare/">HL7 Patient Care WG and Community-Based Care and Privacy WG</a>.
       Package hl7.fhir.us.PACIO-cognitive-status#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-      Generated <span title="Tue, Jan 7, 2020 16:35+0000">2020-01-07</span>.
+      Generated <span title="Wed, Jan 8, 2020 16:52+0000">2020-01-08</span>.
       <br/>
       <span style="color: #FFFF77">
         Links:

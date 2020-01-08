@@ -128,8 +128,7 @@
 
 <h2>Extensions defined as part of this Implementation Guide</h2>
 
-None
-<table class="codes" style="display: none">
+<table class="codes">
   <thead>
     <tr>
       <td>
@@ -141,7 +140,264 @@ None
     </tr>
   </thead>
   <tbody>
-    
+    <tr>
+          <td><a href="StructureDefinition-obf-datatype-AnatomicalOrientation-extension.html">Anatomical Orientation</a></td>
+          <td><p>AnatomicalOrientation of the body location, if needed to distinguish from a similar location in another orientation.
+The orientation element is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
+
+<ul>
+  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
+  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
+  <li>Relation to landmark: The location relative to a landmark is specified by:
+    <ol>
+      <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
+      <li>Specifying the direction and distance from the landmark to the body location.</li>
+    </ol>
+  </li>
+</ul>
+
+<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Annotation-extension.html">Annotation</a></td>
+          <td><p>An added or follow-up note, often after the fact, that contains metadata about who made the statement and when.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-AppointmentReasonReference-extension.html">Appointment Reason Reference</a></td>
+          <td><p>Reason the appointment is to take place (resource)</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-BasedOn-extension.html">Based On</a></td>
+          <td><p>The proposal, order, or plan that is partly or wholly fulfilled by this item.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-CareContext-extension.html">Care Context</a></td>
+          <td><p>The encounter or episode of care</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Category-extension.html">Category</a></td>
+          <td><p>The general type or class of this item.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Code-extension.html">Code</a></td>
+          <td><p>The main type identifier for a lab, procedure, condition, etc., usually drawn from a controlled vocabulary.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-CommentOrDescription-extension.html">Comment Or Description</a></td>
+          <td><p>A text note containing additional details, explanation, description, comment, or summarization.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Comparator-extension.html">Comparator</a></td>
+          <td><p>A code indicated if the value represents an upper or lower bound</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-DiagnosisCode-extension.html">Diagnosis Code</a></td>
+          <td><p>Codes for a diagnosis.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Dosage-extension.html">Dosage</a></td>
+          <td><p>The dosage of the medication. The data structure is flexible and can describe a dosage prescribed, administered, or reported.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-DoseSequenceNumber-extension.html">Dose Sequence Number</a></td>
+          <td><p>Dose number within series.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-ExpectedPerformanceTime-extension.html">Expected Performance Time</a></td>
+          <td><p>When an action should be done. If the action is a series or recurs (e.g. daily blood sugar testing in the morning) then a Timing can be used to describe the periodicity.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-ExpectedPerformer-extension.html">Expected Performer</a></td>
+          <td><p>Who this request is being addressed to.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-ExpectedPerformerType-extension.html">Expected Performer Type</a></td>
+          <td><p>What type of party should carry out the testing.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-HandlingRisk-extension.html">Handling Risk</a></td>
+          <td><p>Cautions on the handling of this specimen.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Identifier-extension.html">Identifier</a></td>
+          <td><p>Business identifier or external id for this resource.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Indication-extension.html">Indication</a></td>
+          <td><p>Conditions or situations where the procedure is recommended. In the Performed context, the actual indication should be reported.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Laterality-extension.html">Laterality</a></td>
+          <td><p>Body side of the body location, if needed to distinguish from a similar location on the other side of the body.</p>
+
+<p>The laterality element is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
+
+<ul>
+  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
+  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
+  <li>Relation to landmark: The location relative to a landmark is specified by:
+    <ol>
+      <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
+      <li>Specifying the direction and distance from the landmark to the body location.</li>
+    </ol>
+  </li>
+</ul>
+
+<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-MedicationCodeOrReference-extension.html">Medication Code Or Reference</a></td>
+          <td><p>A choice of a medication code or reference.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Method-extension.html">Method</a></td>
+          <td><p>The technique used to carry out an action, for example, the specific imaging technical or assessment vehicle.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Number-extension.html">Number</a></td>
+          <td><p>A decimal value.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html">Occurrence Time Or Period</a></td>
+          <td><p>The point or period of time when the event takes place. Times can be precise (dateTime) or approximate (date). If a time period is used, and the start date or dateTime is missing, the start of the period is not known. If the end date or dateTime is missing, it means that the period is ongoing.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-OnBehalfOf-extension.html">On Behalf Of</a></td>
+          <td><p>The party represented by the actual participant.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-PartOf-extension.html">Part Of</a></td>
+          <td><p>The larger entity that the asserted item is a portion of. For example, an organization part of a larger organization, or an encounter with a hospitalist might be part of a larger hospitalization encounter.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Participation-extension.html">Participation</a></td>
+          <td><p>Record of someone or something involvement in an activity or event.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-PatientInstruction-extension.html">Patient Instruction</a></td>
+          <td><p>Patient or consumer-oriented instructions.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-PriorityCode-extension.html">Priority Code</a></td>
+          <td><p>An indication of the importance of an action relative to other actions.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-ReasonCode-extension.html">Reason Code</a></td>
+          <td><p>The explanation or justification for the current item or action, as a code.
+Reason is a string or CodeableConcept in DSTU2 but in later versions only a CodeableConcept.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-ReasonReference-extension.html">Reason Reference</a></td>
+          <td><p>The justification, as reference to a condition or observation.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-RelationToLandmark-extension.html">Relation To Landmark</a></td>
+          <td><p>The relationship between a landmark that helps determine a body location and the body location itself. The location relative to a landmark is specified by:</p>
+<ul>
+  <li>Specifying the location and type of landmark using a body site code and optional laterality/orientation,</li>
+  <li>Specifying the direction from the landmark to the body location, and</li>
+  <li>Specifying the distance from the landmark to the body location.</li>
+</ul>
+
+<p>The RelationToLandmark element is part of BodyLocation, a flexible structure that allows the location to be determined by a single code, or a code plus laterality and/or orientation. The body location can also be specified in relation to one or more body landmarks. SNOMED CT is used in all cases.</p>
+
+<ul>
+  <li>Code only: The code should include (precoordinate) laterality and/orientation to the degree necessary to completely specify the body location.</li>
+  <li>Code plus laterality and/or orientation: The basic code augmented by codes specifying the body side and/or anatomical orientation.</li>
+  <li>Relation to landmark: The location relative to a landmark is specified by:
+    <ol>
+      <li>Establishing the location and type of landmark using a body site code and optional laterality/orientation, and</li>
+      <li>Specifying the direction and distance from the landmark to the body location.</li>
+    </ol>
+  </li>
+</ul>
+
+<p>Note that BodyLocation is a data type (a reusable structure), not a stand-alone entity. The concept is similar to how a postal address can apply to a person, location, or organization. This contrasts with FHIR’s stand-alone BodySite (aka BodyStructure in r4) which ‘is not … intended for describing the type of anatomical location but rather a specific body site on a specific patient’ (FHIR 3.5).</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-RequestIntent-extension.html">Request Intent</a></td>
+          <td><p>Indicates the level of authority/intentionality associated with the request and where the request fits into the workflow chain.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Requester-extension.html">Requester</a></td>
+          <td><p>The person or organization originating this referral</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-SpecialHandling-extension.html">Special Handling</a></td>
+          <td><p>Information about the proper handling of the specimen.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-SpecimenTreatment-extension.html">Specimen Treatment</a></td>
+          <td><p>Additives added to the specimen.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-StatementDateTime-extension.html">Statement Date Time</a></td>
+          <td><p>The point in time when the statement was created.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-Status-extension.html">Status</a></td>
+          <td><p>A state that relates to the workflow or interpretation of this resource. Certain status values can modify the meaning of the resource, for example, entered-in-error. When a boolean value is used, Status of true indicates the record is active, false means inactive.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-SubjectOfRecord-extension.html">Subject Of Record</a></td>
+          <td><p>The subject of a clinical statement, often called the Patient or the Subject. The SubjectOfRecord typically identifies the clinical record in which this statement is contained. If the statement should be in John Doe’s patient record, then John Doe is the subject of record. When there is no patient, the SubjectOfRecord can also be a location, group, or other entity that statement pertains to. For example, observations concerning a hospital ward would have a Location as the SubjectOfRecord.</p>
+
+<p>Note that the word ‘Subject’ is used here in the sense of a person or entity subjected to observations or actions, not subject as in a conceptual topic, like heart disease.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-TerminationReason-extension.html">Termination Reason</a></td>
+          <td><p>A code explaining unplanned or premature termination of a plan of treatment, course of medication, or research study.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-TreatmentIntent-extension.html">Treatment Intent</a></td>
+          <td><p>The purpose of a treatment.</p>
+</td>
+        </tr>
+        <tr>
+          <td><a href="StructureDefinition-obf-datatype-Units-extension.html">Units</a></td>
+          <td><p>The unit of measure of the quantity.</p>
+</td>
+        </tr>
+        
   </tbody>
 </table>
 
@@ -166,7 +422,7 @@ None
       &copy;2019+
       <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare/">HL7 Patient Care WG and Community-Based Care and Privacy WG</a>.
       Package hl7.fhir.us.PACIO-cognitive-status#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-      Generated <span title="Tue, Jan 7, 2020 16:35+0000">2020-01-07</span>.
+      Generated <span title="Wed, Jan 8, 2020 16:52+0000">2020-01-08</span>.
       <br/>
       <span style="color: #FFFF77">
         Links:

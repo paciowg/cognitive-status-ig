@@ -3,73 +3,215 @@
 
 err = 6, warn = 0, info = 0
 IG Publisher Version: v1.0.9-SNAPSHOT Out of date - current version is v1.0.37-SNAPSHOT
-Generated Tue Jan 07 16:38:34 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-cognitive-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
+Generated Wed Jan 08 16:56:01 UTC 2020. FHIR version 4.0.1 for hl7.fhir.us.PACIO-cognitive-status#0.1.0 (canonical = http://hl7.org/fhir/us/PACIO-functional-cognitive-status)
 
  Build Errors : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-ImageMimeTypeCS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-LanguageQualifierCS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-PerformanceGradingScaleCS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-SettingCS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS : 0 / 0
  /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/ig : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionStatement : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Appointment : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AppointmentReasonReference-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-BasedOn-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CareContext-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CarePlan : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DocumentReference : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DoseSequenceNumber-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Encounter : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Endpoint : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-EpisodeOfCare : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformanceTime-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformer-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformerType-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Group : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HandlingRisk-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HealthcareService : 2 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Indication-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Location : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Media : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Medication : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationAdministration : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationCodeOrReference-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationDispense : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationRequest : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationStatement : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Method-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-NationalProviderIdentifier : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Observation : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-OnBehalfOf-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Organization : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PartOf-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Participation-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PatientInstruction-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PractitionerRole : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Procedure : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ProcedureRequest : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-QuestionnaireResponse : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonCode-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonReference-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReferralRequest : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RelatedPerson : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RequestIntent-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Requester-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchStudy : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchSubject : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ServiceRequest : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecialHandling-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Specimen : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecimenTreatment-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-StatementDateTime-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Status-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SubjectOfRecord-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Substance : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TerminationReason-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TreatmentIntent-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-AnatomicalOrientation-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Category-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Code-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-CommentOrDescription-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Comparator-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Duration : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Identifier-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Laterality-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Money : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Number-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-PriorityCode-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-RelationToLandmark-extension : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension : 0 / 0
  /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-BundledCognitiveStatus : 0 / 0
  /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-CognitiveStatus : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AgeGroupVS : 1 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AnatomicalDirectionVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-BodyLocationVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ClockFaceDirectionVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ConditionStatusTrendVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-DetectedNotDetectedVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GestationalTimePeriodVS : 1 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedAmountVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedFrequencyVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedPortionVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ImageMimeTypeVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LandmarkTypeVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LanguageQualifierVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LateralityVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LowerBoundTypeVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-OrientationVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PerformanceGradingScaleVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PositiveNegativeVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-SettingVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-StatisticTypeVS : 1 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UnitsOfLengthVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UpperBoundTypeVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoUnknownVS : 0 / 0
- /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS : 1 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentIntentVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentTerminationReasonVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalDirectionVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalOrientationVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS : 0 / 0
+ /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-pacio-cs-CognitiveStatusQuestionVS : 0 / 0
 </table>
 == n/a ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-ImageMimeTypeCS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-LanguageQualifierCS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-PerformanceGradingScaleCS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-shr-core-SettingCS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS.json ==
 == /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/ig.xml ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionStatement.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Appointment.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AppointmentReasonReference-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-BasedOn-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CareContext-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CarePlan.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DocumentReference.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DoseSequenceNumber-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Encounter.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Endpoint.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-EpisodeOfCare.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformanceTime-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformer-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformerType-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Group.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HandlingRisk-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HealthcareService.json ==
+ERROR: StructureDefinition/obf-HealthcareService: StructureDefinition.snapshot.element[31].binding.valueSet: URL value 'http://hl7.org/fhir/valueset-languages.html' does not resolve
+ERROR: StructureDefinition/obf-HealthcareService: StructureDefinition.differential.element[9].binding.valueSet: URL value 'http://hl7.org/fhir/valueset-languages.html' does not resolve
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Indication-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Location.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Media.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Medication.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationAdministration.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationCodeOrReference-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationDispense.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationRequest.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationStatement.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Method-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-NationalProviderIdentifier.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Observation.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-OnBehalfOf-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Organization.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PartOf-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Participation-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PatientInstruction-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PractitionerRole.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Procedure.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ProcedureRequest.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-QuestionnaireResponse.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonCode-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonReference-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReferralRequest.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RelatedPerson.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RequestIntent-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Requester-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchStudy.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchSubject.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ServiceRequest.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecialHandling-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Specimen.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecimenTreatment-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-StatementDateTime-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Status-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SubjectOfRecord-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Substance.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TerminationReason-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TreatmentIntent-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-AnatomicalOrientation-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Category-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Code-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-CommentOrDescription-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Comparator-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Duration.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Identifier-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Laterality-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Money.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Number-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-PriorityCode-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-RelationToLandmark-extension.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension.json ==
 == /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-BundledCognitiveStatus.json ==
 == /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-CognitiveStatus.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AgeGroupVS.json ==
-ERROR: shr-core-AgeGroupVS: Error from server: Unable to provide support for code system http://ncimeta.nci.nih.gov
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-AnatomicalDirectionVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-BodyLocationVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ClockFaceDirectionVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ConditionStatusTrendVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-DetectedNotDetectedVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GestationalTimePeriodVS.json ==
-ERROR: shr-core-GestationalTimePeriodVS: Error from server: Unable to provide support for code system http://ncimeta.nci.nih.gov
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedAmountVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedFrequencyVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-GradedPortionVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-ImageMimeTypeVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LandmarkTypeVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LanguageQualifierVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LateralityVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-LowerBoundTypeVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-OrientationVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PerformanceGradingScaleVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-PositiveNegativeVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-SettingVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-StatisticTypeVS.json ==
-ERROR: shr-core-StatisticTypeVS: Error from server: Unable to provide support for code system http://ncimeta.nci.nih.gov
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UnitsOfLengthVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-UpperBoundTypeVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoUnknownVS.json ==
-== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-shr-core-YesNoVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS.json ==
+ERROR: obf-StudyArmTypeVS: Error from server: Unable to provide support for code system https://ncit.nci.nih.gov
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentIntentVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentTerminationReasonVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalDirectionVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalOrientationVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS.json ==
+== /home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-pacio-cs-CognitiveStatusQuestionVS.json ==

@@ -10,7 +10,7 @@
   "name": "PACIO_Cognitive_Status",
   "title": "PACIO Cognitive Status",
   "status": "draft",
-  "date": "2020-01-07T16:35:06+00:00",
+  "date": "2020-01-08T16:52:33+00:00",
   "publisher": "HL7 Patient Care WG and Community-Based Care and Privacy WG",
   "contact": [
     {
@@ -50,6 +50,91 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-AccessionIdentifier.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-AccessionIdentifier"
+        },
+        "name": "Accession Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ActionRequest.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ActionRequest"
+        },
+        "name": "Action Request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ActionStatement.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ActionStatement"
+        },
+        "name": "Action Statement",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Annotation.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Annotation"
+        },
+        "name": "Annotation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Appointment.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Appointment"
+        },
+        "name": "Appointment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           },
           {
@@ -61,6 +146,23 @@
           "reference": "StructureDefinition/pacio-cs-BundledCognitiveStatus"
         },
         "name": "Bundled Cognitive Status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-CarePlan.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-CarePlan"
+        },
+        "name": "Care Plan",
         "exampleBoolean": false
       },
       {
@@ -84,17 +186,1377 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:resource"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-AgeGroupVS.html"
+            "valueUri": "StructureDefinition-obf-Composition.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-AgeGroupVS"
+          "reference": "StructureDefinition/obf-Composition"
         },
-        "name": "Age Group VS",
+        "name": "Composition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Condition.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Condition"
+        },
+        "name": "Condition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Coverage.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Coverage"
+        },
+        "name": "Coverage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Device.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Device"
+        },
+        "name": "Device",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-DiagnosticReport.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-DiagnosticReport"
+        },
+        "name": "Diagnostic Report",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-DocumentReference.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-DocumentReference"
+        },
+        "name": "Document Reference",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Dosage.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Dosage"
+        },
+        "name": "Dosage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Duration.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Duration"
+        },
+        "name": "Duration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Encounter.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Encounter"
+        },
+        "name": "Encounter",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Endpoint.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Endpoint"
+        },
+        "name": "Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-EpisodeOfCare.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-EpisodeOfCare"
+        },
+        "name": "Episode Of Care",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Group.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Group"
+        },
+        "name": "Group",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-HealthcareService.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-HealthcareService"
+        },
+        "name": "Healthcare Service",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Location.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Location"
+        },
+        "name": "Location",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Media.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Media"
+        },
+        "name": "Media",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Medication.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Medication"
+        },
+        "name": "Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-MedicationAdministration.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-MedicationAdministration"
+        },
+        "name": "Medication Administration",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-MedicationDispense.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-MedicationDispense"
+        },
+        "name": "Medication Dispense",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-MedicationRequest.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-MedicationRequest"
+        },
+        "name": "Medication Request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-MedicationStatement.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-MedicationStatement"
+        },
+        "name": "Medication Statement",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Money.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Money"
+        },
+        "name": "Money",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-NationalProviderIdentifier.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-NationalProviderIdentifier"
+        },
+        "name": "National Provider Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Observation.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Observation"
+        },
+        "name": "Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Organization.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Organization"
+        },
+        "name": "Organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Patient.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Patient"
+        },
+        "name": "Patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Practitioner.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Practitioner"
+        },
+        "name": "Practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-PractitionerRole.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-PractitionerRole"
+        },
+        "name": "Practitioner Role",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Procedure.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Procedure"
+        },
+        "name": "Procedure",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ProcedureRequest.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ProcedureRequest"
+        },
+        "name": "Procedure Request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-QuestionnaireResponse.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-QuestionnaireResponse"
+        },
+        "name": "Questionnaire Response",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ReferralRequest.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ReferralRequest"
+        },
+        "name": "Referral Request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-RelatedPerson.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-RelatedPerson"
+        },
+        "name": "Related Person",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ResearchStudy.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ResearchStudy"
+        },
+        "name": "Research Study",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ResearchSubject.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ResearchSubject"
+        },
+        "name": "Research Subject",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-SampledData.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-SampledData"
+        },
+        "name": "Sampled Data",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ServiceRequest.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ServiceRequest"
+        },
+        "name": "Service Request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Specimen.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Specimen"
+        },
+        "name": "Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Substance.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Substance"
+        },
+        "name": "Substance",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-TaxIdentificationNumber.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-TaxIdentificationNumber"
+        },
+        "name": "Tax Identification Number",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Timing.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Timing"
+        },
+        "name": "Timing",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-AnatomicalOrientation-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-AnatomicalOrientation-extension"
+        },
+        "name": "Anatomical Orientation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Annotation-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Annotation-extension"
+        },
+        "name": "Annotation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-AppointmentReasonReference-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-AppointmentReasonReference-extension"
+        },
+        "name": "Appointment Reason Reference",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-BasedOn-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-BasedOn-extension"
+        },
+        "name": "Based On",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-CareContext-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-CareContext-extension"
+        },
+        "name": "Care Context",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Category-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Category-extension"
+        },
+        "name": "Category",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Code-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Code-extension"
+        },
+        "name": "Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-CommentOrDescription-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-CommentOrDescription-extension"
+        },
+        "name": "Comment Or Description",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Comparator-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Comparator-extension"
+        },
+        "name": "Comparator",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-DiagnosisCode-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-DiagnosisCode-extension"
+        },
+        "name": "Diagnosis Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Dosage-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Dosage-extension"
+        },
+        "name": "Dosage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-DoseSequenceNumber-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-DoseSequenceNumber-extension"
+        },
+        "name": "Dose Sequence Number",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ExpectedPerformanceTime-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ExpectedPerformanceTime-extension"
+        },
+        "name": "Expected Performance Time",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ExpectedPerformer-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ExpectedPerformer-extension"
+        },
+        "name": "Expected Performer",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ExpectedPerformerType-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ExpectedPerformerType-extension"
+        },
+        "name": "Expected Performer Type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-HandlingRisk-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-HandlingRisk-extension"
+        },
+        "name": "Handling Risk",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Identifier-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Identifier-extension"
+        },
+        "name": "Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Indication-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Indication-extension"
+        },
+        "name": "Indication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Laterality-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Laterality-extension"
+        },
+        "name": "Laterality",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-MedicationCodeOrReference-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-MedicationCodeOrReference-extension"
+        },
+        "name": "Medication Code Or Reference",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Method-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Method-extension"
+        },
+        "name": "Method",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Number-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Number-extension"
+        },
+        "name": "Number",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-OccurrenceTimeOrPeriod-extension"
+        },
+        "name": "Occurrence Time Or Period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-OnBehalfOf-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-OnBehalfOf-extension"
+        },
+        "name": "On Behalf Of",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-PartOf-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-PartOf-extension"
+        },
+        "name": "Part Of",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Participation-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Participation-extension"
+        },
+        "name": "Participation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-PatientInstruction-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-PatientInstruction-extension"
+        },
+        "name": "Patient Instruction",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-PriorityCode-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-PriorityCode-extension"
+        },
+        "name": "Priority Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ReasonCode-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ReasonCode-extension"
+        },
+        "name": "Reason Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-ReasonReference-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-ReasonReference-extension"
+        },
+        "name": "Reason Reference",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-RelationToLandmark-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-RelationToLandmark-extension"
+        },
+        "name": "Relation To Landmark",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-RequestIntent-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-RequestIntent-extension"
+        },
+        "name": "Request Intent",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Requester-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Requester-extension"
+        },
+        "name": "Requester",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-SpecialHandling-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-SpecialHandling-extension"
+        },
+        "name": "Special Handling",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-SpecimenTreatment-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-SpecimenTreatment-extension"
+        },
+        "name": "Specimen Treatment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-StatementDateTime-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-StatementDateTime-extension"
+        },
+        "name": "Statement Date Time",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-Status-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-Status-extension"
+        },
+        "name": "Status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-SubjectOfRecord-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-SubjectOfRecord-extension"
+        },
+        "name": "Subject Of Record",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-TerminationReason-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-TerminationReason-extension"
+        },
+        "name": "Termination Reason",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-TreatmentIntent-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-TreatmentIntent-extension"
+        },
+        "name": "Treatment Intent",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-obf-datatype-Units-extension.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/obf-datatype-Units-extension"
+        },
+        "name": "Units",
         "exampleBoolean": false
       },
       {
@@ -105,11 +1567,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-AnatomicalDirectionVS.html"
+            "valueUri": "ValueSet-obf-datatype-AnatomicalDirectionVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-AnatomicalDirectionVS"
+          "reference": "ValueSet/obf-datatype-AnatomicalDirectionVS"
         },
         "name": "Anatomical Direction VS",
         "exampleBoolean": false
@@ -122,13 +1584,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-BodyLocationVS.html"
+            "valueUri": "ValueSet-obf-datatype-AnatomicalOrientationVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-BodyLocationVS"
+          "reference": "ValueSet/obf-datatype-AnatomicalOrientationVS"
         },
-        "name": "Body Location VS",
+        "name": "Anatomical Orientation VS",
         "exampleBoolean": false
       },
       {
@@ -139,13 +1601,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-ClockFaceDirectionVS.html"
+            "valueUri": "ValueSet-pacio-cs-CognitiveStatusQuestionVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-ClockFaceDirectionVS"
+          "reference": "ValueSet/pacio-cs-CognitiveStatusQuestionVS"
         },
-        "name": "Clock Face Direction VS",
+        "name": "Cognitive Status Question VS",
         "exampleBoolean": false
       },
       {
@@ -156,130 +1618,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-ConditionStatusTrendVS.html"
+            "valueUri": "ValueSet-obf-datatype-LandmarkTypeVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-ConditionStatusTrendVS"
-        },
-        "name": "Condition Status Trend VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-DetectedNotDetectedVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-DetectedNotDetectedVS"
-        },
-        "name": "Detected Not Detected VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-GestationalTimePeriodVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-GestationalTimePeriodVS"
-        },
-        "name": "Gestational Time Period VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-GradedAmountVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-GradedAmountVS"
-        },
-        "name": "Graded Amount VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-GradedFrequencyVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-GradedFrequencyVS"
-        },
-        "name": "Graded Frequency VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-GradedPortionVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-GradedPortionVS"
-        },
-        "name": "Graded Portion VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-ImageMimeTypeVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-ImageMimeTypeVS"
-        },
-        "name": "Image Mime Type VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-LandmarkTypeVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-LandmarkTypeVS"
+          "reference": "ValueSet/obf-datatype-LandmarkTypeVS"
         },
         "name": "Landmark Type VS",
         "exampleBoolean": false
@@ -292,13 +1635,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-LanguageQualifierVS.html"
+            "valueUri": "ValueSet-obf-ResearchSubjectTerminationReasonVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-LanguageQualifierVS"
+          "reference": "ValueSet/obf-ResearchSubjectTerminationReasonVS"
         },
-        "name": "Language Qualifier VS",
+        "name": "Research Subject Termination Reason VS",
         "exampleBoolean": false
       },
       {
@@ -309,96 +1652,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-LateralityVS.html"
+            "valueUri": "ValueSet-obf-datatype-SettingVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-LateralityVS"
-        },
-        "name": "Laterality VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-LowerBoundTypeVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-LowerBoundTypeVS"
-        },
-        "name": "Lower Bound Type VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-OrientationVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-OrientationVS"
-        },
-        "name": "Orientation VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-PerformanceGradingScaleVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-PerformanceGradingScaleVS"
-        },
-        "name": "Performance Grading Scale VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-PositiveNegativeVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-PositiveNegativeVS"
-        },
-        "name": "Positive Negative VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-SettingVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-SettingVS"
+          "reference": "ValueSet/obf-datatype-SettingVS"
         },
         "name": "Setting VS",
         "exampleBoolean": false
@@ -411,13 +1669,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-StatisticTypeVS.html"
+            "valueUri": "ValueSet-obf-StudyArmTypeVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-StatisticTypeVS"
+          "reference": "ValueSet/obf-StudyArmTypeVS"
         },
-        "name": "Statistic Type VS",
+        "name": "Study Arm Type VS",
         "exampleBoolean": false
       },
       {
@@ -428,11 +1686,45 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-UnitsOfLengthVS.html"
+            "valueUri": "ValueSet-obf-TreatmentIntentVS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-UnitsOfLengthVS"
+          "reference": "ValueSet/obf-TreatmentIntentVS"
+        },
+        "name": "Treatment Intent VS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-obf-TreatmentTerminationReasonVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/obf-TreatmentTerminationReasonVS"
+        },
+        "name": "Treatment Termination Reason VS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-obf-datatype-UnitsOfLengthVS.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/obf-datatype-UnitsOfLengthVS"
         },
         "name": "Units Of Length VS",
         "exampleBoolean": false
@@ -441,51 +1733,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "CodeSystem"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-UpperBoundTypeVS.html"
+            "valueUri": "CodeSystem-obf-ResearchSubjectTerminationReasonCS.html"
           }
         ],
         "reference": {
-          "reference": "ValueSet/shr-core-UpperBoundTypeVS"
+          "reference": "CodeSystem/obf-ResearchSubjectTerminationReasonCS"
         },
-        "name": "Upper Bound Type VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-YesNoUnknownVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-YesNoUnknownVS"
-        },
-        "name": "Yes No Unknown VS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-shr-core-YesNoVS.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/shr-core-YesNoVS"
-        },
-        "name": "Yes No VS",
+        "name": "Research Subject Termination Reason CS",
         "exampleBoolean": false
       },
       {
@@ -496,62 +1754,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-shr-core-ImageMimeTypeCS.html"
+            "valueUri": "CodeSystem-obf-datatype-SettingCS.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/shr-core-ImageMimeTypeCS"
-        },
-        "name": "Image Mime Type CS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-shr-core-LanguageQualifierCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/shr-core-LanguageQualifierCS"
-        },
-        "name": "Language Qualifier CS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-shr-core-PerformanceGradingScaleCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/shr-core-PerformanceGradingScaleCS"
-        },
-        "name": "Performance Grading Scale CS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-shr-core-SettingCS.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/shr-core-SettingCS"
+          "reference": "CodeSystem/obf-datatype-SettingCS"
         },
         "name": "Setting CS",
         "exampleBoolean": false
