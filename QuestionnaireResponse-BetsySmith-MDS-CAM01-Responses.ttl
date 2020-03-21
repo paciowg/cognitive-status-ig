@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BetsySmith-MDS-CAM01-Responses"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-qr";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-qr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-MDS-CAM01-Responses</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Betsy Smith\">Betsy Smith</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: CAM01</p><p><b>text</b>: Evidence of an acute change in mental status from the patients baseline within the first 3 days of SNF admission?</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><a href=\"{{[type]}}-{{[id]}}.html\">Generated Summary: id: BetsySmith-MDS-CAM01-MentalStatusChange; <span title=\"Codes: {http://loinc.org 54632-5}\">Acute onset mental status change [CMS Assessment]</span>; <span title=\"Codes: {http://loinc.org LA32-8}\">No</span></a></td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:Reference.reference [ fhir:value "Betsy Smith" ]
+  ];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "CAM01" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Evidence of an acute change in mental status from the patients baseline within the first 3 days of SNF admission?" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueReference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-MDS-CAM01-MentalStatusChange>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-MDS-CAM01-MentalStatusChange" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

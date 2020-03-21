@@ -1,1160 +1,386 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 3, warn = 0, info = 0 -->
+<!-- broken links = 68, errors = 9, warn = 4, info = 1 -->
 <head>
-  <title>PACIO_Cognitive_Status : Validation Results</title>
+  <title>PACIOCognitiveStatusImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for PACIO_Cognitive_Status</h1>
- <p>Generated Wed Jan 08 16:56:01 UTC 2020, FHIR version 4.0.1 for hl7.fhir.us.PACIO-cognitive-status#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/PACIO-functional-cognitive-status">http://hl7.org/fhir/us/PACIO-functional-cognitive-status</a> (<a href="http://hl7.org/fhir/us/PACIO-functional-cognitive-status/history.html">history</a>))</p>
-<p style="background-color: #ffcccc">IG Publisher Version: v1.0.9-SNAPSHOT, which is out of date. The current version is v1.0.37-SNAPSHOT <a hhef="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
+ <h1>Validation Results for PACIOCognitiveStatusImplementationGuide</h1>
+ <p>Generated Sat Mar 21 00:14:10 UTC 2020, FHIR version 4.0.1 for pacio-cs#0.1.0 (canonical = <a href="http://pacioproject.org">http://pacioproject.org</a> (<a href="http://pacioproject.org/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.72-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
- <p>HL7 Publication check:</p> <ul>
-  <li>History Page 'http://hl7.org/fhir/us/PACIO-cognitive-status/history.html' is wrong (ig.json#paths/history) - must be 'http://hl7.org/fhir/us/PACIO-functional-cognitive-status/history.html' or 'http://hl7.org/fhir/us/PACIO-functional-cognitive-status/history.cfml'</li>
-  <li>package-list.json: canonical is wrong - is 'http://hl7.org/fhir/us/PACIO-cognitive-status' should be 'http://hl7.org/fhir/us/PACIO-functional-cognitive-status'</li>
-  <li>package-list.json: No entry found for version 0.1.0</li>
-</ul>
+ <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>63</b></td><td><b>5</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_codesystem-obf-ResearchSubjectTerminationReasonCS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_codesystem-obf-datatype-SettingCS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_ig"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/ig</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-AccessionIdentifier"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionRequest"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionStatement"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionStatement</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Appointment"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Appointment</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-AppointmentReasonReference-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AppointmentReasonReference-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-BasedOn-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-BasedOn-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-CareContext-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CareContext-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-CarePlan"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CarePlan</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Composition"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Condition"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Coverage"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Device"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosisCode-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosticReport"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DocumentReference"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DocumentReference</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DoseSequenceNumber-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DoseSequenceNumber-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Encounter"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Encounter</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Endpoint"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Endpoint</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-EpisodeOfCare"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-EpisodeOfCare</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformanceTime-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformanceTime-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformer-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformer-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformerType-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformerType-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Group"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Group</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-HandlingRisk-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HandlingRisk-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_ImplementationGuide-pacio-cs"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/ImplementationGuide-pacio-cs</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-HealthcareService"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HealthcareService</b></a></td><td><b>2</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Indication-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Indication-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Location"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Location</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Media"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Media</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Medication"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Medication</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationAdministration"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationAdministration</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationCodeOrReference-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationCodeOrReference-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationDispense"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationDispense</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationRequest"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationStatement"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationStatement</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Method-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Method-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-NationalProviderIdentifier"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-NationalProviderIdentifier</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Observation"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Observation</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-OnBehalfOf-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-OnBehalfOf-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Organization"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Organization</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-PartOf-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PartOf-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Participation-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Participation-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Patient"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-PatientInstruction-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PatientInstruction-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Practitioner"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-PractitionerRole"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PractitionerRole</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Procedure"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Procedure</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ProcedureRequest"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ProcedureRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-QuestionnaireResponse"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-QuestionnaireResponse</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonCode-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonCode-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonReference-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonReference-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReferralRequest"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReferralRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-RelatedPerson"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RelatedPerson</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-RequestIntent-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RequestIntent-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Requester-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Requester-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchStudy"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchStudy</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchSubject"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchSubject</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ServiceRequest"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ServiceRequest</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecialHandling-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecialHandling-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Specimen"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Specimen</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecimenTreatment-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecimenTreatment-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-StatementDateTime-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-StatementDateTime-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Status-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Status-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-SubjectOfRecord-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SubjectOfRecord-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Substance"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Substance</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-TaxIdentificationNumber"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-TerminationReason-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TerminationReason-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-TreatmentIntent-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TreatmentIntent-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-AnatomicalOrientation-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-AnatomicalOrientation-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Category-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Category-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Code-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Code-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-CommentOrDescription-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-CommentOrDescription-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Comparator-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Comparator-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Duration"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Duration</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Identifier-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Identifier-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Laterality-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Laterality-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Money"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Money</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Number-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Number-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-PriorityCode-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-PriorityCode-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-RelationToLandmark-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-RelationToLandmark-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-SampledData"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Timing"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Units-extension"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-pacio-cs-BundledCognitiveStatus"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-BundledCognitiveStatus</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-pacio-cs-CognitiveStatus"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-CognitiveStatus</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-ResearchSubjectTerminationReasonVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith</b></a></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-StudyArmTypeVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS</b></a></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith-MDS-CAM01-MentalStatusChange"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith-MDS-CAM01-MentalStatusChange</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith-MDS-CAM02-Inattention"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith-MDS-CAM02-Inattention</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith-MDS-CAM03-AlteredConsciousness"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith-MDS-CAM03-AlteredConsciousness</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses</b></a></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentIntentVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentIntentVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_profiles_StructureDefinition-pacio-bcs"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/profiles/StructureDefinition-pacio-bcs</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentTerminationReasonVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentTerminationReasonVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_profiles_StructureDefinition-pacio-cs"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/profiles/StructureDefinition-pacio-cs</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalDirectionVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalDirectionVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalOrientationVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalOrientationVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-LandmarkTypeVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-SettingVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-UnitsOfLengthVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-pacio-cs-CognitiveStatusQuestionVS"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-pacio-cs-CognitiveStatusQuestionVS</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_profiles_StructureDefinition-pacio-qr"><b>/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/profiles/StructureDefinition-pacio-qr</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmith.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmith-MDS-CAM01-MentalStatusChange.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmith-MDS-CAM02-Inattention.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Observation/BetsySmith-MDS-CAM03-AlteredConsciousness.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html#0879c252-d20a-4a88-90d9-1c8a45420f55">Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 425</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html#0aad9e71-a5c4-4804-be75-458152057d25">Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 487</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html#c69b5187-0a12-4174-81f3-b74914a58697">Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.json.html#d30f8a94-e51d-4a98-acca-99c0b65a6891">Observation-BetsySmith-MDS-CAM01-MentalStatusChange.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.ttl.html#718e4a59-bfd9-4cfe-b905-347f2ae11723">Observation-BetsySmith-MDS-CAM01-MentalStatusChange.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.xml.html#ac49073a-f325-4a1d-941a-70ed04470ef6">Observation-BetsySmith-MDS-CAM01-MentalStatusChange.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM02-Inattention.html#d89ace77-23ea-4a44-9e0c-991b13365e5e">Observation-BetsySmith-MDS-CAM02-Inattention.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 406</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM02-Inattention.html#530fcd0d-0486-4a88-b7bc-d79add48a548">Observation-BetsySmith-MDS-CAM02-Inattention.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 468</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM02-Inattention.html#76c54731-328a-44f2-b043-a456b815d4ad">Observation-BetsySmith-MDS-CAM02-Inattention.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM02-Inattention.json.html#d4e01a02-1b94-41ea-96c4-600634c79a3e">Observation-BetsySmith-MDS-CAM02-Inattention.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM02-Inattention.ttl.html#42b82aa1-7ae6-495a-ad03-56c616fc0f2a">Observation-BetsySmith-MDS-CAM02-Inattention.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM02-Inattention.xml.html#30f7fa64-d354-40dd-876e-293df18a23d0">Observation-BetsySmith-MDS-CAM02-Inattention.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html#2bc104c8-70db-46a6-8f09-84d349fc0b9d">Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 435</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html#a95c8167-23c6-47ad-8ca8-79b652ca4527">Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 497</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html#522e98ce-53a7-44dd-bfe9-fb4a1691de34">Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.json.html#5a66eed1-5fec-4383-a460-2f20891ac48d">Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.json.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.ttl.html#b652a00c-57c1-4e9d-aba5-677d20016964">Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.ttl.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.xml.html#5ff9a20e-e712-4902-b8b4-1ef0e6de5dad">Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.xml.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.html#a99d6f44-b744-414b-8bd6-3ed6251985c3">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 464</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.html#9562a004-1fbe-4187-b233-cddab0a7ae2b">Observation-BetsySmith.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 526</a></b></td><td><b>error</b></td><td><b>The link 'CMS Provider' for &quot;CMS Provider&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.html#337bef42-d234-48cf-ba66-bce77996c177">Observation-BetsySmith.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.json.html#a40bd381-1604-42fa-b18b-cb8795168aec">Observation-BetsySmith.json.html#/html/body/div/div/div/p/a at Line 166, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.ttl.html#39741b9e-505f-46af-b0f4-6d16c3decad9">Observation-BetsySmith.ttl.html#/html/body/div/div/div/p/a at Line 179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-BetsySmith.xml.html#6fcc981a-0dd8-4a26-af77-964f30c557df">Observation-BetsySmith.xml.html#/html/body/div/div/div/p/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html#dcc7ab20-d78c-4eb0-bb98-94496789214e">QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html#/html/body/div/div/div/div/div/div/p/a at Line 132, column 210</a></b></td><td><b>error</b></td><td><b>The link 'Betsy Smith' for &quot;Betsy Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html#7922f29f-2fea-4d77-85a0-1624ee50db57">QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html#/html/body/div/div/div/p/a at Line 147, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.json.html#d9aac6dd-8d7e-4d9e-bf2a-19f0ed43bddb">QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.json.html#/html/body/div/div/div/p/a at Line 161, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.ttl.html#0ee4bc00-9f84-4034-a1e3-ece2b4795085">QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.ttl.html#/html/body/div/div/div/p/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.xml.html#d23c481f-a2ed-4c7d-a85e-7f6992a2eefe">QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.xml.html#/html/body/div/div/div/p/a at Line 156, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs-definitions.html#c0f6b7f6-86fd-4887-851a-c17dff04ed03">StructureDefinition-pacio-bcs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs-examples.html#526b9b27-c1c8-4ff6-9345-b513438ca887">StructureDefinition-pacio-bcs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs-mappings.html#9d1441d5-2464-44b2-a3b1-59ca66b97648">StructureDefinition-pacio-bcs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.html#793da671-786e-440f-82fa-218e92cb7817">StructureDefinition-pacio-bcs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.json.html#02fb2c9e-5a66-4bbd-b095-8478dc849651">StructureDefinition-pacio-bcs.json.html#/html/body/div/div/div/p/a at Line 2828, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.profile.json.html#d9a891f4-1335-48c3-997e-81e9d0c6d1b9">StructureDefinition-pacio-bcs.profile.json.html#/html/body/div/div/div/p/a at Line 2877, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.profile.ttl.html#71f0d2dd-3ac7-42f0-8c84-362a6e6ec308">StructureDefinition-pacio-bcs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2563, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.profile.xml.html#028e546a-0526-4fe7-8561-c902170bf22f">StructureDefinition-pacio-bcs.profile.xml.html#/html/body/div/div/div/p/a at Line 2634, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.ttl.html#92e5dfd7-8390-4221-b289-64a984e62de2">StructureDefinition-pacio-bcs.ttl.html#/html/body/div/div/div/p/a at Line 2513, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-bcs.xml.html#d2864e78-20cd-41e7-8d76-00d5d5ae0556">StructureDefinition-pacio-bcs.xml.html#/html/body/div/div/div/p/a at Line 2581, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs-definitions.html#876a5ba0-58bb-4585-917f-a88a03a58956">StructureDefinition-pacio-cs-definitions.html#/html/body/div/div/div/p/a at Line 703, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs-examples.html#655d6d2f-5d24-4eeb-a243-abdb0b6e679d">StructureDefinition-pacio-cs-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs-mappings.html#392c7240-f547-4aa5-9048-240488c66b64">StructureDefinition-pacio-cs-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.html#9bc19b58-52e3-4bbe-bd9c-b72b04e71896">StructureDefinition-pacio-cs.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.json.html#0d46501d-79db-499a-b77a-369642559c5f">StructureDefinition-pacio-cs.json.html#/html/body/div/div/div/p/a at Line 2828, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.profile.json.html#6e7e761d-cd42-42f5-93ea-a85cebd72235">StructureDefinition-pacio-cs.profile.json.html#/html/body/div/div/div/p/a at Line 2877, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.profile.ttl.html#167bc859-ae06-45c2-801f-171dbb13e9a7">StructureDefinition-pacio-cs.profile.ttl.html#/html/body/div/div/div/p/a at Line 2563, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.profile.xml.html#c3a697ca-361d-4bc7-a77d-6150c45a7058">StructureDefinition-pacio-cs.profile.xml.html#/html/body/div/div/div/p/a at Line 2633, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.ttl.html#89a4f447-e8dd-4e66-af79-435e6201e048">StructureDefinition-pacio-cs.ttl.html#/html/body/div/div/div/p/a at Line 2513, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-cs.xml.html#57ce8d4b-50e1-44ae-932a-46cd12e76e3a">StructureDefinition-pacio-cs.xml.html#/html/body/div/div/div/p/a at Line 2580, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-definitions.html#07d6e77e-0cb5-4504-a278-40de71d305d5">StructureDefinition-pacio-qr-definitions.html#/html/body/div/div/div/p/a at Line 518, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-examples.html#57234656-d8e8-4452-b006-4f684b01e3d5">StructureDefinition-pacio-qr-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr-mappings.html#5ef4a994-efaf-4481-a6a4-2d4db7133bd1">StructureDefinition-pacio-qr-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.html#a4868556-6d3b-470d-b267-274bb00133e2">StructureDefinition-pacio-qr.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.json.html#9ce390e2-6852-4e45-986d-8c45083e7c14">StructureDefinition-pacio-qr.json.html#/html/body/div/div/div/p/a at Line 1689, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.json.html#2c0416a0-399a-419d-82af-ee5799135e27">StructureDefinition-pacio-qr.profile.json.html#/html/body/div/div/div/p/a at Line 1738, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.ttl.html#0b7a556d-35ee-40ba-9544-1bd5ac05af90">StructureDefinition-pacio-qr.profile.ttl.html#/html/body/div/div/div/p/a at Line 1593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.profile.xml.html#5789b8a3-938a-4e66-9862-39d0a90759a6">StructureDefinition-pacio-qr.profile.xml.html#/html/body/div/div/div/p/a at Line 1587, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.ttl.html#e2672b7a-6f56-48df-b9f2-052af4006dce">StructureDefinition-pacio-qr.ttl.html#/html/body/div/div/div/p/a at Line 1543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pacio-qr.xml.html#a6043f11-c0a8-49a4-9f8d-6ec37b1eb29a">StructureDefinition-pacio-qr.xml.html#/html/body/div/div/div/p/a at Line 1534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#e104fa8b-547f-45ff-a7f4-fae8d6c51e31">artifacts.html#/html/body/div/div/div/p/a at Line 215, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/output/index.html#ac4daeb1-39c0-4d36-a8a9-585a5c6c3a42">index.html#/html/body/div/div/div/div/div/p/img at Line 137, column 5</a></b></td><td><b>error</b></td><td><b>The image source './pacio.png' cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#3b64e7ca-3161-47bd-857a-28df4c5a7a0d">index.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#3bcc3425-2eb3-48ac-8819-7c1465512b54">toc.html#/html/body/div/div/div/p/a at Line 121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'calebwan@mitre.org' for &quot;MITRE Dev Team&quot; cannot be resolved</b></td>
+   </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_codesystem-obf-ResearchSubjectTerminationReasonCS"> </a>
-<h2><a href="CodeSystem-obf-ResearchSubjectTerminationReasonCS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-ResearchSubjectTerminationReasonCS.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_ImplementationGuide-pacio-cs"> </a>
+<h2><a href="ImplementationGuide-pacio-cs.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/ImplementationGuide-pacio-cs.json</a></h2>
  <table class="grid">
    <tr>
      <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_codesystem-obf-datatype-SettingCS"> </a>
-<h2><a href="CodeSystem-obf-datatype-SettingCS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/codesystem-obf-datatype-SettingCS.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith"> </a>
+<h2><a href="Observation-BetsySmith.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmith: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_ig"> </a>
-<h2><a href="ImplementationGuide-hl7.fhir.us.PACIO-cognitive-status.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/ig.xml</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith-MDS-CAM01-MentalStatusChange"> </a>
+<h2><a href="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith-MDS-CAM01-MentalStatusChange.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmith-MDS-CAM01-MentalStatusChange: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith-MDS-CAM01-MentalStatusChange: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith-MDS-CAM01-MentalStatusChange: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-AccessionIdentifier"> </a>
-<h2><a href="StructureDefinition-obf-AccessionIdentifier.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AccessionIdentifier.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith-MDS-CAM02-Inattention"> </a>
+<h2><a href="Observation-BetsySmith-MDS-CAM02-Inattention.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith-MDS-CAM02-Inattention.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmith-MDS-CAM02-Inattention: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith-MDS-CAM02-Inattention: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith-MDS-CAM02-Inattention: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionRequest"> </a>
-<h2><a href="StructureDefinition-obf-ActionRequest.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionRequest.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_Observation-BetsySmith-MDS-CAM03-AlteredConsciousness"> </a>
+<h2><a href="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/BetsySmith-MDS-CAM03-AlteredConsciousness: Observation.code</b></td><td><b>warning</b></td><td><b>ValueSet http://loinc.org not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith-MDS-CAM03-AlteredConsciousness: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/BetsySmith-MDS-CAM03-AlteredConsciousness: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;CMS Provider&quot;</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ActionStatement"> </a>
-<h2><a href="StructureDefinition-obf-ActionStatement.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ActionStatement.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation"> </a>
-<h2><a href="StructureDefinition-obf-Annotation.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Annotation-extension"> </a>
-<h2><a href="StructureDefinition-obf-Annotation-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Annotation-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Appointment"> </a>
-<h2><a href="StructureDefinition-obf-Appointment.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Appointment.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-AppointmentReasonReference-extension"> </a>
-<h2><a href="StructureDefinition-obf-AppointmentReasonReference-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-AppointmentReasonReference-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-BasedOn-extension"> </a>
-<h2><a href="StructureDefinition-obf-BasedOn-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-BasedOn-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-CareContext-extension"> </a>
-<h2><a href="StructureDefinition-obf-CareContext-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CareContext-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-CarePlan"> </a>
-<h2><a href="StructureDefinition-obf-CarePlan.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-CarePlan.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Composition"> </a>
-<h2><a href="StructureDefinition-obf-Composition.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Composition.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Condition"> </a>
-<h2><a href="StructureDefinition-obf-Condition.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Condition.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Coverage"> </a>
-<h2><a href="StructureDefinition-obf-Coverage.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Coverage.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Device"> </a>
-<h2><a href="StructureDefinition-obf-Device.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Device.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosisCode-extension"> </a>
-<h2><a href="StructureDefinition-obf-DiagnosisCode-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosisCode-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DiagnosticReport"> </a>
-<h2><a href="StructureDefinition-obf-DiagnosticReport.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DiagnosticReport.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DocumentReference"> </a>
-<h2><a href="StructureDefinition-obf-DocumentReference.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DocumentReference.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage"> </a>
-<h2><a href="StructureDefinition-obf-Dosage.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Dosage-extension"> </a>
-<h2><a href="StructureDefinition-obf-Dosage-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Dosage-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-DoseSequenceNumber-extension"> </a>
-<h2><a href="StructureDefinition-obf-DoseSequenceNumber-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-DoseSequenceNumber-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Encounter"> </a>
-<h2><a href="StructureDefinition-obf-Encounter.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Encounter.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Endpoint"> </a>
-<h2><a href="StructureDefinition-obf-Endpoint.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Endpoint.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-EpisodeOfCare"> </a>
-<h2><a href="StructureDefinition-obf-EpisodeOfCare.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-EpisodeOfCare.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformanceTime-extension"> </a>
-<h2><a href="StructureDefinition-obf-ExpectedPerformanceTime-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformanceTime-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformer-extension"> </a>
-<h2><a href="StructureDefinition-obf-ExpectedPerformer-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformer-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ExpectedPerformerType-extension"> </a>
-<h2><a href="StructureDefinition-obf-ExpectedPerformerType-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ExpectedPerformerType-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Group"> </a>
-<h2><a href="StructureDefinition-obf-Group.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Group.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-HandlingRisk-extension"> </a>
-<h2><a href="StructureDefinition-obf-HandlingRisk-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HandlingRisk-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-HealthcareService"> </a>
-<h2><a href="StructureDefinition-obf-HealthcareService.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-HealthcareService.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_examples_QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses"> </a>
+<h2><a href="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/examples/QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/obf-HealthcareService: StructureDefinition.snapshot.element[31].binding.valueSet</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/valueset-languages.html' does not resolve</b></td>
+     <td><b>QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses: QuestionnaireResponse.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Betsy Smith&quot;</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition/obf-HealthcareService: StructureDefinition.differential.element[9].binding.valueSet</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/valueset-languages.html' does not resolve</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses: QuestionnaireResponse</b></td><td><b>information</b></td><td><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Indication-extension"> </a>
-<h2><a href="StructureDefinition-obf-Indication-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Indication-extension.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_profiles_StructureDefinition-pacio-bcs"> </a>
+<h2><a href="StructureDefinition-pacio-bcs.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/profiles/StructureDefinition-pacio-bcs.json</a></h2>
  <table class="grid">
    <tr>
      <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Location"> </a>
-<h2><a href="StructureDefinition-obf-Location.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Location.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_profiles_StructureDefinition-pacio-cs"> </a>
+<h2><a href="StructureDefinition-pacio-cs.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/profiles/StructureDefinition-pacio-cs.json</a></h2>
  <table class="grid">
    <tr>
      <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Media"> </a>
-<h2><a href="StructureDefinition-obf-Media.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Media.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Medication"> </a>
-<h2><a href="StructureDefinition-obf-Medication.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Medication.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationAdministration"> </a>
-<h2><a href="StructureDefinition-obf-MedicationAdministration.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationAdministration.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationCodeOrReference-extension"> </a>
-<h2><a href="StructureDefinition-obf-MedicationCodeOrReference-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationCodeOrReference-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationDispense"> </a>
-<h2><a href="StructureDefinition-obf-MedicationDispense.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationDispense.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationRequest"> </a>
-<h2><a href="StructureDefinition-obf-MedicationRequest.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-MedicationStatement"> </a>
-<h2><a href="StructureDefinition-obf-MedicationStatement.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-MedicationStatement.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Method-extension"> </a>
-<h2><a href="StructureDefinition-obf-Method-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Method-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-NationalProviderIdentifier"> </a>
-<h2><a href="StructureDefinition-obf-NationalProviderIdentifier.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-NationalProviderIdentifier.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Observation"> </a>
-<h2><a href="StructureDefinition-obf-Observation.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Observation.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-OnBehalfOf-extension"> </a>
-<h2><a href="StructureDefinition-obf-OnBehalfOf-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-OnBehalfOf-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Organization"> </a>
-<h2><a href="StructureDefinition-obf-Organization.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Organization.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-PartOf-extension"> </a>
-<h2><a href="StructureDefinition-obf-PartOf-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PartOf-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Participation-extension"> </a>
-<h2><a href="StructureDefinition-obf-Participation-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Participation-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Patient"> </a>
-<h2><a href="StructureDefinition-obf-Patient.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Patient.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-PatientInstruction-extension"> </a>
-<h2><a href="StructureDefinition-obf-PatientInstruction-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PatientInstruction-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Practitioner"> </a>
-<h2><a href="StructureDefinition-obf-Practitioner.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Practitioner.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-PractitionerRole"> </a>
-<h2><a href="StructureDefinition-obf-PractitionerRole.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-PractitionerRole.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Procedure"> </a>
-<h2><a href="StructureDefinition-obf-Procedure.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Procedure.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ProcedureRequest"> </a>
-<h2><a href="StructureDefinition-obf-ProcedureRequest.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ProcedureRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-QuestionnaireResponse"> </a>
-<h2><a href="StructureDefinition-obf-QuestionnaireResponse.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-QuestionnaireResponse.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonCode-extension"> </a>
-<h2><a href="StructureDefinition-obf-ReasonCode-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonCode-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReasonReference-extension"> </a>
-<h2><a href="StructureDefinition-obf-ReasonReference-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReasonReference-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ReferralRequest"> </a>
-<h2><a href="StructureDefinition-obf-ReferralRequest.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ReferralRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-RelatedPerson"> </a>
-<h2><a href="StructureDefinition-obf-RelatedPerson.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RelatedPerson.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-RequestIntent-extension"> </a>
-<h2><a href="StructureDefinition-obf-RequestIntent-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-RequestIntent-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Requester-extension"> </a>
-<h2><a href="StructureDefinition-obf-Requester-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Requester-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchStudy"> </a>
-<h2><a href="StructureDefinition-obf-ResearchStudy.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchStudy.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ResearchSubject"> </a>
-<h2><a href="StructureDefinition-obf-ResearchSubject.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ResearchSubject.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-ServiceRequest"> </a>
-<h2><a href="StructureDefinition-obf-ServiceRequest.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-ServiceRequest.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecialHandling-extension"> </a>
-<h2><a href="StructureDefinition-obf-SpecialHandling-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecialHandling-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Specimen"> </a>
-<h2><a href="StructureDefinition-obf-Specimen.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Specimen.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-SpecimenTreatment-extension"> </a>
-<h2><a href="StructureDefinition-obf-SpecimenTreatment-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SpecimenTreatment-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-StatementDateTime-extension"> </a>
-<h2><a href="StructureDefinition-obf-StatementDateTime-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-StatementDateTime-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Status-extension"> </a>
-<h2><a href="StructureDefinition-obf-Status-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Status-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-SubjectOfRecord-extension"> </a>
-<h2><a href="StructureDefinition-obf-SubjectOfRecord-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-SubjectOfRecord-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-Substance"> </a>
-<h2><a href="StructureDefinition-obf-Substance.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-Substance.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-TaxIdentificationNumber"> </a>
-<h2><a href="StructureDefinition-obf-TaxIdentificationNumber.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TaxIdentificationNumber.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-TerminationReason-extension"> </a>
-<h2><a href="StructureDefinition-obf-TerminationReason-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TerminationReason-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-TreatmentIntent-extension"> </a>
-<h2><a href="StructureDefinition-obf-TreatmentIntent-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-TreatmentIntent-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-AnatomicalOrientation-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-AnatomicalOrientation-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-AnatomicalOrientation-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Category-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Category-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Category-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Code-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Code-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Code-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-CommentOrDescription-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-CommentOrDescription-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-CommentOrDescription-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Comparator-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Comparator-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Comparator-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Duration"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Duration.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Duration.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Identifier-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Identifier-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Identifier-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Laterality-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Laterality-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Laterality-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Money"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Money.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Money.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Number-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Number-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Number-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-OccurrenceTimeOrPeriod-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-PriorityCode-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-PriorityCode-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-PriorityCode-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-RelationToLandmark-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-RelationToLandmark-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-RelationToLandmark-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-SampledData"> </a>
-<h2><a href="StructureDefinition-obf-datatype-SampledData.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-SampledData.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Timing"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Timing.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Timing.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-obf-datatype-Units-extension"> </a>
-<h2><a href="StructureDefinition-obf-datatype-Units-extension.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-obf-datatype-Units-extension.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-pacio-cs-BundledCognitiveStatus"> </a>
-<h2><a href="StructureDefinition-pacio-cs-BundledCognitiveStatus.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-BundledCognitiveStatus.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_structuredefinition-pacio-cs-CognitiveStatus"> </a>
-<h2><a href="StructureDefinition-pacio-cs-CognitiveStatus.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/structuredefinition-pacio-cs-CognitiveStatus.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-ResearchSubjectTerminationReasonVS"> </a>
-<h2><a href="ValueSet-obf-ResearchSubjectTerminationReasonVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-ResearchSubjectTerminationReasonVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-StudyArmTypeVS"> </a>
-<h2><a href="ValueSet-obf-StudyArmTypeVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-StudyArmTypeVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>obf-StudyArmTypeVS</b></td><td><b>error</b></td><td><b>Error from server: Unable to provide support for code system https://ncit.nci.nih.gov</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentIntentVS"> </a>
-<h2><a href="ValueSet-obf-TreatmentIntentVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentIntentVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-TreatmentTerminationReasonVS"> </a>
-<h2><a href="ValueSet-obf-TreatmentTerminationReasonVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-TreatmentTerminationReasonVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalDirectionVS"> </a>
-<h2><a href="ValueSet-obf-datatype-AnatomicalDirectionVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalDirectionVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-AnatomicalOrientationVS"> </a>
-<h2><a href="ValueSet-obf-datatype-AnatomicalOrientationVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-AnatomicalOrientationVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-LandmarkTypeVS"> </a>
-<h2><a href="ValueSet-obf-datatype-LandmarkTypeVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-LandmarkTypeVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-SettingVS"> </a>
-<h2><a href="ValueSet-obf-datatype-SettingVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-SettingVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-obf-datatype-UnitsOfLengthVS"> </a>
-<h2><a href="ValueSet-obf-datatype-UnitsOfLengthVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-obf-datatype-UnitsOfLengthVS.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_out_fhir_guide_resources_valueset-pacio-cs-CognitiveStatusQuestionVS"> </a>
-<h2><a href="ValueSet-pacio-cs-CognitiveStatusQuestionVS.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/out/fhir/guide/resources/valueset-pacio-cs-CognitiveStatusQuestionVS.json</a></h2>
+<a name="_home_runner_work_cognitive-status-cli_cognitive-status-cli_build_input_profiles_StructureDefinition-pacio-qr"> </a>
+<h2><a href="StructureDefinition-pacio-qr.html">/home/runner/work/cognitive-status-cli/cognitive-status-cli/build/input/profiles/StructureDefinition-pacio-qr.json</a></h2>
  <table class="grid">
    <tr>
      <td>&check;</td>

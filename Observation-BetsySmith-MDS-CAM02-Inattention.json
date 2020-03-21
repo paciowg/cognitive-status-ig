@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "BetsySmith-MDS-CAM02-Inattention",
+  "meta": {
+    "profile": [
+      "http://pacioproject.org/StructureDefinition/pacio-cs"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-MDS-CAM02-Inattention</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Inattention in last 7 days [CMS Assessment] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '54628-3' = 'Inattention in last 7 days [CMS Assessment])</span></p><p><b>subject</b>: <a href=\"Betsy Smith\">Betsy Smith</a></p><p><b>performer</b>: <a href=\"CMS Provider\">CMS Provider</a></p><p><b>value</b>: Behavior not present <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA61-7' = 'Behavior not present)</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "54628-3"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Betsy Smith"
+  },
+  "performer": [
+    {
+      "reference": "CMS Provider"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA61-7"
+      }
+    ]
+  }
+}

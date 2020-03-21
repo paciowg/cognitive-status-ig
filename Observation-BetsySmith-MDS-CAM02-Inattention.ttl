@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/Observation/BetsySmith-MDS-CAM02-Inattention> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BetsySmith-MDS-CAM02-Inattention"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-MDS-CAM02-Inattention</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Inattention in last 7 days [CMS Assessment] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '54628-3' = 'Inattention in last 7 days [CMS Assessment])</span></p><p><b>subject</b>: <a href=\"Betsy Smith\">Betsy Smith</a></p><p><b>performer</b>: <a href=\"CMS Provider\">CMS Provider</a></p><p><b>value</b>: Behavior not present <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA61-7' = 'Behavior not present)</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:54628-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "54628-3" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "Betsy Smith" ]
+  ];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "CMS Provider" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA61-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA61-7" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/Observation/BetsySmith-MDS-CAM02-Inattention.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
