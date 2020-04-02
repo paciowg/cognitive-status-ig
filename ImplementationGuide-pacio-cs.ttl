@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-03-21T00:13:59+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-01T04:07:08+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE Dev Team"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -86,6 +86,30 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
          fhir:Extension.valueString [ fhir:value "path-qa" ]
        ], [
          fhir:index 1;
@@ -94,7 +118,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -106,7 +130,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -118,7 +142,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -130,7 +154,19 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://pacioproject.org/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -142,7 +178,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 8;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -154,7 +190,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 9;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -166,7 +202,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 10;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -178,7 +214,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 11;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -190,7 +226,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 12;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -202,7 +238,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 13;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -214,7 +250,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 14;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -226,7 +262,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 15;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -238,7 +274,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 16;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -265,11 +301,29 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-bcs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundled Cognitive Status" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Bundled Cognitive Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An point in time bundle of cognitive status observations for a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-cognition-qr.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cognition-qr" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Cognition Questionnaire Response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A completed, or sections of a completed, CMS PAC assessment." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -283,47 +337,26 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cognitive Status" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Cognitive Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of cognitive status data for a patient." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-qr.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://pacioproject.org/StructureDefinition/pacio-qr>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-qr" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Questionaire Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A completed, or sections of a completed, CMS PAC assessment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
+         fhir:Extension.valueString [ fhir:value "Patient" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith.html" ]
+         fhir:Extension.valueUri [ fhir:value "Patient-BetsySmith.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://pacioproject.org/Observation/BetsySmith>;
-         fhir:Reference.reference [ fhir:value "Observation/BetsySmith" ]
+         fhir:link <http://pacioproject.org/Patient/BetsySmith>;
+         fhir:Reference.reference [ fhir:value "Patient/BetsySmith" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
-         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
-       ]
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 4;
        fhir:Element.extension [
@@ -333,36 +366,36 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html" ]
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-2019-03-25-Within3DSNFAdmission.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://pacioproject.org/Observation/BetsySmith-MDS-CAM01-MentalStatusChange>;
-         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-MDS-CAM01-MentalStatusChange" ]
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-2019-03-25-Within3DSNFAdmission>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-2019-03-25-Within3DSNFAdmission" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-MDS-CAM01-MentalStatusChange" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-2019-03-25-Within3DSNFAdmission" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
-         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+         fhir:Extension.valueString [ fhir:value "Observation" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html" ]
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-2019-04-06-Last3DSNFStay.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://pacioproject.org/QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses>;
-         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses" ]
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-2019-04-06-Last3DSNFStay>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-2019-04-06-Last3DSNFStay" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-MDS-CAM01-Responses" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-2019-04-06-Last3DSNFStay" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://pacioproject.org/StructureDefinition/pacio-qr";
-         fhir:link <http://pacioproject.org/StructureDefinition/pacio-qr>
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
        fhir:index 6;
@@ -373,16 +406,16 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-MDS-CAM02-Inattention.html" ]
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-2019-04-07-HHStartCarePerformance.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://pacioproject.org/Observation/BetsySmith-MDS-CAM02-Inattention>;
-         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-MDS-CAM02-Inattention" ]
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-2019-04-07-HHStartCarePerformance>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-2019-04-07-HHStartCarePerformance" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-MDS-CAM02-Inattention" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-2019-04-07-HHStartCarePerformance" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
-         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
        fhir:index 7;
@@ -393,13 +426,413 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html" ]
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-2019-05-03-HHDischargePerformance.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://pacioproject.org/Observation/BetsySmith-MDS-CAM03-AlteredConsciousness>;
-         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-MDS-CAM03-AlteredConsciousness" ]
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-2019-05-03-HHDischargePerformance>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-2019-05-03-HHDischargePerformance" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-MDS-CAM03-AlteredConsciousness" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-2019-05-03-HHDischargePerformance" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-BetsySmith-HHDischargePerformance-CAM-Response.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/BetsySmith-HHDischargePerformance-CAM-Response>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/BetsySmith-HHDischargePerformance-CAM-Response" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHDischargePerformance-CAM-Response" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHDischargePerformance-CAM02-Inattention.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHDischargePerformance-CAM02-Inattention>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHDischargePerformance-CAM02-Inattention" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHDischargePerformance-CAM02-Inattention" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-BetsySmith-HHStartCarePerformance-CAM-Response.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/BetsySmith-HHStartCarePerformance-CAM-Response>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/BetsySmith-HHStartCarePerformance-CAM-Response" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHStartCarePerformance-CAM-Response" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHStartCarePerformance-CAM02-Inattention.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHStartCarePerformance-CAM02-Inattention>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHStartCarePerformance-CAM02-Inattention" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHStartCarePerformance-CAM02-Inattention" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-BetsySmith-Last3DSNFStay-CAM-Response.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/BetsySmith-Last3DSNFStay-CAM-Response>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/BetsySmith-Last3DSNFStay-CAM-Response" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Last3DSNFStay-CAM-Response" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Last3DSNFStay-CAM02-Inattention.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Last3DSNFStay-CAM02-Inattention>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Last3DSNFStay-CAM02-Inattention" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Last3DSNFStay-CAM02-Inattention" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-BetsySmith-Within3DSNFAdmission-CAM-Response.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/BetsySmith-Within3DSNFAdmission-CAM-Response>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/BetsySmith-Within3DSNFAdmission-CAM-Response" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Within3DSNFAdmission-CAM-Response" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Within3DSNFAdmission-CAM02-Inattention.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Within3DSNFAdmission-CAM02-Inattention>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Within3DSNFAdmission-CAM02-Inattention" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Within3DSNFAdmission-CAM02-Inattention" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness>;
+         fhir:Reference.reference [ fhir:value "Observation/BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
@@ -450,14 +883,18 @@
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
      ], [
        fhir:index 8;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
      ], [
        fhir:index 9;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
      ], [
        fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 11;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]

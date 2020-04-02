@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-03-21T00:13:59+00:00"/>
+  <date value="2020-04-01T04:07:08+00:00"/>
   <publisher value="MITRE Dev Team"/>
   <contact>
     <name value="Caleb Wan"/>
@@ -56,6 +56,22 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="path-qa"/>
       </extension>
       <extension url="value">
@@ -84,6 +100,14 @@
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://pacioproject.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -176,8 +200,22 @@
       <reference>
         <reference value="StructureDefinition/pacio-bcs"/>
       </reference>
-      <name value="Bundled Cognitive Status"/>
+      <name value="PACIO Bundled Cognitive Status"/>
       <description value="An point in time bundle of cognitive status observations for a patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-pacio-cognition-qr.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pacio-cognition-qr"/>
+      </reference>
+      <name value="PACIO Cognition Questionnaire Response"/>
+      <description value="A completed, or sections of a completed, CMS PAC assessment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -190,35 +228,34 @@
       <reference>
         <reference value="StructureDefinition/pacio-cs"/>
       </reference>
-      <name value="Cognitive Status"/>
+      <name value="PACIO Cognitive Status"/>
       <description value="An exchange of cognitive status data for a patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Patient"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-pacio-qr.html"/>
+        <valueUri value="Patient-BetsySmith.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pacio-qr"/>
+        <reference value="Patient/BetsySmith"/>
       </reference>
-      <name value="PACIO Questionaire Response"/>
-      <description value="A completed, or sections of a completed, CMS PAC assessment."/>
-      <exampleBoolean value="false"/>
+      <name value="BetsySmith"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BetsySmith.html"/>
+        <valueUri value="Observation-BetsySmith-2019-03-25-Within3DSNFAdmission.html"/>
       </extension>
       <reference>
-        <reference value="Observation/BetsySmith"/>
+        <reference value="Observation/BetsySmith-2019-03-25-Within3DSNFAdmission"/>
       </reference>
-      <name value="BetsySmith"/>
+      <name value="BetsySmith-2019-03-25-Within3DSNFAdmission"/>
       <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -226,12 +263,103 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html"/>
+        <valueUri value="Observation-BetsySmith-2019-04-06-Last3DSNFStay.html"/>
       </extension>
       <reference>
-        <reference value="Observation/BetsySmith-MDS-CAM01-MentalStatusChange"/>
+        <reference value="Observation/BetsySmith-2019-04-06-Last3DSNFStay"/>
       </reference>
-      <name value="BetsySmith-MDS-CAM01-MentalStatusChange"/>
+      <name value="BetsySmith-2019-04-06-Last3DSNFStay"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-2019-04-07-HHStartCarePerformance.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-2019-04-07-HHStartCarePerformance"/>
+      </reference>
+      <name value="BetsySmith-2019-04-07-HHStartCarePerformance"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-2019-05-03-HHDischargePerformance.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-2019-05-03-HHDischargePerformance"/>
+      </reference>
+      <name value="BetsySmith-2019-05-03-HHDischargePerformance"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-BetsySmith-HHDischargePerformance-CAM-Response.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/BetsySmith-HHDischargePerformance-CAM-Response"/>
+      </reference>
+      <name value="BetsySmith-HHDischargePerformance-CAM-Response"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange"/>
+      </reference>
+      <name value="BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-HHDischargePerformance-CAM02-Inattention.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-HHDischargePerformance-CAM02-Inattention"/>
+      </reference>
+      <name value="BetsySmith-HHDischargePerformance-CAM02-Inattention"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking"/>
+      </reference>
+      <name value="BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness"/>
+      </reference>
+      <name value="BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness"/>
       <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -239,25 +367,25 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html"/>
+        <valueUri value="QuestionnaireResponse-BetsySmith-HHStartCarePerformance-CAM-Response.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses"/>
+        <reference value="QuestionnaireResponse/BetsySmith-HHStartCarePerformance-CAM-Response"/>
       </reference>
-      <name value="BetsySmith-MDS-CAM01-Responses"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-qr"/>
+      <name value="BetsySmith-HHStartCarePerformance-CAM-Response"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BetsySmith-MDS-CAM02-Inattention.html"/>
+        <valueUri value="Observation-BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange.html"/>
       </extension>
       <reference>
-        <reference value="Observation/BetsySmith-MDS-CAM02-Inattention"/>
+        <reference value="Observation/BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange"/>
       </reference>
-      <name value="BetsySmith-MDS-CAM02-Inattention"/>
+      <name value="BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange"/>
       <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -265,12 +393,168 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html"/>
+        <valueUri value="Observation-BetsySmith-HHStartCarePerformance-CAM02-Inattention.html"/>
       </extension>
       <reference>
-        <reference value="Observation/BetsySmith-MDS-CAM03-AlteredConsciousness"/>
+        <reference value="Observation/BetsySmith-HHStartCarePerformance-CAM02-Inattention"/>
       </reference>
-      <name value="BetsySmith-MDS-CAM03-AlteredConsciousness"/>
+      <name value="BetsySmith-HHStartCarePerformance-CAM02-Inattention"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking"/>
+      </reference>
+      <name value="BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness"/>
+      </reference>
+      <name value="BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-BetsySmith-Last3DSNFStay-CAM-Response.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/BetsySmith-Last3DSNFStay-CAM-Response"/>
+      </reference>
+      <name value="BetsySmith-Last3DSNFStay-CAM-Response"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange"/>
+      </reference>
+      <name value="BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Last3DSNFStay-CAM02-Inattention.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Last3DSNFStay-CAM02-Inattention"/>
+      </reference>
+      <name value="BetsySmith-Last3DSNFStay-CAM02-Inattention"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking"/>
+      </reference>
+      <name value="BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness"/>
+      </reference>
+      <name value="BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-BetsySmith-Within3DSNFAdmission-CAM-Response.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/BetsySmith-Within3DSNFAdmission-CAM-Response"/>
+      </reference>
+      <name value="BetsySmith-Within3DSNFAdmission-CAM-Response"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange"/>
+      </reference>
+      <name value="BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Within3DSNFAdmission-CAM02-Inattention.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Within3DSNFAdmission-CAM02-Inattention"/>
+      </reference>
+      <name value="BetsySmith-Within3DSNFAdmission-CAM02-Inattention"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking"/>
+      </reference>
+      <name value="BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking"/>
+      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness"/>
+      </reference>
+      <name value="BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness"/>
       <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
     </resource>
     <page>
@@ -314,6 +598,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

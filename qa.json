@@ -3,10 +3,10 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "package-id": "pacio-cs",
   "ig-ver": "0.1.0",
-  "date": "Sat, 21 Mar, 2020 00:13:59 +0000",
-  "errs": 18,
-  "warnings": 8,
-  "hints": 2,
+  "date": "Wed, 01 Apr, 2020 04:07:08 +0000",
+  "errs": 80,
+  "warnings": 48,
+  "hints": 8,
   "version": "4.0.1",
   "tool": "4.2.0 (3)"
 }

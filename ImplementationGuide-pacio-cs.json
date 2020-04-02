@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-03-21T00:13:59+00:00",
+  "date": "2020-04-01T04:07:08+00:00",
   "publisher": "MITRE Dev Team",
   "contact": [
     {
@@ -81,6 +81,32 @@
         "extension": [
           {
             "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
             "valueString": "path-qa"
           },
           {
@@ -125,6 +151,19 @@
           {
             "url": "value",
             "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://pacioproject.org/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -275,8 +314,26 @@
         "reference": {
           "reference": "StructureDefinition/pacio-bcs"
         },
-        "name": "Bundled Cognitive Status",
+        "name": "PACIO Bundled Cognitive Status",
         "description": "An point in time bundle of cognitive status observations for a patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-cognition-qr.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-cognition-qr"
+        },
+        "name": "PACIO Cognition Questionnaire Response",
+        "description": "A completed, or sections of a completed, CMS PAC assessment.",
         "exampleBoolean": false
       },
       {
@@ -293,7 +350,7 @@
         "reference": {
           "reference": "StructureDefinition/pacio-cs"
         },
-        "name": "Cognitive Status",
+        "name": "PACIO Cognitive Status",
         "description": "An exchange of cognitive status data for a patient.",
         "exampleBoolean": false
       },
@@ -301,19 +358,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "Patient"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-pacio-qr.html"
+            "valueUri": "Patient-BetsySmith.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/pacio-qr"
+          "reference": "Patient/BetsySmith"
         },
-        "name": "PACIO Questionaire Response",
-        "description": "A completed, or sections of a completed, CMS PAC assessment.",
-        "exampleBoolean": false
+        "name": "BetsySmith",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -323,13 +379,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BetsySmith.html"
+            "valueUri": "Observation-BetsySmith-2019-03-25-Within3DSNFAdmission.html"
           }
         ],
         "reference": {
-          "reference": "Observation/BetsySmith"
+          "reference": "Observation/BetsySmith-2019-03-25-Within3DSNFAdmission"
         },
-        "name": "BetsySmith",
+        "name": "BetsySmith-2019-03-25-Within3DSNFAdmission",
         "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
       },
       {
@@ -340,13 +396,132 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BetsySmith-MDS-CAM01-MentalStatusChange.html"
+            "valueUri": "Observation-BetsySmith-2019-04-06-Last3DSNFStay.html"
           }
         ],
         "reference": {
-          "reference": "Observation/BetsySmith-MDS-CAM01-MentalStatusChange"
+          "reference": "Observation/BetsySmith-2019-04-06-Last3DSNFStay"
         },
-        "name": "BetsySmith-MDS-CAM01-MentalStatusChange",
+        "name": "BetsySmith-2019-04-06-Last3DSNFStay",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-2019-04-07-HHStartCarePerformance.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-2019-04-07-HHStartCarePerformance"
+        },
+        "name": "BetsySmith-2019-04-07-HHStartCarePerformance",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-2019-05-03-HHDischargePerformance.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-2019-05-03-HHDischargePerformance"
+        },
+        "name": "BetsySmith-2019-05-03-HHDischargePerformance",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-BetsySmith-HHDischargePerformance-CAM-Response.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/BetsySmith-HHDischargePerformance-CAM-Response"
+        },
+        "name": "BetsySmith-HHDischargePerformance-CAM-Response",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange"
+        },
+        "name": "BetsySmith-HHDischargePerformance-CAM01-MentalStatusChange",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-HHDischargePerformance-CAM02-Inattention.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-HHDischargePerformance-CAM02-Inattention"
+        },
+        "name": "BetsySmith-HHDischargePerformance-CAM02-Inattention",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking"
+        },
+        "name": "BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness"
+        },
+        "name": "BetsySmith-HHDischargePerformance-CAM04-AlteredConsciousness",
         "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
       },
       {
@@ -357,14 +532,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "QuestionnaireResponse-BetsySmith-MDS-CAM01-Responses.html"
+            "valueUri": "QuestionnaireResponse-BetsySmith-HHStartCarePerformance-CAM-Response.html"
           }
         ],
         "reference": {
-          "reference": "QuestionnaireResponse/BetsySmith-MDS-CAM01-Responses"
+          "reference": "QuestionnaireResponse/BetsySmith-HHStartCarePerformance-CAM-Response"
         },
-        "name": "BetsySmith-MDS-CAM01-Responses",
-        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-qr"
+        "name": "BetsySmith-HHStartCarePerformance-CAM-Response",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
       },
       {
         "extension": [
@@ -374,13 +549,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BetsySmith-MDS-CAM02-Inattention.html"
+            "valueUri": "Observation-BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange.html"
           }
         ],
         "reference": {
-          "reference": "Observation/BetsySmith-MDS-CAM02-Inattention"
+          "reference": "Observation/BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange"
         },
-        "name": "BetsySmith-MDS-CAM02-Inattention",
+        "name": "BetsySmith-HHStartCarePerformance-CAM01-MentalStatusChange",
         "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
       },
       {
@@ -391,13 +566,217 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BetsySmith-MDS-CAM03-AlteredConsciousness.html"
+            "valueUri": "Observation-BetsySmith-HHStartCarePerformance-CAM02-Inattention.html"
           }
         ],
         "reference": {
-          "reference": "Observation/BetsySmith-MDS-CAM03-AlteredConsciousness"
+          "reference": "Observation/BetsySmith-HHStartCarePerformance-CAM02-Inattention"
         },
-        "name": "BetsySmith-MDS-CAM03-AlteredConsciousness",
+        "name": "BetsySmith-HHStartCarePerformance-CAM02-Inattention",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking"
+        },
+        "name": "BetsySmith-HHStartCarePerformance-CAM03-DisorganizedThinking",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness"
+        },
+        "name": "BetsySmith-HHStartCarePerformance-CAM04-AlteredConsciousness",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-BetsySmith-Last3DSNFStay-CAM-Response.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/BetsySmith-Last3DSNFStay-CAM-Response"
+        },
+        "name": "BetsySmith-Last3DSNFStay-CAM-Response",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange"
+        },
+        "name": "BetsySmith-Last3DSNFStay-CAM01-MentalStatusChange",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Last3DSNFStay-CAM02-Inattention.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Last3DSNFStay-CAM02-Inattention"
+        },
+        "name": "BetsySmith-Last3DSNFStay-CAM02-Inattention",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking"
+        },
+        "name": "BetsySmith-Last3DSNFStay-CAM03-DisorganizedThinking",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness"
+        },
+        "name": "BetsySmith-Last3DSNFStay-CAM04-AlteredConsciousness",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-BetsySmith-Within3DSNFAdmission-CAM-Response.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/BetsySmith-Within3DSNFAdmission-CAM-Response"
+        },
+        "name": "BetsySmith-Within3DSNFAdmission-CAM-Response",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange"
+        },
+        "name": "BetsySmith-Within3DSNFAdmission-CAM01-MentalStatusChange",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Within3DSNFAdmission-CAM02-Inattention.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Within3DSNFAdmission-CAM02-Inattention"
+        },
+        "name": "BetsySmith-Within3DSNFAdmission-CAM02-Inattention",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking"
+        },
+        "name": "BetsySmith-Within3DSNFAdmission-CAM03-DisorganizedThinking",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness"
+        },
+        "name": "BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness",
         "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
       }
     ],
@@ -445,6 +824,10 @@
       {
         "code": "path-resource",
         "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
       },
       {
         "code": "path-pages",

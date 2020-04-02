@@ -6,18 +6,14 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-bcs",
-        "title": "Bundled Cognitive Status"
-      },
-      {
         "url": "http://pacioproject.org/StructureDefinition/pacio-cs",
-        "title": "Cognitive Status"
+        "title": "PACIO Cognitive Status"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-qr",
-        "title": "PACIO Questionaire Response"
+        "url": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr",
+        "title": "PACIO Cognition Questionnaire Response"
       }
     ]
   },
