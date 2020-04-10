@@ -6,19 +6,21 @@
     <profile value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-Last3DSNFStay-CAM-Response</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-BetsySmith.html">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-C</p><p><b>text</b>: Section C: Cognitive Patterns</p><h3>Items</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-Last3DSNFStay-CAM-Response</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-BetsySmith.html">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><p><b>authored</b>: Apr 6, 2019 11:30:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-C</p><p><b>text</b>: Section C: Cognitive Patterns</p><h3>Items</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>
   </text>
+  <questionnaire value="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17"/>
   <status value="completed"/>
   <subject>
     <reference value="Patient/BetsySmith"/>
   </subject>
+  <authored value="2019-04-06T18:30:00-05:00"/>
   <item>
     <linkId value="Section-C"/>
     <text value="Section C: Cognitive Patterns"/>
     <item>
       <linkId value="Section-C/C1310"/>
       <text value="Signs and Symptoms of Delirium"/>
-      <item>
+      <item id="54632-5">
         <linkId value="Section-C/C1310/A"/>
         <text value="Is there evidence of an acute change in mental status from the resident&#39;s baseline?"/>
         <answer>
@@ -27,7 +29,7 @@
           </valueReference>
         </answer>
       </item>
-      <item>
+      <item id="54628-3">
         <linkId value="Section-C/C1310/B"/>
         <text value="Did the resident have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?"/>
         <answer>
@@ -36,7 +38,7 @@
           </valueReference>
         </answer>
       </item>
-      <item>
+      <item id="54629-1">
         <linkId value="Section-C/C1310/C"/>
         <text value="Was the resident&#39;s thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?"/>
         <answer>
@@ -45,7 +47,7 @@
           </valueReference>
         </answer>
       </item>
-      <item>
+      <item id="54630-9">
         <linkId value="Section-C/C1310/D"/>
         <text value="Did the resident have altered level of consciousness as indicated by any of the following criteria: (1) Vigilant, (2) Lethargic, (3) Stuporous, (4) Comatose?"/>
         <answer>

@@ -17,13 +17,18 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-Last3DSNFStay-CAM-Response</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-BetsySmith.html\">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-C</p><p><b>text</b>: Section C: Cognitive Patterns</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-Last3DSNFStay-CAM-Response</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-BetsySmith.html\">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><p><b>authored</b>: Apr 6, 2019 11:30:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-C</p><p><b>text</b>: Section C: Cognitive Patterns</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
+     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
      fhir:link <http://pacioproject.org/Patient/BetsySmith>;
      fhir:Reference.reference [ fhir:value "Patient/BetsySmith" ]
   ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2019-04-06T18:30:00-05:00"^^xsd:dateTime];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
      fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-C" ];
@@ -34,6 +39,7 @@
        fhir:QuestionnaireResponse.item.text [ fhir:value "Signs and Symptoms of Delirium" ];
        fhir:QuestionnaireResponse.item.item [
          fhir:index 0;
+         fhir:Element.id [ fhir:value "54632-5" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-C/C1310/A" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Is there evidence of an acute change in mental status from the resident's baseline?" ];
          fhir:QuestionnaireResponse.item.answer [
@@ -45,6 +51,7 @@
          ]
        ], [
          fhir:index 1;
+         fhir:Element.id [ fhir:value "54628-3" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-C/C1310/B" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Did the resident have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?" ];
          fhir:QuestionnaireResponse.item.answer [
@@ -56,6 +63,7 @@
          ]
        ], [
          fhir:index 2;
+         fhir:Element.id [ fhir:value "54629-1" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-C/C1310/C" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?" ];
          fhir:QuestionnaireResponse.item.answer [
@@ -67,6 +75,7 @@
          ]
        ], [
          fhir:index 3;
+         fhir:Element.id [ fhir:value "54630-9" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-C/C1310/D" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Did the resident have altered level of consciousness as indicated by any of the following criteria: (1) Vigilant, (2) Lethargic, (3) Stuporous, (4) Comatose?" ];
          fhir:QuestionnaireResponse.item.answer [

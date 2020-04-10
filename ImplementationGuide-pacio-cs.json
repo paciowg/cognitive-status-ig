@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-04-01T04:07:08+00:00",
+  "date": "2020-04-10T21:57:56+00:00",
   "publisher": "MITRE Dev Team",
   "contact": [
     {
@@ -778,6 +778,196 @@
         },
         "name": "BetsySmith-Within3DSNFAdmission-CAM04-AlteredConsciousness",
         "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-CMS-Encounter-01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/CMS-Encounter-01"
+        },
+        "name": "CMS-Encounter-01",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-CMS-Encounter-02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/CMS-Encounter-02"
+        },
+        "name": "CMS-Encounter-02",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-CMS-Encounter-03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/CMS-Encounter-03"
+        },
+        "name": "CMS-Encounter-03",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-CMS-Encounter-04.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/CMS-Encounter-04"
+        },
+        "name": "CMS-Encounter-04",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-CMS-Location-AMB.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/CMS-Location-AMB"
+        },
+        "name": "CMS-Location-AMB",
+        "description": "Ambulance provided by Burgers University Medical Center",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-CMS-Location-PTRES.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/CMS-Location-PTRES"
+        },
+        "name": "CMS-Location-PTRES",
+        "description": "Patient's Home",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-CMS-Location-SNF.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/CMS-Location-SNF"
+        },
+        "name": "CMS-Location-SNF",
+        "description": "Burgers Skilled Nursing Facility, South Wing, second floor",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-CMS-Organization-01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/CMS-Organization-01"
+        },
+        "name": "CMS-Organization-01",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-CMS-Organization-02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/CMS-Organization-02"
+        },
+        "name": "CMS-Organization-02",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-CMS-Practitioner-01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/CMS-Practitioner-01"
+        },
+        "name": "CMS-Practitioner-01",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-CMS-Practitioner-02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/CMS-Practitioner-02"
+        },
+        "name": "CMS-Practitioner-02",
+        "exampleBoolean": true
       }
     ],
     "page": {

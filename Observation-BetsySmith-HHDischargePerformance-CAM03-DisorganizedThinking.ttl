@@ -18,7 +18,15 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Disorganized thinking in last 7 days [CMS Assessment] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '54629-1' = 'Disorganized thinking in last 7 days [CMS Assessment])</span></p><p><b>subject</b>: <a href=\"Patient-BetsySmith.html\">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><p><b>effective</b>: May 3, 2019 11:30:00 PM</p><p><b>performer</b>: <a href=\"CMS Provider\">CMS Provider</a></p><p><b>value</b>: Behavior present, fluctuates (comes and goes, changes in severity) <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA10993-6' = 'Behavior present, fluctuates (comes and goes, changes in severity))</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: BetsySmith-HHDischargePerformance-CAM03-DisorganizedThinking</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Disorganized thinking in last 7 days <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '54629-1' = 'Disorganized thinking in last 7 days [CMS Assessment]', given as 'Disorganized thinking in last 7 days'})</span></p><p><b>subject</b>: <a href=\"Patient-BetsySmith.html\">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><p><b>effective</b>: May 3, 2019 11:30:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-CMS-Practitioner-02.html\">Dr. Steve Davidson, MD. Generated Summary: id: CMS-Practitioner-02; active; Steve Davidson ; gender: male</a></li><li><a href=\"Organization-CMS-Organization-02.html\">Organization. Generated Summary: id: CMS-Organization-02; name: Good Health Clinic</a></li></ul><p><b>value</b>: Behavior present, fluctuates (comes and goes, changes in severity) <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA10993-6' = 'Behavior present, fluctuates (comes and goes, changes in severity)', given as 'Behavior present, fluctuates (comes and goes, changes in severity)'})</span></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://pacioproject.org/Location/CMS-Location-PTRES>;
+       fhir:Reference.reference [ fhir:value "Location/CMS-Location-PTRES" ]
+     ]
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -26,7 +34,8 @@
        fhir:index 0;
        a loinc:54629-1;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "54629-1" ]
+       fhir:Coding.code [ fhir:value "54629-1" ];
+       fhir:Coding.display [ fhir:value "Disorganized thinking in last 7 days" ]
      ]
   ];
   fhir:Observation.subject [
@@ -36,14 +45,22 @@
   fhir:Observation.effectiveDateTime [ fhir:value "2019-05-03T18:30:00-05:00"^^xsd:dateTime];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "CMS Provider" ]
+     fhir:link <http://pacioproject.org/Practitioner/CMS-Practitioner-02>;
+     fhir:Reference.reference [ fhir:value "Practitioner/CMS-Practitioner-02" ];
+     fhir:Reference.display [ fhir:value "Dr. Steve Davidson, MD" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://pacioproject.org/Organization/CMS-Organization-02>;
+     fhir:Reference.reference [ fhir:value "Organization/CMS-Organization-02" ];
+     fhir:Reference.display [ fhir:value "Organization" ]
   ];
   fhir:Observation.valueCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
        a loinc:LA10993-6;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "LA10993-6" ]
+       fhir:Coding.code [ fhir:value "LA10993-6" ];
+       fhir:Coding.display [ fhir:value "Behavior present, fluctuates (comes and goes, changes in severity)" ]
      ]
   ] .
 
