@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>PACIO-CS\CMS-Location-AMB - XML Representation - FHIR v4.0.1</title>
+    <title>PACIO-CS\Use of Device - Examples - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"2.33"}
-    h3,h4,h5,h6{--heading-prefix:"2.33"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.4"}
+    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
@@ -64,7 +64,8 @@
             </button>
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
+                <!-- menu.xml -->
+<ul class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifacts Summary</a></li>
@@ -86,7 +87,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CMS-Location-AMB</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Use of Device</b></li>
         </ul>  
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -95,57 +96,93 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
+
+
+
+
+<div style="counter-reset: section 6" class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">PACIO Cognitive Status Implementation Guide - Local Development build (v0.1.0). See the <a href="http://pacioproject.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <ul class="nav nav-tabs">
+    <li>
+      <a href="StructureDefinition-pacio-cs-dev.html">Content</a>
+    </li>
+    <li>
+      <a href="StructureDefinition-pacio-cs-dev-definitions.html">Detailed Descriptions</a>
+    </li>
+
+    <li>
+      <a href="StructureDefinition-pacio-cs-dev-mappings.html">Mappings</a>
+    </li>
+
+    <li class="active">
+      <a href="#">Examples</a>
+    </li>
+
+    <li>
+      <a href="StructureDefinition-pacio-cs-dev.profile.xml.html">XML</a>
+    </li>
+
+
+    <li>
+      <a href="StructureDefinition-pacio-cs-dev.profile.json.html">JSON</a>
+    </li>
+
+
+    <li>
+      <a href="StructureDefinition-pacio-cs-dev.profile.ttl.html">Turtle</a>
+    </li>
+
+  </ul>
   <a name="root"> </a>
-  <h2 id="root">CMS-Location-AMB - XML Representation</h2>
-  <p>
-    <a href="Location-CMS-Location-AMB.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="Location-CMS-Location-AMB.xml">Raw xml</a>
-  </p>
+  <h2 id="root">StructureDefinition: UseOfDevice - Examples
   
   
   
-  <p>
-    <b>Source view</b>
-  </p>
-  
-  <pre class="xml">
 
-&lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CMS-Location-AMB"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: CMS-Location-AMB&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: BUMC Ambulance&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Ambulance provided by Burgers University Medical Center&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Ambulance &lt;span style="background: LightGoldenRodYellow"&gt;(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'AMB' = 'Ambulance)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="BUMC Ambulance"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Ambulance provided by Burgers University Medical Center"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.type">type</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="AMB"/&gt;
-    &lt;/coding&gt;
-  &lt;/type&gt;
-&lt;/Location&gt;</pre>
+
+  <p><b>No examples are currently available for the  Profile.</b></p>
 
 
   
   
-</div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
 
+
+            <!-- /inner-wrapper -->
+          <!-- /row -->
+        <!-- /container -->
+      <!-- /segment-content -->
+
+
+  <script src="jquery.js" type="text/javascript"> </script>
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="b3635ff9-5305-4ec2-bdb6-5dcb1486da74">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="calebwan@mitre.org">MITRE Dev Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 10, 2020 21:57+0000">2020-04-10</span>
+        <p><a name="e790177f-2590-4d93-9fa6-159cb0154d6b">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="calebwan@mitre.org">MITRE Dev Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 29, 2020 16:20+0000">2020-04-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -174,5 +211,5 @@ anchors.add()</script>
   
     <!-- Analytics Below
   ================================================== -->
-  </body>
-</html>
+  
+</h2></div></div></div></div></div></body></html>

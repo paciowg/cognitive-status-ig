@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-04-10T21:57:56+00:00",
+  "date": "2020-04-29T16:20:54+00:00",
   "publisher": "MITRE Dev Team",
   "contact": [
     {
@@ -352,6 +352,24 @@
         },
         "name": "PACIO Cognitive Status",
         "description": "An exchange of cognitive status data for a patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-cs-dev.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-cs-dev"
+        },
+        "name": "Use of Device",
+        "description": "A device used by a Patient during a cognitive status assessment.",
         "exampleBoolean": false
       },
       {
@@ -855,24 +873,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Location-CMS-Location-AMB.html"
-          }
-        ],
-        "reference": {
-          "reference": "Location/CMS-Location-AMB"
-        },
-        "name": "CMS-Location-AMB",
-        "description": "Ambulance provided by Burgers University Medical Center",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Location"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Location-CMS-Location-PTRES.html"
           }
         ],
@@ -1018,6 +1018,10 @@
       {
         "code": "path-resource",
         "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
       },
       {
         "code": "path-pages",
