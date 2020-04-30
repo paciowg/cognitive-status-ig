@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="SkyHarborHomeHealthServices-Loc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: SkyHarborHomeHealthServices-Loc</p><p><b>status</b>: active</p><p><b>name</b>: Sky Harbor Home Health Services</p><p><b>description</b>: 8810 Old Sky Harbor, SanAntonio, TX 78242</p><p><b>type</b>: Wing <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'PWI' = 'PWI', given as 'Wing'})</span></p></div>
+  </text>
+  <status value="active"/>
+  <name value="Sky Harbor Home Health Services"/>
+  <description value="8810 Old Sky Harbor, SanAntonio, TX 78242"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="PWI"/>
+      <display value="Wing"/>
+    </coding>
+  </type>
+</Location>

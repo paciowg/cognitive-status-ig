@@ -1,0 +1,451 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/QuestionnaireResponse-1-First3DSNFAdmission> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "QuestionnaireResponse-1-First3DSNFAdmission"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: QuestionnaireResponse-1-First3DSNFAdmission</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"Q-MDS3-NC-1.17\">Q-MDS3-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-BetsySmith.html\">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><p><b>authored</b>: Apr 9, 2020 11:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 86529-5</p><p><b>linkId</b>: Section C</p><p><b>text</b>: Cognitive Patterns</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>id</b>: 90482-1</p><p><b>linkId</b>: Section D</p><p><b>text</b>: Mood</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [ fhir:value "Q-MDS3-NC-1.17"];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <http://pacioproject.org/Patient/BetsySmith>;
+     fhir:Reference.reference [ fhir:value "Patient/BetsySmith" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "86529-5" ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Cognitive Patterns" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "52491-8" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Brief Interview for Mental Status (BIMS)" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "52731-7" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0200" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Number of words repeated after first attempt" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-13>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-13" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "54510-3" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0300" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Temporal Orientation (orientation to year, month, and day)" ];
+         fhir:QuestionnaireResponse.item.item [
+           fhir:index 0;
+           fhir:Element.id [ fhir:value "52732-5" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0300/C0300A" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct year" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-14>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-14" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Element.id [ fhir:value "52733-3" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0300/C0300B" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct month" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-15>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-15" ]
+             ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:Element.id [ fhir:value "54609-3" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0300/C0300C" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct day of the week" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-16>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-16" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Element.id [ fhir:value "52493-4" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0400" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Recall" ];
+         fhir:QuestionnaireResponse.item.item [
+           fhir:index 0;
+           fhir:Element.id [ fhir:value "52735-8" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0400/C0400A" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall sock" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-17>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-17" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Element.id [ fhir:value "52736-6" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0400/C0400B" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall blue" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-18>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-18" ]
+             ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:Element.id [ fhir:value "52737-4" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0400/C0400C" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall bed" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-19>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-19" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Element.id [ fhir:value "54614-3" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C0200-C0500/C0500" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "BIMS Summary Score" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-20>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-20" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "86585-7" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C1310" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Signs and Symptoms of Delirium (from CAM)" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "54632-5" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C1310/C1310A" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Is there evidence of an acute change in mental status from the patients baseline?" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-1>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-1" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "54628-3" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C1310/C1310B" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Did the patient have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-5>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-5" ]
+           ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Element.id [ fhir:value "54629-1" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section C/C1310/C1310C" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-9>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-9" ]
+           ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "90482-1" ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Mood" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "54635-8" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Resident Mood Interview (PHQ-9)" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "86843-0" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Symptom Presence" ];
+         fhir:QuestionnaireResponse.item.item [
+           fhir:index 0;
+           fhir:Element.id [ fhir:value "54636-6" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200A1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Little interest or pleasure in doing things" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-21>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-21" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Element.id [ fhir:value "54638-2" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200B1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling down, depressed or hopeless" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-23>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-23" ]
+             ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:Element.id [ fhir:value "54640-8" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200C1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble falling or staying asleep or sleeping too much" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-25>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-25" ]
+             ]
+           ]
+         ], [
+           fhir:index 3;
+           fhir:Element.id [ fhir:value "54642-4" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200D1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling tired or having little energy" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-27>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-27" ]
+             ]
+           ]
+         ], [
+           fhir:index 4;
+           fhir:Element.id [ fhir:value "54644-0" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200E1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Poor appetite or overeating" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-29>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-29" ]
+             ]
+           ]
+         ], [
+           fhir:index 5;
+           fhir:Element.id [ fhir:value "54646-5" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200F1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling bad about yourself - or that you are a failure or have let yourself or your family down" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-31>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-31" ]
+             ]
+           ]
+         ], [
+           fhir:index 6;
+           fhir:Element.id [ fhir:value "54648-1" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200G1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble concentrating on things, such as reading the newspaper or watching television" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-33>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-33" ]
+             ]
+           ]
+         ], [
+           fhir:index 7;
+           fhir:Element.id [ fhir:value "54650-7" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200H1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-35>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-35" ]
+             ]
+           ]
+         ], [
+           fhir:index 8;
+           fhir:Element.id [ fhir:value "54652-3" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/1/D0200I1" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead, or of hurting yourself in some way" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-37>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-37" ]
+             ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "86844-8" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Symptom Frequency" ];
+         fhir:QuestionnaireResponse.item.item [
+           fhir:index 0;
+           fhir:Element.id [ fhir:value "54637-4" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200A2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Little interest or pleasure in doing things" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-22>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-22" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Element.id [ fhir:value "54639-0" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200B2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling down, depressed or hopeless" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-24>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-24" ]
+             ]
+           ]
+         ], [
+           fhir:index 2;
+           fhir:Element.id [ fhir:value "54641-6" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200C2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble falling or staying asleep or sleeping too much" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-26>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-26" ]
+             ]
+           ]
+         ], [
+           fhir:index 3;
+           fhir:Element.id [ fhir:value "54643-2" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200D2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling tired or having little energy" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-28>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-28" ]
+             ]
+           ]
+         ], [
+           fhir:index 4;
+           fhir:Element.id [ fhir:value "54645-7" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200E2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Poor appetite or overeating" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-30>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-30" ]
+             ]
+           ]
+         ], [
+           fhir:index 5;
+           fhir:Element.id [ fhir:value "54647-3" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200F2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling bad about yourself - or that you are a failure or have let yourself or your family down" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-32>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-32" ]
+             ]
+           ]
+         ], [
+           fhir:index 6;
+           fhir:Element.id [ fhir:value "54649-9" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200G2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble concentrating on things, such as reading the newspaper or watching television" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-34>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-34" ]
+             ]
+           ]
+         ], [
+           fhir:index 7;
+           fhir:Element.id [ fhir:value "54651-5" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200H2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-36>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-36" ]
+             ]
+           ]
+         ], [
+           fhir:index 8;
+           fhir:Element.id [ fhir:value "54653-1" ];
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0200/2/D0200I2" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead, or of hurting yourself in some way" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueReference [
+               fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-38>;
+               fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-38" ]
+             ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "54654-9" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section D/D0300" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Total Severity Score" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <http://pacioproject.org/Observation/Assessment-1-First3DSNFAdmission-Observation-39>;
+           fhir:Reference.reference [ fhir:value "Observation/Assessment-1-First3DSNFAdmission-Observation-39" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/QuestionnaireResponse-1-First3DSNFAdmission.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

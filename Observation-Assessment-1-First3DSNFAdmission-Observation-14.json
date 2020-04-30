@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "Assessment-1-First3DSNFAdmission-Observation-14",
+  "meta": {
+    "profile": [
+      "http://pacioproject.org/StructureDefinition/pacio-cs"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Assessment-1-First3DSNFAdmission-Observation-14</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Able to report correct year <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '52732-5' = 'Temporal orientation - current year [BIMS]', given as 'Able to report correct year'})</span></p><p><b>subject</b>: <a href=\"Patient-BetsySmith.html\">Generated Summary: id: BetsySmith; Betsy Smith ; gender: female; birthDate: 1959-06-14</a></p><p><b>effective</b>: Apr 9, 2020 11:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-HoneyJones.html\">Generated Summary: id: HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href=\"Organization-HappyNursingFacility.html\">Organization. Generated Summary: id: HappyNursingFacility; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: 3 <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QuestionnaireResponse-1-First3DSNFAdmission.html\">Generated Summary: id: QuestionnaireResponse-1-First3DSNFAdmission; questionnaire: Q-MDS3-NC-1.17; status: completed; authored: Apr 9, 2020 11:00:00 PM</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/event-location",
+      "valueReference": {
+        "reference": "Location/HappyNursingFacility-Loc"
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "52732-5",
+        "display": "Able to report correct year"
+      }
+    ],
+    "text": "Able to report correct year"
+  },
+  "subject": {
+    "reference": "Patient/BetsySmith"
+  },
+  "effectiveDateTime": "2020-04-09T18:00:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/HoneyJones"
+    },
+    {
+      "reference": "Organization/HappyNursingFacility",
+      "display": "Organization"
+    }
+  ],
+  "valueCodeableConcept": {
+    "text": "3"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QuestionnaireResponse-1-First3DSNFAdmission"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType": "Organization",
+  "id": "SkyHarborHomeHealthServices",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: SkyHarborHomeHealthServices</p><p><b>name</b>: Sky Harbor Home Health Services</p></div>"
+  },
+  "name": "Sky Harbor Home Health Services"
+}
