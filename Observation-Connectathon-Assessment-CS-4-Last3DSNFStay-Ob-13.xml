@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-13"/>
+  <meta>
+    <profile value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-13</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)? <span style="background: LightGoldenRodYellow">(Details : {LOINC code '54629-1' = 'Disorganized thinking in last 7 days [CMS Assessment]', given as 'Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused'})</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 23, 2020 7:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Connectathon-Practitioner-HoneyJones.html">Generated Summary: id: Connectathon-Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href="PractitionerRole-Connectathon-Role-RN.html">Generated Summary: id: Connectathon-Role-RN; active; <span title="Codes: {http://snomed.info/sct 224535009}">Registered Nurse</span></a></li><li><a href="Organization-Connectathon-Org-02.html">Organization. Generated Summary: id: Connectathon-Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: Behavior present, fluctuates (comes and goes, changes in severity) <span style="background: LightGoldenRodYellow">(Details : {LOINC code 'LA10993-6' = 'Behavior present, fluctuates (comes and goes, changes in severity))</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-Connectathon-QuestResponse-CS-4-Last3DSNFStay.html">Generated Summary: id: Connectathon-QuestResponse-CS-4-Last3DSNFStay; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 23, 2020 7:00:00 PM</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
+    <valueReference>
+      <reference value="Location/Connectathon-Org-Loc-02"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="54629-1"/>
+      <display value="Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused"/>
+    </coding>
+    <text value="Disorganized Thinking - Was the resident&#39;s thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?"/>
+  </code>
+  <subject>
+    <reference value="Patient/patientBSJ1"/>
+  </subject>
+  <effectiveDateTime value="2020-04-23T14:00:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Connectathon-Practitioner-HoneyJones"/>
+  </performer>
+  <performer>
+    <reference value="PractitionerRole/Connectathon-Role-RN"/>
+  </performer>
+  <performer>
+    <reference value="Organization/Connectathon-Org-02"/>
+    <display value="Organization"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA10993-6"/>
+    </coding>
+    <text value="Behavior present, fluctuates (comes and goes, changes in severity)"/>
+  </valueCodeableConcept>
+  <derivedFrom>
+    <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-4-Last3DSNFStay"/>
+  </derivedFrom>
+</Observation>

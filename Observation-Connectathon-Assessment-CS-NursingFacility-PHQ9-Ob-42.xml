@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-42"/>
+  <meta>
+    <profile value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-42</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Thoughts that you would be better off dead <span style="background: LightGoldenRodYellow">(Details : {LOINC code '54653-1' = 'Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.frequency [Reported PHQ-9 CMS]', given as 'Thoughts that you would be better off dead, or of hurting yourself in some way'})</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 11:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Connectathon-Practitioner-HoneyJones.html">Generated Summary: id: Connectathon-Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href="PractitionerRole-Connectathon-Role-RN.html">Generated Summary: id: Connectathon-Role-RN; active; <span title="Codes: {http://snomed.info/sct 224535009}">Registered Nurse</span></a></li><li><a href="Organization-Connectathon-Org-02.html">Organization. Generated Summary: id: Connectathon-Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: Never or 1 day <span style="background: LightGoldenRodYellow">(Details : {LOINC code 'LA10997-7' = 'Never or 1 day', given as '0'})</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-Connectathon-QuestResponse-CS-NursingFacility-PHQ9.html">Generated Summary: id: Connectathon-QuestResponse-CS-NursingFacility-PHQ9; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 11:00:00 PM</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
+    <valueReference>
+      <reference value="Location/Connectathon-Org-Loc-02"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="54653-1"/>
+      <display value="Thoughts that you would be better off dead, or of hurting yourself in some way"/>
+    </coding>
+    <text value="Thoughts that you would be better off dead"/>
+  </code>
+  <subject>
+    <reference value="Patient/patientBSJ1"/>
+  </subject>
+  <effectiveDateTime value="2020-04-09T18:00:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Connectathon-Practitioner-HoneyJones"/>
+  </performer>
+  <performer>
+    <reference value="PractitionerRole/Connectathon-Role-RN"/>
+  </performer>
+  <performer>
+    <reference value="Organization/Connectathon-Org-02"/>
+    <display value="Organization"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA10997-7"/>
+      <display value="0"/>
+    </coding>
+    <text value="Never or 1 day"/>
+  </valueCodeableConcept>
+  <derivedFrom>
+    <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-NursingFacility-PHQ9"/>
+  </derivedFrom>
+</Observation>

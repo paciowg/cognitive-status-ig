@@ -1,0 +1,63 @@
+{
+  "resourceType": "Observation",
+  "id": "Connectathon-Assessment-CS-Hospital-CAM-Ob-1",
+  "meta": {
+    "profile": [
+      "http://pacioproject.org/StructureDefinition/pacio-cs"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-Assessment-CS-Hospital-CAM-Ob-1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline? <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '54632-5' = 'Acute onset mental status change [CMS Assessment]', given as 'Is there evidence of an acute change in mental status from the patients baseline?'})</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 5, 2020 3:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Connectathon-Practitioner-RonBurgendy.html\">Generated Summary: id: Connectathon-Practitioner-RonBurgendy; active; Ron Burgendy ; gender: male</a></li><li><a href=\"PractitionerRole-Connectathon-Role-RN.html\">Generated Summary: id: Connectathon-Role-RN; active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Connectathon-Org-01.html\">Organization. Generated Summary: id: Connectathon-Org-01; name: San Antonio General Hospital</a></li></ul><p><b>value</b>: No <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA32-8' = 'No', given as '0'})</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-Connectathon-QuestResponse-CS-Hospital-CAM.html\">Generated Summary: id: Connectathon-QuestResponse-CS-Hospital-CAM; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 5, 2020 3:00:00 PM</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/event-location",
+      "valueReference": {
+        "reference": "Location/Connectathon-Org-Loc-01"
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "54632-5",
+        "display": "Is there evidence of an acute change in mental status from the patients baseline?"
+      }
+    ],
+    "text": "Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?"
+  },
+  "subject": {
+    "reference": "Patient/patientBSJ1"
+  },
+  "effectiveDateTime": "2020-04-05T10:00:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/Connectathon-Practitioner-RonBurgendy"
+    },
+    {
+      "reference": "PractitionerRole/Connectathon-Role-RN"
+    },
+    {
+      "reference": "Organization/Connectathon-Org-01",
+      "display": "Organization"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "0"
+      }
+    ],
+    "text": "No"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/Connectathon-QuestResponse-CS-Hospital-CAM"
+    }
+  ]
+}

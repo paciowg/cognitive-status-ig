@@ -1,0 +1,71 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "Connectathon-QuestResponse-CS-3-First3DSNFAdmission",
+  "meta": {
+    "profile": [
+      "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-QuestResponse-CS-3-First3DSNFAdmission</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 9, 2020 11:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 86529-5</p><p><b>linkId</b>: Section C</p><p><b>text</b>: Cognitive Patterns</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  },
+  "questionnaire": "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/patientBSJ1"
+  },
+  "authored": "2020-04-09T18:00:00-05:00",
+  "item": [
+    {
+      "id": "86529-5",
+      "linkId": "Section C",
+      "text": "Cognitive Patterns",
+      "item": [
+        {
+          "id": "86585-7",
+          "linkId": "Section C/C1310",
+          "text": "Signs and Symptoms of Delirium (from CAM)",
+          "item": [
+            {
+              "id": "54632-5",
+              "linkId": "Section C/C1310/C1310A",
+              "text": "Is there evidence of an acute change in mental status from the patients baseline?",
+              "answer": [
+                {
+                  "valueReference": {
+                    "reference": "Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-2"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "54628-3",
+              "linkId": "Section C/C1310/C1310B",
+              "text": "Did the patient have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?",
+              "answer": [
+                {
+                  "valueReference": {
+                    "reference": "Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-7"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "54629-1",
+              "linkId": "Section C/C1310/C1310C",
+              "text": "Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused",
+              "answer": [
+                {
+                  "valueReference": {
+                    "reference": "Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-12"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

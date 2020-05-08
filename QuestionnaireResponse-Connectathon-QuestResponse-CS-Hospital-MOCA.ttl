@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/Connectathon-QuestResponse-CS-Hospital-MOCA> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Connectathon-QuestResponse-CS-Hospital-MOCA"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-QuestResponse-CS-Hospital-MOCA</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 5, 2020 9:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 72133-2</p><p><b>linkId</b>: MoCA</p><p><b>text</b>: Montreal Cognitive Assessment [MoCA]</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
+     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-05T16:00:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "72133-2" ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "MoCA" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Montreal Cognitive Assessment [MoCA]" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "72172-0" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "MoCA/TotalScore" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Total score [MoCA]" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <http://pacioproject.org/Observation/Connectathon-Assessment-CS-Hospital-MOCA>;
+           fhir:Reference.reference [ fhir:value "Observation/Connectathon-Assessment-CS-Hospital-MOCA" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/Connectathon-QuestResponse-CS-Hospital-MOCA.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
