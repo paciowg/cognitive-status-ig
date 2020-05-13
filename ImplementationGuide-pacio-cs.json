@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-05-08T16:18:08+00:00",
+  "date": "2020-05-11T23:04:24+00:00",
   "publisher": "MITRE Dev Team",
   "contact": [
     {
@@ -737,23 +737,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-Connectathon-Assessment-CS-Hospital-MOCA-Ob-16.html"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/Connectathon-Assessment-CS-Hospital-MOCA-Ob-16"
-        },
-        "name": "Connectathon-Assessment-CS-Hospital-MOCA-Ob-16",
-        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Observation-Connectathon-Assessment-CS-NursingFacility-BIMS.html"
           }
         ],
@@ -880,23 +863,6 @@
           "reference": "Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-23"
         },
         "name": "Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-23",
-        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-24.html"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-24"
-        },
-        "name": "Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-24",
         "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
       },
       {

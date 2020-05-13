@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-Assessment-CS-Hospital-MOCA</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'survey' = 'Survey)</span></p><p><b>code</b>: Montreal Cognitive Assessment [MoCA] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '72133-2' = 'Montreal Cognitive Assessment [MoCA]', given as 'Montreal Cognitive Assessment [MoCA]'})</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 5, 2020 9:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Connectathon-Practitioner-JennyGlass.html\">Generated Summary: id: Connectathon-Practitioner-JennyGlass; active; Jenny Glass ; gender: female</a></li><li><a href=\"PractitionerRole-Connectathon-Role-RN.html\">Generated Summary: id: Connectathon-Role-RN; active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Connectathon-Org-01.html\">Organization. Generated Summary: id: Connectathon-Org-01; name: San Antonio General Hospital</a></li></ul><p><b>hasMember</b>: <a href=\"Observation-Connectathon-Assessment-CS-Hospital-MOCA-Ob-16.html\">Generated Summary: id: Connectathon-Assessment-CS-Hospital-MOCA-Ob-16; <span title=\"Codes: {http://loinc.org 72172-0}\">Total score [MoCA]</span>; effective: Apr 5, 2020 9:00:00 PM; <span title=\"Codes: \">12</span></a></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-Connectathon-QuestResponse-CS-Hospital-MOCA.html\">Questionnaire Response. Generated Summary: id: Connectathon-QuestResponse-CS-Hospital-MOCA; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 5, 2020 9:00:00 PM</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Connectathon-Assessment-CS-Hospital-MOCA</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'survey' = 'Survey)</span></p><p><b>code</b>: Montreal Cognitive Assessment [MoCA] <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '72133-2' = 'Montreal Cognitive Assessment [MoCA]', given as 'Montreal Cognitive Assessment [MoCA]'})</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 5, 2020 9:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Connectathon-Practitioner-JennyGlass.html\">Generated Summary: id: Connectathon-Practitioner-JennyGlass; active; Jenny Glass ; gender: female</a></li><li><a href=\"PractitionerRole-Connectathon-Role-RN.html\">Generated Summary: id: Connectathon-Role-RN; active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Connectathon-Org-01.html\">Organization. Generated Summary: id: Connectathon-Org-01; name: San Antonio General Hospital</a></li></ul><p><b>value</b>: 12 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'null' = 'null', given as 'Total score [MoCA]'})</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-Connectathon-QuestResponse-CS-Hospital-MOCA.html\">Questionnaire Response. Generated Summary: id: Connectathon-QuestResponse-CS-Hospital-MOCA; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 5, 2020 9:00:00 PM</a></p></div>"
   },
   "extension": [
     {
@@ -54,11 +54,14 @@
       "display": "Organization"
     }
   ],
-  "hasMember": [
-    {
-      "reference": "Observation/Connectathon-Assessment-CS-Hospital-MOCA-Ob-16"
-    }
-  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "display": "Total score [MoCA]"
+      }
+    ],
+    "text": "12"
+  },
   "derivedFrom": [
     {
       "reference": "QuestionnaireResponse/Connectathon-QuestResponse-CS-Hospital-MOCA",
