@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "pacio-cs",
   "text": {
-    "status": "generated",
+    "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIOCognitiveStatusImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://pacioproject.org/ImplementationGuide/pacio-cs</pre><div><p>PACIO Cognitive Status Implementation Guide generated with the FHIR Shorthand tool</p>\n</div></div>"
   },
   "url": "http://pacioproject.org/ImplementationGuide/pacio-cs",
@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-05-11T23:04:24+00:00",
+  "date": "2020-06-23T22:47:22+00:00",
   "publisher": "MITRE Dev Team",
   "contact": [
     {
@@ -362,6 +362,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-pacio-plcf.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pacio-plcf"
+        },
+        "name": "PACIO Prior Level of Cognitive Function",
+        "description": "An exchange of prior level of cognitive function data for a patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-pacio-cs-dev.html"
           }
         ],
@@ -371,6 +389,909 @@
         "name": "Use of Device",
         "description": "A device used by a Patient during a cognitive status assessment.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-assistance-required.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/assistance-required"
+        },
+        "name": "AssistanceRequired",
+        "description": "Associated cognitive status used for display purposes.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-device-patient-used.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/device-patient-used"
+        },
+        "name": "DevicePatientUsed",
+        "description": "A device used by a patient during a cognitive status assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-Discharge-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-Discharge-CS"
+        },
+        "name": "Assessment-HH-Discharge-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-Discharge-CS-Ob-10.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-Discharge-CS-Ob-10"
+        },
+        "name": "Assessment-HH-Discharge-CS-Ob-10",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-Discharge-CS-Ob-15.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-Discharge-CS-Ob-15"
+        },
+        "name": "Assessment-HH-Discharge-CS-Ob-15",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-Discharge-CS-Ob-5.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-Discharge-CS-Ob-5"
+        },
+        "name": "Assessment-HH-Discharge-CS-Ob-5",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-StartOfCare-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-StartOfCare-CS"
+        },
+        "name": "Assessment-HH-StartOfCare-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-StartOfCare-CS-Ob-14.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-StartOfCare-CS-Ob-14"
+        },
+        "name": "Assessment-HH-StartOfCare-CS-Ob-14",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-StartOfCare-CS-Ob-4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-StartOfCare-CS-Ob-4"
+        },
+        "name": "Assessment-HH-StartOfCare-CS-Ob-4",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-HH-StartOfCare-CS-Ob-9.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-HH-StartOfCare-CS-Ob-9"
+        },
+        "name": "Assessment-HH-StartOfCare-CS-Ob-9",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-Hospital-Admission-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-Hospital-Admission-CS"
+        },
+        "name": "Assessment-Hospital-Admission-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-Hospital-Admission-CS-Ob-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-Hospital-Admission-CS-Ob-1"
+        },
+        "name": "Assessment-Hospital-Admission-CS-Ob-1",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-Hospital-Admission-CS-Ob-11.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-Hospital-Admission-CS-Ob-11"
+        },
+        "name": "Assessment-Hospital-Admission-CS-Ob-11",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-Hospital-Admission-CS-Ob-6.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-Hospital-Admission-CS-Ob-6"
+        },
+        "name": "Assessment-Hospital-Admission-CS-Ob-6",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-Hospital-MOCA.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-Hospital-MOCA"
+        },
+        "name": "Assessment-Hospital-MOCA",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-Hospital-MOCA-Ob-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-Hospital-MOCA-Ob-1"
+        },
+        "name": "Assessment-Hospital-MOCA-Ob-1",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Admission-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Admission-CS"
+        },
+        "name": "Assessment-SNF-Admission-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Admission-CS-Ob-12.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Admission-CS-Ob-12"
+        },
+        "name": "Assessment-SNF-Admission-CS-Ob-12",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Admission-CS-Ob-2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Admission-CS-Ob-2"
+        },
+        "name": "Assessment-SNF-Admission-CS-Ob-2",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Admission-CS-Ob-7.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Admission-CS-Ob-7"
+        },
+        "name": "Assessment-SNF-Admission-CS-Ob-7",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS"
+        },
+        "name": "Assessment-SNF-BIMS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-2"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-2",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-3"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-3",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-4"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-4",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-5.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-5"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-5",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-6.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-6"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-6",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-7.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-7"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-7",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-8.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-8"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-8",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-BIMS-Ob-9.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-BIMS-Ob-9"
+        },
+        "name": "Assessment-SNF-BIMS-Ob-9",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Discharge-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Discharge-CS"
+        },
+        "name": "Assessment-SNF-Discharge-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Discharge-CS-Ob-13.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Discharge-CS-Ob-13"
+        },
+        "name": "Assessment-SNF-Discharge-CS-Ob-13",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Discharge-CS-Ob-3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Discharge-CS-Ob-3"
+        },
+        "name": "Assessment-SNF-Discharge-CS-Ob-3",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-Discharge-CS-Ob-8.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-Discharge-CS-Ob-8"
+        },
+        "name": "Assessment-SNF-Discharge-CS-Ob-8",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9"
+        },
+        "name": "Assessment-SNF-PHQ9",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-10.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-10"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-10",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-11.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-11"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-11",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-12.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-12"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-12",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-13.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-13"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-13",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-14.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-14"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-14",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-15.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-15"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-15",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-16.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-16"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-16",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-17.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-17"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-17",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-18.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-18"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-18",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-19.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-19"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-19",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-20.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-20"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-20",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-21.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-21"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-21",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-22.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-22"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-22",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-23.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-23"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-23",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-24.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-24"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-24",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-25.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-25"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-25",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-26.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-26"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-26",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-27.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-27"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-27",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-Assessment-SNF-PHQ9-Ob-28.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/Assessment-SNF-PHQ9-Ob-28"
+        },
+        "name": "Assessment-SNF-PHQ9-Ob-28",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cs"
       },
       {
         "extension": [
@@ -1611,6 +2532,431 @@
           "reference": "PractitionerRole/Connectathon-Role-RN"
         },
         "name": "Connectathon-Role-RN",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Org-01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Org-01"
+        },
+        "name": "Org-01",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Org-02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Org-02"
+        },
+        "name": "Org-02",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-Org-03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Org-03"
+        },
+        "name": "Org-03",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-Org-Loc-01.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Org-Loc-01"
+        },
+        "name": "Org-Loc-01",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-Org-Loc-02.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Org-Loc-02"
+        },
+        "name": "Org-Loc-02",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Location-Org-Loc-03.html"
+          }
+        ],
+        "reference": {
+          "reference": "Location/Org-Loc-03"
+        },
+        "name": "Org-Loc-03",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-DanielGranger.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-DanielGranger"
+        },
+        "name": "Practitioner-DanielGranger",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-HoneyJones.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-HoneyJones"
+        },
+        "name": "Practitioner-HoneyJones",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-JenCadbury.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-JenCadbury"
+        },
+        "name": "Practitioner-JenCadbury",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-JennyGlass.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-JennyGlass"
+        },
+        "name": "Practitioner-JennyGlass",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-LunaBaskins.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-LunaBaskins"
+        },
+        "name": "Practitioner-LunaBaskins",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-RonBurgendy.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-RonBurgendy"
+        },
+        "name": "Practitioner-RonBurgendy",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-RonMarble.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-RonMarble"
+        },
+        "name": "Practitioner-RonMarble",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-SallySmith.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-SallySmith"
+        },
+        "name": "Practitioner-SallySmith",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-ScottDumble.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-ScottDumble"
+        },
+        "name": "Practitioner-ScottDumble",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-HH-Discharge-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-HH-Discharge-CS"
+        },
+        "name": "QResponse-HH-Discharge-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-HH-StartOfCare-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-HH-StartOfCare-CS"
+        },
+        "name": "QResponse-HH-StartOfCare-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-Hospital-Admission-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-Hospital-Admission-CS"
+        },
+        "name": "QResponse-Hospital-Admission-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-Hospital-MOCA.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-Hospital-MOCA"
+        },
+        "name": "QResponse-Hospital-MOCA",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-SNF-Admission-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-SNF-Admission-CS"
+        },
+        "name": "QResponse-SNF-Admission-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-SNF-BIMS.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-SNF-BIMS"
+        },
+        "name": "QResponse-SNF-BIMS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-SNF-Discharge-CS.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-SNF-Discharge-CS"
+        },
+        "name": "QResponse-SNF-Discharge-CS",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-SNF-PHQ9.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-SNF-PHQ9"
+        },
+        "name": "QResponse-SNF-PHQ9",
+        "exampleCanonical": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "PractitionerRole-Role-PT.html"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/Role-PT"
+        },
+        "name": "Role-PT",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "PractitionerRole-Role-RN.html"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/Role-RN"
+        },
+        "name": "Role-RN",
         "exampleBoolean": true
       },
       {

@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-        
+          <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">PACIO Cognitive Status Implementation Guide</span><br/>0.1.0 - CI Build</p>
@@ -96,48 +97,78 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-
 <div style="counter-reset: section 6" class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">PACIO Cognitive Status Implementation Guide - Local Development build (v0.1.0). See the <a href="http://pacioproject.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="StructureDefinition-pacio-cognition-qr.html">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-pacio-cognition-qr-definitions.html">Detailed Descriptions</a>
-    </li>
+  
 
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-pacio-cognition-qr.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-pacio-cognition-qr-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
     <li>
       <a href="StructureDefinition-pacio-cognition-qr-mappings.html">Mappings</a>
     </li>
+  
 
-    <li class="active">
-      <a href="#">Examples</a>
-    </li>
 
+
+  
+    
+      <li class="active">
+        <a href="#">Examples</a>
+      </li>
+    
+  
+
+
+
+  
     <li>
       <a href="StructureDefinition-pacio-cognition-qr.profile.xml.html">XML</a>
     </li>
+  
 
 
+  
     <li>
       <a href="StructureDefinition-pacio-cognition-qr.profile.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="StructureDefinition-pacio-cognition-qr.profile.ttl.html">Turtle</a>
+      <a href="StructureDefinition-pacio-cognition-qr.profile.ttl.html">TTL</a>
     </li>
+  
 
-  </ul>
+</ul>
+
   <a name="root"> </a>
-  <h2 id="root">StructureDefinition: CognitionQuestionnaireResponse - Examples
-  
-  
-  
+
+
+  <h2 id="root">Resource Profile: CognitionQuestionnaireResponse - Examples</h2>
+
+     <!-- insert intro if present -->
+    
+
+
+
 
 
   <p>Examples for the pacio-cognition-qr Profile.</p>
@@ -192,22 +223,73 @@
           </td>
         </tr>
       
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-HH-Discharge-CS.html">QResponse-HH-Discharge-CS</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-HH-StartOfCare-CS.html">QResponse-HH-StartOfCare-CS</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-Hospital-Admission-CS.html">QResponse-Hospital-Admission-CS</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-Hospital-MOCA.html">QResponse-Hospital-MOCA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-SNF-Admission-CS.html">QResponse-SNF-Admission-CS</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-SNF-BIMS.html">QResponse-SNF-BIMS</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-SNF-Discharge-CS.html">QResponse-SNF-Discharge-CS</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="QuestionnaireResponse-QResponse-SNF-PHQ9.html">QResponse-SNF-PHQ9</a>
+          </td>
+        </tr>
+      
     </tbody>
   </table>
 
 
-  
-  
+  <!-- insert notes if present -->
 
 
-            <!-- /inner-wrapper -->
-          <!-- /row -->
-        <!-- /container -->
-      <!-- /segment-content -->
 
 
-  <script src="jquery.js" type="text/javascript"> </script>
+</div>
+
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
   <script type="text/javascript">
     try {
       var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
@@ -231,11 +313,18 @@
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="fb1637f6-d89f-4027-b83d-1bbcfc5279b3">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="calebwan@mitre.org">MITRE Dev Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 11, 2020 23:04+0000">2020-05-11</span>
+        <p><a name="157b8a3b-c28c-4622-a525-50a30e3ce15f">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="calebwan@mitre.org">MITRE Dev Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2020 22:47+0000">2020-06-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -255,7 +344,6 @@
     <!-- Bootstrap core JavaScript
   ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
@@ -264,5 +352,5 @@ anchors.add()</script>
   
     <!-- Analytics Below
   ================================================== -->
-  
-</h2></div></div></div></div></div></body></html>
+  </body>
+</html>

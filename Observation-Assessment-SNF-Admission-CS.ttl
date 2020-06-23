@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/Observation/Assessment-SNF-Admission-CS> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Assessment-SNF-Admission-CS"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Assessment-SNF-Admission-CS</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 86585-7}\">Signs and Symptoms of Delirium (from CAM)</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 11:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: id: Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-RN.html\">Generated Summary: id: Role-RN; active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: id: Org-02; name: Happy Nursing Facility</a></li></ul><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-Assessment-SNF-Admission-CS-Ob-2.html\">Generated Summary: id: Assessment-SNF-Admission-CS-Ob-2; <span title=\"Codes: {http://loinc.org 54632-5}\">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span>; effective: Apr 9, 2020 11:00:00 PM; <span title=\"Codes: {http://loinc.org LA32-8}\">No</span></a></li><li><a href=\"Observation-Assessment-SNF-Admission-CS-Ob-7.html\">Generated Summary: id: Assessment-SNF-Admission-CS-Ob-7; <span title=\"Codes: {http://loinc.org 54628-3}\">Inattention - Did the resident have difficulty focusing attention, for example, being easily distractible or having difficulty keeping track of what was being said?</span>; effective: Apr 9, 2020 11:00:00 PM; <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></a></li><li><a href=\"Observation-Assessment-SNF-Admission-CS-Ob-12.html\">Generated Summary: id: Assessment-SNF-Admission-CS-Ob-12; <span title=\"Codes: {http://loinc.org 54629-1}\">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span>; effective: Apr 9, 2020 11:00:00 PM; <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-Admission-CS.html\">Questionnaire Response. Generated Summary: id: QResponse-SNF-Admission-CS; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 11:00:00 PM</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://pacioproject.org/Location/Org-Loc-02>;
+       fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "survey" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:86585-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "86585-7" ];
+       fhir:Coding.display [ fhir:value "Signs and Symptoms of Delirium (from CAM)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://pacioproject.org/Practitioner/Practitioner-HoneyJones>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://pacioproject.org/PractitionerRole/Role-RN>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-RN" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://pacioproject.org/Organization/Org-02>;
+     fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
+     fhir:Reference.display [ fhir:value "Organization" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS-Ob-2>;
+     fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS-Ob-2" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS-Ob-7>;
+     fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS-Ob-7" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS-Ob-12>;
+     fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS-Ob-12" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-Admission-CS>;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-Admission-CS" ];
+     fhir:Reference.display [ fhir:value "Questionnaire Response" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/Observation/Assessment-SNF-Admission-CS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

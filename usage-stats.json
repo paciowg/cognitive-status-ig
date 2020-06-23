@@ -2,12 +2,27 @@
   "package": "pacio-cs",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://pacioproject.org/StructureDefinition/assistance-required",
+      "title": "AssistanceRequired",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://pacioproject.org/StructureDefinition/device-patient-used",
+      "title": "DevicePatientUsed",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
     "Observation": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-cs",
-        "title": "PACIO Cognitive Status"
+        "url": "http://pacioproject.org/StructureDefinition/pacio-plcf",
+        "title": "PACIO Prior Level of Cognitive Function"
       }
     ],
     "QuestionnaireResponse": [
@@ -35,6 +50,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
@@ -60,6 +76,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://pacioproject.org/StructureDefinition/assistance-required": [
+      "Observation"
+    ],
+    "http://pacioproject.org/StructureDefinition/device-patient-used": [
+      "Observation"
     ]
   }
 }

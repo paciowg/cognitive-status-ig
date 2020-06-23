@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-14> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Assessment-SNF-PHQ9-Ob-14"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: Assessment-SNF-PHQ9-Ob-14</p><p><b>meta</b>: </p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54640-8}\">Trouble falling or staying asleep</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 11:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: id: Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-RN.html\">Generated Summary: id: Role-RN; active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: id: Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA33-6}\">Yes</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-PHQ9.html\">Generated Summary: id: QResponse-SNF-PHQ9; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 11:00:00 PM</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 86843-0}\">Symptom Presence</span></p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA33-6}\">1</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 86844-8}\">Symptom Frequency</span></p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA10998-5}\">1</span></p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://pacioproject.org/Location/Org-Loc-02>;
+       fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:54640-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "54640-8" ];
+       fhir:Coding.display [ fhir:value "Trouble falling or staying asleep or sleeping too much" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Trouble falling or staying asleep" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://pacioproject.org/Practitioner/Practitioner-HoneyJones>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://pacioproject.org/PractitionerRole/Role-RN>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-RN" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://pacioproject.org/Organization/Org-02>;
+     fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
+     fhir:Reference.display [ fhir:value "Organization" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA33-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA33-6" ];
+       fhir:Coding.display [ fhir:value "Yes" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Yes" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-PHQ9>;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-PHQ9" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:86843-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "86843-0" ];
+         fhir:Coding.display [ fhir:value "Symptom Presence" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:LA33-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "LA33-6" ];
+         fhir:Coding.display [ fhir:value "Yes" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:86844-8;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "86844-8" ];
+         fhir:Coding.display [ fhir:value "Symptom Frequency" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:LA10998-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "LA10998-5" ];
+         fhir:Coding.display [ fhir:value "2-6 days (several days)" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-14.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

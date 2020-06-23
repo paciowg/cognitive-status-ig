@@ -9,7 +9,7 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pacio-cs"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIOCognitiveStatusImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://pacioproject.org/ImplementationGuide/pacio-cs</pre><div><p>PACIO Cognitive Status Implementation Guide generated with the FHIR Shorthand tool</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://pacioproject.org/ImplementationGuide/pacio-cs"];
@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-11T23:04:24+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-23T22:47:22+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE Dev Team"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -349,6 +349,24 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-plcf.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-plcf>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-plcf" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Prior Level of Cognitive Function" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of prior level of cognitive function data for a patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-pacio-cs-dev.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -359,7 +377,1063 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A device used by a Patient during a cognitive status assessment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-assistance-required.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/StructureDefinition/assistance-required>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/assistance-required" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AssistanceRequired" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated cognitive status used for display purposes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-device-patient-used.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/StructureDefinition/device-patient-used>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/device-patient-used" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DevicePatientUsed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A device used by a patient during a cognitive status assessment." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-Discharge-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-Discharge-CS>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-Discharge-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-Discharge-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-Discharge-CS-Ob-10.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-Discharge-CS-Ob-10>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-Discharge-CS-Ob-10" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-Discharge-CS-Ob-10" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-Discharge-CS-Ob-15.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-Discharge-CS-Ob-15>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-Discharge-CS-Ob-15" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-Discharge-CS-Ob-15" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-Discharge-CS-Ob-5.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-Discharge-CS-Ob-5>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-Discharge-CS-Ob-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-Discharge-CS-Ob-5" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-StartOfCare-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-StartOfCare-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-StartOfCare-CS-Ob-14.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS-Ob-14>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS-Ob-14" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-StartOfCare-CS-Ob-14" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-StartOfCare-CS-Ob-4.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS-Ob-4>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS-Ob-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-StartOfCare-CS-Ob-4" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-HH-StartOfCare-CS-Ob-9.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS-Ob-9>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS-Ob-9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-HH-StartOfCare-CS-Ob-9" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-Hospital-Admission-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-Hospital-Admission-CS>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-Hospital-Admission-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-Hospital-Admission-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-Hospital-Admission-CS-Ob-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-Hospital-Admission-CS-Ob-1>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-Hospital-Admission-CS-Ob-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-Hospital-Admission-CS-Ob-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-Hospital-Admission-CS-Ob-11.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-Hospital-Admission-CS-Ob-11>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-Hospital-Admission-CS-Ob-11" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-Hospital-Admission-CS-Ob-11" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-Hospital-Admission-CS-Ob-6.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-Hospital-Admission-CS-Ob-6>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-Hospital-Admission-CS-Ob-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-Hospital-Admission-CS-Ob-6" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-Hospital-MOCA.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-Hospital-MOCA>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-Hospital-MOCA" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-Hospital-MOCA" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-Hospital-MOCA-Ob-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-Hospital-MOCA-Ob-1>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-Hospital-MOCA-Ob-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-Hospital-MOCA-Ob-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Admission-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Admission-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Admission-CS-Ob-12.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS-Ob-12>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS-Ob-12" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Admission-CS-Ob-12" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Admission-CS-Ob-2.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS-Ob-2>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS-Ob-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Admission-CS-Ob-2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Admission-CS-Ob-7.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Admission-CS-Ob-7>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Admission-CS-Ob-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Admission-CS-Ob-7" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-2.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-2>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-3.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-3>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-3" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-4.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-4>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-4" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-5.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-5>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-5" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-6.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-6>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-6" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-7.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-7>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-7" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-8.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-8>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-8" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-BIMS-Ob-9.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-9>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-BIMS-Ob-9" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Discharge-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Discharge-CS>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Discharge-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Discharge-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Discharge-CS-Ob-13.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Discharge-CS-Ob-13>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Discharge-CS-Ob-13" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Discharge-CS-Ob-13" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Discharge-CS-Ob-3.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Discharge-CS-Ob-3>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Discharge-CS-Ob-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Discharge-CS-Ob-3" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-Discharge-CS-Ob-8.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-Discharge-CS-Ob-8>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-Discharge-CS-Ob-8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-Discharge-CS-Ob-8" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-bcs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-10.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-10>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-10" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-10" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-11.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-11>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-11" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-11" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-12.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-12>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-12" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-12" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-13.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-13>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-13" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-13" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-14.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-14>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-14" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-14" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-15.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-15>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-15" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-15" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-16.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-16>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-16" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-16" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-17.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-17>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-17" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-17" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-18.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-18>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-18" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-18" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-19.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-19>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-20.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-20>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-20" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-20" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-21.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-21>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-21" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-21" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-22.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-22>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-22" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-22" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-23.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-23>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-23" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-23" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-24.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-24>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-24" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-24" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-25.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-25>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-25" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-25" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-26.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-26>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-26" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-26" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-27.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-27>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-27" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-27" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-Assessment-SNF-PHQ9-Ob-28.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Observation/Assessment-SNF-PHQ9-Ob-28>;
+         fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-PHQ9-Ob-28" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assessment-SNF-PHQ9-Ob-28" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cs";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
+       ]
+     ], [
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -379,7 +1453,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 5;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -399,7 +1473,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 6;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -419,7 +1493,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 7;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -439,7 +1513,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 8;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -459,7 +1533,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -479,7 +1553,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 10;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -499,7 +1573,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -519,7 +1593,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -539,7 +1613,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -559,7 +1633,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -579,7 +1653,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -599,7 +1673,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -619,7 +1693,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 17;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -639,7 +1713,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 18;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -659,7 +1733,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -679,7 +1753,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -699,7 +1773,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -719,7 +1793,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -739,7 +1813,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -759,7 +1833,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -779,7 +1853,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -799,7 +1873,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -819,7 +1893,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -839,7 +1913,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -859,7 +1933,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -879,7 +1953,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -899,7 +1973,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 85;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -919,7 +1993,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 86;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -939,7 +2013,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -959,7 +2033,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-bcs>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 88;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -979,7 +2053,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 89;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -999,7 +2073,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1019,7 +2093,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 91;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1039,7 +2113,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 92;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1059,7 +2133,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 39;
+       fhir:index 93;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1079,7 +2153,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 40;
+       fhir:index 94;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1099,7 +2173,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 41;
+       fhir:index 95;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1119,7 +2193,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 42;
+       fhir:index 96;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1139,7 +2213,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 43;
+       fhir:index 97;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1159,7 +2233,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 44;
+       fhir:index 98;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1179,7 +2253,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 99;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1199,7 +2273,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 46;
+       fhir:index 100;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1219,7 +2293,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 47;
+       fhir:index 101;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1239,7 +2313,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 48;
+       fhir:index 102;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1259,7 +2333,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 49;
+       fhir:index 103;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1279,7 +2353,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 104;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1299,7 +2373,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 51;
+       fhir:index 105;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1319,7 +2393,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cs>
        ]
      ], [
-       fhir:index 52;
+       fhir:index 106;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1336,7 +2410,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Org-01" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 107;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1353,7 +2427,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Org-02" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 108;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1370,7 +2444,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Org-03" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 109;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1387,7 +2461,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Org-Loc-01" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 110;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1404,7 +2478,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Org-Loc-02" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 111;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1421,7 +2495,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Org-Loc-03" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 112;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1438,7 +2512,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-DanielGranger" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 59;
+       fhir:index 113;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1455,7 +2529,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-HoneyJones" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 114;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1472,7 +2546,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-JenCadbury" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 61;
+       fhir:index 115;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1489,7 +2563,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-JennyGlass" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 62;
+       fhir:index 116;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1506,7 +2580,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-LunaBaskins" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 63;
+       fhir:index 117;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1523,7 +2597,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-RonBurgendy" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 64;
+       fhir:index 118;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1540,7 +2614,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-RonMarble" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 65;
+       fhir:index 119;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1557,7 +2631,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-SallySmith" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 120;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1574,7 +2648,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Practitioner-ScottDumble" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 121;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1594,7 +2668,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 122;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1614,7 +2688,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 123;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1634,7 +2708,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 124;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1654,7 +2728,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 125;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1674,7 +2748,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 72;
+       fhir:index 126;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1694,7 +2768,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 73;
+       fhir:index 127;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1714,7 +2788,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 74;
+       fhir:index 128;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1734,7 +2808,7 @@
          fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
        ]
      ], [
-       fhir:index 75;
+       fhir:index 129;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1751,7 +2825,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Role-PT" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 76;
+       fhir:index 130;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1768,7 +2842,456 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Connectathon-Role-RN" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-Org-01.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Organization/Org-01>;
+         fhir:Reference.reference [ fhir:value "Organization/Org-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-01" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-Org-02.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Organization/Org-02>;
+         fhir:Reference.reference [ fhir:value "Organization/Org-02" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-02" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-Org-03.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Organization/Org-03>;
+         fhir:Reference.reference [ fhir:value "Organization/Org-03" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-03" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Location-Org-Loc-01.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Location/Org-Loc-01>;
+         fhir:Reference.reference [ fhir:value "Location/Org-Loc-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-Loc-01" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Location-Org-Loc-02.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Location/Org-Loc-02>;
+         fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-Loc-02" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Location-Org-Loc-03.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Location/Org-Loc-03>;
+         fhir:Reference.reference [ fhir:value "Location/Org-Loc-03" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-Loc-03" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-DanielGranger.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-DanielGranger>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-DanielGranger" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-DanielGranger" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-HoneyJones.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-HoneyJones>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-HoneyJones" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-JenCadbury.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-JenCadbury>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-JenCadbury" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-JenCadbury" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-JennyGlass.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-JennyGlass>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-JennyGlass" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-JennyGlass" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-LunaBaskins.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-LunaBaskins>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-LunaBaskins" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-LunaBaskins" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-RonBurgendy.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-RonBurgendy>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-RonBurgendy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-RonBurgendy" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-RonMarble.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-RonMarble>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-RonMarble" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-RonMarble" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-SallySmith.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-SallySmith>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-SallySmith" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-SallySmith" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-Practitioner-ScottDumble.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/Practitioner/Practitioner-ScottDumble>;
+         fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-ScottDumble" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner-ScottDumble" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-HH-Discharge-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-HH-Discharge-CS>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-HH-Discharge-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-HH-Discharge-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-HH-StartOfCare-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-HH-StartOfCare-CS>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-HH-StartOfCare-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-HH-StartOfCare-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-Hospital-Admission-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-Hospital-Admission-CS>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-Hospital-Admission-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-Hospital-Admission-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 149;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-Hospital-MOCA.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-Hospital-MOCA>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-Hospital-MOCA" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-Hospital-MOCA" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 150;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-SNF-Admission-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-Admission-CS>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-Admission-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-SNF-Admission-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 151;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-SNF-BIMS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-BIMS>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-BIMS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-SNF-BIMS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 152;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-SNF-Discharge-CS.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-Discharge-CS>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-Discharge-CS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-SNF-Discharge-CS" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 153;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-QResponse-SNF-PHQ9.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-PHQ9>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-PHQ9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QResponse-SNF-PHQ9" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+         fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       ]
+     ], [
+       fhir:index 154;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-Role-PT.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/PractitionerRole/Role-PT>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/Role-PT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role-PT" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 155;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-Role-RN.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://pacioproject.org/PractitionerRole/Role-RN>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/Role-RN" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role-RN" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 156;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1785,7 +3308,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patientBSJ1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 78;
+       fhir:index 157;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

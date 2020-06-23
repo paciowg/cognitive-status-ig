@@ -1,0 +1,154 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-BIMS> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "QResponse-SNF-BIMS"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+       fhir:index 0;
+       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: QResponse-SNF-BIMS</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 9, 2020 11:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 86529-5</p><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Id</b></td></tr><tr><td>*</td><td>52731-7</td></tr><tr><td>*</td><td>54510-3</td></tr><tr><td>*</td><td>52493-4</td></tr><tr><td>*</td><td>54614-3</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
+     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "86529-5" ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Cognitive Patterns" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "52731-7" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0200" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Number of words repeated after first attempt" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-2>;
+           fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-2" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "54510-3" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Temporal Orientation (orientation to year, month, and day)" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "52732-5" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300A" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct year" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-3>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-3" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "52733-3" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300B" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct month" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-4>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-4" ]
+           ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Element.id [ fhir:value "54609-3" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300C" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct day of the week" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-5>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-5" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "52493-4" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Recall" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "52735-8" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400A" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall sock" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-6>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-6" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "52736-6" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400B" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall blue" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-7>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-7" ]
+           ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Element.id [ fhir:value "52737-4" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400C" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall bed" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-8>;
+             fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-8" ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "54614-3" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0500" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "BIMS Summary Score" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-9>;
+           fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-9" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-BIMS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
