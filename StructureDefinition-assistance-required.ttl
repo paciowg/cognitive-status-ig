@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "AssistanceRequired"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-23T22:47:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-24T03:29:38+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE Dev Team"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "calebwan@mitre.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Associated cognitive status used for display purposes."];
+  fhir:StructureDefinition.description [ fhir:value "Associated with prior level of cognitive function to provide indication of 'independent' vs. 'assistance needed'."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

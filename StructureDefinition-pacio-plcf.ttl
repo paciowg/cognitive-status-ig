@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "PriorLevelOfCognitiveFunction"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Prior Level of Cognitive Function"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-23T22:47:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-24T03:29:38+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE Dev Team"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "calebwan@mitre.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "An exchange of prior level of cognitive function data for a patient."];
+  fhir:StructureDefinition.description [ fhir:value "An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

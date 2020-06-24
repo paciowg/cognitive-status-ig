@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-23T22:47:22+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-24T03:29:38+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE Dev Team"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -356,7 +356,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-plcf" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Prior Level of Cognitive Function" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of prior level of cognitive function data for a patient." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -392,7 +392,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/assistance-required" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AssistanceRequired" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated cognitive status used for display purposes." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with prior level of cognitive function to provide indication of 'independent' vs. 'assistance needed'." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;

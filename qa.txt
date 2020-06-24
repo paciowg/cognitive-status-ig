@@ -3,7 +3,7 @@
 
 err = 27, warn = 400, info = 0
 IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Tue Jun 23 22:48:41 GMT 2020. FHIR version 4.0.1 for pacio-cs#0.1.0 (canonical = http://pacioproject.org)
+Generated Wed Jun 24 03:31:01 GMT 2020. FHIR version 4.0.1 for pacio-cs#0.1.0 (canonical = http://pacioproject.org)
 
  Build Errors : 670 / 150
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-pacio-cs : 0 / 0
@@ -926,7 +926,7 @@ ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-stat
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-assistance-required.html#/html/body/div/div/div/p/a at Line 447, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-assistance-required.profile.json.html#/html/body/div/div/div/p/a at Line 487, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-assistance-required.profile.ttl.html#/html/body/div/div/div/p/a at Line 462, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-assistance-required.profile.xml.html#/html/body/div/div/div/p/a at Line 444, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-assistance-required.profile.xml.html#/html/body/div/div/div/p/a at Line 445, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-device-patient-used-definitions.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-device-patient-used-mappings.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-device-patient-used.html#/html/body/div/div/div/p/a at Line 461, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
