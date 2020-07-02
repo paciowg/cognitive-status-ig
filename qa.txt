@@ -1,9 +1,9 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 20, warn = 406, info = 0
+err = 25, warn = 406, info = 0
 IG Publisher Version: v1.0.100-SNAPSHOT Out of date - current version is v1.0.101-SNAPSHOT
-Generated Thu Jul 02 17:57:54 GMT 2020. FHIR version 4.0.1 for pacio-cs#0.1.0 (canonical = http://pacioproject.org)
+Generated Thu Jul 02 20:48:09 GMT 2020. FHIR version 4.0.1 for pacio-cs#0.1.0 (canonical = http://pacioproject.org)
 
  Build Errors : 676 / 150
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-pacio-cs : 0 / 0
@@ -164,7 +164,7 @@ Generated Thu Jul 02 17:57:54 GMT 2020. FHIR version 4.0.1 for pacio-cs#0.1.0 (c
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs : 1 / 2
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev : 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 0 / 3
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cs : 14 / 0
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cs : 19 / 0
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/Assessment-HH-Discharge-CS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -318,9 +318,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/Role-RN.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/patientBSJ1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.html#/html/body/div/div/div/p/a at Line 177, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.json.html#/html/body/div/div/div/p/a at Line 1060, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.ttl.html#/html/body/div/div/div/p/a at Line 1176, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.xml.html#/html/body/div/div/div/p/a at Line 1151, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.json.html#/html/body/div/div/div/p/a at Line 1346, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.ttl.html#/html/body/div/div/div/p/a at Line 1512, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/CapabilityStatement-pacio-cs.xml.html#/html/body/div/div/div/p/a at Line 1489, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/Location-Connectathon-Org-Loc-01.html#/html/body/div/div/div/p/a at Line 176, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/Location-Connectathon-Org-Loc-01.json.html#/html/body/div/div/div/p/a at Line 190, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/Location-Connectathon-Org-Loc-01.ttl.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
@@ -985,10 +985,10 @@ ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-stat
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.ttl.html#/html/body/div/div/div/p/a at Line 2707, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.xml.html#/html/body/div/div/div/p/a at Line 2779, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/artifacts.html#/html/body/div/div/div/p/a at Line 1297, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/cognitive_status_use_case.html#/html/body/div/div/div/p/a at Line 163, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/cognitive_status_use_case.html#/html/body/div/div/div/p/a at Line 165, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/index.html#/html/body/div/div/div/div/div/ul/li/strong/a at Line 168, column 16: The link 'http://hl7.org/fhir/us/core/STU3' for "US Core STU3" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/index.html#/html/body/div/div/div/p/a at Line 201, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/profile_highlights_and_guidance.html#/html/body/div/div/div/p/a at Line 417, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/profile_highlights_and_guidance.html#/html/body/div/div/div/p/a at Line 420, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/security_and_data_sharing.html#/html/body/div/div/div/p/a at Line 155, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/toc.html#/html/body/div/div/div/p/a at Line 135, column 28: The link 'calebwan@mitre.org' for "MITRE Dev Team" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/underlying_technologies.html#/html/body/div/div/div/div/div/p/a at Line 141, column 142: The link 'http://hl7.org/fhir/us/core/STU3' for "US Core Implementation Guide" cannot be resolved
@@ -1427,4 +1427,9 @@ ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[1].sea
 ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[2].type: The value provided ("CognitionQuestionnaireResponse") is not in the value set http://hl7.org/fhir/ValueSet/resource-types|4.0.1 (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#CognitionQuestionnaireResponse in http://hl7.org/fhir/resource-types)
 ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[2].searchParam[2].definition: URL value "http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-parent" does not resolve
 ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[2].searchParam[8].definition: URL value "http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-context" does not resolve
-ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[3].type: The value provided ("UseOfDevice") is not in the value set http://hl7.org/fhir/ValueSet/resource-types|4.0.1 (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#UseOfDevice in http://hl7.org/fhir/resource-types)
+ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[3].type: The value provided ("PriorLevelOfCognitiveFunction") is not in the value set http://hl7.org/fhir/ValueSet/resource-types|4.0.1 (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#PriorLevelOfCognitiveFunction in http://hl7.org/fhir/resource-types)
+ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[3].searchParam[11].definition: URL value "http://hl7.org/fhir/SearchParameter/Observation-related" does not resolve
+ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[3].searchParam[17].definition: URL value "http://hl7.org/fhir/SearchParameter/Observation-context" does not resolve
+ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[3].searchParam[29].definition: URL value "http://hl7.org/fhir/SearchParameter/Observation-related-type" does not resolve
+ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[3].searchParam[30].definition: URL value "http://hl7.org/fhir/SearchParameter/Observation-related-target" does not resolve
+ERROR: CapabilityStatement/pacio-cs: CapabilityStatement.rest[0].resource[4].type: The value provided ("UseOfDevice") is not in the value set http://hl7.org/fhir/ValueSet/resource-types|4.0.1 (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#UseOfDevice in http://hl7.org/fhir/resource-types)
