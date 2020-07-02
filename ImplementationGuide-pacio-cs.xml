@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-06-24T03:29:38+00:00"/>
+  <date value="2020-07-02T17:56:14+00:00"/>
   <publisher value="MITRE Dev Team"/>
   <contact>
     <name value="Caleb Wan"/>
@@ -2259,6 +2259,26 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="cognitive_status_use_case.html"/>
+        <title value="Cognitive Status Use Case"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profile_highlights_and_guidance.html"/>
+        <title value="Profile Highlights and Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security_and_data_sharing.html"/>
+        <title value="Security and Data Sharing"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="underlying_technologies.html"/>
+        <title value="Underlying Technologies"/>
         <generation value="markdown"/>
       </page>
     </page>

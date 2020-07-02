@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-24T03:29:38+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-02T17:56:14+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE Dev Team"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -3334,6 +3334,26 @@
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "cognitive_status_use_case.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Cognitive Status Use Case" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profile_highlights_and_guidance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profile Highlights and Guidance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security_and_data_sharing.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Data Sharing" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "underlying_technologies.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Underlying Technologies" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

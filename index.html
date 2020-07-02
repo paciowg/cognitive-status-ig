@@ -69,6 +69,9 @@
 <ul class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="cognitive_status_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
   <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
@@ -115,6 +118,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#cognitive-status" id="markdown-toc-cognitive-status">Cognitive Status</a></li>
   <li><a href="#expected-users" id="markdown-toc-expected-users">Expected Users</a></li>
   <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#content-and-organization" id="markdown-toc-content-and-organization">Content and Organization</a></li>
+  <li><a href="#dependencies" id="markdown-toc-dependencies">Dependencies</a></li>
+  <li><a href="#downloads" id="markdown-toc-downloads">Downloads</a></li>
 </ul>
 
 </div>
@@ -145,6 +151,32 @@ Data to be standardized and interoperable to allow exchange of data between PAC 
 
 <p>The primary goal of the PACIO Project is to establish a framework for the development of Fast Healthcare Interoperability Resource (FHIR) technical implementation guides and reference implementations that will facilitate health data exchange through standards-based use case-driven application programming interfaces (APIs).</p>
 
+<h3 id="content-and-organization">Content and Organization</h3>
+<p>The implementation guide is organized into the following sections:</p>
+<ul>
+  <li><a href="cognitive_status_use_case.html">Use Case Example</a> Describes an example of its use and provides a high-level overview of expected process flow.</li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a> Describes the different specifications this implementation guide relies on and indicates what developers should read and understand prior to implementing this specification.</li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a> Provides a closer look at the IG profiles and guidance for constructing profile instances with examples for data exchange.</li>
+  <li><a href="security_and_data_sharing.html">Security and Data Sharing</a> Covers issues concerning security and patient information access and sharing.</li>
+  <li><a href="artifacts.html">Artifacts Summary</a> Introduces and provides links to the Capability Statement, IG Resource Profiles, and IG Extension Definitions as well as example profile instances.</li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+<p>This implementation guide relies on the following other specifications:</p>
+<ul>
+  <li><strong><a href="http://hl7.org/fhir/R4/">FHIR R4</a></strong> - The ‘current’ official version of FHIR as of the time this implementation guide was published.  See the <a href="underlying_technologies.html">background page</a> for key pieces of this specification implementers should be familiar with.</li>
+  <li><strong><a name="28e41b66-20ad-4d3c-b1c4-0be2b2c1663f">​</a><a href="http://hl7.org/fhir/us/core/STU3">US Core STU3</a></strong> - The version of US Core based on FHIR R4.</li>
+</ul>
+
+<p>This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.</p>
+
+<h3 id="downloads">Downloads</h3>
+<ul>
+  <li>The full <a href="full-ig.zip">PACIO Cognitive Status Implementation Guide</a></li>
+  <li><a href="definitions.json.zip">FHIR R4 PACIO CS Resource Definitions</a> for use with the FHIR validator</li>
+  <li><a href="https://fhir.github.io/latest-ig-validator/org.hl7.fhir.validator.jar">FHIR IG Validator Pack</a> which can be used to check FHIR resource instance validity</li>
+</ul>
+
 
 </div>
         </div>    <!-- /inner-wrapper -->
@@ -165,8 +197,8 @@ Data to be standardized and interoperable to allow exchange of data between PAC 
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="89fb91fd-929b-4f8b-94eb-65b01820c47e">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="calebwan@mitre.org">MITRE Dev Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 24, 2020 03:29+0000">2020-06-24</span>
+        <p><a name="8010a57d-fe9c-435b-8098-64f2111fb7bd">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="calebwan@mitre.org">MITRE Dev Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 2, 2020 17:56+0000">2020-07-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

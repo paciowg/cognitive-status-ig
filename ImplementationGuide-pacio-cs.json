@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-06-24T03:29:38+00:00",
+  "date": "2020-07-02T17:56:14+00:00",
   "publisher": "MITRE Dev Team",
   "contact": [
     {
@@ -3003,6 +3003,26 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "cognitive_status_use_case.html",
+          "title": "Cognitive Status Use Case",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profile_highlights_and_guidance.html",
+          "title": "Profile Highlights and Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "security_and_data_sharing.html",
+          "title": "Security and Data Sharing",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "underlying_technologies.html",
+          "title": "Underlying Technologies",
           "generation": "markdown"
         }
       ]
