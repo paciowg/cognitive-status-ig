@@ -3,7 +3,7 @@
   "id": "Assessment-SNF-Discharge-CS",
   "meta": {
     "profile": [
-      "http://pacioproject.org/StructureDefinition/pacio-bcs"
+      "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"
     ]
   },
   "text": {

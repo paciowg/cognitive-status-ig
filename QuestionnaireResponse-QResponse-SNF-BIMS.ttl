@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-BIMS> a fhir:QuestionnaireResponse;
+<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BIMS> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-SNF-BIMS"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
        fhir:index 0;
-       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
      ]
   ];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
@@ -42,7 +42,7 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-2>;
+           fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-2>;
            fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-2" ]
          ]
        ]
@@ -59,7 +59,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-3>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-3>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-3" ]
            ]
          ]
@@ -71,7 +71,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-4>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-4>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-4" ]
            ]
          ]
@@ -83,7 +83,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-5>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-5>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-5" ]
            ]
          ]
@@ -101,7 +101,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-6>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-6>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-6" ]
            ]
          ]
@@ -113,7 +113,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-7>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-7>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-7" ]
            ]
          ]
@@ -125,7 +125,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-8>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-8>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-8" ]
            ]
          ]
@@ -138,7 +138,7 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <http://pacioproject.org/Observation/Assessment-SNF-BIMS-Ob-9>;
+           fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-SNF-BIMS-Ob-9>;
            fhir:Reference.reference [ fhir:value "Observation/Assessment-SNF-BIMS-Ob-9" ]
          ]
        ]
@@ -147,7 +147,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://pacioproject.org/QuestionnaireResponse/QResponse-SNF-BIMS.ttl> a owl:Ontology;
+<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BIMS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://pacioproject.org/Practitioner/Practitioner-RonMarble> a fhir:Practitioner;
+<https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-RonMarble> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Practitioner-RonMarble"];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://pacioproject.org/Practitioner/Practitioner-RonMarble.ttl> a owl:Ontology;
+<https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-RonMarble.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

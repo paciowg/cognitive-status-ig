@@ -3,7 +3,7 @@
   "id": "QResponse-SNF-Admission-CS",
   "meta": {
     "profile": [
-      "http://pacioproject.org/StructureDefinition/pacio-cognition-qr"
+      "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
     ]
   },
   "text": {

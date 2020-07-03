@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://pacioproject.org/Organization/Org-01> a fhir:Organization;
+<https://paciowg.github.io/cognitive-status-ig/Organization/Org-01> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Org-01"];
   fhir:DomainResource.text [
@@ -16,7 +16,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://pacioproject.org/Organization/Org-01.ttl> a owl:Ontology;
+<https://paciowg.github.io/cognitive-status-ig/Organization/Org-01.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

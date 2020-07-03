@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://pacioproject.org/QuestionnaireResponse/QResponse-HH-StartOfCare-CS> a fhir:QuestionnaireResponse;
+<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-HH-StartOfCare-CS> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-HH-StartOfCare-CS"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://pacioproject.org/StructureDefinition/pacio-cognition-qr";
+       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
        fhir:index 0;
-       fhir:link <http://pacioproject.org/StructureDefinition/pacio-cognition-qr>
+       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
      ]
   ];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <http://pacioproject.org/Patient/patientBSJ1>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-24T13:15:00-05:00"^^xsd:dateTime];
@@ -47,7 +47,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS-Ob-4>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-HH-StartOfCare-CS-Ob-4>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS-Ob-4" ]
            ]
          ]
@@ -59,7 +59,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS-Ob-9>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-HH-StartOfCare-CS-Ob-9>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS-Ob-9" ]
            ]
          ]
@@ -71,7 +71,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://pacioproject.org/Observation/Assessment-HH-StartOfCare-CS-Ob-14>;
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/Assessment-HH-StartOfCare-CS-Ob-14>;
              fhir:Reference.reference [ fhir:value "Observation/Assessment-HH-StartOfCare-CS-Ob-14" ]
            ]
          ]
@@ -81,7 +81,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://pacioproject.org/QuestionnaireResponse/QResponse-HH-StartOfCare-CS.ttl> a owl:Ontology;
+<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-HH-StartOfCare-CS.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

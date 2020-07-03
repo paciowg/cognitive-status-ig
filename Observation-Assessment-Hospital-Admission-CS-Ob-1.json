@@ -3,7 +3,7 @@
   "id": "Assessment-Hospital-Admission-CS-Ob-1",
   "meta": {
     "profile": [
-      "http://pacioproject.org/StructureDefinition/pacio-cs"
+      "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
     ]
   },
   "text": {

@@ -4,14 +4,14 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://pacioproject.org/StructureDefinition/assistance-required",
+      "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required",
       "title": "AssistanceRequired",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://pacioproject.org/StructureDefinition/device-patient-used",
+      "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used",
       "title": "DevicePatientUsed",
       "types": [
         "Reference"
@@ -21,19 +21,19 @@
   "profiles": {
     "Observation": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-plcf",
+        "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
         "title": "PACIO Prior Level of Cognitive Function"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-cognition-qr",
+        "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
         "title": "PACIO Cognition Questionnaire Response"
       }
     ],
     "DeviceUseStatement": [
       {
-        "url": "http://pacioproject.org/StructureDefinition/pacio-cs-dev",
+        "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev",
         "title": "Use of Device"
       }
     ]
@@ -76,10 +76,10 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://pacioproject.org/StructureDefinition/assistance-required": [
+    "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required": [
       "Observation"
     ],
-    "http://pacioproject.org/StructureDefinition/device-patient-used": [
+    "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used": [
       "Observation"
     ]
   }

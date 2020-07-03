@@ -3,26 +3,24 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="pacio-cs"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PACIOCognitiveStatusImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://pacioproject.org/ImplementationGuide/pacio-cs</pre><div><p>PACIO Cognitive Status Implementation Guide generated with the FHIR Shorthand tool</p>
-</div></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PACIOCognitiveStatusImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://paciowg.github.io/cognitive-status-ig/ImplementationGuide/pacio-cs</pre></div>
   </text>
-  <url value="http://pacioproject.org/ImplementationGuide/pacio-cs"/>
+  <url value="https://paciowg.github.io/cognitive-status-ig/ImplementationGuide/pacio-cs"/>
   <version value="0.1.0"/>
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-07-02T20:46:43+00:00"/>
-  <publisher value="MITRE Dev Team"/>
+  <date value="2020-07-03T15:51:30+00:00"/>
+  <publisher value="MITRE PACIO Team"/>
   <contact>
     <name value="Caleb Wan"/>
     <telecom>
       <system value="email"/>
-      <value value="calebwan@mitre.org"/>
+      <value value="http://pacioproject.org/"/>
     </telecom>
   </contact>
-  <description value="PACIO Cognitive Status Implementation Guide generated with the FHIR Shorthand tool"/>
   <packageId value="pacio-cs"/>
-  <license value="Apache-2.0"/>
+  <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn>
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -107,7 +105,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://pacioproject.org/history.html"/>
+        <valueString value="https://paciowg.github.io/cognitive-status-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -299,7 +297,7 @@
         <reference value="Observation/Assessment-HH-Discharge-CS"/>
       </reference>
       <name value="Assessment-HH-Discharge-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -312,7 +310,7 @@
         <reference value="Observation/Assessment-HH-Discharge-CS-Ob-10"/>
       </reference>
       <name value="Assessment-HH-Discharge-CS-Ob-10"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -325,7 +323,7 @@
         <reference value="Observation/Assessment-HH-Discharge-CS-Ob-15"/>
       </reference>
       <name value="Assessment-HH-Discharge-CS-Ob-15"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -338,7 +336,7 @@
         <reference value="Observation/Assessment-HH-Discharge-CS-Ob-5"/>
       </reference>
       <name value="Assessment-HH-Discharge-CS-Ob-5"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -351,7 +349,7 @@
         <reference value="Observation/Assessment-HH-StartOfCare-CS"/>
       </reference>
       <name value="Assessment-HH-StartOfCare-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -364,7 +362,7 @@
         <reference value="Observation/Assessment-HH-StartOfCare-CS-Ob-14"/>
       </reference>
       <name value="Assessment-HH-StartOfCare-CS-Ob-14"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -377,7 +375,7 @@
         <reference value="Observation/Assessment-HH-StartOfCare-CS-Ob-4"/>
       </reference>
       <name value="Assessment-HH-StartOfCare-CS-Ob-4"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -390,7 +388,7 @@
         <reference value="Observation/Assessment-HH-StartOfCare-CS-Ob-9"/>
       </reference>
       <name value="Assessment-HH-StartOfCare-CS-Ob-9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -403,7 +401,7 @@
         <reference value="Observation/Assessment-Hospital-Admission-CS"/>
       </reference>
       <name value="Assessment-Hospital-Admission-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -416,7 +414,7 @@
         <reference value="Observation/Assessment-Hospital-Admission-CS-Ob-1"/>
       </reference>
       <name value="Assessment-Hospital-Admission-CS-Ob-1"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -429,7 +427,7 @@
         <reference value="Observation/Assessment-Hospital-Admission-CS-Ob-11"/>
       </reference>
       <name value="Assessment-Hospital-Admission-CS-Ob-11"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -442,7 +440,7 @@
         <reference value="Observation/Assessment-Hospital-Admission-CS-Ob-6"/>
       </reference>
       <name value="Assessment-Hospital-Admission-CS-Ob-6"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -455,7 +453,7 @@
         <reference value="Observation/Assessment-Hospital-MOCA"/>
       </reference>
       <name value="Assessment-Hospital-MOCA"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -468,7 +466,7 @@
         <reference value="Observation/Assessment-Hospital-MOCA-Ob-1"/>
       </reference>
       <name value="Assessment-Hospital-MOCA-Ob-1"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -481,7 +479,7 @@
         <reference value="Observation/Assessment-SNF-Admission-CS"/>
       </reference>
       <name value="Assessment-SNF-Admission-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -494,7 +492,7 @@
         <reference value="Observation/Assessment-SNF-Admission-CS-Ob-12"/>
       </reference>
       <name value="Assessment-SNF-Admission-CS-Ob-12"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,7 +505,7 @@
         <reference value="Observation/Assessment-SNF-Admission-CS-Ob-2"/>
       </reference>
       <name value="Assessment-SNF-Admission-CS-Ob-2"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,7 +518,7 @@
         <reference value="Observation/Assessment-SNF-Admission-CS-Ob-7"/>
       </reference>
       <name value="Assessment-SNF-Admission-CS-Ob-7"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -533,7 +531,7 @@
         <reference value="Observation/Assessment-SNF-BIMS"/>
       </reference>
       <name value="Assessment-SNF-BIMS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -546,7 +544,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-2"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-2"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -559,7 +557,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-3"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-3"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -572,7 +570,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-4"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-4"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -585,7 +583,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-5"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-5"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -598,7 +596,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-6"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-6"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -611,7 +609,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-7"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-7"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -624,7 +622,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-8"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-8"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -637,7 +635,7 @@
         <reference value="Observation/Assessment-SNF-BIMS-Ob-9"/>
       </reference>
       <name value="Assessment-SNF-BIMS-Ob-9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -650,7 +648,7 @@
         <reference value="Observation/Assessment-SNF-Discharge-CS"/>
       </reference>
       <name value="Assessment-SNF-Discharge-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -663,7 +661,7 @@
         <reference value="Observation/Assessment-SNF-Discharge-CS-Ob-13"/>
       </reference>
       <name value="Assessment-SNF-Discharge-CS-Ob-13"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -676,7 +674,7 @@
         <reference value="Observation/Assessment-SNF-Discharge-CS-Ob-3"/>
       </reference>
       <name value="Assessment-SNF-Discharge-CS-Ob-3"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -689,7 +687,7 @@
         <reference value="Observation/Assessment-SNF-Discharge-CS-Ob-8"/>
       </reference>
       <name value="Assessment-SNF-Discharge-CS-Ob-8"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -702,7 +700,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9"/>
       </reference>
       <name value="Assessment-SNF-PHQ9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -715,7 +713,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-10"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-10"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -728,7 +726,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-11"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-11"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -741,7 +739,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-12"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-12"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -754,7 +752,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-13"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-13"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -767,7 +765,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-14"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-14"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -780,7 +778,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-15"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-15"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -793,7 +791,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-16"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-16"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -806,7 +804,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-17"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-17"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -819,7 +817,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-18"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-18"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -832,7 +830,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-19"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-19"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -845,7 +843,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-20"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-20"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -858,7 +856,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-21"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-21"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -871,7 +869,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-22"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-22"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -884,7 +882,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-23"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-23"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -897,7 +895,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-24"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-24"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -910,7 +908,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-25"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-25"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -923,7 +921,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-26"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-26"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -936,7 +934,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-27"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-27"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -949,956 +947,7 @@
         <reference value="Observation/Assessment-SNF-PHQ9-Ob-28"/>
       </reference>
       <name value="Assessment-SNF-PHQ9-Ob-28"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-3-First3DSNFAdmission.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-3-First3DSNFAdmission"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-12.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-12"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-12"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-2.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-2"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-2"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-7.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-7"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-3-First3DSNFAdmission-Ob-7"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-4-Last3DSNFStay.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-4-Last3DSNFStay"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-4-Last3DSNFStay"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-13.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-13"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-13"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-3.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-3"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-3"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-8.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-8"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-4-Last3DSNFStay-Ob-8"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-5-HHStartOfCarePerf.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-5-HHStartOfCarePerf"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-5-HHStartOfCarePerf"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-14.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-14"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-14"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-4.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-4"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-4"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-9.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-9"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-5-HHStartOfCarePerf-Ob-9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-6-HHDischargePerf.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-6-HHDischargePerf"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-6-HHDischargePerf"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-6-HHDischargePerf-Ob-10.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-6-HHDischargePerf-Ob-10"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-6-HHDischargePerf-Ob-10"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-6-HHDischargePerf-Ob-15.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-6-HHDischargePerf-Ob-15"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-6-HHDischargePerf-Ob-15"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-6-HHDischargePerf-Ob-5.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-6-HHDischargePerf-Ob-5"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-6-HHDischargePerf-Ob-5"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-Hospital-CAM.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-Hospital-CAM"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-Hospital-CAM"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-Hospital-CAM-Ob-1.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-Hospital-CAM-Ob-1"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-Hospital-CAM-Ob-1"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-Hospital-CAM-Ob-11.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-Hospital-CAM-Ob-11"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-Hospital-CAM-Ob-11"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-Hospital-CAM-Ob-6.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-Hospital-CAM-Ob-6"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-Hospital-CAM-Ob-6"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-Hospital-MOCA.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-Hospital-MOCA"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-Hospital-MOCA"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-17.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-17"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-17"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-18.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-18"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-18"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-19.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-19"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-19"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-20.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-20"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-20"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-21.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-21"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-21"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-22.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-22"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-22"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-23.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-23"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-BIMS-Ob-23"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-25.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-25"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-25"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-26.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-26"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-26"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-27.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-27"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-27"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-28.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-28"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-28"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-29.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-29"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-29"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-30.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-30"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-30"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-31.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-31"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-31"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-32.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-32"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-32"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-33.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-33"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-33"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-34.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-34"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-34"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-35.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-35"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-35"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-36.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-36"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-36"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-37.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-37"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-37"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-38.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-38"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-38"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-39.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-39"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-39"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-40.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-40"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-40"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-41.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-41"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-41"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-42.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-42"/>
-      </reference>
-      <name value="Connectathon-Assessment-CS-NursingFacility-PHQ9-Ob-42"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-Connectathon-Org-01.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/Connectathon-Org-01"/>
-      </reference>
-      <name value="Connectathon-Org-01"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-Connectathon-Org-02.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/Connectathon-Org-02"/>
-      </reference>
-      <name value="Connectathon-Org-02"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Organization-Connectathon-Org-03.html"/>
-      </extension>
-      <reference>
-        <reference value="Organization/Connectathon-Org-03"/>
-      </reference>
-      <name value="Connectathon-Org-03"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Location-Connectathon-Org-Loc-01.html"/>
-      </extension>
-      <reference>
-        <reference value="Location/Connectathon-Org-Loc-01"/>
-      </reference>
-      <name value="Connectathon-Org-Loc-01"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Location-Connectathon-Org-Loc-02.html"/>
-      </extension>
-      <reference>
-        <reference value="Location/Connectathon-Org-Loc-02"/>
-      </reference>
-      <name value="Connectathon-Org-Loc-02"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Location-Connectathon-Org-Loc-03.html"/>
-      </extension>
-      <reference>
-        <reference value="Location/Connectathon-Org-Loc-03"/>
-      </reference>
-      <name value="Connectathon-Org-Loc-03"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-DanielGranger.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-DanielGranger"/>
-      </reference>
-      <name value="Connectathon-Practitioner-DanielGranger"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-HoneyJones.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-HoneyJones"/>
-      </reference>
-      <name value="Connectathon-Practitioner-HoneyJones"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-JenCadbury.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-JenCadbury"/>
-      </reference>
-      <name value="Connectathon-Practitioner-JenCadbury"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-JennyGlass.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-JennyGlass"/>
-      </reference>
-      <name value="Connectathon-Practitioner-JennyGlass"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-LunaBaskins.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-LunaBaskins"/>
-      </reference>
-      <name value="Connectathon-Practitioner-LunaBaskins"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-RonBurgendy.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-RonBurgendy"/>
-      </reference>
-      <name value="Connectathon-Practitioner-RonBurgendy"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-RonMarble.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-RonMarble"/>
-      </reference>
-      <name value="Connectathon-Practitioner-RonMarble"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-SallySmith.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-SallySmith"/>
-      </reference>
-      <name value="Connectathon-Practitioner-SallySmith"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Connectathon-Practitioner-ScottDumble.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Connectathon-Practitioner-ScottDumble"/>
-      </reference>
-      <name value="Connectathon-Practitioner-ScottDumble"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-3-First3DSNFAdmission.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-3-First3DSNFAdmission"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-3-First3DSNFAdmission"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-4-Last3DSNFStay.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-4-Last3DSNFStay"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-4-Last3DSNFStay"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-5-HHStartOfCarePerf.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-5-HHStartOfCarePerf"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-5-HHStartOfCarePerf"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-6-HHDischargePerf.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-6-HHDischargePerf"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-6-HHDischargePerf"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-Hospital-CAM.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-Hospital-CAM"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-Hospital-CAM"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-Hospital-MOCA.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-Hospital-MOCA"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-Hospital-MOCA"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-NursingFacility-BIMS.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-NursingFacility-BIMS"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-NursingFacility-BIMS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-Connectathon-QuestResponse-CS-NursingFacility-PHQ9.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/Connectathon-QuestResponse-CS-NursingFacility-PHQ9"/>
-      </reference>
-      <name value="Connectathon-QuestResponse-CS-NursingFacility-PHQ9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="PractitionerRole-Connectathon-Role-PT.html"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/Connectathon-Role-PT"/>
-      </reference>
-      <name value="Connectathon-Role-PT"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="PractitionerRole-Connectathon-Role-RN.html"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/Connectathon-Role-RN"/>
-      </reference>
-      <name value="Connectathon-Role-RN"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2106,7 +1155,7 @@
         <reference value="QuestionnaireResponse/QResponse-HH-Discharge-CS"/>
       </reference>
       <name value="QResponse-HH-Discharge-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2119,7 +1168,7 @@
         <reference value="QuestionnaireResponse/QResponse-HH-StartOfCare-CS"/>
       </reference>
       <name value="QResponse-HH-StartOfCare-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2132,7 +1181,7 @@
         <reference value="QuestionnaireResponse/QResponse-Hospital-Admission-CS"/>
       </reference>
       <name value="QResponse-Hospital-Admission-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2145,7 +1194,7 @@
         <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA"/>
       </reference>
       <name value="QResponse-Hospital-MOCA"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2158,7 +1207,7 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-Admission-CS"/>
       </reference>
       <name value="QResponse-SNF-Admission-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2171,7 +1220,7 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-BIMS"/>
       </reference>
       <name value="QResponse-SNF-BIMS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2184,7 +1233,7 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-Discharge-CS"/>
       </reference>
       <name value="QResponse-SNF-Discharge-CS"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2197,7 +1246,7 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-PHQ9"/>
       </reference>
       <name value="QResponse-SNF-PHQ9"/>
-      <exampleCanonical value="http://pacioproject.org/StructureDefinition/pacio-cognition-qr"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2243,10 +1292,10 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CapabilityStatement-pacio-cs.html"/>
+        <valueUri value="CapabilityStatement-CapabilityStatement-pacio-cs.html"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/pacio-cs"/>
+        <reference value="CapabilityStatement/CapabilityStatement-pacio-cs"/>
       </reference>
       <name value="PACIO Cognitive Status Capability Statement"/>
       <description value="This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide."/>

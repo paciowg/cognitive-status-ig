@@ -3,7 +3,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="Assessment-SNF-PHQ9-Ob-25"/>
   <meta>
-    <profile value="http://pacioproject.org/StructureDefinition/pacio-cs"/>
+    <profile value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: Assessment-SNF-PHQ9-Ob-25</p><p><b>meta</b>: </p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 54651-5}">Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 11:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-HoneyJones.html">Generated Summary: id: Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href="PractitionerRole-Role-RN.html">Generated Summary: id: Role-RN; active; <span title="Codes: {http://snomed.info/sct 224535009}">Registered Nurse</span></a></li><li><a href="Organization-Org-02.html">Organization. Generated Summary: id: Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title="Codes: {http://loinc.org LA10997-7}">Never or 1 day</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-PHQ9.html">Generated Summary: id: QResponse-SNF-PHQ9; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 11:00:00 PM</a></p></div>
