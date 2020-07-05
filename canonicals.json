@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/CapabilityStatement-pacio-cs.html",
+    "id": "CapabilityStatement-pacio-cs",
+    "type": "CapabilityStatement",
+    "version": "0.1.0",
+    "name": "PACIO_CognitiveStatus_CapabilityStatement"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/ImplementationGuide/pacio-cs",
+    "id": "pacio-cs",
+    "type": "ImplementationGuide",
+    "version": "0.1.0",
+    "name": "PACIOCognitiveStatusImplementationGuide"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required",
+    "id": "assistance-required",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "AssistanceRequired"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used",
+    "id": "device-patient-used",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "DevicePatientUsed"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs",
+    "id": "pacio-bcs",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "BundledCognitiveStatus"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
+    "id": "pacio-cognition-qr",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "CognitionQuestionnaireResponse"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs",
+    "id": "pacio-cs",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "CognitiveStatus"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev",
+    "id": "pacio-cs-dev",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "UseOfDevice"
+  },
+  {
+    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
+    "id": "pacio-plcf",
+    "type": "StructureDefinition",
+    "version": "0.1.0",
+    "name": "PriorLevelOfCognitiveFunction"
+  }
+]

@@ -126,6 +126,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#bundledcognitivestatus--bims-example" id="markdown-toc-bundledcognitivestatus--bims-example">BundledCognitiveStatus – BIMS Example</a></li>
   <li><a href="#bundledcognitivestatus--moca-example" id="markdown-toc-bundledcognitivestatus--moca-example">BundledCognitiveStatus – MoCA Example</a></li>
   <li><a href="#bundledcognitivestatus--phq-9-two-column-example" id="markdown-toc-bundledcognitivestatus--phq-9-two-column-example">BundledCognitiveStatus – PHQ-9 Two-Column Example</a></li>
+  <li><a href="#cognitivestatus--phq-9-two-column-example" id="markdown-toc-cognitivestatus--phq-9-two-column-example">CognitiveStatus – PHQ-9 Two-Column Example</a></li>
 </ul>
 
 </div>
@@ -193,11 +194,11 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   </tr>
   <tr>
     <td>category</td>
-    <td>A required field with the preferred binding to the code system https://terminology.hl7.org/1.0.0/ValueSet-observation-category.html. This field should contain the value ‘survey’ for PAC assessment.</td>
+    <td>A required field with 'extensible' binding to the code system https://terminology.hl7.org/1.0.0/ValueSet-observation-category.html. This field should contain the value ‘survey’ for PAC assessment.</td>
   </tr>
   <tr>
     <td>code</td>
-    <td>A required field with ‘preferred’ binding to the LOINC code system http://loinc.org/.</td>
+    <td>A required field with ‘extensible’ binding to the LOINC code system http://loinc.org/.</td>
   </tr>
   <tr>
     <td>subject</td>
@@ -242,7 +243,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   </tr>
   <tr>
     <td>code</td>
-    <td>A required field with ‘preferred’ binding to the LOINC code system http://loinc.org/.</td>
+    <td>A required field with ‘extensible’ binding to the LOINC code system http://loinc.org/.</td>
   </tr>
   <tr>
     <td>subject</td>
@@ -295,7 +296,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   </tr>
   <tr>
     <td>code</td>
-    <td>A required field with ‘preferred’ binding to the LOINC code system http://loinc.org/.</td>
+    <td>A required field with ‘extensible’ binding to the LOINC code system http://loinc.org/.</td>
   </tr>
   <tr>
     <td>subject</td>
@@ -349,7 +350,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
 <p><strong>Guidance and Notes:</strong></p>
 <ol>
   <li>The ‘questionnaire’ field is the URL pointing to the file of the questionnaire that defines and organizes the questions for which answers are being provided.</li>
-  <li>Use ‘id’ field to indicate the code of a section title or an observation question. For example, the LONIC code ‘86585-7.’</li>
+  <li>Use ‘id’ field to indicate the code of a section title or an observation question. For example, the LOINC code ‘86585-7.’</li>
   <li>Each ‘linkId’ field should match the ‘linkId’ of the corresponding section title or question from the questionnaire.</li>
   <li>The nesting structure of the ‘item’ fields should correspond to the nesting structure as showed in the questionnaire.</li>
 </ol>
@@ -360,7 +361,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
 
 <p><strong>Guidance and Notes:</strong></p>
 <ol>
-  <li>Here is how the ‘event-location’ extension is used to point to a FHIR Location resource.</li>
+  <li>Here is how the ‘event-location’ extension is used to point to a FHIR Location resource to indicate where the observation event occurred.</li>
   <li>Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘86585-7’ is used to indicate ‘Signs and Symptoms of Delirium (from CAM©)’.</li>
   <li>The ‘category’ field should contain the value ‘survey’ for a PAC assessment.</li>
 </ol>
@@ -393,7 +394,17 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
 <ol>
   <li>Use the right LOINC code to indicate the particular kind of cognitive assessment. In this case the LOINC code ‘54635-8’ is used to indicate ‘Resident Mood Interview (PHQ-9)’.</li>
   <li>An assessment with more than one observation questions would have a number of ‘hasMember’ elements, each of which would point to an observation in the assessment.</li>
-  <li>The observation questions of the PHQ-9 assessments are grouped under two headings. One way to determine which ‘hasMember’ elements (i.e. observation questions) should be grouped together and under which heading is to examine the QuestionnaireResponse resource which has the nesting structure to show how the questions were organized.</li>
+  <li>The observation questions of the PHQ-9 assessment are grouped under two headings. One way to determine which ‘hasMember’ elements (i.e. observation questions) should be grouped together and under which heading is to examine the CognitionQuestionnaireResponse resource which has the nesting structure to show how the questions were organized.</li>
+</ol>
+
+<h3 id="cognitivestatus--phq-9-two-column-example">CognitiveStatus – PHQ-9 Two-Column Example</h3>
+
+<p><img src="CS_PHQ9_TwoColumn_Example.png" alt="CS PHQ9 TwoColumn Example" style="float: none;" /></p>
+
+<p><strong>Guidance and Notes:</strong></p>
+<ol>
+  <li>The observation questions of the PHQ-9 assessment are grouped under two headings. Use the ‘component.code’ to specify column headings to provide support for two-column display.</li>
+  <li>Use the ‘component.value’ to specify the answers to the observation questions to provide support for two-column display.</li>
 </ol>
 
 
@@ -417,7 +428,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 3, 2020 15:51+0000">2020-07-03</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 5, 2020 07:02+0000">2020-07-05</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
