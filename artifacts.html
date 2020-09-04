@@ -4,16 +4,16 @@
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>PACIO-CS\Artifacts Summary - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link href="fhir.css" rel="stylesheet"/>
-     
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  
+
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
@@ -27,7 +27,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-  
+
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
     <style type="text/css">h2{--heading-prefix:"6"}
     h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
@@ -49,12 +49,12 @@
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -89,17 +89,18 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->  
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
-        </ul>  
+        </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">  <!-- segment-content -->
+
+    <div id="segment-content">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -147,7 +148,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="CapabilityStatement-CapabilityStatement-pacio-cs.html"
                      title="CapabilityStatement/CapabilityStatement-pacio-cs">PACIO Cognitive Status Capability Statement</a>
                </td>
-               <td>This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide.</td>
+               <td>
+<p>This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide.</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -164,35 +167,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-pacio-bcs.html"
                      title="StructureDefinition/pacio-bcs">PACIO Bundled Cognitive Status</a>
                </td>
-               <td>An point in time bundle of cognitive status observations for a patient.</td>
+               <td>
+<p>An point in time bundle of cognitive status observations for a patient.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-pacio-cognition-qr.html"
                      title="StructureDefinition/pacio-cognition-qr">PACIO Cognition Questionnaire Response</a>
                </td>
-               <td>A completed, or sections of a completed, CMS PAC assessment.</td>
+               <td>
+<p>A completed, or sections of a completed, CMS PAC assessment.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-pacio-cs.html"
                      title="StructureDefinition/pacio-cs">PACIO Cognitive Status</a>
                </td>
-               <td>An exchange of cognitive status data for a patient.</td>
+               <td>
+<p>An exchange of cognitive status data for a patient.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-pacio-plcf.html"
                      title="StructureDefinition/pacio-plcf">PACIO Prior Level of Cognitive Function</a>
                </td>
-               <td>An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)</td>
+               <td>
+<p>An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-pacio-cs-dev.html"
                      title="StructureDefinition/pacio-cs-dev">Use of Device</a>
                </td>
-               <td>A device used by a Patient during a cognitive status assessment.</td>
+               <td>
+<p>A device used by a Patient during a cognitive status assessment.</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -209,14 +222,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-assistance-required.html"
                      title="StructureDefinition/assistance-required">AssistanceRequired</a>
                </td>
-               <td>Associated with prior level of cognitive function to provide indication of 'independent' vs. 'assistance needed'.</td>
+               <td>
+<p>Associated with prior level of cognitive function to provide indication of ‘independent’ vs. ‘assistance needed’.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-device-patient-used.html"
                      title="StructureDefinition/device-patient-used">DevicePatientUsed</a>
                </td>
-               <td>A device used by a patient during a cognitive status assessment.</td>
+               <td>
+<p>A device used by a patient during a cognitive status assessment.</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -230,533 +247,337 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-Discharge-CS.html"
-                     title="Observation/Assessment-HH-Discharge-CS">Assessment-HH-Discharge-CS</a>
+                  <a href="Observation-BCS-Hospital-MMSE-1.html"
+                     title="Observation/BCS-Hospital-MMSE-1">BCS-Hospital-MMSE-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-Discharge-CS-Ob-10.html"
-                     title="Observation/Assessment-HH-Discharge-CS-Ob-10">Assessment-HH-Discharge-CS-Ob-10</a>
+                  <a href="Observation-BCS-Hospital-MMSE-2.html"
+                     title="Observation/BCS-Hospital-MMSE-2">BCS-Hospital-MMSE-2</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-Discharge-CS-Ob-15.html"
-                     title="Observation/Assessment-HH-Discharge-CS-Ob-15">Assessment-HH-Discharge-CS-Ob-15</a>
+                  <a href="Observation-BCS-Hospital-MOCA-1.html"
+                     title="Observation/BCS-Hospital-MOCA-1">BCS-Hospital-MOCA-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-Discharge-CS-Ob-5.html"
-                     title="Observation/Assessment-HH-Discharge-CS-Ob-5">Assessment-HH-Discharge-CS-Ob-5</a>
+                  <a href="Observation-BCS-Hospital-MOCA-2.html"
+                     title="Observation/BCS-Hospital-MOCA-2">BCS-Hospital-MOCA-2</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-StartOfCare-CS.html"
-                     title="Observation/Assessment-HH-StartOfCare-CS">Assessment-HH-StartOfCare-CS</a>
+                  <a href="Observation-BCS-SNF-BCAT-1.html"
+                     title="Observation/BCS-SNF-BCAT-1">BCS-SNF-BCAT-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-StartOfCare-CS-Ob-14.html"
-                     title="Observation/Assessment-HH-StartOfCare-CS-Ob-14">Assessment-HH-StartOfCare-CS-Ob-14</a>
+                  <a href="Observation-BCS-SNF-BIMS-1.html"
+                     title="Observation/BCS-SNF-BIMS-1">BCS-SNF-BIMS-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-StartOfCare-CS-Ob-4.html"
-                     title="Observation/Assessment-HH-StartOfCare-CS-Ob-4">Assessment-HH-StartOfCare-CS-Ob-4</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-1.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-1">BCS-SNF-BIMS-1-Ob-Question-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-HH-StartOfCare-CS-Ob-9.html"
-                     title="Observation/Assessment-HH-StartOfCare-CS-Ob-9">Assessment-HH-StartOfCare-CS-Ob-9</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-2.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-2">BCS-SNF-BIMS-1-Ob-Question-2</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-Hospital-Admission-CS.html"
-                     title="Observation/Assessment-Hospital-Admission-CS">Assessment-Hospital-Admission-CS</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-3.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-3">BCS-SNF-BIMS-1-Ob-Question-3</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-Hospital-Admission-CS-Ob-1.html"
-                     title="Observation/Assessment-Hospital-Admission-CS-Ob-1">Assessment-Hospital-Admission-CS-Ob-1</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-4.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-4">BCS-SNF-BIMS-1-Ob-Question-4</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-Hospital-Admission-CS-Ob-11.html"
-                     title="Observation/Assessment-Hospital-Admission-CS-Ob-11">Assessment-Hospital-Admission-CS-Ob-11</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-5.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-5">BCS-SNF-BIMS-1-Ob-Question-5</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-Hospital-Admission-CS-Ob-6.html"
-                     title="Observation/Assessment-Hospital-Admission-CS-Ob-6">Assessment-Hospital-Admission-CS-Ob-6</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-6.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-6">BCS-SNF-BIMS-1-Ob-Question-6</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-Hospital-MOCA.html"
-                     title="Observation/Assessment-Hospital-MOCA">Assessment-Hospital-MOCA</a>
+                  <a href="Observation-BCS-SNF-BIMS-1-Ob-Question-7.html"
+                     title="Observation/BCS-SNF-BIMS-1-Ob-Question-7">BCS-SNF-BIMS-1-Ob-Question-7</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-Hospital-MOCA-Ob-1.html"
-                     title="Observation/Assessment-Hospital-MOCA-Ob-1">Assessment-Hospital-MOCA-Ob-1</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1.html"
+                     title="Observation/BCS-SNF-PHQ9-1">BCS-SNF-PHQ9-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Admission-CS.html"
-                     title="Observation/Assessment-SNF-Admission-CS">Assessment-SNF-Admission-CS</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-10.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-10">BCS-SNF-PHQ9-1-Ob-Question-10</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Admission-CS-Ob-12.html"
-                     title="Observation/Assessment-SNF-Admission-CS-Ob-12">Assessment-SNF-Admission-CS-Ob-12</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-11.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-11">BCS-SNF-PHQ9-1-Ob-Question-11</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Admission-CS-Ob-2.html"
-                     title="Observation/Assessment-SNF-Admission-CS-Ob-2">Assessment-SNF-Admission-CS-Ob-2</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-12.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-12">BCS-SNF-PHQ9-1-Ob-Question-12</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Admission-CS-Ob-7.html"
-                     title="Observation/Assessment-SNF-Admission-CS-Ob-7">Assessment-SNF-Admission-CS-Ob-7</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-13.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-13">BCS-SNF-PHQ9-1-Ob-Question-13</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS.html"
-                     title="Observation/Assessment-SNF-BIMS">Assessment-SNF-BIMS</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-14.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-14">BCS-SNF-PHQ9-1-Ob-Question-14</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-2.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-2">Assessment-SNF-BIMS-Ob-2</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-15.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-15">BCS-SNF-PHQ9-1-Ob-Question-15</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-3.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-3">Assessment-SNF-BIMS-Ob-3</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-16.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-16">BCS-SNF-PHQ9-1-Ob-Question-16</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-4.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-4">Assessment-SNF-BIMS-Ob-4</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-17.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-17">BCS-SNF-PHQ9-1-Ob-Question-17</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-5.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-5">Assessment-SNF-BIMS-Ob-5</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-18.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-18">BCS-SNF-PHQ9-1-Ob-Question-18</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-6.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-6">Assessment-SNF-BIMS-Ob-6</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-19.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-19">BCS-SNF-PHQ9-1-Ob-Question-19</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-7.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-7">Assessment-SNF-BIMS-Ob-7</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-20.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-20">BCS-SNF-PHQ9-1-Ob-Question-20</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-8.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-8">Assessment-SNF-BIMS-Ob-8</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-21.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-21">BCS-SNF-PHQ9-1-Ob-Question-21</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-BIMS-Ob-9.html"
-                     title="Observation/Assessment-SNF-BIMS-Ob-9">Assessment-SNF-BIMS-Ob-9</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-22.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-22">BCS-SNF-PHQ9-1-Ob-Question-22</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Discharge-CS.html"
-                     title="Observation/Assessment-SNF-Discharge-CS">Assessment-SNF-Discharge-CS</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-23.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-23">BCS-SNF-PHQ9-1-Ob-Question-23</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Discharge-CS-Ob-13.html"
-                     title="Observation/Assessment-SNF-Discharge-CS-Ob-13">Assessment-SNF-Discharge-CS-Ob-13</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-24.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-24">BCS-SNF-PHQ9-1-Ob-Question-24</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Discharge-CS-Ob-3.html"
-                     title="Observation/Assessment-SNF-Discharge-CS-Ob-3">Assessment-SNF-Discharge-CS-Ob-3</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-25.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-25">BCS-SNF-PHQ9-1-Ob-Question-25</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-Discharge-CS-Ob-8.html"
-                     title="Observation/Assessment-SNF-Discharge-CS-Ob-8">Assessment-SNF-Discharge-CS-Ob-8</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-8.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-8">BCS-SNF-PHQ9-1-Ob-Question-8</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9.html"
-                     title="Observation/Assessment-SNF-PHQ9">Assessment-SNF-PHQ9</a>
+                  <a href="Observation-BCS-SNF-PHQ9-1-Ob-Question-9.html"
+                     title="Observation/BCS-SNF-PHQ9-1-Ob-Question-9">BCS-SNF-PHQ9-1-Ob-Question-9</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-10.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-10">Assessment-SNF-PHQ9-Ob-10</a>
+                  <a href="Observation-BSJ-plocf-observation-1.html"
+                     title="Observation/BSJ-plocf-observation-1">BSJ-plocf-observation-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-11.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-11">Assessment-SNF-PHQ9-Ob-11</a>
+                  <a href="Observation-BSJ-plocf-observation-2.html"
+                     title="Observation/BSJ-plocf-observation-2">BSJ-plocf-observation-2</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-12.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-12">Assessment-SNF-PHQ9-Ob-12</a>
+                  <a href="Observation-BSJ-plocf-observation-3.html"
+                     title="Observation/BSJ-plocf-observation-3">BSJ-plocf-observation-3</a>
                </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-13.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-13">Assessment-SNF-PHQ9-Ob-13</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-14.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-14">Assessment-SNF-PHQ9-Ob-14</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-15.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-15">Assessment-SNF-PHQ9-Ob-15</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-16.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-16">Assessment-SNF-PHQ9-Ob-16</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-17.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-17">Assessment-SNF-PHQ9-Ob-17</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-18.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-18">Assessment-SNF-PHQ9-Ob-18</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-19.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-19">Assessment-SNF-PHQ9-Ob-19</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-20.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-20">Assessment-SNF-PHQ9-Ob-20</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-21.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-21">Assessment-SNF-PHQ9-Ob-21</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-22.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-22">Assessment-SNF-PHQ9-Ob-22</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-23.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-23">Assessment-SNF-PHQ9-Ob-23</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-24.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-24">Assessment-SNF-PHQ9-Ob-24</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-25.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-25">Assessment-SNF-PHQ9-Ob-25</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-26.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-26">Assessment-SNF-PHQ9-Ob-26</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-27.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-27">Assessment-SNF-PHQ9-Ob-27</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-Assessment-SNF-PHQ9-Ob-28.html"
-                     title="Observation/Assessment-SNF-PHQ9-Ob-28">Assessment-SNF-PHQ9-Ob-28</a>
-               </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-Org-01.html" title="Organization/Org-01">Org-01</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-Org-02.html" title="Organization/Org-02">Org-02</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-Org-03.html" title="Organization/Org-03">Org-03</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Location-Org-Loc-01.html" title="Location/Org-Loc-01">Org-Loc-01</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Location-Org-Loc-02.html" title="Location/Org-Loc-02">Org-Loc-02</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Location-Org-Loc-03.html" title="Location/Org-Loc-03">Org-Loc-03</a>
                </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Practitioner-DanielGranger.html"
-                     title="Practitioner/Practitioner-DanielGranger">Practitioner-DanielGranger</a>
-               </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-Practitioner-HoneyJones.html"
                      title="Practitioner/Practitioner-HoneyJones">Practitioner-HoneyJones</a>
                </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Practitioner-Practitioner-JenCadbury.html"
-                     title="Practitioner/Practitioner-JenCadbury">Practitioner-JenCadbury</a>
-               </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-Practitioner-JennyGlass.html"
                      title="Practitioner/Practitioner-JennyGlass">Practitioner-JennyGlass</a>
                </td>
-               <td/>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-Practitioner-JohnSmith.html"
+                     title="Practitioner/Practitioner-JohnSmith">Practitioner-JohnSmith</a>
+               </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Practitioner-Practitioner-LunaBaskins.html"
                      title="Practitioner/Practitioner-LunaBaskins">Practitioner-LunaBaskins</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Practitioner-Practitioner-RonBurgendy.html"
-                     title="Practitioner/Practitioner-RonBurgendy">Practitioner-RonBurgendy</a>
+                  <a href="QuestionnaireResponse-QResponse-Hospital-MMSE-1.html"
+                     title="QuestionnaireResponse/QResponse-Hospital-MMSE-1">QResponse-Hospital-MMSE-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Practitioner-Practitioner-RonMarble.html"
-                     title="Practitioner/Practitioner-RonMarble">Practitioner-RonMarble</a>
+                  <a href="QuestionnaireResponse-QResponse-Hospital-MMSE-2.html"
+                     title="QuestionnaireResponse/QResponse-Hospital-MMSE-2">QResponse-Hospital-MMSE-2</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Practitioner-Practitioner-SallySmith.html"
-                     title="Practitioner/Practitioner-SallySmith">Practitioner-SallySmith</a>
+                  <a href="QuestionnaireResponse-QResponse-Hospital-MOCA-1.html"
+                     title="QuestionnaireResponse/QResponse-Hospital-MOCA-1">QResponse-Hospital-MOCA-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Practitioner-Practitioner-ScottDumble.html"
-                     title="Practitioner/Practitioner-ScottDumble">Practitioner-ScottDumble</a>
+                  <a href="QuestionnaireResponse-QResponse-Hospital-MOCA-2.html"
+                     title="QuestionnaireResponse/QResponse-Hospital-MOCA-2">QResponse-Hospital-MOCA-2</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-HH-Discharge-CS.html"
-                     title="QuestionnaireResponse/QResponse-HH-Discharge-CS">QResponse-HH-Discharge-CS</a>
+                  <a href="QuestionnaireResponse-QResponse-SNF-BCAT-1.html"
+                     title="QuestionnaireResponse/QResponse-SNF-BCAT-1">QResponse-SNF-BCAT-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-HH-StartOfCare-CS.html"
-                     title="QuestionnaireResponse/QResponse-HH-StartOfCare-CS">QResponse-HH-StartOfCare-CS</a>
+                  <a href="QuestionnaireResponse-QResponse-SNF-BIMS-1.html"
+                     title="QuestionnaireResponse/QResponse-SNF-BIMS-1">QResponse-SNF-BIMS-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-Hospital-Admission-CS.html"
-                     title="QuestionnaireResponse/QResponse-Hospital-Admission-CS">QResponse-Hospital-Admission-CS</a>
+                  <a href="QuestionnaireResponse-QResponse-SNF-PHQ9-1.html"
+                     title="QuestionnaireResponse/QResponse-SNF-PHQ9-1">QResponse-SNF-PHQ9-1</a>
                </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-Hospital-MOCA.html"
-                     title="QuestionnaireResponse/QResponse-Hospital-MOCA">QResponse-Hospital-MOCA</a>
+                  <a href="PractitionerRole-Role-SLP.html" title="PractitionerRole/Role-SLP">Role-SLP</a>
                </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-SNF-Admission-CS.html"
-                     title="QuestionnaireResponse/QResponse-SNF-Admission-CS">QResponse-SNF-Admission-CS</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-SNF-BIMS.html"
-                     title="QuestionnaireResponse/QResponse-SNF-BIMS">QResponse-SNF-BIMS</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-SNF-Discharge-CS.html"
-                     title="QuestionnaireResponse/QResponse-SNF-Discharge-CS">QResponse-SNF-Discharge-CS</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-SNF-PHQ9.html"
-                     title="QuestionnaireResponse/QResponse-SNF-PHQ9">QResponse-SNF-PHQ9</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="PractitionerRole-Role-PT.html" title="PractitionerRole/Role-PT">Role-PT</a>
-               </td>
-               <td/>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="PractitionerRole-Role-RN.html" title="PractitionerRole/Role-RN">Role-RN</a>
-               </td>
-               <td/>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-patientBSJ1.html" title="Patient/patientBSJ1">patientBSJ1</a>
                </td>
-               <td/>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-provider-org-01.html"
+                     title="Organization/provider-org-01">provider-org-01</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-provider-org-loc-01.html"
+                     title="Location/provider-org-loc-01">provider-org-loc-01</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-provider-role-pcp.html"
+                     title="PractitionerRole/provider-role-pcp">provider-role-pcp</a>
+               </td>
             </tr>
          </tbody>
       </table>
@@ -783,7 +604,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 5, 2020 07:02+0000">2020-07-05</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 4, 2020 17:24+0000">2020-09-04</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -813,4 +634,3 @@ anchors.add()</script>
   ================================================== -->
   </body>
 </html>
-

@@ -1,0 +1,63 @@
+{
+  "resourceType": "Observation",
+  "id": "BCS-SNF-BIMS-1-Ob-Question-1",
+  "meta": {
+    "profile": [
+      "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: BCS-SNF-BIMS-1-Ob-Question-1</p><p><b>meta</b>: </p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 52731-7}\">Repetition of Three Words. Number of words repeated after first attempt</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 11, 2020 4:30:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: id: Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-SLP.html\">Generated Summary: id: Role-SLP; active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech Language Pathologist</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: id: Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA6395-3}\">Three</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-BIMS-1.html\">Generated Summary: id: QResponse-SNF-BIMS-1; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020 4:30:00 PM</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/event-location",
+      "valueReference": {
+        "reference": "Location/Org-Loc-02"
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "52731-7",
+        "display": "Number of words repeated after first attempt"
+      }
+    ],
+    "text": "Repetition of Three Words. Number of words repeated after first attempt"
+  },
+  "subject": {
+    "reference": "Patient/patientBSJ1"
+  },
+  "effectiveDateTime": "2020-07-11T11:30:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/Practitioner-HoneyJones"
+    },
+    {
+      "reference": "PractitionerRole/Role-SLP"
+    },
+    {
+      "reference": "Organization/Org-02",
+      "display": "Organization"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA6395-3",
+        "display": "Three"
+      }
+    ],
+    "text": "Three"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QResponse-SNF-BIMS-1"
+    }
+  ]
+}

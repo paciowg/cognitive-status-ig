@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BCS-SNF-BIMS-1"/>
+  <meta>
+    <profile value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: BCS-SNF-BIMS-1</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 52491-8}">Brief Interview for Mental Status (BIMS)</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 11, 2020 4:30:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-HoneyJones.html">Generated Summary: id: Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href="PractitionerRole-Role-SLP.html">Generated Summary: id: Role-SLP; active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech Language Pathologist</span></a></li><li><a href="Organization-Org-02.html">Organization. Generated Summary: id: Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title="Codes: ">9</span></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-1.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-1; <span title="Codes: {http://loinc.org 52731-7}">Repetition of Three Words. Number of words repeated after first attempt</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA6395-3}">Three</span></a></li><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-2.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-2; <span title="Codes: {http://loinc.org 52732-5}">Able to report correct year</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA10008-3}">Missed by 1 year</span></a></li><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-3.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-3; <span title="Codes: {http://loinc.org 52733-3}">Able to report correct month</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA10010-9}">Missed by 6 days to 1 month</span></a></li><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-4.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-4; <span title="Codes: {http://loinc.org 54609-3}">Able to report correct day of the week</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA9960-1}">Correct</span></a></li><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-5.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-5; <span title="Codes: {http://loinc.org 52735-8}">Able to recall 'sock'</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA10126-3}">Yes, after cueing ('something to wear')</span></a></li><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-6.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-6; <span title="Codes: {http://loinc.org 52736-6}">Able to recall 'blue'</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA10978-7}">Yes, after cueing ('a color')</span></a></li><li><a href="Observation-BCS-SNF-BIMS-1-Ob-Question-7.html">Generated Summary: id: BCS-SNF-BIMS-1-Ob-Question-7; <span title="Codes: {http://loinc.org 52737-4}">Able to recall 'bed'</span>; effective: Jul 11, 2020 4:30:00 PM; <span title="Codes: {http://loinc.org LA10125-5}">Yes, after cueing ('a piece of furniture')</span></a></li></ul><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-BIMS-1.html">Questionnaire Response. Generated Summary: id: QResponse-SNF-BIMS-1; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020 4:30:00 PM</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
+    <valueReference>
+      <reference value="Location/Org-Loc-02"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="52491-8"/>
+      <display value="Brief Interview for Mental Status (BIMS)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patientBSJ1"/>
+  </subject>
+  <effectiveDateTime value="2020-07-11T11:30:00-05:00"/>
+  <performer>
+    <reference value="Practitioner/Practitioner-HoneyJones"/>
+  </performer>
+  <performer>
+    <reference value="PractitionerRole/Role-SLP"/>
+  </performer>
+  <performer>
+    <reference value="Organization/Org-02"/>
+    <display value="Organization"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <display value="BIMS Summary Score"/>
+    </coding>
+    <text value="9"/>
+  </valueCodeableConcept>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-1"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-2"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-3"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-4"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-5"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-6"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-7"/>
+  </hasMember>
+  <derivedFrom>
+    <reference value="QuestionnaireResponse/QResponse-SNF-BIMS-1"/>
+    <display value="Questionnaire Response"/>
+  </derivedFrom>
+</Observation>

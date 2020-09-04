@@ -4,16 +4,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>PACIO-CS\Underlying Technologies - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link rel="stylesheet" href="fhir.css"/>
-     
+
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
-  
+
       <!-- Project extras -->
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
@@ -27,7 +27,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif] -->
-  
+
       <!-- Favicons -->
     <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
     <style type="text/css">h2{--heading-prefix:"5"}
     h3,h4,h5,h6{--heading-prefix:"5"}</style>
@@ -49,12 +49,12 @@
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">    <!-- container -->
           <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
             <!-- status-bar -->
           <div class="container">
@@ -89,17 +89,18 @@
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Underlying Technologies</b></li>
-        </ul>  
+        </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">    <!-- segment-content -->
+
+    <div id="segment-content">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -111,13 +112,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">PACIO Cognitive Status Implementation Guide - Local Development build (v0.1.0). See the <a href="https://paciowg.github.io/cognitive-status-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Underlying Technologies</h2>
   
-  
-  
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#fast-healthcare-interoperability-resources" id="markdown-toc-fast-healthcare-interoperability-resources">Fast Healthcare Interoperability Resources</a></li>
-</ul>
 
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
   <!-- underlying_technologies.md -->
 <h3 id="fast-healthcare-interoperability-resources">Fast Healthcare Interoperability Resources</h3>
@@ -138,7 +144,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="http://hl7.org/fhir/R4/security-labels.html">Security Labels</a></li>
 </ul>
 
-<p><a name="8f1b0fd6-4450-4c39-8b3f-9e7f10fc29c0">​</a>This implementation guide supports the <a href="http://hl7.org/fhir/R4/index.html">R4</a> version of the FHIR standard and builds on the <a href="http://hl7.org/fhir/us/core/STU3">US Core Implementation Guide</a> and implementers need to familiarize themselves with the profiles in that guide.  Implementers should also familiarize themselves with the FHIR resources used within the guide:</p>
+<p><a name="627d90cb-a993-4a11-a2ca-a4a9c65e9442">​</a>This implementation guide supports the <a href="http://hl7.org/fhir/R4/index.html">R4</a> version of the FHIR standard and builds on the <a href="http://hl7.org/fhir/us/core/STU3">US Core Implementation Guide</a> and implementers need to familiarize themselves with the profiles in that guide.  Implementers should also familiarize themselves with the FHIR resources used within the guide:</p>
 
 <table>
     <td>
@@ -154,6 +160,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a><br/>
     </td>
 </table>
+
+
 
 
 </div>
@@ -176,7 +184,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jul 5, 2020 07:02+0000">2020-07-05</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 4, 2020 17:24+0000">2020-09-04</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

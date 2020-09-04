@@ -10,7 +10,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-07-05T07:02:02+00:00"/>
+  <date value="2020-09-04T17:24:51+00:00"/>
   <publisher value="MITRE PACIO Team"/>
   <contact>
     <name value="Caleb Wan"/>
@@ -291,12 +291,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-Discharge-CS.html"/>
+        <valueUri value="Observation-BCS-Hospital-MMSE-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-HH-Discharge-CS"/>
+        <reference value="Observation/BCS-Hospital-MMSE-1"/>
       </reference>
-      <name value="Assessment-HH-Discharge-CS"/>
+      <name value="BCS-Hospital-MMSE-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -304,51 +304,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-Discharge-CS-Ob-10.html"/>
+        <valueUri value="Observation-BCS-Hospital-MMSE-2.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-HH-Discharge-CS-Ob-10"/>
+        <reference value="Observation/BCS-Hospital-MMSE-2"/>
       </reference>
-      <name value="Assessment-HH-Discharge-CS-Ob-10"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-Discharge-CS-Ob-15.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-HH-Discharge-CS-Ob-15"/>
-      </reference>
-      <name value="Assessment-HH-Discharge-CS-Ob-15"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-Discharge-CS-Ob-5.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-HH-Discharge-CS-Ob-5"/>
-      </reference>
-      <name value="Assessment-HH-Discharge-CS-Ob-5"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-StartOfCare-CS.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-HH-StartOfCare-CS"/>
-      </reference>
-      <name value="Assessment-HH-StartOfCare-CS"/>
+      <name value="BCS-Hospital-MMSE-2"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -356,51 +317,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-StartOfCare-CS-Ob-14.html"/>
+        <valueUri value="Observation-BCS-Hospital-MOCA-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-HH-StartOfCare-CS-Ob-14"/>
+        <reference value="Observation/BCS-Hospital-MOCA-1"/>
       </reference>
-      <name value="Assessment-HH-StartOfCare-CS-Ob-14"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-StartOfCare-CS-Ob-4.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-HH-StartOfCare-CS-Ob-4"/>
-      </reference>
-      <name value="Assessment-HH-StartOfCare-CS-Ob-4"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-HH-StartOfCare-CS-Ob-9.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-HH-StartOfCare-CS-Ob-9"/>
-      </reference>
-      <name value="Assessment-HH-StartOfCare-CS-Ob-9"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-Hospital-Admission-CS.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-Hospital-Admission-CS"/>
-      </reference>
-      <name value="Assessment-Hospital-Admission-CS"/>
+      <name value="BCS-Hospital-MOCA-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -408,51 +330,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-Hospital-Admission-CS-Ob-1.html"/>
+        <valueUri value="Observation-BCS-Hospital-MOCA-2.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-Hospital-Admission-CS-Ob-1"/>
+        <reference value="Observation/BCS-Hospital-MOCA-2"/>
       </reference>
-      <name value="Assessment-Hospital-Admission-CS-Ob-1"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-Hospital-Admission-CS-Ob-11.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-Hospital-Admission-CS-Ob-11"/>
-      </reference>
-      <name value="Assessment-Hospital-Admission-CS-Ob-11"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-Hospital-Admission-CS-Ob-6.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-Hospital-Admission-CS-Ob-6"/>
-      </reference>
-      <name value="Assessment-Hospital-Admission-CS-Ob-6"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-Hospital-MOCA.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-Hospital-MOCA"/>
-      </reference>
-      <name value="Assessment-Hospital-MOCA"/>
+      <name value="BCS-Hospital-MOCA-2"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -460,25 +343,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-Hospital-MOCA-Ob-1.html"/>
+        <valueUri value="Observation-BCS-SNF-BCAT-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-Hospital-MOCA-Ob-1"/>
+        <reference value="Observation/BCS-SNF-BCAT-1"/>
       </reference>
-      <name value="Assessment-Hospital-MOCA-Ob-1"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Admission-CS.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-Admission-CS"/>
-      </reference>
-      <name value="Assessment-SNF-Admission-CS"/>
+      <name value="BCS-SNF-BCAT-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -486,51 +356,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Admission-CS-Ob-12.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-Admission-CS-Ob-12"/>
+        <reference value="Observation/BCS-SNF-BIMS-1"/>
       </reference>
-      <name value="Assessment-SNF-Admission-CS-Ob-12"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Admission-CS-Ob-2.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-Admission-CS-Ob-2"/>
-      </reference>
-      <name value="Assessment-SNF-Admission-CS-Ob-2"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Admission-CS-Ob-7.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-Admission-CS-Ob-7"/>
-      </reference>
-      <name value="Assessment-SNF-Admission-CS-Ob-7"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-BIMS"/>
-      </reference>
-      <name value="Assessment-SNF-BIMS"/>
+      <name value="BCS-SNF-BIMS-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -538,12 +369,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-2.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-2"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-1"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-2"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -551,12 +382,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-3.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-2.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-3"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-2"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-3"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-2"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -564,12 +395,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-4.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-3.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-4"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-3"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-4"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-3"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -577,12 +408,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-5.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-4.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-5"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-4"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-5"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-4"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -590,12 +421,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-6.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-5.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-6"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-5"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-6"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-5"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -603,12 +434,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-7.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-6.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-7"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-6"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-7"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-6"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -616,12 +447,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-8.html"/>
+        <valueUri value="Observation-BCS-SNF-BIMS-1-Ob-Question-7.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-8"/>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-7"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-8"/>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-7"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -629,25 +460,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-BIMS-Ob-9.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-BIMS-Ob-9"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1"/>
       </reference>
-      <name value="Assessment-SNF-BIMS-Ob-9"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Discharge-CS.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-Discharge-CS"/>
-      </reference>
-      <name value="Assessment-SNF-Discharge-CS"/>
+      <name value="BCS-SNF-PHQ9-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
     </resource>
     <resource>
@@ -655,12 +473,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Discharge-CS-Ob-13.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-10.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-Discharge-CS-Ob-13"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-10"/>
       </reference>
-      <name value="Assessment-SNF-Discharge-CS-Ob-13"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-10"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -668,12 +486,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Discharge-CS-Ob-3.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-11.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-Discharge-CS-Ob-3"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-11"/>
       </reference>
-      <name value="Assessment-SNF-Discharge-CS-Ob-3"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-11"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -681,12 +499,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-Discharge-CS-Ob-8.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-12.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-Discharge-CS-Ob-8"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-12"/>
       </reference>
-      <name value="Assessment-SNF-Discharge-CS-Ob-8"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-12"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -694,25 +512,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-13.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-13"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-10.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-10"/>
-      </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-10"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-13"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -720,12 +525,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-11.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-14.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-11"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-14"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-11"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-14"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -733,12 +538,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-12.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-15.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-12"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-15"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-12"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-15"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -746,12 +551,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-13.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-16.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-13"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-16"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-13"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-16"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -759,12 +564,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-14.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-17.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-14"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-17"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-14"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-17"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -772,12 +577,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-15.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-18.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-15"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-18"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-15"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-18"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -785,12 +590,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-16.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-19.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-16"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-19"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-16"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-19"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -798,12 +603,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-17.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-20.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-17"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-20"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-17"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-20"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -811,12 +616,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-18.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-21.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-18"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-21"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-18"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-21"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -824,12 +629,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-19.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-22.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-19"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-22"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-19"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-22"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -837,12 +642,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-20.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-23.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-20"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-23"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-20"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-23"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -850,12 +655,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-21.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-24.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-21"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-24"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-21"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-24"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -863,12 +668,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-22.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-25.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-22"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-25"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-22"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-25"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -876,12 +681,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-23.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-8.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-23"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-8"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-23"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-8"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -889,12 +694,12 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-24.html"/>
+        <valueUri value="Observation-BCS-SNF-PHQ9-1-Ob-Question-9.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-24"/>
+        <reference value="Observation/BCS-SNF-PHQ9-1-Ob-Question-9"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-24"/>
+      <name value="BCS-SNF-PHQ9-1-Ob-Question-9"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
@@ -902,52 +707,39 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-25.html"/>
+        <valueUri value="Observation-BSJ-plocf-observation-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-25"/>
+        <reference value="Observation/BSJ-plocf-observation-1"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-25"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+      <name value="BSJ-plocf-observation-1"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-26.html"/>
+        <valueUri value="Observation-BSJ-plocf-observation-2.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-26"/>
+        <reference value="Observation/BSJ-plocf-observation-2"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-26"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+      <name value="BSJ-plocf-observation-2"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-27.html"/>
+        <valueUri value="Observation-BSJ-plocf-observation-3.html"/>
       </extension>
       <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-27"/>
+        <reference value="Observation/BSJ-plocf-observation-3"/>
       </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-27"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-Assessment-SNF-PHQ9-Ob-28.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Assessment-SNF-PHQ9-Ob-28"/>
-      </reference>
-      <name value="Assessment-SNF-PHQ9-Ob-28"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+      <name value="BSJ-plocf-observation-3"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1032,38 +824,12 @@
         <valueString value="Practitioner"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Practitioner-DanielGranger.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Practitioner-DanielGranger"/>
-      </reference>
-      <name value="Practitioner-DanielGranger"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Practitioner-Practitioner-HoneyJones.html"/>
       </extension>
       <reference>
         <reference value="Practitioner/Practitioner-HoneyJones"/>
       </reference>
       <name value="Practitioner-HoneyJones"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Practitioner-JenCadbury.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Practitioner-JenCadbury"/>
-      </reference>
-      <name value="Practitioner-JenCadbury"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1084,6 +850,19 @@
         <valueString value="Practitioner"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-Practitioner-JohnSmith.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Practitioner-JohnSmith"/>
+      </reference>
+      <name value="Practitioner-JohnSmith"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Practitioner-Practitioner-LunaBaskins.html"/>
       </extension>
       <reference>
@@ -1094,67 +873,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Practitioner-RonBurgendy.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Practitioner-RonBurgendy"/>
-      </reference>
-      <name value="Practitioner-RonBurgendy"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Practitioner-RonMarble.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Practitioner-RonMarble"/>
-      </reference>
-      <name value="Practitioner-RonMarble"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Practitioner-SallySmith.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Practitioner-SallySmith"/>
-      </reference>
-      <name value="Practitioner-SallySmith"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Practitioner-Practitioner-ScottDumble.html"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Practitioner-ScottDumble"/>
-      </reference>
-      <name value="Practitioner-ScottDumble"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-HH-Discharge-CS.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-Hospital-MMSE-1.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-HH-Discharge-CS"/>
+        <reference value="QuestionnaireResponse/QResponse-Hospital-MMSE-1"/>
       </reference>
-      <name value="QResponse-HH-Discharge-CS"/>
+      <name value="QResponse-Hospital-MMSE-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1162,12 +889,12 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-HH-StartOfCare-CS.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-Hospital-MMSE-2.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-HH-StartOfCare-CS"/>
+        <reference value="QuestionnaireResponse/QResponse-Hospital-MMSE-2"/>
       </reference>
-      <name value="QResponse-HH-StartOfCare-CS"/>
+      <name value="QResponse-Hospital-MMSE-2"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1175,12 +902,12 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-Hospital-Admission-CS.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-Hospital-MOCA-1.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-Hospital-Admission-CS"/>
+        <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA-1"/>
       </reference>
-      <name value="QResponse-Hospital-Admission-CS"/>
+      <name value="QResponse-Hospital-MOCA-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1188,12 +915,12 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-Hospital-MOCA.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-Hospital-MOCA-2.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA"/>
+        <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA-2"/>
       </reference>
-      <name value="QResponse-Hospital-MOCA"/>
+      <name value="QResponse-Hospital-MOCA-2"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1201,12 +928,12 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-SNF-Admission-CS.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-SNF-BCAT-1.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-SNF-Admission-CS"/>
+        <reference value="QuestionnaireResponse/QResponse-SNF-BCAT-1"/>
       </reference>
-      <name value="QResponse-SNF-Admission-CS"/>
+      <name value="QResponse-SNF-BCAT-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1214,12 +941,12 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-SNF-BIMS.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-SNF-BIMS-1.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-SNF-BIMS"/>
+        <reference value="QuestionnaireResponse/QResponse-SNF-BIMS-1"/>
       </reference>
-      <name value="QResponse-SNF-BIMS"/>
+      <name value="QResponse-SNF-BIMS-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1227,25 +954,12 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-SNF-Discharge-CS.html"/>
+        <valueUri value="QuestionnaireResponse-QResponse-SNF-PHQ9-1.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-SNF-Discharge-CS"/>
+        <reference value="QuestionnaireResponse/QResponse-SNF-PHQ9-1"/>
       </reference>
-      <name value="QResponse-SNF-Discharge-CS"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-QResponse-SNF-PHQ9.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/QResponse-SNF-PHQ9"/>
-      </reference>
-      <name value="QResponse-SNF-PHQ9"/>
+      <name value="QResponse-SNF-PHQ9-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>
@@ -1253,25 +967,12 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="PractitionerRole-Role-PT.html"/>
+        <valueUri value="PractitionerRole-Role-SLP.html"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/Role-PT"/>
+        <reference value="PractitionerRole/Role-SLP"/>
       </reference>
-      <name value="Role-PT"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="PractitionerRole-Role-RN.html"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/Role-RN"/>
-      </reference>
-      <name value="Role-RN"/>
+      <name value="Role-SLP"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1285,6 +986,45 @@
         <reference value="Patient/patientBSJ1"/>
       </reference>
       <name value="patientBSJ1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-provider-org-01.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/provider-org-01"/>
+      </reference>
+      <name value="provider-org-01"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Location-provider-org-loc-01.html"/>
+      </extension>
+      <reference>
+        <reference value="Location/provider-org-loc-01"/>
+      </reference>
+      <name value="provider-org-loc-01"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="PractitionerRole-provider-role-pcp.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/provider-role-pcp"/>
+      </reference>
+      <name value="provider-role-pcp"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1370,6 +1110,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="QResponse-SNF-BIMS-1"/>
+  <meta>
+    <profile value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: QResponse-SNF-BIMS-1</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Jul 11, 2020 4:30:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 86529-5</p><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p></blockquote></blockquote></div>
+  </text>
+  <questionnaire value="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/patientBSJ1"/>
+  </subject>
+  <authored value="2020-07-11T11:30:00-05:00"/>
+  <item id="86529-5">
+    <linkId value="Section-3"/>
+    <text value="Cognitive Patterns"/>
+    <item id="52491-8">
+      <linkId value="Section-3/C0200-C0500"/>
+      <text value="Brief Interview for Mental Status (BIMS)"/>
+      <item id="52731-7">
+        <linkId value="Section-3/C0200"/>
+        <text value="Number of words repeated after first attempt"/>
+        <answer>
+          <valueReference>
+            <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-1"/>
+          </valueReference>
+        </answer>
+      </item>
+      <item id="54510-3">
+        <linkId value="Section-3/C0300"/>
+        <text value="Temporal Orientation (orientation to year, month, and day)"/>
+        <item id="52732-5">
+          <linkId value="Section-3/C0300A"/>
+          <text value="Able to report correct year"/>
+          <answer>
+            <valueReference>
+              <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-2"/>
+            </valueReference>
+          </answer>
+        </item>
+        <item id="52733-3">
+          <linkId value="Section-3/C0300B"/>
+          <text value="What month are we in right now?"/>
+          <answer>
+            <valueReference>
+              <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-3"/>
+            </valueReference>
+          </answer>
+        </item>
+        <item id="54609-3">
+          <linkId value="Section-3/C0300C"/>
+          <text value="What day of the week is today?"/>
+          <answer>
+            <valueReference>
+              <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-4"/>
+            </valueReference>
+          </answer>
+        </item>
+      </item>
+      <item id="52493-4">
+        <linkId value="Section-3/C0400"/>
+        <text value="Recall"/>
+        <item id="52735-8">
+          <linkId value="Section-3/C0400A"/>
+          <text value="Able to recall sock"/>
+          <answer>
+            <valueReference>
+              <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-5"/>
+            </valueReference>
+          </answer>
+        </item>
+        <item id="52736-6">
+          <linkId value="Section-3/C0400B"/>
+          <text value="Able to recall blue"/>
+          <answer>
+            <valueReference>
+              <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-6"/>
+            </valueReference>
+          </answer>
+        </item>
+        <item id="52737-4">
+          <linkId value="Section-3/C0400C"/>
+          <text value="Able to recall bed"/>
+          <answer>
+            <valueReference>
+              <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-7"/>
+            </valueReference>
+          </answer>
+        </item>
+      </item>
+      <item id="54614-3">
+        <linkId value="Section-3/C0500"/>
+        <text value="BIMS Summary Score"/>
+        <answer>
+          <valueReference>
+            <reference value="Observation/BCS-SNF-BIMS-1"/>
+          </valueReference>
+        </answer>
+      </item>
+    </item>
+  </item>
+</QuestionnaireResponse>
