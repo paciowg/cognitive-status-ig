@@ -10,7 +10,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2020-09-04T17:24:51+00:00"/>
+  <date value="2020-09-14T20:23:53+00:00"/>
   <publisher value="MITRE PACIO Team"/>
   <contact>
     <name value="Caleb Wan"/>
@@ -460,6 +460,110 @@
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Admission-1.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Admission-1"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Admission-1"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-1.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Admission-1-Ob-Question-1"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-3.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Admission-1-Ob-Question-3"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-5.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Admission-1-Ob-Question-5"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Discharge-1.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Discharge-1"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Discharge-1"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Discharge-1-Ob-Question-2.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-2"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Discharge-1-Ob-Question-2"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Discharge-1-Ob-Question-4.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-4"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Discharge-1-Ob-Question-4"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-BCS-SNF-CAM-Discharge-1-Ob-Question-6.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-6"/>
+      </reference>
+      <name value="BCS-SNF-CAM-Discharge-1-Ob-Question-6"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Observation-BCS-SNF-PHQ9-1.html"/>
       </extension>
       <reference>
@@ -704,41 +808,184 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Condition"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BSJ-plocf-observation-1.html"/>
+        <valueUri value="Condition-BSJ-Assessed-Need1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/BSJ-plocf-observation-1"/>
+        <reference value="Condition/BSJ-Assessed-Need1"/>
       </reference>
-      <name value="BSJ-plocf-observation-1"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
+      <name value="BSJ-Assessed-Need1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Assessed-Need2.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Assessed-Need2"/>
+      </reference>
+      <name value="BSJ-Assessed-Need2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Assessed-Need3.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Assessed-Need3"/>
+      </reference>
+      <name value="BSJ-Assessed-Need3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis1.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis1"/>
+      </reference>
+      <name value="BSJ-Diagnosis1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis2.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis2"/>
+      </reference>
+      <name value="BSJ-Diagnosis2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis3.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis3"/>
+      </reference>
+      <name value="BSJ-Diagnosis3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis4.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis4"/>
+      </reference>
+      <name value="BSJ-Diagnosis4"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis5.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis5"/>
+      </reference>
+      <name value="BSJ-Diagnosis5"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis6.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis6"/>
+      </reference>
+      <name value="BSJ-Diagnosis6"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis7.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis7"/>
+      </reference>
+      <name value="BSJ-Diagnosis7"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis8.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis8"/>
+      </reference>
+      <name value="BSJ-Diagnosis8"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-BSJ-Diagnosis9.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BSJ-Diagnosis9"/>
+      </reference>
+      <name value="BSJ-Diagnosis9"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-BSJ-Encounter-1.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/BSJ-Encounter-1"/>
+      </reference>
+      <name value="BSJ-Encounter-1"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BSJ-plocf-observation-2.html"/>
+        <valueUri value="Observation-BSJ-Prior-Level-Of-Cognitive-Function-1.html"/>
       </extension>
       <reference>
-        <reference value="Observation/BSJ-plocf-observation-2"/>
+        <reference value="Observation/BSJ-Prior-Level-Of-Cognitive-Function-1"/>
       </reference>
-      <name value="BSJ-plocf-observation-2"/>
-      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Observation-BSJ-plocf-observation-3.html"/>
-      </extension>
-      <reference>
-        <reference value="Observation/BSJ-plocf-observation-3"/>
-      </reference>
-      <name value="BSJ-plocf-observation-3"/>
+      <name value="BSJ-Prior-Level-Of-Cognitive-Function-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
     </resource>
     <resource>
@@ -873,6 +1120,19 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-Practitioner-NoraOlogist.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Practitioner-NoraOlogist"/>
+      </reference>
+      <name value="Practitioner-NoraOlogist"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -947,6 +1207,32 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-BIMS-1"/>
       </reference>
       <name value="QResponse-SNF-BIMS-1"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/QResponse-SNF-CAM-Admission-1"/>
+      </reference>
+      <name value="QResponse-SNF-CAM-Admission-1"/>
+      <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-QResponse-SNF-CAM-Discharge-1.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/QResponse-SNF-CAM-Discharge-1"/>
+      </reference>
+      <name value="QResponse-SNF-CAM-Discharge-1"/>
       <exampleCanonical value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
     </resource>
     <resource>

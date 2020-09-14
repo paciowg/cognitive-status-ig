@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BCS-SNF-CAM-Admission-1-Ob-Question-5"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs";
+       fhir:index 0;
+       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: BCS-SNF-CAM-Admission-1-Ob-Question-5</p><p><b>meta</b>: </p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54629-1}\">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 11:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: id: Practitioner-HoneyJones; active; Honey Jones ; gender: female</a></li><li><a href=\"Role-RN\">Role-RN</a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: id: Org-02; name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Generated Summary: id: QResponse-SNF-CAM-Admission-1; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 11:00:00 PM</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-02>;
+       fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:54629-1;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "54629-1" ];
+       fhir:Coding.display [ fhir:value "Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-HoneyJones>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "Role-RN" ]
+  ], [
+     fhir:index 2;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Organization/Org-02>;
+     fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
+     fhir:Reference.display [ fhir:value "Organization" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA61-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA61-7" ];
+       fhir:Coding.display [ fhir:value "Behavior not present" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Behavior not present" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1>;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-CAM-Admission-1" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

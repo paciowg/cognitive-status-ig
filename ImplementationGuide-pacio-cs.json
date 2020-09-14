@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-09-04T17:24:51+00:00",
+  "date": "2020-09-14T20:23:53+00:00",
   "publisher": "MITRE PACIO Team",
   "contact": [
     {
@@ -654,6 +654,142 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Admission-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Admission-1"
+        },
+        "name": "BCS-SNF-CAM-Admission-1",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Admission-1-Ob-Question-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1"
+        },
+        "name": "BCS-SNF-CAM-Admission-1-Ob-Question-1",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Admission-1-Ob-Question-3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3"
+        },
+        "name": "BCS-SNF-CAM-Admission-1-Ob-Question-3",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Admission-1-Ob-Question-5.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5"
+        },
+        "name": "BCS-SNF-CAM-Admission-1-Ob-Question-5",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Discharge-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Discharge-1"
+        },
+        "name": "BCS-SNF-CAM-Discharge-1",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Discharge-1-Ob-Question-2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-2"
+        },
+        "name": "BCS-SNF-CAM-Discharge-1-Ob-Question-2",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Discharge-1-Ob-Question-4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-4"
+        },
+        "name": "BCS-SNF-CAM-Discharge-1-Ob-Question-4",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-BCS-SNF-CAM-Discharge-1-Ob-Question-6.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-6"
+        },
+        "name": "BCS-SNF-CAM-Discharge-1-Ob-Question-6",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Observation-BCS-SNF-PHQ9-1.html"
           }
         ],
@@ -973,18 +1109,222 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
+            "valueString": "Condition"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BSJ-plocf-observation-1.html"
+            "valueUri": "Condition-BSJ-Assessed-Need1.html"
           }
         ],
         "reference": {
-          "reference": "Observation/BSJ-plocf-observation-1"
+          "reference": "Condition/BSJ-Assessed-Need1"
         },
-        "name": "BSJ-plocf-observation-1",
-        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"
+        "name": "BSJ-Assessed-Need1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Assessed-Need2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Assessed-Need2"
+        },
+        "name": "BSJ-Assessed-Need2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Assessed-Need3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Assessed-Need3"
+        },
+        "name": "BSJ-Assessed-Need3",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis1"
+        },
+        "name": "BSJ-Diagnosis1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis2"
+        },
+        "name": "BSJ-Diagnosis2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis3"
+        },
+        "name": "BSJ-Diagnosis3",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis4"
+        },
+        "name": "BSJ-Diagnosis4",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis5.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis5"
+        },
+        "name": "BSJ-Diagnosis5",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis6.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis6"
+        },
+        "name": "BSJ-Diagnosis6",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis7.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis7"
+        },
+        "name": "BSJ-Diagnosis7",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis8.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis8"
+        },
+        "name": "BSJ-Diagnosis8",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Condition-BSJ-Diagnosis9.html"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BSJ-Diagnosis9"
+        },
+        "name": "BSJ-Diagnosis9",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-BSJ-Encounter-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/BSJ-Encounter-1"
+        },
+        "name": "BSJ-Encounter-1",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -994,30 +1334,13 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BSJ-plocf-observation-2.html"
+            "valueUri": "Observation-BSJ-Prior-Level-Of-Cognitive-Function-1.html"
           }
         ],
         "reference": {
-          "reference": "Observation/BSJ-plocf-observation-2"
+          "reference": "Observation/BSJ-Prior-Level-Of-Cognitive-Function-1"
         },
-        "name": "BSJ-plocf-observation-2",
-        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Observation-BSJ-plocf-observation-3.html"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BSJ-plocf-observation-3"
-        },
-        "name": "BSJ-plocf-observation-3",
+        "name": "BSJ-Prior-Level-Of-Cognitive-Function-1",
         "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"
       },
       {
@@ -1194,6 +1517,23 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-Practitioner-NoraOlogist.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/Practitioner-NoraOlogist"
+        },
+        "name": "Practitioner-NoraOlogist",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "QuestionnaireResponse"
           },
           {
@@ -1290,6 +1630,40 @@
           "reference": "QuestionnaireResponse/QResponse-SNF-BIMS-1"
         },
         "name": "QResponse-SNF-BIMS-1",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-SNF-CAM-Admission-1"
+        },
+        "name": "QResponse-SNF-CAM-Admission-1",
+        "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-QResponse-SNF-CAM-Discharge-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/QResponse-SNF-CAM-Discharge-1"
+        },
+        "name": "QResponse-SNF-CAM-Discharge-1",
         "exampleCanonical": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
       },
       {

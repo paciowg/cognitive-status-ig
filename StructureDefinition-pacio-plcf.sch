@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Observation</sch:title>
     <sch:rule context="f:Observation">
+      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/event-location']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/event-location': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required']) &lt;= 1">extension with URL = 'https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>

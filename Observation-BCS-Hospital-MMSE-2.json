@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: BCS-Hospital-MMSE-2</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 72107-6}\">Mini-Mental State Examination [MMSE]</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 10, 2020 5:16:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-JennyGlass.html\">Generated Summary: id: Practitioner-JennyGlass; active; Jenny Glass ; gender: female</a></li><li><a href=\"PractitionerRole-Role-SLP.html\">Generated Summary: id: Role-SLP; active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech Language Pathologist</span></a></li><li><a href=\"Organization-Org-01.html\">Organization. Generated Summary: id: Org-01; name: San Antonio General Hospital</a></li></ul><p><b>value</b>: <span title=\"Codes: \">24</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-Hospital-MMSE-2.html\">Questionnaire Response. Generated Summary: id: QResponse-Hospital-MMSE-2; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 10, 2020 5:16:00 PM</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: BCS-Hospital-MMSE-2</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 72107-6}\">Mini-Mental State Examination [MMSE]</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>encounter</b>: <a href=\"Encounter-BSJ-Encounter-1.html\">Generated Summary: id: BSJ-Encounter-1; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">Inpatient encounter</span>; <span title=\"Codes: {http://snomed.info/sct 32485007}\">Hospital admission (procedure)</span>; period: Jul 7, 2020 8:00:00 PM --&gt; Jul 11, 2020 3:30:00 PM</a></p><p><b>effective</b>: Jul 10, 2020 5:16:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-JennyGlass.html\">Generated Summary: id: Practitioner-JennyGlass; active; Jenny Glass ; gender: female</a></li><li><a href=\"PractitionerRole-Role-SLP.html\">Generated Summary: id: Role-SLP; active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech Language Pathologist</span></a></li><li><a href=\"Organization-Org-01.html\">Organization. Generated Summary: id: Org-01; name: San Antonio General Hospital</a></li></ul><p><b>value</b>: <span title=\"Codes: \">24</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-Hospital-MMSE-2.html\">Questionnaire Response. Generated Summary: id: QResponse-Hospital-MMSE-2; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 10, 2020 5:16:00 PM</a></p></div>"
   },
   "extension": [
     {
@@ -40,6 +40,9 @@
   },
   "subject": {
     "reference": "Patient/patientBSJ1"
+  },
+  "encounter": {
+    "reference": "Encounter/BSJ-Encounter-1"
   },
   "effectiveDateTime": "2020-07-10T12:16:00-05:00",
   "performer": [

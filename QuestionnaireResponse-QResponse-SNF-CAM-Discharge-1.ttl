@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Discharge-1> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "QResponse-SNF-CAM-Discharge-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
+       fhir:index 0;
+       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: QResponse-SNF-CAM-Discharge-1</p><p><b>meta</b>: </p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: id: patientBSJ1; Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 23, 2020 7:00:00 PM</p><blockquote><p><b>item</b></p><p><b>id</b>: 86529-5</p><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p></blockquote></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
+     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-23T14:00:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "86529-5" ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Cognitive Patterns" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "86585-7" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C1310" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Signs and Symptoms of Delirium (from CAM)" ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:Element.id [ fhir:value "54632-5" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C1310A" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Is there evidence of an acute change in mental status from the patients baseline?" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-2>;
+             fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-2" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Element.id [ fhir:value "54628-3" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C1310B" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Did the patient have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-4>;
+             fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-4" ]
+           ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Element.id [ fhir:value "54629-1" ];
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C1310C" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueReference [
+             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-6>;
+             fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Discharge-1-Ob-Question-6" ]
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Discharge-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
