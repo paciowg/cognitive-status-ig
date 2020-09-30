@@ -20,6 +20,7 @@
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -39,8 +40,10 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"6.31"}
-    h3,h4,h5,h6{--heading-prefix:"6.31"}</style>
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.31"}
+    h3,h4,h5,h6{--heading-prefix:"7.31"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -74,6 +77,7 @@
   <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
   <li><a href="cognitive_status_use_case.html">Use Case Example</a></li>
   <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="representative_assessments.html">Representative Assessments</a></li>
   <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
@@ -156,7 +160,7 @@
 
 
 
-  <pre class="xml">
+  <pre class="xml"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BCS-SNF-PHQ9-1-Ob-Question-10&quot;/&gt;
@@ -165,8 +169,8 @@
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: BCS-SNF-PHQ9-1-Ob-Question-10&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes: {http://loinc.org 54638-2}&quot;&gt;Feeling down&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-patientBSJ1.html&quot;&gt;Generated Summary: id: patientBSJ1; Betsy Smith-Johnson &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jul 11, 2020 4:30:00 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;Practitioner-Practitioner-LunaBaskins.html&quot;&gt;Generated Summary: id: Practitioner-LunaBaskins; active; Luna Baskins ; gender: female&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;PractitionerRole-Role-SLP.html&quot;&gt;Generated Summary: id: Role-SLP; active; &lt;span title=&quot;Codes: {http://snomed.info/sct 159026005}&quot;&gt;Speech Language Pathologist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Organization-Org-03.html&quot;&gt;Organization. Generated Summary: id: Org-03; name: Sky Harbor Home Health Services&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;Codes: {http://loinc.org LA33-6}&quot;&gt;Yes&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=&quot;QuestionnaireResponse-QResponse-SNF-PHQ9-1.html&quot;&gt;Generated Summary: id: QResponse-SNF-PHQ9-1; questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020 4:30:00 PM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Ids&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Meta&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Event Location&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes: {http://loinc.org 54638-2}&quot;&gt;Feeling down&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-patientBSJ1.html&quot;&gt;Generated Summary: Betsy Smith-Johnson &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jul 11, 2020 9:30:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;Practitioner-Practitioner-LunaBaskins.html&quot;&gt;Generated Summary: active; Luna Baskins ; gender: female&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;PractitionerRole-Role-SLP.html&quot;&gt;Generated Summary: active; &lt;span title=&quot;Codes: {http://snomed.info/sct 159026005}&quot;&gt;Speech Language Pathologist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Organization-Org-03.html&quot;&gt;Organization. Generated Summary: name: Sky Harbor Home Health Services&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=&quot;Codes: {http://loinc.org LA33-6}&quot;&gt;Yes&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;derivedFrom&lt;/b&gt;: &lt;a href=&quot;QuestionnaireResponse-QResponse-SNF-PHQ9-1.html&quot;&gt;Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020 9:30:00 AM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/event-location&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
@@ -207,7 +211,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.derivedFrom">derivedFrom</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;QuestionnaireResponse/QResponse-SNF-PHQ9-1&quot;/&gt;
   &lt;/derivedFrom&gt;
-&lt;/Observation&gt;</pre>
+&lt;/Observation&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -235,7 +239,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 14, 2020 20:23+0000">2020-09-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:15-0700">2020-09-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

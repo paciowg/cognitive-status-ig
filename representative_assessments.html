@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PACIO-CS\Representative Assessments - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PACIO Cognitive Status Implementation Guide</span><br/>0.1.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
+  <li><a href="cognitive_status_use_case.html">Use Case Example</a></li>
+  <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="representative_assessments.html">Representative Assessments</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Representative Assessments</b></li>
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">PACIO Cognitive Status Implementation Guide - Local Development build (v0.1.0). See the <a href="https://paciowg.github.io/cognitive-status-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Representative Assessments</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#standardized-assessments-and-code-systems" id="markdown-toc-standardized-assessments-and-code-systems">Standardized Assessments and Code Systems</a></li>
+  <li><a href="#fully-codified-assessments" id="markdown-toc-fully-codified-assessments">Fully Codified Assessments</a></li>
+  <li><a href="#partially-codified-assessments" id="markdown-toc-partially-codified-assessments">Partially Codified Assessments</a></li>
+  <li><a href="#not-codified-assessments" id="markdown-toc-not-codified-assessments">Not Codified Assessments</a></li>
+</ul>
+
+</div>
+<!-- representative_assessments.md  -->
+<blockquote class="stu-note">
+<p><b>Note to Commenters:</b>
+The PACIO Cognitive Status workgroup is seeking feedback on the level of guidance needed related to specific assessment instruments. In addition, comments around whether this guidance should be included in the Cognitive Assessment IG or published as a supplemental guide.
+</p>
+<p><b>Note to Commenters:</b>
+LOINC is included as an example. We would like to find out how prevalent other code systems (i.e. SNOMED) and should guidance be included here.
+</p>
+</blockquote>
+<p><br /></p>
+<h3 id="standardized-assessments-and-code-systems">Standardized Assessments and Code Systems</h3>
+
+<p>A large number and variety of assessment instruments exist for assessing cognitive function in care settings. The following instruments have been analyzed for the purposes of providing implementation guidance and exchange of cognitive status. Standardized instruments that assess cognitive function fall into three broad categories based on use of standardized code systems.</p>
+
+<ol>
+  <li>Fully Codified – These instruments have standardized terminology associated with them, meaning the entire instrument can be modelled.</li>
+  <li>Partially Codified – These instruments generally have standardized question and answer pairs and a code to describe the instrument and total score. However, critical meta data or other information may only be found on the assessment itself.</li>
+  <li>Not Codified – These instruments do not have standard codes associated with them and may be proprietary. Exchange of this information may require special handling and/or development. In this case it is expected that the assessment instrument and result are expected to be exchanged.</li>
+</ol>
+
+<p>Representative examples of each of these categories are provided in the following sections to guide implementers.</p>
+
+<h3 id="fully-codified-assessments">Fully Codified Assessments</h3>
+
+<p>The following are considered fully codified assessments:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>COGNITIVE TESTS/SCREENS</th>
+      <th>LOINC</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Confusion Assessment Method (CAM)</td>
+    <td>52495-9 Confusion Assessment Method (CAM)<br />
+        &nbsp;&nbsp; 52738-2 Inattention<br />
+        &nbsp;&nbsp; 52739-0 Disorganized thinking<br />
+        &nbsp;&nbsp; 52740-8 Altered level of consciousness/alertness<br />
+        &nbsp;&nbsp; 52741-6 Psychomotor retardation
+    </td>
+  </tr>
+  <tr>
+    <td>Brief Interview for Mental Status (BIMS)</td>
+    <td>52491-8 Brief Interview for Mental Status<br />
+        &nbsp;&nbsp; 52731-7 Repetition of Three Words. Number of words repeated after first attempt<br />
+        &nbsp;&nbsp; 54510-3 Temporal Orientation (orientation to year, month, and day)<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; 52732-5 Able to report correct year<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; 52733-3 Able to report correct month<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; 54609-3 Able to report correct day of the week<br />
+        &nbsp;&nbsp; 52493-4 Recall<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; 52735-8 Able to recall "sock"<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; 52736-6 Able to recall "blue"<br />
+        &nbsp;&nbsp;&nbsp;&nbsp; 52737-4 Able to recall "bed"<br />
+        &nbsp;&nbsp; 54614-3 BIMS Summary Score
+    </td>
+  </tr>
+  <tr>
+    <td>Patient Health Questionnaire (PHQ)</td>
+    <td>58120-7 Patient Health Questionnaire 2 item (PHQ-2) [PHQ.CMS]<br />
+        55758-7 Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]<br /><br />
+        54635-8 Patient Mood Interview (PHQ-2 to 9)<br />
+        44261-6 Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]<br /><br />
+        54657-2 Staff assessment of resident mood (PHQ-9-OV) [Observed PHQ-9 CMS]<br />
+        54677-0 Staff assessment of resident mood total severity score [Observed PHQ-9 CMS]<br /><br />
+        89206-7 Patient Health Questionnaire-9: Modified for Teens [Reported.PHQ.Teen]<br />
+        89204-2 Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]
+    </td>
+  </tr>
+</table>
+
+<h3 id="partially-codified-assessments">Partially Codified Assessments</h3>
+
+<p>Assessments that have LOINC codes for representing the instrument should be used for exchanging the instrument and result. Additional ‘meta data’ fields, such as author can be mapped using QuestionnaireResponse.</p>
+
+<p>MoCA is provided as an example:</p>
+
+<table class="grid">
+  <tr>
+    <td>Montreal Cognitive Assessment (MoCA)</td>
+    <td>72133-2 Montreal Cognitive Assessment [MoCA]<br />
+        72172-0 Total score [MoCA]
+    </td>
+  </tr>
+</table>
+
+<h3 id="not-codified-assessments">Not Codified Assessments</h3>
+
+<p>Some assessments do not have any codes associated with them. In this case, the individual data elements contained in the assessment instrument can be mapped to QuestionnaireResponse fields.</p>
+
+<p>The Brief Cognitive Assessment Tool (BCAT) is included here as an example:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>BCAT Fields</th>
+      <th>Mapping</th>
+      <th>Reference Mapping</th>
+      <th>Values</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Name</td>
+    <td>QuestionnaireResponse.Subject</td>
+    <td>patient.name</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>DOB</td>
+    <td>QuestionnaireResponse.Subject</td>
+    <td>patient.birthDate</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>QuestionnaireResponse.Subject</td>
+    <td>patient.gender</td>
+    <td>AdministrativeGender (required)</td>
+  </tr>
+  <tr>
+    <td>Eduction</td>
+    <td>Observation.component</td>
+    <td></td>
+    <td>91694-0, LP2877-1, LL836-8</td>
+  </tr>
+  <tr>
+    <td>Examiner</td>
+    <td>QuestionnaireResponse.author</td>
+    <td>Reference to Practitioner/role</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Today's Date</td>
+    <td>QuestionnaireResponse.authored ('dateTime' type)</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Total Score</td>
+    <td>Observation.value</td>
+    <td>Not contained in QuestionareResponse</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>referenceRange</td>
+    <td>Observation.ReferenceRange</td>
+    <td>Not part of BCAT form but needed for interpreting total score.</td>
+    <td></td>
+  </tr>
+</table>
+
+<p>Codes for Education:</p>
+<ul>
+  <li>CMS Data Element <a href="https://del.cms.gov/DELWeb/pubDataEleDetail?asmtId=6&amp;asmtItmId=A1050">A1050</a> Highest education completed<br /></li>
+  <li>LOINC <a href="https://loinc.org/91694-0/">91694-0</a> Highest level of education of Personnel</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:15-0700">2020-09-29</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

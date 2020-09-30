@@ -20,6 +20,7 @@
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -39,8 +40,10 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-    <style type="text/css">h2{--heading-prefix:"6.66"}
-    h3,h4,h5,h6{--heading-prefix:"6.66"}</style>
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.66"}
+    h3,h4,h5,h6{--heading-prefix:"7.66"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -74,6 +77,7 @@
   <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
   <li><a href="cognitive_status_use_case.html">Use Case Example</a></li>
   <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="representative_assessments.html">Representative Assessments</a></li>
   <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
@@ -156,20 +160,20 @@
 
 
 
-  <pre class="xml">
+  <pre class="xml"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Org-Loc-01&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: Org-Loc-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: San Antonio General Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 26022 Meadowlark Bay, San Antonio, TX 78260&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Ids&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: San Antonio General Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 26022 Meadowlark Bay, San Antonio, TX 78260&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;San Antonio General Hospital&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.address">address</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;26022 Meadowlark Bay, San Antonio, TX 78260&quot;/&gt;
   &lt;/address&gt;
-&lt;/Location&gt;</pre>
+&lt;/Location&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -197,7 +201,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 14, 2020 20:23+0000">2020-09-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:15-0700">2020-09-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

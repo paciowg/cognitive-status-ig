@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
@@ -36,6 +37,8 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
@@ -72,6 +75,7 @@
   <li><a href="underlying_technologies.html">Underlying Technologies</a></li>
   <li><a href="cognitive_status_use_case.html">Use Case Example</a></li>
   <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a></li>
+  <li><a href="representative_assessments.html">Representative Assessments</a></li>
   <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
@@ -166,6 +170,7 @@ Data to be standardized and interoperable to allow exchange of data between PAC 
   <li><a href="cognitive_status_use_case.html">Use Case Example</a> Describes an example of its use and provides a high-level overview of expected process flow.</li>
   <li><a href="underlying_technologies.html">Underlying Technologies</a> Describes the different specifications this implementation guide relies on and indicates what developers should read and understand prior to implementing this specification.</li>
   <li><a href="profile_highlights_and_guidance.html">Profile Highlights and Guidance</a> Provides a closer look at the IG profiles and guidance for constructing profile instances with examples for data exchange.</li>
+  <li><a name="403554a9-70f5-492d-bdf9-058730834f9d">​</a><a href="Representative_assessments.html">Representative Assessments</a> Presents representative examples of standardized instruments and guidance on the use of standardized code systems.</li>
   <li><a href="security_and_data_sharing.html">Security and Data Sharing</a> Covers issues concerning security and patient information access and sharing.</li>
   <li><a href="artifacts.html">Artifacts Summary</a> Introduces and provides links to the Capability Statement, IG Resource Profiles, and IG Extension Definitions as well as example profile instances.</li>
 </ul>
@@ -174,7 +179,7 @@ Data to be standardized and interoperable to allow exchange of data between PAC 
 <p>This implementation guide relies on the following other specifications:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/R4/">FHIR R4</a> - The ‘current’ official version of FHIR as of the time this implementation guide was published.  See the <a href="underlying_technologies.html">background page</a> for key pieces of this specification implementers should be familiar with.</li>
-  <li><a name="90c110b8-733e-48af-a395-06d29772f915">​</a><a href="http://hl7.org/fhir/us/core/">US Core STU3</a> - The version of US Core based on FHIR R4.</li>
+  <li><a name="773bdeb5-ab4d-47df-9b08-071934d6e0fd">​</a><a href="http://hl7.org/fhir/us/core/">US Core STU3</a> - The version of US Core based on FHIR R4.</li>
 </ul>
 
 <p>This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.</p>
@@ -208,7 +213,7 @@ Data to be standardized and interoperable to allow exchange of data between PAC 
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 14, 2020 20:23+0000">2020-09-14</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="http://pacioproject.org/">MITRE PACIO Team</a>.  Package pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 29, 2020 21:15-0700">2020-09-29</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
