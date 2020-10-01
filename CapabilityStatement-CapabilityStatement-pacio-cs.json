@@ -11,10 +11,10 @@
   "title": "PACIO Cognitive Status Capability Statement",
   "status": "draft",
   "date": "2020-05-08T00:00:00+00:00",
-  "publisher": "MITRE PACIO Team",
+  "publisher": "PACIO Project",
   "contact": [
     {
-      "name": "Caleb Wan",
+      "name": "MITRE PACIO Team",
       "telecom": [
         {
           "system": "email",

@@ -10,11 +10,11 @@
   "name": "PriorLevelOfCognitiveFunction",
   "title": "PACIO Prior Level of Cognitive Function",
   "status": "active",
-  "date": "2020-09-29T21:15:07-07:00",
-  "publisher": "MITRE PACIO Team",
+  "date": "2020-10-01T09:12:36-07:00",
+  "publisher": "PACIO Project",
   "contact": [
     {
-      "name": "Caleb Wan",
+      "name": "MITRE PACIO Team",
       "telecom": [
         {
           "system": "email",

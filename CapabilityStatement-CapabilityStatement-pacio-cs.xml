@@ -12,9 +12,9 @@
   <title value="PACIO Cognitive Status Capability Statement"/>
   <status value="draft"/>
   <date value="2020-05-08T00:00:00+00:00"/>
-  <publisher value="MITRE PACIO Team"/>
+  <publisher value="PACIO Project"/>
   <contact>
-    <name value="Caleb Wan"/>
+    <name value="MITRE PACIO Team"/>
     <telecom>
       <system value="email"/>
       <value value="http://pacioproject.org/"/>
