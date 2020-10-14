@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-Hospital-MMSE-1> a fhir:QuestionnaireResponse;
+<http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-Hospital-MMSE-1> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-Hospital-MMSE-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
+       fhir:value "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr";
        fhir:index 0;
-       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
+       fhir:link <http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr>
      ]
   ];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-08T17:32:00-05:00"^^xsd:dateTime];
@@ -42,17 +42,22 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-Hospital-MMSE-1>;
+           fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-Hospital-MMSE-1>;
            fhir:Reference.reference [ fhir:value "Observation/BCS-Hospital-MMSE-1" ]
          ]
        ]
      ]
   ] .
 
+<http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-Hospital-MMSE-1> a fhir:us .
+
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-Hospital-MMSE-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-Hospital-MMSE-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-cs/QuestionnaireResponse/QResponse-Hospital-MMSE-1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-PHQ9-1> a fhir:QuestionnaireResponse;
+<http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-PHQ9-1> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-SNF-PHQ9-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
+       fhir:value "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr";
        fhir:index 0;
-       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
+       fhir:link <http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr>
      ]
   ];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
@@ -52,7 +52,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-8>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-8>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-8" ]
              ]
            ]
@@ -64,7 +64,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-10>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-10>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-10" ]
              ]
            ]
@@ -76,7 +76,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-12>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-12>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-12" ]
              ]
            ]
@@ -88,7 +88,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-14>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-14>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-14" ]
              ]
            ]
@@ -100,7 +100,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-16>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-16>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-16" ]
              ]
            ]
@@ -112,7 +112,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-18>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-18>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-18" ]
              ]
            ]
@@ -124,7 +124,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-20>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-20>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-20" ]
              ]
            ]
@@ -136,7 +136,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-22>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-22>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-22" ]
              ]
            ]
@@ -148,7 +148,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-24>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-24>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-24" ]
              ]
            ]
@@ -166,7 +166,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-9>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-9>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-9" ]
              ]
            ]
@@ -178,7 +178,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-11>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-11>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-11" ]
              ]
            ]
@@ -190,7 +190,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-13>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-13>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-13" ]
              ]
            ]
@@ -202,7 +202,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-15>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-15>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-15" ]
              ]
            ]
@@ -214,7 +214,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-17>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-17>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-17" ]
              ]
            ]
@@ -226,7 +226,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-19>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-19>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-19" ]
              ]
            ]
@@ -238,7 +238,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-21>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-21>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-21" ]
              ]
            ]
@@ -250,7 +250,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-23>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-23>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-23" ]
              ]
            ]
@@ -262,7 +262,7 @@
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
              fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1-Ob-Question-25>;
+               fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-25>;
                fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1-Ob-Question-25" ]
              ]
            ]
@@ -276,17 +276,58 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-PHQ9-1>;
+           fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1>;
            fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-PHQ9-1" ]
          ]
        ]
      ]
   ] .
 
+<http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-8> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-10> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-12> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-14> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-16> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-18> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-20> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-22> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-24> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-9> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-11> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-13> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-15> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-17> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-19> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-21> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-23> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1-Ob-Question-25> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-PHQ9-1> a fhir:us .
+
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-PHQ9-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-PHQ9-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-PHQ9-1.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,64 +1,64 @@
 [
   {
-    "id": "CapabilityStatement-pacio-cs",
+    "id": "pacio-cap",
     "type": "CapabilityStatement",
-    "url": "https://paciowg.github.io/cognitive-status-ig/CapabilityStatement-pacio-cs.html",
+    "url": "/CapabilityStatement-pacio-cap.html",
     "version": "0.1.0",
     "name": "PACIO_CognitiveStatus_CapabilityStatement"
   },
   {
-    "id": "pacio-cs",
+    "id": "hl7.fhir.us.pacio-cs",
     "type": "ImplementationGuide",
-    "url": "https://paciowg.github.io/cognitive-status-ig/ImplementationGuide/pacio-cs",
+    "url": "http://hl7.org/fhir/us/pacio-cs/ImplementationGuide/hl7.fhir.us.pacio-cs",
     "version": "0.1.0",
     "name": "PACIOCognitiveStatusImplementationGuide"
   },
   {
     "id": "assistance-required",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/assistance-required",
     "version": "0.1.0",
     "name": "AssistanceRequired"
   },
   {
     "id": "device-patient-used",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/device-patient-used",
     "version": "0.1.0",
     "name": "DevicePatientUsed"
   },
   {
     "id": "pacio-bcs",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs",
     "version": "0.1.0",
     "name": "BundledCognitiveStatus"
   },
   {
     "id": "pacio-cognition-qr",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr",
     "version": "0.1.0",
     "name": "CognitionQuestionnaireResponse"
   },
   {
     "id": "pacio-cs",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs",
     "version": "0.1.0",
     "name": "CognitiveStatus"
   },
   {
     "id": "pacio-cs-dev",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs-dev",
     "version": "0.1.0",
     "name": "UseOfDevice"
   },
   {
     "id": "pacio-plcf",
     "type": "StructureDefinition",
-    "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
+    "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-plcf",
     "version": "0.1.0",
     "name": "PriorLevelOfCognitiveFunction"
   }

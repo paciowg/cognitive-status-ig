@@ -1,17 +1,17 @@
 {
-  "package": "pacio-cs",
+  "package": "hl7.fhir.us.pacio-cs",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required",
+      "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/assistance-required",
       "title": "AssistanceRequired",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used",
+      "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/device-patient-used",
       "title": "DevicePatientUsed",
       "types": [
         "Reference"
@@ -21,19 +21,19 @@
   "profiles": {
     "Observation": [
       {
-        "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
+        "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-plcf",
         "title": "PACIO Prior Level of Cognitive Function"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
+        "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr",
         "title": "PACIO Cognition Questionnaire Response"
       }
     ],
     "DeviceUseStatement": [
       {
-        "url": "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev",
+        "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs-dev",
         "title": "Use of Device"
       }
     ]
@@ -79,13 +79,10 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter-diagnosisPresentOnAdmission": [
-      "Encounter.diagnosis"
-    ],
-    "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required": [
+    "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/assistance-required": [
       "Observation"
     ],
-    "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used": [
+    "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/device-patient-used": [
       "Observation"
     ]
   }

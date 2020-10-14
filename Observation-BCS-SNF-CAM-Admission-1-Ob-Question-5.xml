@@ -3,10 +3,10 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="BCS-SNF-CAM-Admission-1-Ob-Question-5"/>
   <meta>
-    <profile value="https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    <profile value="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 54629-1}">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 4:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-HoneyJones.html">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href="Role-RN">Role-RN</a></li><li><a href="Organization-Org-02.html">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title="Codes: {http://loinc.org LA61-7}">Behavior not present</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 4:00:00 PM</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 54629-1}">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 4:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-HoneyJones.html">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href="PractitionerRole-Role-RN.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 224535009}">Registered Nurse</span></a></li><li><a href="Organization-Org-02.html">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title="Codes: {http://loinc.org LA61-7}">Behavior not present</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Apr 9, 2020 4:00:00 PM</a></p></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
     <valueReference>
@@ -30,7 +30,7 @@
     <reference value="Practitioner/Practitioner-HoneyJones"/>
   </performer>
   <performer>
-    <reference value="Role-RN"/>
+    <reference value="PractitionerRole/Role-RN"/>
   </performer>
   <performer>
     <reference value="Organization/Org-02"/>

@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-4> a fhir:Observation;
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-BIMS-1-Ob-Question-4> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BCS-SNF-BIMS-1-Ob-Question-4"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs";
+       fhir:value "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs";
        fhir:index 0;
-       fhir:link <https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs>
+       fhir:link <http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs>
      ]
   ];
   fhir:DomainResource.text [
@@ -24,7 +24,7 @@
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
      fhir:Extension.valueReference [
-       fhir:link <https://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-02>;
+       fhir:link <http://hl7.org/fhir/us/pacio-cs/Location/Org-Loc-02>;
        fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
      ]
   ];
@@ -40,21 +40,21 @@
      fhir:CodeableConcept.text [ fhir:value "Able to report correct day of the week" ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-HoneyJones>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/Practitioner/Practitioner-HoneyJones>;
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
   ], [
      fhir:index 1;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/PractitionerRole/Role-SLP>;
      fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP" ]
   ], [
      fhir:index 2;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Organization/Org-02>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/Organization/Org-02>;
      fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
      fhir:Reference.display [ fhir:value "Organization" ]
   ];
@@ -70,14 +70,27 @@
   ];
   fhir:Observation.derivedFrom [
      fhir:index 0;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BIMS-1>;
+     fhir:link <http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-BIMS-1>;
      fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-BIMS-1" ]
   ] .
 
+<http://hl7.org/fhir/us/pacio-cs/Location/Org-Loc-02> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Practitioner/Practitioner-HoneyJones> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/PractitionerRole/Role-SLP> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/Organization/Org-02> a fhir:us .
+
+<http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-BIMS-1> a fhir:us .
+
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-4.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-BIMS-1-Ob-Question-4.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/pacio-cs/Observation/BCS-SNF-BIMS-1-Ob-Question-4.ttl> .
 
 # -------------------------------------------------------------------------------------
 
