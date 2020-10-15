@@ -35,6 +35,14 @@
      ]
   ];
   fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;

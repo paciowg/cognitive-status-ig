@@ -205,7 +205,19 @@
 
 
 
-  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+  <a name="argonaut-dq-dstu2"> </a><h3>Mappings for Argonaut-DQ-DSTU2 (http://unknown.org/Argonaut-DQ-DSTU2)</h3><table class="grid">
+ <tr><td colspan="3"><b>PriorLevelOfCognitiveFunction</b></td></tr>
+ <tr><td>Observation</td><td>Observation</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Observation.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>Observation.category</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (Laboratory)</td><td>Observation.category</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Observation.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Observation.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>Observation.effective[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>Observation.value[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>Observation.dataAbsentReason</td> </tr>
+</table>
+<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>PriorLevelOfCognitiveFunction</b></td></tr>
  <tr><td>Observation</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension (event-location)</td><td>Event.location</td> </tr>
@@ -290,6 +302,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.outboundRelationship[typeCode=FLFS].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status  Amended &amp; Final are differentiated by whether it is the subject of a ControlAct event with a type of &quot;revise&quot;</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (Laboratory)</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;EVN&quot;].code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -337,6 +350,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>FiveWs.class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category (Laboratory)</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;focus</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
@@ -411,7 +425,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.hl7.org/Special/committees/patientcare/">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 15, 2020 08:00-0700">2020-10-15</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.hl7.org/Special/committees/patientcare/">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 15, 2020 13:49-0700">2020-10-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

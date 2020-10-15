@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "DevicePatientUsed"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-10-15T08:00:20-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-10-15T13:49:46-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -32,15 +32,6 @@
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A device used by a patient during a cognitive status assessment."];
-  fhir:StructureDefinition.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States of America" ]
-     ]
-  ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

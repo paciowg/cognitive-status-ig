@@ -25,13 +25,6 @@
     </telecom>
   </contact>
   <description value="This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide."/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
-      <display value="United States of America"/>
-    </coding>
-  </jurisdiction>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="xml"/>

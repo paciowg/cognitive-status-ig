@@ -13,7 +13,7 @@
   <name value="UseOfDevice"/>
   <title value="Use of Device"/>
   <status value="active"/>
-  <date value="2020-10-15T08:00:20-07:00"/>
+  <date value="2020-10-15T13:49:46-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="MITRE PACIO Team"/>
@@ -27,13 +27,6 @@
     </telecom>
   </contact>
   <description value="A device used by a Patient during a cognitive status assessment."/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
-      <display value="United States of America"/>
-    </coding>
-  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

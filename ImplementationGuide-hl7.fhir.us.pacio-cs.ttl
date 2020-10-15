@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-10-15T08:00:20-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-10-15T13:49:46-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -30,15 +30,6 @@
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
        fhir:ContactPoint.value [ fhir:value "info@pacioproject.org" ]
-     ]
-  ];
-  fhir:ImplementationGuide.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ];
-       fhir:Coding.display [ fhir:value "United States of America" ]
      ]
   ];
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.us.pacio-cs"];

@@ -4,8 +4,8 @@ HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Type: application/fhir+xml
 Content-Length: 96193
-Date: Thu, 15 Oct 2020 15:00:13 GMT
-X-Request-Id: 362-1418190
+Date: Thu, 15 Oct 2020 20:49:40 GMT
+X-Request-Id: 362-1504961
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: Content-Location, Location
 Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
@@ -16,31 +16,31 @@ Server: Health Intersections FHIR Server
 <hr/><a name="l1"> </a>
 <p>#1</p>
 <pre>
-POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 User-Agent: hapi-fhir-tooling-client
 Accept: application/fhir+xml
 Content-Type: application/fhir+xml;charset=UTF-8
 Accept-Charset: UTF-8
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;urn:iso:std:iso:3166&quot;/&gt;&lt;code value=&quot;US&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;b9a8f607-687c-4544-a2cd-8ed7b9e9170e&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;url value=&quot;urn:uuid:68704057-bea9-41a3-b470-2cc2c8b23255&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;urn:iso:std:iso:3166&quot;/&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;11332-4&quot;/&gt;&lt;display value=&quot;History of Cognitive Function Narrative&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 <pre>
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Type: application/fhir+xml; charset=UTF-8
-Content-Length: 257
+Content-Length: 272
 Cache-control: public, max-age=600
-Date: Thu, 15 Oct 2020 15:00:25 GMT
+Date: Thu, 15 Oct 2020 20:49:52 GMT
 Pragma: no-cache
-X-Request-Id: 362-1418199
+X-Request-Id: 362-1504965
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: Content-Location, Location
 Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
 X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
-Last-Modified: Thu, 15 Oct 2020 15:00:25 GMT
+Last-Modified: Thu, 15 Oct 2020 20:49:52 GMT
 Server: Health Intersections FHIR Server
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;United States of America&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;History of Cognitive function Narrative&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 <hr/><a name="l2"> </a>
 <p>#2</p>
@@ -51,29 +51,57 @@ Accept: application/fhir+xml
 Content-Type: application/fhir+xml;charset=UTF-8
 Accept-Charset: UTF-8
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;urn:iso:std:iso:3166&quot;/&gt;&lt;code value=&quot;US&quot;/&gt;&lt;display value=&quot;United States of America&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSetMode&quot;/&gt;&lt;valueString value=&quot;NO_MEMBERSHIP_CHECK&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;b9a8f607-687c-4544-a2cd-8ed7b9e9170e&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;id value=&quot;jurisdiction&quot;/&gt;&lt;meta&gt;&lt;lastUpdated value=&quot;2019-10-31T15:29:23.356-07:00&quot;/&gt;&lt;profile value=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset&quot;/&gt;&lt;/meta&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;&gt;&lt;valueCode value=&quot;vocab&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;&lt;valueCode value=&quot;normative&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;&lt;valueInteger value=&quot;5&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;&lt;valueCode value=&quot;4.0.0&quot;/&gt;&lt;/extension&gt;&lt;url value=&quot;http://hl7.org/fhir/ValueSet/jurisdiction&quot;/&gt;&lt;identifier&gt;&lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;&lt;value value=&quot;urn:oid:2.16.840.1.113883.4.642.3.48&quot;/&gt;&lt;/identifier&gt;&lt;version value=&quot;4.0.1&quot;/&gt;&lt;name value=&quot;Jurisdiction ValueSet&quot;/&gt;&lt;title value=&quot;Jurisdiction&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;experimental value=&quot;false&quot;/&gt;&lt;date value=&quot;2019-11-01T09:29:23+11:00&quot;/&gt;&lt;publisher value=&quot;FHIR Project team&quot;/&gt;&lt;contact&gt;&lt;telecom&gt;&lt;system value=&quot;url&quot;/&gt;&lt;value value=&quot;http://hl7.org/fhir&quot;/&gt;&lt;/telecom&gt;&lt;/contact&gt;&lt;description value=&quot;This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   &amp;#xD;&amp;#xA;   &amp;#xD;&amp;#xA;   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for &amp;quot;supra-national&amp;quot; regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;urn:iso:std:iso:3166&quot;/&gt;&lt;/include&gt;&lt;include&gt;&lt;system value=&quot;urn:iso:std:iso:3166:-2&quot;/&gt;&lt;/include&gt;&lt;include&gt;&lt;system value=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;&lt;filter&gt;&lt;property value=&quot;class&quot;/&gt;&lt;op value=&quot;=&quot;/&gt;&lt;value value=&quot;region&quot;/&gt;&lt;/filter&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;tx-resource&quot;/&gt;&lt;resource&gt;&lt;CodeSystem&gt;&lt;id value=&quot;v3-iso3166-2&quot;/&gt;&lt;text&gt;&lt;status value=&quot;generated&quot;/&gt;&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;ISO 3166 Part 2 Country Subdivision Codes&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.&lt;/p&gt;
-&lt;/div&gt;&lt;p&gt;This code system urn:iso:std:iso:3166:-2 defines many codes, but they are not represented here&lt;/p&gt;&lt;/div&gt;&lt;/text&gt;&lt;url value=&quot;urn:iso:std:iso:3166:-2&quot;/&gt;&lt;identifier&gt;&lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;&lt;value value=&quot;urn:oid:1.0.3166.2&quot;/&gt;&lt;/identifier&gt;&lt;version value=&quot;2013-11&quot;/&gt;&lt;name value=&quot;Iso3166_2&quot;/&gt;&lt;title value=&quot;ISO 3166 Part 2 Country Subdivision Codes&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;experimental value=&quot;false&quot;/&gt;&lt;date value=&quot;2019-03-20T00:00:00-04:00&quot;/&gt;&lt;publisher value=&quot;ISO 3166 Maintenance Agency (ISO)&quot;/&gt;&lt;contact&gt;&lt;name value=&quot;International Standards Organization (ISO), International Standards Organization (ISO)&quot;/&gt;&lt;/contact&gt;&lt;description value=&quot;Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.&quot;/&gt;&lt;content value=&quot;not-present&quot;/&gt;&lt;/CodeSystem&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;xml&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;implySystem&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;id value=&quot;mimetypes&quot;/&gt;&lt;meta&gt;&lt;lastUpdated value=&quot;2019-10-31T15:29:23.356-07:00&quot;/&gt;&lt;profile value=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset&quot;/&gt;&lt;/meta&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;&gt;&lt;valueCode value=&quot;fhir&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;&lt;valueCode value=&quot;normative&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version&quot;&gt;&lt;valueCode value=&quot;4.0.0&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;&lt;valueInteger value=&quot;5&quot;/&gt;&lt;/extension&gt;&lt;url value=&quot;http://hl7.org/fhir/ValueSet/mimetypes&quot;/&gt;&lt;identifier&gt;&lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;&lt;value value=&quot;urn:oid:2.16.840.1.113883.4.642.3.1024&quot;/&gt;&lt;/identifier&gt;&lt;version value=&quot;4.0.1&quot;/&gt;&lt;name value=&quot;Mime Types&quot;/&gt;&lt;title value=&quot;MimeType&quot;/&gt;&lt;status value=&quot;active&quot;/&gt;&lt;experimental value=&quot;false&quot;/&gt;&lt;date value=&quot;2019-11-01T09:29:23+11:00&quot;/&gt;&lt;publisher value=&quot;HL7 International - FHIR-Infrastructure&quot;/&gt;&lt;contact&gt;&lt;telecom&gt;&lt;system value=&quot;url&quot;/&gt;&lt;value value=&quot;http://hl7.org/fhir&quot;/&gt;&lt;/telecom&gt;&lt;/contact&gt;&lt;description value=&quot;This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 <pre>
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Type: application/fhir+xml; charset=UTF-8
-Content-Length: 257
+Content-Length: 236
 Cache-control: public, max-age=600
-Date: Thu, 15 Oct 2020 15:00:25 GMT
+Date: Thu, 15 Oct 2020 20:49:52 GMT
 Pragma: no-cache
-X-Request-Id: 362-1418200
+X-Request-Id: 362-1504966
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: Content-Location, Location
 Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
 X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
-Last-Modified: Thu, 15 Oct 2020 15:00:25 GMT
+Last-Modified: Thu, 15 Oct 2020 20:49:52 GMT
 Server: Health Intersections FHIR Server
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;United States of America&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;xml&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 <hr/><a name="l3"> </a>
 <p>#3</p>
+<pre>
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;json&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;implySystem&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;url&quot;/&gt;&lt;valueUri value=&quot;http://hl7.org/fhir/ValueSet/mimetypes|4.0.1&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 237
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:52 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504967
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:52 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;json&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
 <pre>
 POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 User-Agent: hapi-fhir-tooling-client
@@ -81,24 +109,1735 @@ Accept: application/fhir+xml
 Content-Type: application/fhir+xml;charset=UTF-8
 Accept-Charset: UTF-8
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;urn:iso:std:iso:3166&quot;/&gt;&lt;code value=&quot;US&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;b9a8f607-687c-4544-a2cd-8ed7b9e9170e&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;72107-6&quot;/&gt;&lt;display value=&quot;Mini-Mental State Examination [MMSE]&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 <pre>
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Type: application/fhir+xml; charset=UTF-8
-Content-Length: 257
+Content-Length: 269
 Cache-control: public, max-age=600
-Date: Thu, 15 Oct 2020 15:00:25 GMT
+Date: Thu, 15 Oct 2020 20:49:56 GMT
 Pragma: no-cache
-X-Request-Id: 362-1418201
+X-Request-Id: 362-1504973
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: Content-Location, Location
 Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
 X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
-Last-Modified: Thu, 15 Oct 2020 15:00:25 GMT
+Last-Modified: Thu, 15 Oct 2020 20:49:56 GMT
 Server: Health Intersections FHIR Server
 
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;United States of America&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Mini-Mental State Examination [MMSE]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;72133-2&quot;/&gt;&lt;display value=&quot;Montreal Cognitive Assessment [MoCA]&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 269
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:56 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504976
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:56 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Montreal Cognitive Assessment [MoCA]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52491-8&quot;/&gt;&lt;display value=&quot;Brief Interview for Mental Status (BIMS)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 543
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:56 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504977
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:56 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Brief interview for mental status [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Brief Interview for Mental Status (BIMS)&amp;quot; is not a valid display for the code {http://loinc.org}52491-8 - should be one of [&amp;quot;Brief interview for mental status [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52731-7&quot;/&gt;&lt;display value=&quot;Number of words repeated after first attempt&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 535
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:56 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504978
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:56 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Repetition of three words # [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Number of words repeated after first attempt&amp;quot; is not a valid display for the code {http://loinc.org}52731-7 - should be one of [&amp;quot;Repetition of three words # [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA6395-3&quot;/&gt;&lt;display value=&quot;Three&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 238
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:57 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504979
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:57 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Three&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52732-5&quot;/&gt;&lt;display value=&quot;Able to report correct year&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 534
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:57 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504980
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:57 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Temporal orientation - current year [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Able to report correct year&amp;quot; is not a valid display for the code {http://loinc.org}52732-5 - should be one of [&amp;quot;Temporal orientation - current year [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l10"> </a>
+<p>#10</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10008-3&quot;/&gt;&lt;display value=&quot;Missed by 1 year&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 249
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:57 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504981
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:57 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Missed by 1 year&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l11"> </a>
+<p>#11</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52733-3&quot;/&gt;&lt;display value=&quot;What month are we in right now?&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 540
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:57 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504982
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:57 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Temporal orientation - current month [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;What month are we in right now?&amp;quot; is not a valid display for the code {http://loinc.org}52733-3 - should be one of [&amp;quot;Temporal orientation - current month [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l12"> </a>
+<p>#12</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10010-9&quot;/&gt;&lt;display value=&quot;Missed by 6 days to 1 month&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 260
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:58 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504983
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:58 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Missed by 6 days to 1 month&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l13"> </a>
+<p>#13</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54609-3&quot;/&gt;&lt;display value=&quot;What day of the week is today?&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 559
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:58 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504984
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:58 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Temporal orientation - current day of the week [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;What day of the week is today?&amp;quot; is not a valid display for the code {http://loinc.org}54609-3 - should be one of [&amp;quot;Temporal orientation - current day of the week [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l14"> </a>
+<p>#14</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA9960-1&quot;/&gt;&lt;display value=&quot;Correct&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 240
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:58 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504985
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:58 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Correct&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l15"> </a>
+<p>#15</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52735-8&quot;/&gt;&lt;display value=&quot;Able to recall sock&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 482
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:59 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504986
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:59 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Recall - sock [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Able to recall sock&amp;quot; is not a valid display for the code {http://loinc.org}52735-8 - should be one of [&amp;quot;Recall - sock [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l16"> </a>
+<p>#16</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10126-3&quot;/&gt;&lt;display value=&quot;Yes, after cueing (&amp;#39;something to wear&amp;#39;)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 583
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:59 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504987
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:59 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Yes, after cueing (&amp;quot;something to wear&amp;quot;)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Yes, after cueing (&amp;apos;something to wear&amp;apos;)&amp;quot; is not a valid display for the code {http://loinc.org}LA10126-3 - should be one of [&amp;quot;Yes, after cueing (&amp;quot;&amp;quot;something to wear&amp;quot;&amp;quot;)&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l17"> </a>
+<p>#17</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52736-6&quot;/&gt;&lt;display value=&quot;Able to recall blue&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 482
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:59 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504988
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:59 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Recall - blue [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Able to recall blue&amp;quot; is not a valid display for the code {http://loinc.org}52736-6 - should be one of [&amp;quot;Recall - blue [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l18"> </a>
+<p>#18</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10978-7&quot;/&gt;&lt;display value=&quot;Yes, after cueing (&amp;#39;a color&amp;#39;)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 553
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:49:59 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504989
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:49:59 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Yes, after cueing (&amp;quot;a color&amp;quot;)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Yes, after cueing (&amp;apos;a color&amp;apos;)&amp;quot; is not a valid display for the code {http://loinc.org}LA10978-7 - should be one of [&amp;quot;Yes, after cueing (&amp;quot;&amp;quot;a color&amp;quot;&amp;quot;)&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l19"> </a>
+<p>#19</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;52737-4&quot;/&gt;&lt;display value=&quot;Able to recall bed&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 479
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:00 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504990
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:00 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Recall - bed [BIMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Able to recall bed&amp;quot; is not a valid display for the code {http://loinc.org}52737-4 - should be one of [&amp;quot;Recall - bed [BIMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l20"> </a>
+<p>#20</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10125-5&quot;/&gt;&lt;display value=&quot;Yes, after cueing (&amp;#39;a piece of furniture&amp;#39;)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 592
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:00 GMT
+Pragma: no-cache
+X-Request-Id: 362-1504991
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:00 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Yes, after cueing (&amp;quot;a piece of furniture&amp;quot;)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Yes, after cueing (&amp;apos;a piece of furniture&amp;apos;)&amp;quot; is not a valid display for the code {http://loinc.org}LA10125-5 - should be one of [&amp;quot;Yes, after cueing (&amp;quot;&amp;quot;a piece of furniture&amp;quot;&amp;quot;)&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l21"> </a>
+<p>#21</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;86585-7&quot;/&gt;&lt;display value=&quot;Signs and Symptoms of Delirium (from CAM)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 630
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:00 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505004
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:00 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;MDS v3.0 - RAI v1.17.2 - Signs and symptoms of delirium (from CAM) [CMS Assessment]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Signs and Symptoms of Delirium (from CAM)&amp;quot; is not a valid display for the code {http://loinc.org}86585-7 - should be one of [&amp;quot;MDS v3.0 - RAI v1.17.2 - Signs and symptoms of delirium (from CAM) [CMS Assessment]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l22"> </a>
+<p>#22</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54632-5&quot;/&gt;&lt;display value=&quot;Is there evidence of an acute change in mental status from the patients baseline?&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 588
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:00 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505010
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:00 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Acute onset mental status change [CAM.CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Is there evidence of an acute change in mental status from the patients baseline?&amp;quot; is not a valid display for the code {http://loinc.org}54632-5 - should be one of [&amp;quot;Acute onset mental status change [CAM.CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l23"> </a>
+<p>#23</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA32-8&quot;/&gt;&lt;display value=&quot;No&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 235
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:01 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505011
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:01 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;No&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l24"> </a>
+<p>#24</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54628-3&quot;/&gt;&lt;display value=&quot;Did the patient have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 644
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:01 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505013
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:01 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Inattention in last 7 days [CAM.CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Did the patient have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?&amp;quot; is not a valid display for the code {http://loinc.org}54628-3 - should be one of [&amp;quot;Inattention in last 7 days [CAM.CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l25"> </a>
+<p>#25</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA61-7&quot;/&gt;&lt;display value=&quot;Behavior not present&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 253
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:01 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505014
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:01 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Behavior not present&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l26"> </a>
+<p>#26</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54629-1&quot;/&gt;&lt;display value=&quot;Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 878
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:01 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505015
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:01 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Disorganized thinking in last 7 days [CAM.CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused&amp;quot; is not a valid display for the code {http://loinc.org}54629-1 - should be one of [&amp;quot;Disorganized thinking in last 7 days [CAM.CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l27"> </a>
+<p>#27</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA33-6&quot;/&gt;&lt;display value=&quot;Yes&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 236
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:02 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505016
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:02 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Yes&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l28"> </a>
+<p>#28</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10992-8&quot;/&gt;&lt;display value=&quot;Behavior continuously present, does not fluctuate&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 282
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:02 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505017
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:02 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Behavior continuously present, does not fluctuate&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l29"> </a>
+<p>#29</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10993-6&quot;/&gt;&lt;display value=&quot;Behavior present, fluctuates (comes and goes, changes in severity)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 299
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:02 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505018
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:02 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Behavior present, fluctuates (comes and goes, changes in severity)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l30"> </a>
+<p>#30</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54635-8&quot;/&gt;&lt;display value=&quot;Resident Mood Interview (PHQ-9)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 558
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:02 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505019
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:02 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Resident Mood Interview (PHQ-9)&amp;quot; is not a valid display for the code {http://loinc.org}54635-8 - should be one of [&amp;quot;Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l31"> </a>
+<p>#31</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54638-2&quot;/&gt;&lt;display value=&quot;Feeling down, depressed or hopeless&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 620
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:03 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505020
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:03 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Feeling down, depressed or hopeless in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Feeling down, depressed or hopeless&amp;quot; is not a valid display for the code {http://loinc.org}54638-2 - should be one of [&amp;quot;Feeling down, depressed or hopeless in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l32"> </a>
+<p>#32</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54639-0&quot;/&gt;&lt;display value=&quot;Feeling down, depressed or hopeless&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 622
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:03 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505021
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:03 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Feeling down, depressed or hopeless in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Feeling down, depressed or hopeless&amp;quot; is not a valid display for the code {http://loinc.org}54639-0 - should be one of [&amp;quot;Feeling down, depressed or hopeless in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l33"> </a>
+<p>#33</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10998-5&quot;/&gt;&lt;display value=&quot;2-6 days (several days)&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 256
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:03 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505022
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:03 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;2-6 days (several days)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l34"> </a>
+<p>#34</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54640-8&quot;/&gt;&lt;display value=&quot;Trouble falling or staying asleep or sleeping too much&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 679
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:04 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505023
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:04 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Trouble falling or staying asleep, or sleeping too much in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Trouble falling or staying asleep or sleeping too much&amp;quot; is not a valid display for the code {http://loinc.org}54640-8 - should be one of [&amp;quot;Trouble falling or staying asleep, or sleeping too much in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l35"> </a>
+<p>#35</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54641-6&quot;/&gt;&lt;display value=&quot;Trouble falling or staying asleep or sleeping too much&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 681
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:04 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505024
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:04 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Trouble falling or staying asleep, or sleeping too much in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Trouble falling or staying asleep or sleeping too much&amp;quot; is not a valid display for the code {http://loinc.org}54641-6 - should be one of [&amp;quot;Trouble falling or staying asleep, or sleeping too much in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l36"> </a>
+<p>#36</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54642-4&quot;/&gt;&lt;display value=&quot;Feeling tired or having little energy&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 626
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:04 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505025
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:04 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Feeling tired or having little energy in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Feeling tired or having little energy&amp;quot; is not a valid display for the code {http://loinc.org}54642-4 - should be one of [&amp;quot;Feeling tired or having little energy in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l37"> </a>
+<p>#37</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54643-2&quot;/&gt;&lt;display value=&quot;Feeling tired or having little energy&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 628
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:04 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505026
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:04 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Feeling tired or having little energy in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Feeling tired or having little energy&amp;quot; is not a valid display for the code {http://loinc.org}54643-2 - should be one of [&amp;quot;Feeling tired or having little energy in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l38"> </a>
+<p>#38</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10997-7&quot;/&gt;&lt;display value=&quot;Never or 1 day&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 247
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:05 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505027
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:05 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Never or 1 day&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l39"> </a>
+<p>#39</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54644-0&quot;/&gt;&lt;display value=&quot;Poor appetite or overeating&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 596
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:05 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505028
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:05 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Poor appetite or overeating in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Poor appetite or overeating&amp;quot; is not a valid display for the code {http://loinc.org}54644-0 - should be one of [&amp;quot;Poor appetite or overeating in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l40"> </a>
+<p>#40</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54645-7&quot;/&gt;&lt;display value=&quot;Poor appetite or overeating&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 598
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:05 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505029
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:05 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Poor appetite or overeating in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Poor appetite or overeating&amp;quot; is not a valid display for the code {http://loinc.org}54645-7 - should be one of [&amp;quot;Poor appetite or overeating in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l41"> </a>
+<p>#41</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54646-5&quot;/&gt;&lt;display value=&quot;Feeling bad about yourself&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 731
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:05 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505050
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:05 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Feeling bad about yourself&amp;quot; is not a valid display for the code {http://loinc.org}54646-5 - should be one of [&amp;quot;Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l42"> </a>
+<p>#42</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54647-3&quot;/&gt;&lt;display value=&quot;Feeling bad about yourself&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 733
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:06 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505051
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:06 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Feeling bad about yourself&amp;quot; is not a valid display for the code {http://loinc.org}54647-3 - should be one of [&amp;quot;Feeling bad about yourself - or that you are a failure or have let yourself or your family down in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l43"> </a>
+<p>#43</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54648-1&quot;/&gt;&lt;display value=&quot;Trouble concentrating on things&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 716
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:06 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505052
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:06 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Trouble concentrating on things&amp;quot; is not a valid display for the code {http://loinc.org}54648-1 - should be one of [&amp;quot;Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l44"> </a>
+<p>#44</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54649-9&quot;/&gt;&lt;display value=&quot;Trouble concentrating on things&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 718
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:06 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505053
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:06 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Trouble concentrating on things&amp;quot; is not a valid display for the code {http://loinc.org}54649-9 - should be one of [&amp;quot;Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l45"> </a>
+<p>#45</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54650-7&quot;/&gt;&lt;display value=&quot;Moving or speaking so slowly so that others notice/or the opposite - being fidgety or restless&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 945
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:06 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505054
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:06 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Moving or speaking so slowly so that others notice/or the opposite - being fidgety or restless&amp;quot; is not a valid display for the code {http://loinc.org}54650-7 - should be one of [&amp;quot;Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l46"> </a>
+<p>#46</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54651-5&quot;/&gt;&lt;display value=&quot;Moving or speaking so slowly so that others notice/or the opposite - being fidgety or restless&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 947
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:07 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505055
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:07 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Moving or speaking so slowly so that others notice/or the opposite - being fidgety or restless&amp;quot; is not a valid display for the code {http://loinc.org}54651-5 - should be one of [&amp;quot;Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l47"> </a>
+<p>#47</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54652-3&quot;/&gt;&lt;display value=&quot;Thoughts that you would be better off dead or hurting yourself&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 733
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:07 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505056
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:07 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Thoughts that you would be better off dead or hurting yourself&amp;quot; is not a valid display for the code {http://loinc.org}54652-3 - should be one of [&amp;quot;Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l48"> </a>
+<p>#48</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;LA10996-9&quot;/&gt;&lt;display value=&quot;No response&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 244
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:07 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505058
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:07 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;No response&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l49"> </a>
+<p>#49</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54653-1&quot;/&gt;&lt;display value=&quot;Thoughts that you would be better off dead or hurting yourself&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 735
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:08 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505059
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:08 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Thoughts that you would be better off dead or hurting yourself&amp;quot; is not a valid display for the code {http://loinc.org}54653-1 - should be one of [&amp;quot;Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l50"> </a>
+<p>#50</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54636-6&quot;/&gt;&lt;display value=&quot;Little interest or pleasure in doing things&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 644
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:08 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505060
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:08 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Little interest or pleasure in doing things in last 2 weeks.presence [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Little interest or pleasure in doing things&amp;quot; is not a valid display for the code {http://loinc.org}54636-6 - should be one of [&amp;quot;Little interest or pleasure in doing things in last 2 weeks.presence [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l51"> </a>
+<p>#51</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;code value=&quot;54637-4&quot;/&gt;&lt;display value=&quot;Little interest or pleasure in doing things&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 646
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:08 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505061
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:08 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Little interest or pleasure in doing things in last 2 weeks.frequency [Reported PHQ-9 CMS]&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Little interest or pleasure in doing things&amp;quot; is not a valid display for the code {http://loinc.org}54637-4 - should be one of [&amp;quot;Little interest or pleasure in doing things in last 2 weeks.frequency [Reported PHQ-9 CMS]&amp;quot;,]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l52"> </a>
+<p>#52</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;38341003&quot;/&gt;&lt;display value=&quot;Hypertension&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 252
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:08 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505062
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:08 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;High blood pressure&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l53"> </a>
+<p>#53</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;55822004&quot;/&gt;&lt;display value=&quot;Hyperlipidemia&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 247
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:09 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505064
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:09 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Hyperlipidemia&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l54"> </a>
+<p>#54</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;433144002&quot;/&gt;&lt;display value=&quot;Stage 3 chronic kideny disease&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 609
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:09 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505066
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:09 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Chronic kidney disease stage 3 (disorder)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Stage 3 chronic kideny disease&amp;quot; is not a valid display for the code {http://snomed.info/sct}433144002 - should be one of [&amp;quot;Chronic kidney disease stage 3 (disorder)&amp;quot;,&amp;quot;Chronic kidney disease stage 3&amp;quot;,&amp;quot;CKD stage 3&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l55"> </a>
+<p>#55</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;414545008&quot;/&gt;&lt;display value=&quot;Ischemic heart disease&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 266
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:09 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505067
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:09 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Ischemic heart disease (disorder)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l56"> </a>
+<p>#56</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;192080009&quot;/&gt;&lt;display value=&quot;Depression&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 518
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:10 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505068
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:10 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Chronic depression&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Depression&amp;quot; is not a valid display for the code {http://snomed.info/sct}192080009 - should be one of [&amp;quot;Chronic depression&amp;quot;,&amp;quot;Chronic depression (disorder)&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l57"> </a>
+<p>#57</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;95722004&quot;/&gt;&lt;display value=&quot;Cataracts&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 252
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:10 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505069
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:10 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Bilateral cataracts&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l58"> </a>
+<p>#58</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;396275006&quot;/&gt;&lt;display value=&quot;Osteoarthiritis&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 774
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:10 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505070
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:10 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Osteoarthritis (disorder)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Osteoarthiritis&amp;quot; is not a valid display for the code {http://snomed.info/sct}396275006 - should be one of [&amp;quot;Osteoarthritis (disorder)&amp;quot;,Osteoarthritis,&amp;quot;OA - Osteoarthritis&amp;quot;,&amp;quot;Degenerative arthritis&amp;quot;,&amp;quot;OA - Osteoarthrosis&amp;quot;,&amp;quot;Hypertrophic arthritis&amp;quot;,&amp;quot;Degenerative joint disease&amp;quot;,&amp;quot;Hypertrophic polyarthritis&amp;quot;,Osteoarthrosis,&amp;quot;Degenerative arthropathy&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l59"> </a>
+<p>#59</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;44054006&quot;/&gt;&lt;display value=&quot;Type 2 diabetes&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 654
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:10 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505089
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:10 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Diabetes mellitus type II&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Type 2 diabetes&amp;quot; is not a valid display for the code {http://snomed.info/sct}44054006 - should be one of [&amp;quot;Diabetes mellitus type II&amp;quot;,&amp;quot;Type 2 diabetes mellitus&amp;quot;,&amp;quot;Diabetes mellitus type 2&amp;quot;,&amp;quot;Type II diabetes mellitus&amp;quot;,&amp;quot;Diabetes mellitus type 2 (disorder)&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l60"> </a>
+<p>#60</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;422504002&quot;/&gt;&lt;display value=&quot;Ischemic stroke&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 259
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:11 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505090
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:11 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Ischemic stroke (disorder)&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l61"> </a>
+<p>#61</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;224535009&quot;/&gt;&lt;display value=&quot;Registered Nurse&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 249
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:11 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505091
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:11 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Registered nurse&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l62"> </a>
+<p>#62</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;code value=&quot;159026005&quot;/&gt;&lt;display value=&quot;Speech Language Pathologist&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 715
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:11 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505092
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:11 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Speech and language therapist&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The display &amp;quot;Speech Language Pathologist&amp;quot; is not a valid display for the code {http://snomed.info/sct}159026005 - should be one of [&amp;quot;Speech and language therapist&amp;quot;,&amp;quot;Speech therapist&amp;quot;,&amp;quot;SLT - Speech and language therapist&amp;quot;,&amp;quot;ST - Speech therapist&amp;quot;,&amp;quot;Speech/language therapist (occupation)&amp;quot;,&amp;quot;Speech/language therapist&amp;quot;]&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l63"> </a>
+<p>#63</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;system value=&quot;http://nucc.org/provider-taxonomy&quot;/&gt;&lt;code value=&quot;261QP2300X&quot;/&gt;&lt;display value=&quot;Primary Care&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cache-id&quot;/&gt;&lt;valueString value=&quot;4fb88321-0ad3-42ee-970a-1eda8ea6c497&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 245
+Cache-control: public, max-age=600
+Date: Thu, 15 Oct 2020 20:50:12 GMT
+Pragma: no-cache
+X-Request-Id: 362-1505093
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Thu, 15 Oct 2020 20:50:12 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;display&quot;/&gt;&lt;valueString value=&quot;Primary Care&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;true&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
 </pre>
 </head></html>
