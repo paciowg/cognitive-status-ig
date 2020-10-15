@@ -3,9 +3,9 @@
 
 err = 8, warn = 187, info = 0
 IG Publisher Version: 1.1.34 Out of date - current version is 1.1.35
-Generated Wed Oct 14 15:59:52 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://hl7.org/fhir/us/pacio-cs)
+Generated Wed Oct 14 18:05:12 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://hl7.org/fhir/us/pacio-cs)
 
- Build Errors : 5 / 74 / 0
+ Build Errors : 3 / 74 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis2 : 0 / 0 / 1
@@ -167,9 +167,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/provider-role-pcp.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-pacio-cs in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs-dev-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 376, column 200: The link 'http://hl7.org/fhir/R4/null.html' for "http://hl7.org/fhir/StructureDefinition/bodySite" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/profile_highlights_and_guidance.html#/html/body/div/div/div/div/div/p/a at Line 164, column 135: The link 'http://hl7.org/fhir/us/core/1.0.1/guidance.html#must-support' for "Must Support" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21: The link 'history.html' for "History" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/underlying_technologies.html#/html/body/div/div/div/div/div/p/a at Line 165, column 142: The link 'http://hl7.org/fhir/us/core/STU3' for "US Core Implementation Guide" cannot be resolved
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.pacio-cs: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')

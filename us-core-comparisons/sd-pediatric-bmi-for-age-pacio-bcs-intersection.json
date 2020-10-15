@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c4f42dfb-bc58-4cb4-978c-8f2f6f8819d5-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c4f42dfb-bc58-4cb4-978c-8f2f6f8819d5-9",
+  "id" : "3b9f2a3c-d0f9-4066-9957-cf3b000044a4-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3b9f2a3c-d0f9-4066-9957-cf3b000044a4-9",
   "name" : "IntersectionUSCorePediatricBMIforAgeObservationProfileAndBundledCognitiveStatus",
   "title" : "Intersection of US Core Pediatric BMI for Age Observation Profile And PACIO Bundled Cognitive Status",
   "status" : "active",
-  "date" : "2020-10-14T15:58:22-07:00",
+  "date" : "2020-10-14T18:03:40-07:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",

@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "CognitionQuestionnaireResponse"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Cognition Questionnaire Response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-10-14T15:58:14-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-10-14T18:03:31-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
