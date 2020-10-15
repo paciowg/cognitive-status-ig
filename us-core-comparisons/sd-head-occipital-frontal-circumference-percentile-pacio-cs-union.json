@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3b9f2a3c-d0f9-4066-9957-cf3b000044a4-26",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3b9f2a3c-d0f9-4066-9957-cf3b000044a4-26",
+  "id" : "40a98c65-4a7c-489a-9df8-bc534dbcba42-26",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/40a98c65-4a7c-489a-9df8-bc534dbcba42-26",
   "name" : "UnionUsCorePediatricHeadOccipitalFrontalCircumferencePercentileProfileAndCognitiveStatus",
   "title" : "Union of US Core Pediatric Head Occipital-frontal Circumference Percentile Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2020-10-14T18:03:40-07:00",
+  "date" : "2020-10-15T08:00:28-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

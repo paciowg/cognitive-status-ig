@@ -10,7 +10,7 @@
   "name": "CognitionQuestionnaireResponse",
   "title": "PACIO Cognition Questionnaire Response",
   "status": "active",
-  "date": "2020-10-14T18:03:31-07:00",
+  "date": "2020-10-15T08:00:20-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -28,6 +28,17 @@
     }
   ],
   "description": "A completed, or sections of a completed, CMS PAC assessment.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "3b9f2a3c-d0f9-4066-9957-cf3b000044a4-6",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/3b9f2a3c-d0f9-4066-9957-cf3b000044a4-6",
+  "id" : "40a98c65-4a7c-489a-9df8-bc534dbcba42-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/40a98c65-4a7c-489a-9df8-bc534dbcba42-6",
   "name" : "IntersectionVitalSignsAndLOINCCodes",
   "title" : "Intersection of Vital Signs And LOINC Codes",
   "status" : "active",
-  "date" : "2020-10-14T18:03:39-07:00"
+  "date" : "2020-10-15T08:00:28-07:00"
 }

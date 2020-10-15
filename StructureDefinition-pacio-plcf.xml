@@ -26,7 +26,7 @@
   <name value="PriorLevelOfCognitiveFunction"/>
   <title value="PACIO Prior Level of Cognitive Function"/>
   <status value="active"/>
-  <date value="2020-10-14T18:03:31-07:00"/>
+  <date value="2020-10-15T08:00:20-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="MITRE PACIO Team"/>
@@ -40,6 +40,13 @@
     </telecom>
   </contact>
   <description value="An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

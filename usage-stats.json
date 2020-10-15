@@ -2,6 +2,7 @@
   "package": "hl7.fhir.us.pacio-cs",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
   "extensions": [
     {
       "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/assistance-required",

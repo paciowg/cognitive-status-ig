@@ -1,12 +1,12 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 8, warn = 187, info = 0
+err = 1, warn = 185, info = 0
 IG Publisher Version: 1.1.34 Out of date - current version is 1.1.35
-Generated Wed Oct 14 18:05:12 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://hl7.org/fhir/us/pacio-cs)
+Generated Thu Oct 15 08:01:37 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://hl7.org/fhir/us/pacio-cs)
 
  Build Errors : 3 / 74 / 0
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis2 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis3 : 0 / 1 / 1
@@ -81,14 +81,14 @@ Generated Wed Oct 14 18:05:12 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-CAM-Admission-1 : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-CAM-Discharge-1 : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-PHQ9-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required : 1 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used : 1 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs : 1 / 3 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cognition-qr : 1 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs : 1 / 3 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev : 1 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 1 / 3 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs : 0 / 3 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cognition-qr : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs : 0 / 3 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 0 / 3 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/BCS-Hospital-MMSE-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -170,7 +170,6 @@ ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-stat
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 64, column 21: The link 'history.html' for "History" cannot be resolved
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.pacio-cs: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis1.json ==
 INFORMATION: Condition/BSJ-Diagnosis1: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/condition-BSJ-Diagnosis2.json ==
@@ -421,36 +420,28 @@ INFORMATION: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: 
 WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required.json ==
 INFORMATION: StructureDefinition/assistance-required: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used.json ==
 INFORMATION: StructureDefinition/device-patient-used: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/device-patient-used'): The Implementation Guide contains no examples for this extension
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs.json ==
 INFORMATION: StructureDefinition/pacio-bcs: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/pacio-bcs: StructureDefinition.snapshot.element[22].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/pacio-bcs: StructureDefinition.differential.element[13].short: value should not start or finish with whitespace
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cognition-qr.json ==
 INFORMATION: StructureDefinition/pacio-cognition-qr: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs.json ==
 INFORMATION: StructureDefinition/pacio-cs: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/pacio-cs: StructureDefinition.snapshot.element[21].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/pacio-cs: StructureDefinition.differential.element[11].short: value should not start or finish with whitespace
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev.json ==
 INFORMATION: StructureDefinition/pacio-cs-dev: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs-dev'): The Implementation Guide contains no examples for this profile
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf.json ==
 INFORMATION: StructureDefinition/pacio-plcf: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/pacio-plcf: StructureDefinition.snapshot.element[26].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/pacio-plcf: StructureDefinition.differential.element[9].short: value should not start or finish with whitespace
-ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-plcf').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap.json ==
 INFORMATION: CapabilityStatement/pacio-cap: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
-WARNING: CapabilityStatement.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.pacio-cs, jurisdiction = urn:iso:std:iso:3166#US) (for FSH: 'jurisdiction: urn:iso:std:iso:3166#US "null"')

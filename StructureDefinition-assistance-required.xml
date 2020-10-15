@@ -13,7 +13,7 @@
   <version value="0.1.0"/>
   <name value="AssistanceRequired"/>
   <status value="active"/>
-  <date value="2020-10-14T18:03:31-07:00"/>
+  <date value="2020-10-15T08:00:20-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="MITRE PACIO Team"/>
@@ -27,6 +27,13 @@
     </telecom>
   </contact>
   <description value="Associated with prior level of cognitive function to provide indication of &#39;independent&#39; vs. &#39;assistance needed&#39;."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
