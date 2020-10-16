@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "Role-SLP"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>active</b>: true</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech Language Pathologist</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>active</b>: true</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></p></div>"
   ];
   fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
   fhir:PractitionerRole.code [
@@ -21,7 +21,7 @@
        a sct:159026005;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "159026005" ];
-       fhir:Coding.display [ fhir:value "Speech Language Pathologist" ]
+       fhir:Coding.display [ fhir:value "Speech and language therapist" ]
      ]
   ] .
 

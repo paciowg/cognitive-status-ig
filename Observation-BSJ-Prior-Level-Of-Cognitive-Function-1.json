@@ -62,5 +62,13 @@
       "reference": "Organization/provider-org-01",
       "display": "Organization"
     }
-  ]
+  ],
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code": "not-applicable"
+      }
+    ]
+  }
 }

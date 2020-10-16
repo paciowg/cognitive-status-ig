@@ -9,15 +9,14 @@
   "version": "0.1.0",
   "name": "AssistanceRequired",
   "status": "active",
-  "date": "2020-10-15T13:49:46-07:00",
-  "publisher": "HL7 Patient Care Work Group",
+  "date": "2020-10-15T23:24:00-07:00",
   "contact": [
     {
-      "name": "MITRE PACIO Team",
+      "name": "PACIO  project",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.hl7.org/Special/committees/patientcare/"
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
         },
         {
           "system": "email",
@@ -27,6 +26,16 @@
     }
   ],
   "description": "Associated with prior level of cognitive function to provide indication of 'independent' vs. 'assistance needed'.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

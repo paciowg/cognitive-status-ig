@@ -12,12 +12,11 @@
   <title value="PACIO Cognitive Status Capability Statement"/>
   <status value="draft"/>
   <date value="2020-10-14T00:00:00+00:00"/>
-  <publisher value="HL7 Patient Care Work Group"/>
   <contact>
-    <name value="MITRE PACIO Team"/>
+    <name value="PACIO  project"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.org/Special/committees/patientcare/"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/"/>
     </telecom>
     <telecom>
       <system value="email"/>
@@ -25,6 +24,12 @@
     </telecom>
   </contact>
   <description value="This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="xml"/>

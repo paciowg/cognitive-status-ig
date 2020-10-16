@@ -16,15 +16,14 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "DevicePatientUsed"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-10-15T13:49:46-07:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
+  fhir:StructureDefinition.date [ fhir:value "2020-10-15T23:24:00-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MITRE PACIO Team" ];
+     fhir:ContactDetail.name [ fhir:value "PACIO  project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.org/Special/committees/patientcare/" ]
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare/" ]
      ], [
        fhir:index 1;
        fhir:ContactPoint.system [ fhir:value "email" ];
@@ -32,6 +31,14 @@
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A device used by a patient during a cognitive status assessment."];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

@@ -73,6 +73,13 @@
      fhir:link <http://hl7.org/fhir/us/pacio-cs/Organization/provider-org-01>;
      fhir:Reference.reference [ fhir:value "Organization/provider-org-01" ];
      fhir:Reference.display [ fhir:value "Organization" ]
+  ];
+  fhir:Observation.dataAbsentReason [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/data-absent-reason" ];
+       fhir:Coding.code [ fhir:value "not-applicable" ]
+     ]
   ] .
 
 <http://hl7.org/fhir/us/pacio-cs/Location/provider-org-loc-01> a fhir:us .

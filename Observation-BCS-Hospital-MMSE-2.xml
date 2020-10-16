@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 72107-6}">Mini-Mental State Examination [MMSE]</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 10, 2020 10:16:00 AM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-JennyGlass.html">Generated Summary: active; Jenny Glass ; gender: female</a></li><li><a href="PractitionerRole-Role-SLP.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech Language Pathologist</span></a></li><li><a href="Organization-Org-01.html">Organization. Generated Summary: name: San Antonio General Hospital</a></li></ul><p><b>value</b>: <span title="Codes: ">24</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-Hospital-MMSE-2.html">Questionnaire Response. Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 10, 2020 10:16:00 AM</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span>, <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 72107-6}">Mini-Mental State Examination [MMSE]</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 10, 2020 10:16:00 AM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-JennyGlass.html">Generated Summary: active; Jenny Glass ; gender: female</a></li><li><a href="PractitionerRole-Role-SLP.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech and language therapist</span></a></li><li><a href="Organization-Org-01.html">Organization. Generated Summary: name: San Antonio General Hospital</a></li></ul><p><b>value</b>: <span title="Codes: ">24</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-Hospital-MMSE-2.html">Questionnaire Response. Generated Summary: status: completed; authored: Jul 10, 2020 10:16:00 AM</a></p></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
     <valueReference>
@@ -18,6 +18,12 @@
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
       <code value="survey"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
     </coding>
   </category>
   <code>

@@ -9,9 +9,9 @@
     },
     "version": "0.1.0",
     "contact": {
-      "name": "MITRE PACIO Team",
+      "name": "PACIO  project",
       "email": "info@pacioproject.org",
-      "url": "https://www.hl7.org/Special/committees/patientcare/"
+      "url": "http://www.hl7.org/Special/committees/patientcare/"
     }
   },
   "externalDocs": {
