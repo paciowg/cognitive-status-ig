@@ -13,9 +13,21 @@
   <version value="0.1.0"/>
   <name value="AssistanceRequired"/>
   <status value="active"/>
-  <date value="2020-10-15T23:24:00-07:00"/>
+  <date value="2020-10-16T20:54:21-07:00"/>
+  <publisher value="HL7 Patient Care Work Group"/>
   <contact>
-    <name value="PACIO  project"/>
+    <name value="HL7 Patient Care Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patientcare@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="PACIO project"/>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/patientcare/"/>

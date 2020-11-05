@@ -9,9 +9,9 @@
     },
     "version": "0.1.0",
     "contact": {
-      "name": "PACIO  project",
-      "email": "info@pacioproject.org",
-      "url": "http://www.hl7.org/Special/committees/patientcare/"
+      "name": "HL7 Patient Care Work Group",
+      "email": "patientcare@lists.HL7.org",
+      "url": "http://www.hl7.org/Special/committees/patientcare"
     }
   },
   "externalDocs": {

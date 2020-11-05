@@ -26,10 +26,23 @@
   fhir:StructureDefinition.name [ fhir:value "UseOfDevice"];
   fhir:StructureDefinition.title [ fhir:value "Use of Device"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-10-15T23:24:00-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-10-16T20:54:21-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "PACIO  project" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Care Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "PACIO project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];

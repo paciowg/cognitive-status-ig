@@ -10,10 +10,24 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2020-10-15T23:24:00-07:00",
+  "date": "2020-10-16T20:54:21-07:00",
+  "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
-      "name": "PACIO  project",
+      "name": "HL7 Patient Care Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        },
+        {
+          "system": "email",
+          "value": "patientcare@lists.HL7.org"
+        }
+      ]
+    },
+    {
+      "name": "PACIO project",
       "telecom": [
         {
           "system": "url",
@@ -73,7 +87,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
+            "valueString": "STU Ballot"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -420,165 +434,11 @@
           }
         ],
         "reference": {
-          "reference": "Observation/BCS-Hospital-MMSE-1"
-        },
-        "name": "BCS-Hospital-MMSE-1",
-        "description": "An instance of BundledCognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-Hospital-MMSE-2"
-        },
-        "name": "BCS-Hospital-MMSE-2",
-        "description": "An instance of BundledCognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
           "reference": "Observation/BCS-Hospital-MOCA-1"
         },
         "name": "BCS-Hospital-MOCA-1",
         "description": "An instance of BundledCognitiveStatus",
         "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-Hospital-MOCA-2"
-        },
-        "name": "BCS-Hospital-MOCA-2",
-        "description": "An instance of BundledCognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1"
-        },
-        "name": "BCS-SNF-BIMS-1",
-        "description": "An instance of BundledCognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-1"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-1",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-2"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-2",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-3"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-3",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-4"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-4",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-5"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-5",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-6"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-6",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-7"
-        },
-        "name": "BCS-SNF-BIMS-1-Ob-Question-7",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
       },
       {
         "extension": [
@@ -633,272 +493,6 @@
           "reference": "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5"
         },
         "name": "BCS-SNF-CAM-Admission-1-Ob-Question-5",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1"
-        },
-        "name": "BCS-SNF-PHQ9-1",
-        "description": "An instance of BundledCognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-10"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-10",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-11"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-11",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-12"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-12",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-13"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-13",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-14"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-14",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-15"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-15",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-16"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-16",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-17"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-17",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-18"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-18",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-19"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-19",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-20"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-20",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-21"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-21",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-22"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-22",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-23"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-23",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-24"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-24",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-25"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-25",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-8"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-8",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/BCS-SNF-PHQ9-1-Ob-Question-9"
-        },
-        "name": "BCS-SNF-PHQ9-1-Ob-Question-9",
         "description": "An instance of CognitiveStatus",
         "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs"
       },
@@ -1078,34 +672,6 @@
           }
         ],
         "reference": {
-          "reference": "QuestionnaireResponse/QResponse-Hospital-MMSE-1"
-        },
-        "name": "QResponse-Hospital-MMSE-1",
-        "description": "An instance of CognitionQuestionnaireResponse",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/QResponse-Hospital-MMSE-2"
-        },
-        "name": "QResponse-Hospital-MMSE-2",
-        "description": "An instance of CognitionQuestionnaireResponse",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
           "reference": "QuestionnaireResponse/QResponse-Hospital-MOCA-1"
         },
         "name": "QResponse-Hospital-MOCA-1",
@@ -1120,51 +686,9 @@
           }
         ],
         "reference": {
-          "reference": "QuestionnaireResponse/QResponse-Hospital-MOCA-2"
-        },
-        "name": "QResponse-Hospital-MOCA-2",
-        "description": "An instance of CognitionQuestionnaireResponse",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/QResponse-SNF-BIMS-1"
-        },
-        "name": "QResponse-SNF-BIMS-1",
-        "description": "An instance of CognitionQuestionnaireResponse",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
           "reference": "QuestionnaireResponse/QResponse-SNF-CAM-Admission-1"
         },
         "name": "QResponse-SNF-CAM-Admission-1",
-        "description": "An instance of CognitionQuestionnaireResponse",
-        "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/QResponse-SNF-PHQ9-1"
-        },
-        "name": "QResponse-SNF-PHQ9-1",
         "description": "An instance of CognitionQuestionnaireResponse",
         "exampleCanonical": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"
       },

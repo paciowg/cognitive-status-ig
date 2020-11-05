@@ -18,9 +18,22 @@
   fhir:CapabilityStatement.title [ fhir:value "PACIO Cognitive Status Capability Statement"];
   fhir:CapabilityStatement.status [ fhir:value "draft"];
   fhir:CapabilityStatement.date [ fhir:value "2020-10-14T00:00:00+00:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "PACIO  project" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 Patient Care Work Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.org/Special/committees/patientcare" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "patientcare@lists.HL7.org" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "PACIO project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];

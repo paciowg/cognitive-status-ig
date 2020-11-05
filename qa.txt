@@ -1,9 +1,9 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 48, info = 14
+err = 0, warn = 3, info = 2
 IG Publisher Version: 1.1.35
-Generated Thu Oct 15 23:25:12 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://hl7.org/fhir/us/pacio-cs)
+Generated Fri Oct 16 20:55:11 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://hl7.org/fhir/us/pacio-cs)
 
  Build Errors : 2 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
@@ -11,42 +11,12 @@ Generated Thu Oct 15 23:25:12 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-Org-Loc-02 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-Org-Loc-03 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-provider-org-loc-01 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-1 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-2 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-3 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-4 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-5 : 0 / 2 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-6 : 0 / 2 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-7 : 0 / 2 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-3 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-5 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1 : 0 / 1 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-10 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-11 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-12 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-13 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-14 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-15 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-16 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-17 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-18 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-19 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-20 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-21 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-22 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-23 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-24 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-25 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-8 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-9 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BSJ-Prior-Level-Of-Cognitive-Function-1 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-3 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-5 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BSJ-Prior-Level-Of-Cognitive-Function-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-01 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-02 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-03 : 0 / 0 / 1
@@ -60,20 +30,15 @@ Generated Thu Oct 15 23:25:12 PDT 2020. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/practitionerrole-Role-RN : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/practitionerrole-Role-SLP : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/practitionerrole-provider-role-pcp : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MMSE-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MMSE-2 : 0 / 0 / 2
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MOCA-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MOCA-2 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-BIMS-1 : 0 / 0 / 2
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-CAM-Admission-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-PHQ9-1 : 0 / 0 / 2
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs : 0 / 2 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cognition-qr : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs : 0 / 2 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 0 / 2 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap : 0 / 0 / 1
 </table>
 == n/a ==
@@ -90,124 +55,18 @@ INFORMATION: Location/Org-Loc-02: Location: Validate resource against profile ht
 INFORMATION: Location/Org-Loc-03: Location: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-provider-org-loc-01.json ==
 INFORMATION: Location/provider-org-loc-01: Location: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-1.json ==
-INFORMATION: Observation/BCS-Hospital-MMSE-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-Hospital-MMSE-1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-Hospital-MMSE-1: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2.json ==
-INFORMATION: Observation/BCS-Hospital-MMSE-2: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-Hospital-MMSE-2: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-Hospital-MMSE-2: Observation.code: ValueSet http://loinc.org not found by validator
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1.json ==
 INFORMATION: Observation/BCS-Hospital-MOCA-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-Hospital-MOCA-1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-Hospital-MOCA-1: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2.json ==
-INFORMATION: Observation/BCS-Hospital-MOCA-2: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-Hospital-MOCA-2: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-Hospital-MOCA-2: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-SNF-BIMS-1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-SNF-BIMS-1: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-1.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-1: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-2.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-2: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-2: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-3.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-3: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-3: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-4.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-4: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-4: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-5.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-5: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-5: Observation.code: ValueSet http://loinc.org not found by validator
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-5: Observation.value.ofType(CodeableConcept).coding[0]: Internal error: The display "Yes, after cueing ('something to wear')" is not a valid display for the code {http://loinc.org}LA10126-3 - should be one of ["Yes, after cueing (""something to wear"")"] (from http://tx.fhir.org/r4)
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-6.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-6: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-6: Observation.code: ValueSet http://loinc.org not found by validator
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-6: Observation.value.ofType(CodeableConcept).coding[0]: Internal error: The display "Yes, after cueing ('a color')" is not a valid display for the code {http://loinc.org}LA10978-7 - should be one of ["Yes, after cueing (""a color"")"] (from http://tx.fhir.org/r4)
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-7.json ==
-INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-7: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-7: Observation.code: ValueSet http://loinc.org not found by validator
-WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-7: Observation.value.ofType(CodeableConcept).coding[0]: Internal error: The display "Yes, after cueing ('a piece of furniture')" is not a valid display for the code {http://loinc.org}LA10125-5 - should be one of ["Yes, after cueing (""a piece of furniture"")"] (from http://tx.fhir.org/r4)
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1.json ==
 INFORMATION: Observation/BCS-SNF-CAM-Admission-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-SNF-CAM-Admission-1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-SNF-CAM-Admission-1: Observation.code: ValueSet http://loinc.org not found by validator
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-1.json ==
 INFORMATION: Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1: Observation.code: ValueSet http://loinc.org not found by validator
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-3.json ==
 INFORMATION: Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3: Observation.code: ValueSet http://loinc.org not found by validator
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-5.json ==
 INFORMATION: Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-INFORMATION: Observation/BCS-SNF-PHQ9-1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs
-WARNING: Observation/BCS-SNF-PHQ9-1: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-10.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-10: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-10: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-11.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-11: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-11: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-12.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-12: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-12: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-13.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-13: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-13: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-14.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-14: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-14: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-15.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-15: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-15: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-16.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-16: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-16: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-17.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-17: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-17: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-18.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-18: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-18: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-19.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-19: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-19: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-20.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-20: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-20: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-21.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-21: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-21: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-22.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-22: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-22: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-23.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-23: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-23: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-24.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-24: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-24: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-25.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-25: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-25: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-8.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-8: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-8: Observation.code: ValueSet http://loinc.org not found by validator
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-9.json ==
-INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-9: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs
-WARNING: Observation/BCS-SNF-PHQ9-1-Ob-Question-9: Observation.code: ValueSet http://loinc.org not found by validator
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BSJ-Prior-Level-Of-Cognitive-Function-1.json ==
 INFORMATION: Observation/BSJ-Prior-Level-Of-Cognitive-Function-1: Observation: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-plcf
-WARNING: Observation/BSJ-Prior-Level-Of-Cognitive-Function-1: Observation.code: ValueSet http://loinc.org not found by validator
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-01.json ==
 INFORMATION: Organization/Org-01: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-02.json ==
@@ -234,27 +93,12 @@ INFORMATION: PractitionerRole/Role-RN: PractitionerRole: Validate resource again
 INFORMATION: PractitionerRole/Role-SLP: PractitionerRole: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/practitionerrole-provider-role-pcp.json ==
 INFORMATION: PractitionerRole/provider-role-pcp: PractitionerRole: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MMSE-1.json ==
-INFORMATION: QuestionnaireResponse/QResponse-Hospital-MMSE-1: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
-INFORMATION: QuestionnaireResponse/QResponse-Hospital-MMSE-1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MMSE-2.json ==
-INFORMATION: QuestionnaireResponse/QResponse-Hospital-MMSE-2: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
-INFORMATION: QuestionnaireResponse/QResponse-Hospital-MMSE-2: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MOCA-1.json ==
 INFORMATION: QuestionnaireResponse/QResponse-Hospital-MOCA-1: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
 INFORMATION: QuestionnaireResponse/QResponse-Hospital-MOCA-1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-Hospital-MOCA-2.json ==
-INFORMATION: QuestionnaireResponse/QResponse-Hospital-MOCA-2: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
-INFORMATION: QuestionnaireResponse/QResponse-Hospital-MOCA-2: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-BIMS-1.json ==
-INFORMATION: QuestionnaireResponse/QResponse-SNF-BIMS-1: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
-INFORMATION: QuestionnaireResponse/QResponse-SNF-BIMS-1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-CAM-Admission-1.json ==
 INFORMATION: QuestionnaireResponse/QResponse-SNF-CAM-Admission-1: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
 INFORMATION: QuestionnaireResponse/QResponse-SNF-CAM-Admission-1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-PHQ9-1.json ==
-INFORMATION: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr
-INFORMATION: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required.json ==
 INFORMATION: StructureDefinition/assistance-required: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used.json ==
@@ -262,20 +106,14 @@ INFORMATION: StructureDefinition/device-patient-used: StructureDefinition: Valid
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/device-patient-used'): The Implementation Guide contains no examples for this extension
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs.json ==
 INFORMATION: StructureDefinition/pacio-bcs: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/pacio-bcs: StructureDefinition.snapshot.element[23].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/pacio-bcs: StructureDefinition.differential.element[12].short: value should not start or finish with whitespace
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cognition-qr.json ==
 INFORMATION: StructureDefinition/pacio-cognition-qr: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs.json ==
 INFORMATION: StructureDefinition/pacio-cs: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/pacio-cs: StructureDefinition.snapshot.element[22].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/pacio-cs: StructureDefinition.differential.element[11].short: value should not start or finish with whitespace
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev.json ==
 INFORMATION: StructureDefinition/pacio-cs-dev: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs-dev'): The Implementation Guide contains no examples for this profile
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf.json ==
 INFORMATION: StructureDefinition/pacio-plcf: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/pacio-plcf: StructureDefinition.snapshot.element[27].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/pacio-plcf: StructureDefinition.differential.element[8].short: value should not start or finish with whitespace
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap.json ==
 INFORMATION: CapabilityStatement/pacio-cap: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
