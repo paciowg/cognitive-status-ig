@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e404ca52-4a11-4e28-86de-b426f861b1a5-38",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e404ca52-4a11-4e28-86de-b426f861b1a5-38",
+  "id" : "13fd1436-b5ae-4068-91b8-9aaf6c481c41-38",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/13fd1436-b5ae-4068-91b8-9aaf6c481c41-38",
   "name" : "UnionUSCorePulseOximetryProfileAndCognitiveStatus",
   "title" : "Union of US Core Pulse Oximetry Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2020-12-30T13:46:20-05:00",
+  "date" : "2020-12-30T14:04:57-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e404ca52-4a11-4e28-86de-b426f861b1a5-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/13fd1436-b5ae-4068-91b8-9aaf6c481c41-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1886,7 +1886,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e404ca52-4a11-4e28-86de-b426f861b1a5-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/13fd1436-b5ae-4068-91b8-9aaf6c481c41-5"
       },
       "mapping" : [{
         "identity" : "w5",

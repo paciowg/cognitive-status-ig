@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BundledCognitiveStatus"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Bundled Cognitive Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-12-30T13:46:13-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-12-30T14:04:49-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
