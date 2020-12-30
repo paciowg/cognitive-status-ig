@@ -6,25 +6,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1> a fhir:Observation;
+<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BCS-SNF-CAM-Admission-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs";
+       fhir:value "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-bcs";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-bcs>
+       fhir:link <https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-bcs>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 86585-7}\">MDS v3.0 - RAI v1.17.2 - Signs and symptoms of delirium (from CAM) [CMS Assessment]</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 4:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-RN.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>dataAbsentReason</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/data-absent-reason not-applicable}\">Not Applicable</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-BCS-SNF-CAM-Admission-1-Ob-Question-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 54632-5}\">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span>; effective: Apr 9, 2020 4:00:00 PM; <span title=\"Codes: {http://loinc.org LA32-8}\">No</span></a></li><li><a href=\"Observation-BCS-SNF-CAM-Admission-1-Ob-Question-3.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 54628-3}\">Inattention - Did the resident have difficulty focusing attention, for example, being easily distractible or having difficulty keeping track of what was being said?</span>; effective: Apr 9, 2020 4:00:00 PM; <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></a></li><li><a href=\"Observation-BCS-SNF-CAM-Admission-1-Ob-Question-5.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 54629-1}\">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span>; effective: Apr 9, 2020 4:00:00 PM; <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Questionnaire Response. Generated Summary: status: completed; authored: Apr 9, 2020 4:00:00 PM</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 86585-7}\">MDS v3.0 - RAI v1.17.2 - Signs and symptoms of delirium (from CAM) [CMS Assessment]</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020, 7:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-RN.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>dataAbsentReason</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/data-absent-reason not-applicable}\">Not Applicable</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-BCS-SNF-CAM-Admission-1-Ob-Question-1.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 54632-5}\">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span>; effective: Apr 9, 2020, 7:00:00 PM; <span title=\"Codes: {http://loinc.org LA32-8}\">No</span></a></li><li><a href=\"Observation-BCS-SNF-CAM-Admission-1-Ob-Question-3.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 54628-3}\">Inattention - Did the resident have difficulty focusing attention, for example, being easily distractible or having difficulty keeping track of what was being said?</span>; effective: Apr 9, 2020, 7:00:00 PM; <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></a></li><li><a href=\"Observation-BCS-SNF-CAM-Admission-1-Ob-Question-5.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 54629-1}\">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span>; effective: Apr 9, 2020, 7:00:00 PM; <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Questionnaire Response. Generated Summary: status: completed; authored: Apr 9, 2020, 7:00:00 PM</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
      fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/pacio-cs/Location/Org-Loc-02>;
+       fhir:link <https://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-02>;
        fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
      ]
   ];
@@ -47,21 +47,21 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/Practitioner/Practitioner-HoneyJones>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-HoneyJones>;
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
   ], [
      fhir:index 1;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/PractitionerRole/Role-RN>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-RN>;
      fhir:Reference.reference [ fhir:value "PractitionerRole/Role-RN" ]
   ], [
      fhir:index 2;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/Organization/Org-02>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Organization/Org-02>;
      fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
      fhir:Reference.display [ fhir:value "Organization" ]
   ];
@@ -74,47 +74,28 @@
   ];
   fhir:Observation.hasMember [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1>;
      fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1" ]
   ], [
      fhir:index 1;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3>;
      fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3" ]
   ], [
      fhir:index 2;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5>;
      fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5" ]
   ];
   fhir:Observation.derivedFrom [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1>;
+     fhir:link <https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1>;
      fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-CAM-Admission-1" ];
      fhir:Reference.display [ fhir:value "Questionnaire Response" ]
   ] .
 
-<http://hl7.org/fhir/us/pacio-cs/Location/Org-Loc-02> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/Patient/patientBSJ1> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/Practitioner/Practitioner-HoneyJones> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/PractitionerRole/Role-RN> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/Organization/Org-02> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5> a fhir:us .
-
-<http://hl7.org/fhir/us/pacio-cs/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1> a fhir:us .
-
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/pacio-cs/Observation/BCS-SNF-CAM-Admission-1.ttl> .
+<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

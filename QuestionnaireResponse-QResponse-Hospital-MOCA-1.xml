@@ -3,10 +3,10 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="QResponse-Hospital-MOCA-1"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"/>
+    <profile value="https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cognition-qr"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>authored</b>: Jul 8, 2020 3:32:00 PM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: MoCA</p><p><b>text</b>: Montreal Cognitive Assessment [MoCA]</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: MoCA/TotalScore</p><p><b>text</b>: Total score [MoCA]</p><h3>Answers</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>authored</b>: Jul 8, 2020, 6:32:00 PM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: MoCA</p><p><b>text</b>: Montreal Cognitive Assessment [MoCA]</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: MoCA/TotalScore</p><p><b>text</b>: Total score [MoCA]</p><h3>Answers</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
   </text>
   <status value="completed"/>
   <subject>

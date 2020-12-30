@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/pacio-cs/Location/Org-Loc-01> a fhir:Location;
+<https://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-01> a fhir:Location;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Org-Loc-01"];
   fhir:DomainResource.text [
@@ -20,9 +20,8 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/pacio-cs/Location/Org-Loc-01.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/pacio-cs/Location/Org-Loc-01.ttl> .
+<https://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-01.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

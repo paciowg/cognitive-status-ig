@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr",
+  "url": "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cognition-qr",
   "version": "0.1.0",
   "name": "CognitionQuestionnaireResponse",
   "title": "PACIO Cognition Questionnaire Response",
   "status": "active",
-  "date": "2020-10-16T20:54:21-07:00",
+  "date": "2020-12-30T13:46:13-05:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {

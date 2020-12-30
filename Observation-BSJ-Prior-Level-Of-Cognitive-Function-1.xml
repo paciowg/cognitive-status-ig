@@ -3,12 +3,12 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="BSJ-Prior-Level-Of-Cognitive-Function-1"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-plcf"/>
+    <profile value="https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-plcf"/>
   </meta>
   <text>
     <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Alert and oriented x 3. She is independent in household finances, social and community activities, coeherent and appropriate communication. Appropriate attire for location and weather.</div>
   </text>
-  <extension url="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/assistance-required">
+  <extension url="https://paciowg.github.io/cognitive-status-ig//StructureDefinition/assistance-required">
     <valueCodeableConcept>
       <text value="Independent"/>
     </valueCodeableConcept>

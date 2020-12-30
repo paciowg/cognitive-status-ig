@@ -19,12 +19,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cognition-qr"/>
+  <url value="https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cognition-qr"/>
   <version value="0.1.0"/>
   <name value="CognitionQuestionnaireResponse"/>
   <title value="PACIO Cognition Questionnaire Response"/>
   <status value="active"/>
-  <date value="2020-10-16T20:54:21-07:00"/>
+  <date value="2020-12-30T13:46:13-05:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>

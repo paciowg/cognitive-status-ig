@@ -3,7 +3,7 @@
   "id": "BSJ-Prior-Level-Of-Cognitive-Function-1",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-plcf"
+      "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-plcf"
     ]
   },
   "text": {
@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/pacio-cs/StructureDefinition/assistance-required",
+      "url": "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/assistance-required",
       "valueCodeableConcept": {
         "text": "Independent"
       }

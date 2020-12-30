@@ -14,12 +14,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/pacio-cs/StructureDefinition/pacio-cs-dev"/>
+  <url value="https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cs-dev"/>
   <version value="0.1.0"/>
   <name value="UseOfDevice"/>
   <title value="Use of Device"/>
   <status value="active"/>
-  <date value="2020-10-16T20:54:21-07:00"/>
+  <date value="2020-12-30T13:46:13-05:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/pacio-cs/PractitionerRole/Role-RN> a fhir:PractitionerRole;
+<https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-RN> a fhir:PractitionerRole;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Role-RN"];
   fhir:DomainResource.text [
@@ -27,9 +27,8 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/pacio-cs/PractitionerRole/Role-RN.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/pacio-cs/PractitionerRole/Role-RN.ttl> .
+<https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-RN.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
