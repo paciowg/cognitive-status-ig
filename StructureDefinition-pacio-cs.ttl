@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs> a fhir:StructureDefinition;
+<http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pacio-cs"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cs"];
+  fhir:StructureDefinition.url [ fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "CognitiveStatus"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Cognitive Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-12-30T14:04:49-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-01-03T14:35:29-08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3088,7 +3088,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

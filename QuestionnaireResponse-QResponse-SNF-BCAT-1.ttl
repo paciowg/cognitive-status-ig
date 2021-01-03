@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BCAT-1> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "QResponse-SNF-BCAT-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
+       fhir:index 0;
+       fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>authored</b>: Jul 11, 2020 9:30:00 AM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: BCAT</p><p><b>text</b>: Brief Cognitive Assessment Tool [BCAT]</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: BCAT/SummaryScore</p><p><b>text</b>: BCAT Summary Score</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
+     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "TBD-LOINC1" ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "BCAT" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Brief Cognitive Assessment Tool [BCAT]" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "TBD-LOINC2" ];
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "BCAT/SummaryScore" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "BCAT Summary Score" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueReference [
+           fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BCAT-1>;
+           fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BCAT-1" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BCAT-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

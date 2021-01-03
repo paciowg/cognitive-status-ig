@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "99a650ae-1e3c-4b26-a7b3-1e8468bab743-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/99a650ae-1e3c-4b26-a7b3-1e8468bab743-6",
+  "name" : "IntersectionObservationCategoryCodesAndObservationCategoryCodes",
+  "title" : "Intersection of Observation Category Codes And Observation Category Codes",
+  "status" : "draft",
+  "date" : "2021-01-03T14:35:35-08:00",
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "social-history",
+      "display" : "Social History"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "imaging",
+      "display" : "Imaging"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure",
+      "display" : "Procedure"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "therapy",
+      "display" : "Therapy"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "activity",
+      "display" : "Activity"
+    }]
+  }
+}

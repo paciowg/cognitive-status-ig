@@ -34,12 +34,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cs"/>
+  <url value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
   <version value="0.1.0"/>
   <name value="CognitiveStatus"/>
   <title value="PACIO Cognitive Status"/>
   <status value="active"/>
-  <date value="2020-12-30T14:04:49-05:00"/>
+  <date value="2021-01-03T14:35:29-08:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>

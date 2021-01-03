@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BCS-SNF-BIMS-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs";
+       fhir:index 0;
+       fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 52491-8}\">Brief interview for mental status [BIMS]</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 11, 2020 9:30:00 AM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-SLP.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: \">9</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-1.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 52731-7}\">Repetition of three words # [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA6395-3}\">Three</span></a></li><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-2.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 52732-5}\">Temporal orientation - current year [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA10008-3}\">Missed by 1 year</span></a></li><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-3.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 52733-3}\">Temporal orientation - current month [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA10010-9}\">Missed by 6 days to 1 month</span></a></li><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-4.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 54609-3}\">Temporal orientation - current day of the week [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA9960-1}\">Correct</span></a></li><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-5.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 52735-8}\">Recall - sock [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA10126-3}\">Yes, after cueing ('something to wear')</span></a></li><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-6.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 52736-6}\">Recall - blue [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA10978-7}\">Yes, after cueing ('a color')</span></a></li><li><a href=\"Observation-BCS-SNF-BIMS-1-Ob-Question-7.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 52737-4}\">Recall - bed [BIMS]</span>; effective: Jul 11, 2020 9:30:00 AM; <span title=\"Codes: {http://loinc.org LA10125-5}\">Yes, after cueing ('a piece of furniture')</span></a></li></ul><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-BIMS-1.html\">Questionnaire Response. Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020 9:30:00 AM</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-02>;
+       fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "survey" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:52491-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "52491-8" ];
+       fhir:Coding.display [ fhir:value "Brief interview for mental status [BIMS]" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-HoneyJones>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Organization/Org-02>;
+     fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
+     fhir:Reference.display [ fhir:value "Organization" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.display [ fhir:value "BIMS Summary Score" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "9" ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-1>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-1" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-2>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-2" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-3>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-3" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-4>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-4" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-5>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-5" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-6>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-6" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-7>;
+     fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-7" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BIMS-1>;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-BIMS-1" ];
+     fhir:Reference.display [ fhir:value "Questionnaire Response" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -5,23 +5,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1> a fhir:QuestionnaireResponse;
+<http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-SNF-CAM-Admission-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cognition-qr";
+       fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
        fhir:index 0;
-       fhir:link <https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cognition-qr>
+       fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 9, 2020, 7:00:00 PM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3/C1310</p><p><b>text</b>: Signs and Symptoms of Delirium (from CAM)</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 9, 2020 4:00:00 PM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3/C1310</p><p><b>text</b>: Signs and Symptoms of Delirium (from CAM)</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
@@ -43,7 +43,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1>;
+             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1>;
              fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1" ]
            ]
          ]
@@ -55,7 +55,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3>;
+             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3>;
              fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3" ]
            ]
          ]
@@ -67,7 +67,7 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5>;
+             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5>;
              fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5" ]
            ]
          ]
@@ -77,7 +77,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap> a fhir:CapabilityStatement;
+<http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "pacio-cap"];
   fhir:DomainResource.text [
@@ -815,7 +815,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

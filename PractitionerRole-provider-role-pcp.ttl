@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/PractitionerRole/provider-role-pcp> a fhir:PractitionerRole;
+<http://paciowg.github.io/cognitive-status-ig/PractitionerRole/provider-role-pcp> a fhir:PractitionerRole;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "provider-role-pcp"];
   fhir:DomainResource.text [
@@ -14,11 +14,11 @@
   ];
   fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
   fhir:PractitionerRole.practitioner [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-JohnSmith>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-JohnSmith>;
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-JohnSmith" ]
   ];
   fhir:PractitionerRole.organization [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Organization/provider-org-01>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Organization/provider-org-01>;
      fhir:Reference.reference [ fhir:value "Organization/provider-org-01" ]
   ];
   fhir:PractitionerRole.code [
@@ -32,13 +32,13 @@
   ];
   fhir:PractitionerRole.location [
      fhir:index 0;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Location/provider-org-loc-01>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Location/provider-org-loc-01>;
      fhir:Reference.reference [ fhir:value "Location/provider-org-loc-01" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/PractitionerRole/provider-role-pcp.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/PractitionerRole/provider-role-pcp.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

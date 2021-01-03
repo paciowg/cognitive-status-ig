@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1> a fhir:Patient;
+<http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "patientBSJ1"];
   fhir:DomainResource.text [
@@ -23,7 +23,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

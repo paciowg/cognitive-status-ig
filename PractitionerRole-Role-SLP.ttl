@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP> a fhir:PractitionerRole;
+<http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP> a fhir:PractitionerRole;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Role-SLP"];
   fhir:DomainResource.text [
@@ -27,7 +27,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

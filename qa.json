@@ -1,12 +1,12 @@
 {
-  "url": "https://paciowg.github.io/cognitive-status-ig//ImplementationGuide/hl7.fhir.us.pacio-cs",
+  "url": "http://paciowg.github.io/cognitive-status-ig/ImplementationGuide/hl7.fhir.us.pacio-cs",
   "name": "PACIOCognitiveStatusImplementationGuide",
   "package-id": "hl7.fhir.us.pacio-cs",
   "ig-ver": "0.1.0",
-  "date": "Wed, 30 Dec, 2020 14:04:49 -0500",
-  "errs": 3,
-  "warnings": 6,
-  "hints": 2,
+  "date": "Sun, 03 Jan, 2021 14:35:29 -0800",
+  "errs": 1,
+  "warnings": 17,
+  "hints": 1,
   "version": "4.0.1",
   "tool": "4.5.0 (3)"
 }

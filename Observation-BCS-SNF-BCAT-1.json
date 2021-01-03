@@ -1,0 +1,71 @@
+{
+  "resourceType": "Observation",
+  "id": "BCS-SNF-BCAT-1",
+  "meta": {
+    "profile": [
+      "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org TBD-LOINC1}\">Brief Cognitive Assessment Tool [BCAT]</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Jul 11, 2020 9:30:00 AM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-SLP.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: \">16</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-BCAT-1.html\">Questionnaire Response. Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020 9:30:00 AM</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/event-location",
+      "valueReference": {
+        "reference": "Location/Org-Loc-02"
+      }
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "TBD-LOINC1",
+        "display": "Brief Cognitive Assessment Tool [BCAT]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patientBSJ1"
+  },
+  "effectiveDateTime": "2020-07-11T11:30:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/Practitioner-HoneyJones"
+    },
+    {
+      "reference": "PractitionerRole/Role-SLP"
+    },
+    {
+      "reference": "Organization/Org-02",
+      "display": "Organization"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "display": "BCAT Summary Score"
+      }
+    ],
+    "text": "16"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/QResponse-SNF-BCAT-1",
+      "display": "Questionnaire Response"
+    }
+  ]
+}

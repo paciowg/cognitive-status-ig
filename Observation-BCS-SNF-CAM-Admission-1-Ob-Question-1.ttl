@@ -6,25 +6,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1> a fhir:Observation;
+<http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BCS-SNF-CAM-Admission-1-Ob-Question-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cs";
+       fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs";
        fhir:index 0;
-       fhir:link <https://paciowg.github.io/cognitive-status-ig//StructureDefinition/pacio-cs>
+       fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54632-5}\">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020, 7:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-RN.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA32-8}\">No</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Generated Summary: status: completed; authored: Apr 9, 2020, 7:00:00 PM</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Event Location</b>: </p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54632-5}\">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: Apr 9, 2020 4:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-HoneyJones.html\">Generated Summary: active; Honey Jones ; gender: female</a></li><li><a href=\"PractitionerRole-Role-RN.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 224535009}\">Registered Nurse</span></a></li><li><a href=\"Organization-Org-02.html\">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA32-8}\">No</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Generated Summary: status: completed; authored: Apr 9, 2020 4:00:00 PM</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/event-location" ];
      fhir:Extension.valueReference [
-       fhir:link <https://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-02>;
+       fhir:link <http://paciowg.github.io/cognitive-status-ig/Location/Org-Loc-02>;
        fhir:Reference.reference [ fhir:value "Location/Org-Loc-02" ]
      ]
   ];
@@ -40,21 +40,21 @@
      fhir:CodeableConcept.text [ fhir:value "Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?" ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2020-04-09T18:00:00-05:00"^^xsd:dateTime];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-HoneyJones>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Practitioner/Practitioner-HoneyJones>;
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-HoneyJones" ]
   ], [
      fhir:index 1;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-RN>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-RN>;
      fhir:Reference.reference [ fhir:value "PractitionerRole/Role-RN" ]
   ], [
      fhir:index 2;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/Organization/Org-02>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/Organization/Org-02>;
      fhir:Reference.reference [ fhir:value "Organization/Org-02" ];
      fhir:Reference.display [ fhir:value "Organization" ]
   ];
@@ -70,13 +70,13 @@
   ];
   fhir:Observation.derivedFrom [
      fhir:index 0;
-     fhir:link <https://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1>;
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-CAM-Admission-1>;
      fhir:Reference.reference [ fhir:value "QuestionnaireResponse/QResponse-SNF-CAM-Admission-1" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
