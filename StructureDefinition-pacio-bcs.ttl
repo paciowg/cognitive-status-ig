@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BundledCognitiveStatus"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Bundled Cognitive Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-03T14:35:29-08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-01-03T16:20:53-08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2980,7 +2980,7 @@
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ];
-       fhir:ElementDefinition.contentReference [ fhir:value "#Observation.referenceRange" ];
+       fhir:ElementDefinition.contentReference [ fhir:value "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];

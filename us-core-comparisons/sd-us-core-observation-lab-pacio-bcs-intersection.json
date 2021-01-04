@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "99a650ae-1e3c-4b26-a7b3-1e8468bab743-39",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/99a650ae-1e3c-4b26-a7b3-1e8468bab743-39",
+  "id" : "adf5ed2c-7be4-45fd-a292-5a092652b47f-39",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/adf5ed2c-7be4-45fd-a292-5a092652b47f-39",
   "name" : "IntersectionUSCoreLaboratoryResultObservationProfileAndBundledCognitiveStatus",
   "title" : "Intersection of US Core Laboratory Result Observation Profile And PACIO Bundled Cognitive Status",
   "status" : "active",
-  "date" : "2021-01-03T14:35:36-08:00",
+  "date" : "2021-01-03T16:21:01-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

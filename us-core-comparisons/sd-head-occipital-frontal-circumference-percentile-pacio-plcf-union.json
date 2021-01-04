@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "99a650ae-1e3c-4b26-a7b3-1e8468bab743-104",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/99a650ae-1e3c-4b26-a7b3-1e8468bab743-104",
+  "id" : "adf5ed2c-7be4-45fd-a292-5a092652b47f-104",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/adf5ed2c-7be4-45fd-a292-5a092652b47f-104",
   "name" : "UnionUSCorePediatricHeadOccipitalFrontalCircumferencePercentileProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Union of US Core Pediatric Head Occipital-frontal Circumference Percentile Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-01-03T14:35:36-08:00",
+  "date" : "2021-01-03T16:21:01-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/99a650ae-1e3c-4b26-a7b3-1e8468bab743-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/adf5ed2c-7be4-45fd-a292-5a092652b47f-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1882,7 +1882,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/99a650ae-1e3c-4b26-a7b3-1e8468bab743-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/adf5ed2c-7be4-45fd-a292-5a092652b47f-8"
       },
       "mapping" : [{
         "identity" : "w5",

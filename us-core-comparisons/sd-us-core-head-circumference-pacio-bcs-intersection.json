@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "99a650ae-1e3c-4b26-a7b3-1e8468bab743-33",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/99a650ae-1e3c-4b26-a7b3-1e8468bab743-33",
+  "id" : "adf5ed2c-7be4-45fd-a292-5a092652b47f-33",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/adf5ed2c-7be4-45fd-a292-5a092652b47f-33",
   "name" : "IntersectionUSCoreHeadCircumferenceProfileAndBundledCognitiveStatus",
   "title" : "Intersection of US Core Head Circumference Profile And PACIO Bundled Cognitive Status",
   "status" : "active",
-  "date" : "2021-01-03T14:35:36-08:00",
+  "date" : "2021-01-03T16:21:01-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -573,7 +573,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/99a650ae-1e3c-4b26-a7b3-1e8468bab743-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/adf5ed2c-7be4-45fd-a292-5a092652b47f-9"
       },
       "mapping" : [{
         "identity" : "workflow",
