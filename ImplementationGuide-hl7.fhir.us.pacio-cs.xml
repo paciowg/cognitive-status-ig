@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-01-03T16:20:53-08:00"/>
+  <date value="2021-01-25T14:31:41-08:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -219,7 +219,7 @@
         <reference value="StructureDefinition/pacio-bcs"/>
       </reference>
       <name value="PACIO Bundled Cognitive Status"/>
-      <description value="An point in time bundle of cognitive status observations for a patient."/>
+      <description value="A point in time bundle of cognitive status observations for a patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -912,7 +912,7 @@
         <reference value="PractitionerRole/Role-RN"/>
       </reference>
       <name value="Role-RN"/>
-      <description value="An instance of Practitioner"/>
+      <description value="An instance of PractitionerRole"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -923,7 +923,7 @@
         <reference value="PractitionerRole/Role-SLP"/>
       </reference>
       <name value="Role-SLP"/>
-      <description value="An instance of Practitioner"/>
+      <description value="An instance of PractitionerRole"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

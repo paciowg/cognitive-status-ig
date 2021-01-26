@@ -20,7 +20,7 @@
   "name": "BundledCognitiveStatus",
   "title": "PACIO Bundled Cognitive Status",
   "status": "active",
-  "date": "2021-01-03T16:20:53-08:00",
+  "date": "2021-01-25T14:31:41-08:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -50,7 +50,7 @@
       ]
     }
   ],
-  "description": "An point in time bundle of cognitive status observations for a patient.",
+  "description": "A point in time bundle of cognitive status observations for a patient.",
   "jurisdiction": [
     {
       "coding": [

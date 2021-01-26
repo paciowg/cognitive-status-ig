@@ -1,11 +1,11 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 1, warn = 17, info = 1
-IG Publisher Version: 1.1.56
-Generated Sun Jan 03 16:22:01 PST 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+err = 2, warn = 17, info = 1
+IG Publisher Version: 1.1.56 Out of date - current version is 1.1.59
+Generated Mon Jan 25 14:32:47 PST 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
- Build Errors : 14 / 1 / 0
+ Build Errors : 15 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-Org-Loc-01 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-Org-Loc-02 : 0 / 0 / 1
@@ -94,6 +94,7 @@ ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-stat
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328: The link 'search.html#revinclude' for "_revinclude" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 420, column 1432: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 713, column 1432: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/index.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.pacio-cs: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-Org-Loc-01.json ==

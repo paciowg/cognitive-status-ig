@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 14, errors = 1, warn = 17, info = 1 -->
+<!-- broken links = 14, errors = 2, warn = 17, info = 1 -->
 <head>
   <title>PACIOCognitiveStatusImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,9 +23,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PACIOCognitiveStatusImplementationGuide</h1>
- <p>Generated Sun Jan 03 16:22:01 PST 2021, FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = <a href="http://paciowg.github.io/cognitive-status-ig">http://paciowg.github.io/cognitive-status-ig</a> (<a href="http://paciowg.github.io/cognitive-status-ig/history.html">history</a>)). See <a href="/mnt/c/users/calebwan/workspace/pacio-dev/github.com-repos/cognitive-status-cli/build/output/qa.html">Full QA Report</a></p>
+ <p>Generated Mon Jan 25 14:32:47 PST 2021, FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = <a href="http://paciowg.github.io/cognitive-status-ig">http://paciowg.github.io/cognitive-status-ig</a> (<a href="http://paciowg.github.io/cognitive-status-ig/history.html">history</a>)). See <a href="/mnt/c/users/calebwan/workspace/pacio-dev/github.com-repos/cognitive-status-cli/build/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.56</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.56, which is out of date. The current version is v1.1.59 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.us.pacio-cs, Canonical = http://paciowg.github.io/cognitive-status-ig</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><p>Snomed: <span style="background-color: #ffcccc">The IG does not specify the US edition of SNOMED CT version in the parameters (<code>http://snomed.info/sct/731000124108</code>)</span></p><p><a href="us-core-comparisons/index.html">3 Profiles not based on US Core</a></p></td></tr>
  <tr><td>Version Check:</td><td>0.1.0 = ok. Step <code>ballot</code> in sequence <code>STU 1</code>, to be published at http://hl7.org/fhir/us/pacio-cs/2021Jan (subdir = ??). This IG does not appear to have been published yet. <span stlye="color: marron; font-weight: bold">package-list.json path for this version does not start with the canonical URL (http://hl7.org/fhir/us/pacio-cs/2021Jan vs http://paciowg.github.io/cognitive-status-ig)</span></td></tr>
@@ -38,14 +38,14 @@
 </td></tr>
  <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://paciowg.github.io/cognitive-status-ig (Problem #1 with package-list.json at http://paciowg.github.io/cognitive-status-ig: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
- <tr><td>Summary:</td><td> broken links = 14, errors = 1, warn = 17, info = 1</td></tr>
+ <tr><td>Summary:</td><td> broken links = 14, errors = 2, warn = 17, info = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>14</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>15</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_mnt_c_Users_calebwan_workspace_PACIO-dev_github.com-repos_cognitive-status-cli_build_input_examples_observation-BCS-SNF-BCAT-1"><b>/mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -107,46 +107,49 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bcs-definitions.html#b8e1652c-1302-40f0-a258-4b1ff30aec79">StructureDefinition-pacio-bcs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328</a></b></td><td><b>error</b></td><td><b>The link 'search.html#revinclude' for &quot;_revinclude&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bcs-definitions.html#29852746-9d2a-4158-b4e1-ee6ad61bcffd">StructureDefinition-pacio-bcs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328</a></b></td><td><b>error</b></td><td><b>The link 'search.html#revinclude' for &quot;_revinclude&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bcs.html#9c2baa22-4770-4890-a7df-5b88241be368">StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 403, column 1431</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bcs.html#f91ca40a-842a-4f31-a33e-4d5e3a27bb07">StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 403, column 1431</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-bcs.html#d6f8fff8-f38a-4be0-a07f-97eab18bc788">StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 663, column 1431</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-bcs.html#b507ab0f-2cc1-49e7-8c7e-23ffe085dbe5">StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 663, column 1431</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#b7ac2bc9-4d94-42e7-879a-84ea5065c1af">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 345, column 1513</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#8b08529e-fb70-4abe-827f-5aae354acfca">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 345, column 1513</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#d9f16794-aeda-4135-8055-f1e5d953af46">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 346, column 1391</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#2e4de97d-d2b6-4ea2-b231-823eef069c30">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 346, column 1391</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#5160102c-a8e3-4ebc-b68d-30d0a163afd7">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 1513</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#52302812-05ed-4039-b400-2437c8fbbe4c">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 1513</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#4d460c3d-0273-4028-9d4a-3711f25ddea0">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 509, column 1391</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cognition-qr.html#9404be2b-9a35-45c0-88fd-da38c563b9b8">StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 509, column 1391</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cs-definitions.html#49fe0497-1e5a-4911-af8c-c728e48e1a7a">StructureDefinition-pacio-cs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328</a></b></td><td><b>error</b></td><td><b>The link 'search.html#revinclude' for &quot;_revinclude&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cs-definitions.html#e962bc73-f3e5-4c68-82fe-5b943e318ac1">StructureDefinition-pacio-cs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328</a></b></td><td><b>error</b></td><td><b>The link 'search.html#revinclude' for &quot;_revinclude&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cs-dev-definitions.html#f87411de-23ca-41ac-84c1-a533bfd663d1">StructureDefinition-pacio-cs-dev-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 382, column 200</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/null.html' for &quot;http://hl7.org/fhir/StructureDefinition/bodySite&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cs-dev-definitions.html#48f6e07f-c12f-4db6-a5ef-ed051b68cc46">StructureDefinition-pacio-cs-dev-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 382, column 200</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/null.html' for &quot;http://hl7.org/fhir/StructureDefinition/bodySite&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cs.html#829cac17-b565-46d8-9610-ae0542f2ed87">StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 386, column 1430</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cs.html#79eaf90a-c96f-44e7-8bdb-5c6d1bb4cc5e">StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 386, column 1430</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-cs.html#e625cd6b-3d33-43c8-a5e0-5054d3e8a1b0">StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 611, column 1430</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-cs.html#70829e23-71d2-4dfb-a983-793829fd1e67">StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 611, column 1430</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-plcf-definitions.html#bdfd064e-81a1-4cd2-844e-ee2b8e7a815d">StructureDefinition-pacio-plcf-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328</a></b></td><td><b>error</b></td><td><b>The link 'search.html#revinclude' for &quot;_revinclude&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-plcf-definitions.html#e896c2af-4439-473d-a14b-6d0a1f086c71">StructureDefinition-pacio-plcf-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328</a></b></td><td><b>error</b></td><td><b>The link 'search.html#revinclude' for &quot;_revinclude&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-plcf.html#0732a069-1b2b-48ee-977f-5a811c5b6843">StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 420, column 1432</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-plcf.html#4f5c510d-a18f-4c51-afad-d76e872d6417">StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 420, column 1432</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-pacio-plcf.html#287168f8-4acc-46ac-bc33-380202337a70">StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 713, column 1432</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-pacio-plcf.html#086d67a0-0bd3-48c3-ab9f-a58d0453a09f">StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 713, column 1432</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>index.html</b></td><td><b>error</b></td><td title=""><b>The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead</b></td>
    </tr>
 </table>
 <hr/>

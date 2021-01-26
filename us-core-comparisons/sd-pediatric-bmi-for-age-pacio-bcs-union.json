@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "adf5ed2c-7be4-45fd-a292-5a092652b47f-11",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/adf5ed2c-7be4-45fd-a292-5a092652b47f-11",
+  "id" : "a6196b42-55a8-4ea1-81a7-5fe0abd67994-11",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a6196b42-55a8-4ea1-81a7-5fe0abd67994-11",
   "name" : "UnionUSCorePediatricBMIforAgeObservationProfileAndBundledCognitiveStatus",
   "title" : "Union of US Core Pediatric BMI for Age Observation Profile And PACIO Bundled Cognitive Status",
   "status" : "active",
-  "date" : "2021-01-03T16:21:01-08:00",
+  "date" : "2021-01-25T14:31:48-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -525,7 +525,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/adf5ed2c-7be4-45fd-a292-5a092652b47f-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a6196b42-55a8-4ea1-81a7-5fe0abd67994-5"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/adf5ed2c-7be4-45fd-a292-5a092652b47f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a6196b42-55a8-4ea1-81a7-5fe0abd67994-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1727,7 +1727,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/adf5ed2c-7be4-45fd-a292-5a092652b47f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a6196b42-55a8-4ea1-81a7-5fe0abd67994-8"
       },
       "mapping" : [{
         "identity" : "w5",

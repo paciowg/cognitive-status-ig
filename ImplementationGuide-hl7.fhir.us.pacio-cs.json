@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-01-03T16:20:53-08:00",
+  "date": "2021-01-25T14:31:41-08:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -339,7 +339,7 @@
           "reference": "StructureDefinition/pacio-bcs"
         },
         "name": "PACIO Bundled Cognitive Status",
-        "description": "An point in time bundle of cognitive status observations for a patient.",
+        "description": "A point in time bundle of cognitive status observations for a patient.",
         "exampleBoolean": false
       },
       {
@@ -1221,7 +1221,7 @@
           "reference": "PractitionerRole/Role-RN"
         },
         "name": "Role-RN",
-        "description": "An instance of Practitioner",
+        "description": "An instance of PractitionerRole",
         "exampleBoolean": true
       },
       {
@@ -1235,7 +1235,7 @@
           "reference": "PractitionerRole/Role-SLP"
         },
         "name": "Role-SLP",
-        "description": "An instance of Practitioner",
+        "description": "An instance of PractitionerRole",
         "exampleBoolean": true
       },
       {

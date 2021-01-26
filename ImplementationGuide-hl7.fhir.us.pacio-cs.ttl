@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-01-03T16:20:53-08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-01-25T14:31:41-08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -323,7 +323,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-bcs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Bundled Cognitive Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An point in time bundle of cognitive status observations for a patient." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A point in time bundle of cognitive status observations for a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -1340,7 +1340,7 @@
          fhir:Reference.reference [ fhir:value "PractitionerRole/Role-RN" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role-RN" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 64;
@@ -1354,7 +1354,7 @@
          fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role-SLP" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of PractitionerRole" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 65;
