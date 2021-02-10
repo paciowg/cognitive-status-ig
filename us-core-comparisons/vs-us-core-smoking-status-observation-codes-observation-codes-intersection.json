@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "acc267c0-581a-44fe-8339-d80ff9a9272e-54",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/acc267c0-581a-44fe-8339-d80ff9a9272e-54",
+  "id" : "88bda431-2a3b-42d6-bf7f-d43379aed2ac-54",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/88bda431-2a3b-42d6-bf7f-d43379aed2ac-54",
   "name" : "IntersectionUSCoreSmokingStatusObservationCodesAndLOINCCodes",
   "title" : "Intersection of US Core Smoking Status Observation Codes And LOINC Codes",
   "status" : "active",
-  "date" : "2021-01-27T08:21:44-08:00"
+  "date" : "2021-02-10T08:11:59-08:00"
 }
