@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "88bda431-2a3b-42d6-bf7f-d43379aed2ac-38",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/88bda431-2a3b-42d6-bf7f-d43379aed2ac-38",
+  "id" : "a377b70b-accc-4b28-804b-54c394708624-38",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a377b70b-accc-4b28-804b-54c394708624-38",
   "name" : "UnionUSCoreLaboratoryResultObservationProfileAndBundledCognitiveStatus",
   "title" : "Union of US Core Laboratory Result Observation Profile And PACIO Bundled Cognitive Status",
   "status" : "active",
-  "date" : "2021-02-10T08:11:59-08:00",
+  "date" : "2021-02-16T21:43:26-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -532,7 +532,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/88bda431-2a3b-42d6-bf7f-d43379aed2ac-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a377b70b-accc-4b28-804b-54c394708624-5"
       },
       "mapping" : [{
         "identity" : "w5",

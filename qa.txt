@@ -3,7 +3,7 @@
 
 err = 2, warn = 17, info = 1
 IG Publisher Version: 1.1.56 Out of date - current version is 1.1.59
-Generated Wed Feb 10 08:13:01 PST 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+Generated Tue Feb 16 21:44:41 PST 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
  Build Errors : 15 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
