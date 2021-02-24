@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3ef51b46-e3a6-4339-930e-3a3f5d905640-72",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3ef51b46-e3a6-4339-930e-3a3f5d905640-72",
+  "id" : "e8cee464-8271-425c-a22a-1ef22e0d5cb9-72",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e8cee464-8271-425c-a22a-1ef22e0d5cb9-72",
   "name" : "IntersectionUSCoreRespiratoryRateProfileAndCognitiveStatus",
   "title" : "Intersection of US Core BMI Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-02-23T21:21:52-08:00",
+  "date" : "2021-02-24T09:00:11-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3ef51b46-e3a6-4339-930e-3a3f5d905640-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e8cee464-8271-425c-a22a-1ef22e0d5cb9-9"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1744,7 +1744,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3ef51b46-e3a6-4339-930e-3a3f5d905640-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e8cee464-8271-425c-a22a-1ef22e0d5cb9-9"
       },
       "mapping" : [{
         "identity" : "w5",
