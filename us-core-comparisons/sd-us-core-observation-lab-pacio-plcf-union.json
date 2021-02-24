@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a377b70b-accc-4b28-804b-54c394708624-134",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a377b70b-accc-4b28-804b-54c394708624-134",
+  "id" : "3ef51b46-e3a6-4339-930e-3a3f5d905640-134",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3ef51b46-e3a6-4339-930e-3a3f5d905640-134",
   "name" : "UnionUSCoreLaboratoryResultObservationProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Union of US Core Laboratory Result Observation Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-02-16T21:43:26-08:00",
+  "date" : "2021-02-23T21:21:53-08:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
