@@ -19,7 +19,7 @@
   <name value="UseOfDevice"/>
   <title value="Use of Device"/>
   <status value="active"/>
-  <date value="2021-02-24T09:00:03-08:00"/>
+  <date value="2021-03-12T12:47:11-08:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -43,7 +43,7 @@
       <value value="info@pacioproject.org"/>
     </telecom>
   </contact>
-  <description value="A record of an assistive device such as a hearing aid being used by a patient during a cognitive status assessment. This extension based on the DeviceUseStatement resource provides a way for a BundledCognitiveStatus resource to show records of device usage during an assessment."/>
+  <description value="A record of an assistive device--e.g. eyeglasses or hearing aid, being used by a patient during a cognitive status assessment. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

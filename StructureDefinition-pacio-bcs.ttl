@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BundledCognitiveStatus"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Bundled Cognitive Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-02-24T09:00:03-08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-12T12:47:11-08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -593,7 +593,7 @@
        fhir:ElementDefinition.path [ fhir:value "Observation.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "device-use" ];
        fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "A record indicating what healthcare-related assistive device was used by a patient during a cognitive status assessment." ];
+       fhir:ElementDefinition.definition [ fhir:value "A record indicating what healthcare-related assistive device was used by a patient during a cognitive status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [

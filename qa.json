@@ -3,7 +3,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "package-id": "hl7.fhir.us.pacio-cs",
   "ig-ver": "0.1.0",
-  "date": "Wed, 24 Feb, 2021 09:00:03 -0800",
+  "date": "Fri, 12 Mar, 2021 12:47:11 -0800",
   "errs": 2,
   "warnings": 17,
   "hints": 1,

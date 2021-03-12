@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "UseOfDevice"];
   fhir:StructureDefinition.title [ fhir:value "Use of Device"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-02-24T09:00:03-08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-12T12:47:11-08:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -53,7 +53,7 @@
        fhir:ContactPoint.value [ fhir:value "info@pacioproject.org" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "A record of an assistive device such as a hearing aid being used by a patient during a cognitive status assessment. This extension based on the DeviceUseStatement resource provides a way for a BundledCognitiveStatus resource to show records of device usage during an assessment."];
+  fhir:StructureDefinition.description [ fhir:value "A record of an assistive device--e.g. eyeglasses or hearing aid, being used by a patient during a cognitive status assessment. This profile based on the DeviceUseStatement resource provides a way to include information about device usage during an assessment."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

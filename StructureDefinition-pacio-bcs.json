@@ -20,7 +20,7 @@
   "name": "BundledCognitiveStatus",
   "title": "PACIO Bundled Cognitive Status",
   "status": "active",
-  "date": "2021-02-24T09:00:03-08:00",
+  "date": "2021-03-12T12:47:11-08:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -540,7 +540,7 @@
         "path": "Observation.extension",
         "sliceName": "device-use",
         "short": "Extension",
-        "definition": "A record indicating what healthcare-related assistive device was used by a patient during a cognitive status assessment.",
+        "definition": "A record indicating what healthcare-related assistive device was used by a patient during a cognitive status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient.",
         "min": 0,
         "max": "*",
         "base": {
