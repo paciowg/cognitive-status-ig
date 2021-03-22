@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "858aa44a-df1f-421f-b48b-364aab09ac4f-47",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/858aa44a-df1f-421f-b48b-364aab09ac4f-47",
+  "id" : "7d92f281-a006-4458-b893-3f574bde46de-47",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7d92f281-a006-4458-b893-3f574bde46de-47",
   "name" : "UnionUSCoreSmokingStatusProfileAndBundledCognitiveStatus",
   "title" : "Union of US Core Smoking Status Observation Profile And PACIO Bundled Cognitive Status",
   "status" : "active",
-  "date" : "2021-03-22T12:53:16-07:00",
+  "date" : "2021-03-22T13:20:11-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -474,7 +474,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Codes providing the status of an observation.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/858aa44a-df1f-421f-b48b-364aab09ac4f-50"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7d92f281-a006-4458-b893-3f574bde46de-50"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -526,7 +526,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/858aa44a-df1f-421f-b48b-364aab09ac4f-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7d92f281-a006-4458-b893-3f574bde46de-5"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -562,7 +562,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/858aa44a-df1f-421f-b48b-364aab09ac4f-53"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7d92f281-a006-4458-b893-3f574bde46de-53"
       },
       "mapping" : [{
         "identity" : "workflow",

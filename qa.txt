@@ -1,9 +1,9 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 2, warn = 17, info = 1
+err = 3, warn = 18, info = 1
 IG Publisher Version: 1.1.56 Out of date - current version is 1.1.64
-Generated Mon Mar 22 12:54:13 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+Generated Mon Mar 22 13:21:46 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
  Build Errors : 15 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
@@ -15,7 +15,7 @@ Generated Mon Mar 22 12:54:13 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1 : 1 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1 : 2 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-2 : 0 / 0 / 1
@@ -115,6 +115,8 @@ INFORMATION: Observation/BCS-Hospital-MOCA-1: Observation: Validate resource aga
 INFORMATION: Observation/BCS-Hospital-MOCA-2: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1.json ==
 INFORMATION: Observation/BCS-SNF-BCAT-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
+WARNING: Observation/BCS-SNF-BCAT-1: Observation.code: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/observation-codes because the value set or code system is not known to the validator]
+ERROR: Observation/BCS-SNF-BCAT-1: Observation.code: The code "TBD-LOINC1" is not valid in the system http://loinc.org; The code provided (http://loinc.org#TBD-LOINC1) is not valid in the value set 'LOINCCodes' (from http://tx.fhir.org/r4)
 ERROR: Observation/BCS-SNF-BCAT-1: Observation.code.coding[0]: The code "TBD-LOINC1" is not valid in the system http://loinc.org; The code provided (http://loinc.org#TBD-LOINC1) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#TBD-LOINC1'
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1.json ==
 INFORMATION: Observation/BCS-SNF-BIMS-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
