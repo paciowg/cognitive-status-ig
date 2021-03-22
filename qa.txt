@@ -2,8 +2,8 @@
 =========================================
 
 err = 2, warn = 17, info = 1
-IG Publisher Version: 1.1.56 Out of date - current version is 1.1.63
-Generated Fri Mar 12 12:48:30 PST 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+IG Publisher Version: 1.1.56 Out of date - current version is 1.1.64
+Generated Mon Mar 22 12:54:13 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
  Build Errors : 15 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
@@ -81,8 +81,8 @@ Generated Fri Mar 12 12:48:30 PST 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
 == n/a ==
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328: The link 'search.html#revinclude' for "_revinclude" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 403, column 1431: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 663, column 1431: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 407, column 1431: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 673, column 1431: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 345, column 1513: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 346, column 1391: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 1513: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
