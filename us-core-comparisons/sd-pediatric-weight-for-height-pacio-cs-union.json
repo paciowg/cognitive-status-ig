@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-65",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-65",
+  "id" : "b08fefe3-a19b-4c45-865b-a7d5da3f1e58-65",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-65",
   "name" : "UnionUSCorePediatricWeightForHeightObservationProfileAndCognitiveStatus",
   "title" : "Union of US Core Pediatric Weight for Height Observation Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-03-24T10:15:49-07:00",
+  "date" : "2021-03-24T10:30:35-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1754,7 +1754,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-8"
       },
       "mapping" : [{
         "identity" : "w5",

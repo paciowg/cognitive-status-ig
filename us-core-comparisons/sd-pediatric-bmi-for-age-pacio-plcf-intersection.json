@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-108",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-108",
+  "id" : "b08fefe3-a19b-4c45-865b-a7d5da3f1e58-108",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-108",
   "name" : "IntersectionUSCorePediatricBMIforAgeObservationProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Intersection of US Core Pediatric BMI for Age Observation Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-03-24T10:15:49-07:00",
+  "date" : "2021-03-24T10:30:35-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/62d1a5bc-a80e-4471-ac6f-a8c0f89a693f-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-9"
       },
       "mapping" : [{
         "identity" : "workflow",
