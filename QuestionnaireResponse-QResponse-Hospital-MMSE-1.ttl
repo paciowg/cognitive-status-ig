@@ -42,8 +42,8 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-Hospital-MMSE-1>;
-           fhir:Reference.reference [ fhir:value "Observation/BCS-Hospital-MMSE-1" ]
+           fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-Hospital-MMSE-1-Ob-Question-1>;
+           fhir:Reference.reference [ fhir:value "Observation/BCS-Hospital-MMSE-1-Ob-Question-1" ]
          ]
        ]
      ]

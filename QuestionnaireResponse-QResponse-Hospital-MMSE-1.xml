@@ -22,7 +22,7 @@
       <text value="MMSE Total Score"/>
       <answer>
         <valueReference>
-          <reference value="Observation/BCS-Hospital-MMSE-1"/>
+          <reference value="Observation/BCS-Hospital-MMSE-1-Ob-Question-1"/>
         </valueReference>
       </answer>
     </item>

@@ -220,8 +220,12 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
     <td>A “must support” extension added to the Observation resource for storing the Reference(UseOfDevice) to specify one or more devices used by a patient during a cognitive status assessment.</td>
   </tr>
   <tr>
+    <td>status</td>
+    <td>A required field with 'required' binding to the value set ObservationStatus (http://hl7.org/fhir/R4/valueset-observation-status.html). This field should contain the value 'final' when all the observations are complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used.</td>
+  </tr>
+  <tr>
     <td>category</td>
-    <td>A required field with 'extensible' binding to the code system https://terminology.hl7.org/1.0.0/ValueSet-observation-category.html. This field should contain the value ‘survey’ for PAC assessment.</td>
+    <td>A required field with 'extensible' binding to the code system https://terminology.hl7.org/1.0.0/ValueSet-observation-category.html. This field should contain the value 'survey' for PAC assessment.</td>
   </tr>
   <tr>
     <td>code</td>
@@ -241,7 +245,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   </tr>
   <tr>
     <td>value</td>
-    <td>This field can only be of the type CodeableConcept. In the case of an assessment with a summary score, for example, this field may appropriately be used to contain the score value.</td>
+    <td>It is strongly recommended that the CodeableConcept type be used whenever possible to provide a suitable code to define the concept for the value. In the case of an assessment with a summary score, for example, it is appropriate to use the Quantity type for the field to contain the score value.</td>
   </tr>
   <tr>
     <td>hasMember</td>
@@ -269,6 +273,10 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
     <td>A “must support” extension added to the Observation resource for storing the Reference(Location) to indicate where the observation event occurred.</td>
   </tr>
   <tr>
+    <td>status</td>
+    <td>A required field with 'required' binding to the value set ObservationStatus (http://hl7.org/fhir/R4/valueset-observation-status.html). This field should contain the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used.</td>
+  </tr>
+  <tr>
     <td>code</td>
     <td>A required field with ‘extensible’ binding to the LOINC code system http://loinc.org/.</td>
   </tr>
@@ -286,7 +294,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   </tr>
   <tr>
     <td>value</td>
-    <td>This field can only be of the type CodeableConcept.</td>
+    <td>It is strongly recommended that the CodeableConcept type be used whenever possible to provide a suitable code to define the concept for the value.</td>
   </tr>
   <tr>
     <td>component.code</td>
@@ -461,11 +469,13 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 24, 2021 10:30-0700">2021-03-24</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 6, 2021 21:31-0700">2021-04-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
                | <a style="color: #81BEF7" target="_blank" href="http://paciowg.github.io/cognitive-status-ig/history.html">Version History  |
                <a style="color: #81BEF7" target="_blank" href="searchform.html">Search  |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
@@ -493,6 +503,13 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
   <!-- Analytics Below
   ================================================== -->
   </body>

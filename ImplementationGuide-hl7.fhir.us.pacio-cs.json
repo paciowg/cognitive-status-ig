@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-03-24T10:30:26-07:00",
+  "date": "2021-04-06T21:31:26-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -409,7 +409,7 @@
           "reference": "StructureDefinition/assistance-required"
         },
         "name": "AssistanceRequired",
-        "description": "Associated with prior level of cognitive function to provide indication of 'independent' vs. 'assistance needed'.",
+        "description": "Associated with prior level of cognitive function to provide indication of level of assistance needed. The 'CMS MDS Prior Functioning' answer list LL4970-1 provides exmples of possible values.",
         "exampleBoolean": false
       },
       {
@@ -448,11 +448,39 @@
           }
         ],
         "reference": {
+          "reference": "Observation/BCS-Hospital-MMSE-1-Ob-Question-1"
+        },
+        "name": "BCS-Hospital-MMSE-1-Ob-Question-1",
+        "description": "An instance of CognitiveStatus",
+        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/BCS-Hospital-MMSE-2"
         },
         "name": "BCS-Hospital-MMSE-2",
         "description": "An instance of BundledCognitiveStatus",
         "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-Hospital-MMSE-2-Ob-Question-1"
+        },
+        "name": "BCS-Hospital-MMSE-2-Ob-Question-1",
+        "description": "An instance of CognitiveStatus",
+        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
       },
       {
         "extension": [
@@ -476,6 +504,20 @@
           }
         ],
         "reference": {
+          "reference": "Observation/BCS-Hospital-MOCA-1-Ob-Question-1"
+        },
+        "name": "BCS-Hospital-MOCA-1-Ob-Question-1",
+        "description": "An instance of CognitiveStatus",
+        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/BCS-Hospital-MOCA-2"
         },
         "name": "BCS-Hospital-MOCA-2",
@@ -490,11 +532,39 @@
           }
         ],
         "reference": {
+          "reference": "Observation/BCS-Hospital-MOCA-2-Ob-Question-1"
+        },
+        "name": "BCS-Hospital-MOCA-2-Ob-Question-1",
+        "description": "An instance of CognitiveStatus",
+        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/BCS-SNF-BCAT-1"
         },
         "name": "BCS-SNF-BCAT-1",
         "description": "An instance of BundledCognitiveStatus",
         "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-BCAT-1-Ob-Question-1"
+        },
+        "name": "BCS-SNF-BCAT-1-Ob-Question-1",
+        "description": "An instance of CognitiveStatus",
+        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
       },
       {
         "extension": [
@@ -605,6 +675,20 @@
           "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-7"
         },
         "name": "BCS-SNF-BIMS-1-Ob-Question-7",
+        "description": "An instance of CognitiveStatus",
+        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-8"
+        },
+        "name": "BCS-SNF-BIMS-1-Ob-Question-8",
         "description": "An instance of CognitiveStatus",
         "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
       },

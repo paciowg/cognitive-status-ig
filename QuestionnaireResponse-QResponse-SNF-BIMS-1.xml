@@ -93,10 +93,10 @@
       </item>
       <item id="54614-3">
         <linkId value="Section-3/C0500"/>
-        <text value="BIMS Summary Score"/>
+        <text value="Brief Interview for Mental Status - summary score [BIMS]"/>
         <answer>
           <valueReference>
-            <reference value="Observation/BCS-SNF-BIMS-1"/>
+            <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-8"/>
           </valueReference>
         </answer>
       </item>

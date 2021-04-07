@@ -18,13 +18,18 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>AssistanceRequired</b>: <span title=\"Codes: \">Independent</span></p><p><b>Event Location</b>: <a href=\"Location-provider-org-loc-01.html\">Generated Summary: status: active; name: Primary Care</a></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 11332-4}\">History of Cognitive Function Narrative</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: 2019-07-01 --&gt; 2019-11-30</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-JohnSmith.html\">Generated Summary: active; Primary Care Physician; gender: male</a></li><li><a href=\"PractitionerRole-provider-role-pcp.html\">Generated Summary: active; <span title=\"Codes: {http://nucc.org/provider-taxonomy 261QP2300X}\">Primary Care</span></a></li><li><a href=\"Organization-provider-org-01.html\">Organization. Generated Summary: name: Primary Care</a></li></ul><p><b>value</b>: Alert and oriented x 3. She is independent in household finances, social and community activities, coeherent and appropriate communication. Appropriate attire for location and weather.</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>AssistanceRequired</b>: <span title=\"Codes: {http://loinc.org LA28862-3}\">Independent - Resident completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.</span></p><p><b>Event Location</b>: <a href=\"Location-provider-org-loc-01.html\">Generated Summary: status: active; name: Primary Care</a></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 11332-4}\">History of Cognitive Function Narrative</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson </a></p><p><b>effective</b>: 2019-07-01 --&gt; 2019-11-30</p><p><b>performer</b>: </p><ul><li><a href=\"Practitioner-Practitioner-JohnSmith.html\">Generated Summary: active; Primary Care Physician; gender: male</a></li><li><a href=\"PractitionerRole-provider-role-pcp.html\">Generated Summary: active; <span title=\"Codes: {http://nucc.org/provider-taxonomy 261QP2300X}\">Primary Care</span></a></li><li><a href=\"Organization-provider-org-01.html\">Organization. Generated Summary: name: Primary Care</a></li></ul><p><b>value</b>: Alert and oriented x 3. She is independent in household finances, social and community activities, coeherent and appropriate communication. Appropriate attire for location and weather.</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/assistance-required" ];
      fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.text [ fhir:value "Independent" ]
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:LA28862-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "LA28862-3" ]
+       ]
      ]
   ], [
      fhir:index 1;

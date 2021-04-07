@@ -128,11 +128,11 @@
             {
               "id": "54614-3",
               "linkId": "Section-3/C0500",
-              "text": "BIMS Summary Score",
+              "text": "Brief Interview for Mental Status - summary score [BIMS]",
               "answer": [
                 {
                   "valueReference": {
-                    "reference": "Observation/BCS-SNF-BIMS-1"
+                    "reference": "Observation/BCS-SNF-BIMS-1-Ob-Question-8"
                   }
                 }
               ]

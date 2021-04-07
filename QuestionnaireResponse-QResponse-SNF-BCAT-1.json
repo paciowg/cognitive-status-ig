@@ -29,7 +29,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/BCS-SNF-BCAT-1"
+                "reference": "Observation/BCS-SNF-BCAT-1-Ob-Question-1"
               }
             }
           ]

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b08fefe3-a19b-4c45-865b-a7d5da3f1e58-78",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-78",
+  "id" : "a63cc01b-725e-43ce-9987-31c98240cf23-78",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a63cc01b-725e-43ce-9987-31c98240cf23-78",
   "name" : "IntersectionUSCoreBodyTemperatureProfileAndCognitiveStatus",
   "title" : "Intersection of US Core Body Temperature Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-03-24T10:30:35-07:00",
+  "date" : "2021-04-06T21:31:34-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -466,7 +466,7 @@
     },
     {
       "path" : "Observation.status",
-      "short" : "left: registered | preliminary | final | amended +; right: Should have the value 'final' to indicate the observation is complete.",
+      "short" : "left: registered | preliminary | final | amended +; right: Should have the value 'final' when the observation is complete.",
       "definition" : "The status of the result value.",
       "comment" : "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
       "requirements" : "Need to track the status of individual results. Some results are finalized before the whole report is finalized.",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a63cc01b-725e-43ce-9987-31c98240cf23-9"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -607,7 +607,7 @@
     },
     {
       "path" : "Observation.subject",
-      "short" : "left: Who and/or what the observation is about; right: Should only reference a Patient resource",
+      "short" : "left: Who and/or what the observation is about; right: Should only reference a Patient resource.",
       "definition" : "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.",
       "comment" : "One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.",
       "requirements" : "Observations have no value if you don't know who or what they're about.",
@@ -864,7 +864,7 @@
     },
     {
       "path" : "Observation.value[x]",
-      "short" : "left: Vital Signs Value; right: Actual result",
+      "short" : "left: Vital Signs Value; right: Whenever possible should use the CodeableConcept type to provide a suitable code to define the concept.",
       "definition" : "left: Vital Signs value are typically recorded using the Quantity data type.; right: The information determined as a result of making the observation, if the information has a simple value.",
       "comment" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section] below.",
       "requirements" : "left: 9. SHALL contain exactly one [1..1] value with @xsi:type=\"PQ\" (CONF:7305).; right: An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
@@ -1744,7 +1744,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a63cc01b-725e-43ce-9987-31c98240cf23-9"
       },
       "mapping" : [{
         "identity" : "w5",

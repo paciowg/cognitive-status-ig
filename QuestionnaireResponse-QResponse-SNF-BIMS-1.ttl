@@ -139,12 +139,12 @@
          fhir:index 3;
          fhir:Element.id [ fhir:value "54614-3" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0500" ];
-         fhir:QuestionnaireResponse.item.text [ fhir:value "BIMS Summary Score" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Brief Interview for Mental Status - summary score [BIMS]" ];
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1>;
-             fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1" ]
+             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/BCS-SNF-BIMS-1-Ob-Question-8>;
+             fhir:Reference.reference [ fhir:value "Observation/BCS-SNF-BIMS-1-Ob-Question-8" ]
            ]
          ]
        ]

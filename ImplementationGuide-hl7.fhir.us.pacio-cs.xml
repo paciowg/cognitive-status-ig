@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-03-24T10:30:26-07:00"/>
+  <date value="2021-04-06T21:31:26-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -274,7 +274,7 @@
         <reference value="StructureDefinition/assistance-required"/>
       </reference>
       <name value="AssistanceRequired"/>
-      <description value="Associated with prior level of cognitive function to provide indication of &#39;independent&#39; vs. &#39;assistance needed&#39;."/>
+      <description value="Associated with prior level of cognitive function to provide indication of level of assistance needed. The &#39;CMS MDS Prior Functioning&#39; answer list LL4970-1 provides exmples of possible values."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -304,11 +304,33 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/BCS-Hospital-MMSE-1-Ob-Question-1"/>
+      </reference>
+      <name value="BCS-Hospital-MMSE-1-Ob-Question-1"/>
+      <description value="An instance of CognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/BCS-Hospital-MMSE-2"/>
       </reference>
       <name value="BCS-Hospital-MMSE-2"/>
       <description value="An instance of BundledCognitiveStatus"/>
       <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-Hospital-MMSE-2-Ob-Question-1"/>
+      </reference>
+      <name value="BCS-Hospital-MMSE-2-Ob-Question-1"/>
+      <description value="An instance of CognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -326,6 +348,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/BCS-Hospital-MOCA-1-Ob-Question-1"/>
+      </reference>
+      <name value="BCS-Hospital-MOCA-1-Ob-Question-1"/>
+      <description value="An instance of CognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/BCS-Hospital-MOCA-2"/>
       </reference>
       <name value="BCS-Hospital-MOCA-2"/>
@@ -337,11 +370,33 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/BCS-Hospital-MOCA-2-Ob-Question-1"/>
+      </reference>
+      <name value="BCS-Hospital-MOCA-2-Ob-Question-1"/>
+      <description value="An instance of CognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/BCS-SNF-BCAT-1"/>
       </reference>
       <name value="BCS-SNF-BCAT-1"/>
       <description value="An instance of BundledCognitiveStatus"/>
       <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-BCAT-1-Ob-Question-1"/>
+      </reference>
+      <name value="BCS-SNF-BCAT-1-Ob-Question-1"/>
+      <description value="An instance of CognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -428,6 +483,17 @@
         <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-7"/>
       </reference>
       <name value="BCS-SNF-BIMS-1-Ob-Question-7"/>
+      <description value="An instance of CognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BCS-SNF-BIMS-1-Ob-Question-8"/>
+      </reference>
+      <name value="BCS-SNF-BIMS-1-Ob-Question-8"/>
       <description value="An instance of CognitiveStatus"/>
       <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>

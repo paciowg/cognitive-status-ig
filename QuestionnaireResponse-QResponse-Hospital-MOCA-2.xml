@@ -22,7 +22,7 @@
       <text value="Total score [MoCA]"/>
       <answer>
         <valueReference>
-          <reference value="Observation/BCS-Hospital-MOCA-2"/>
+          <reference value="Observation/BCS-Hospital-MOCA-2-Ob-Question-1"/>
         </valueReference>
       </answer>
     </item>

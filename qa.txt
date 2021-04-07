@@ -1,9 +1,9 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 2, warn = 17, info = 1
-IG Publisher Version: 1.1.56 Out of date - current version is 1.1.64
-Generated Wed Mar 24 10:31:31 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+err = 5, warn = 19, info = 1
+IG Publisher Version: 1.1.56 Out of date - current version is 1.1.65
+Generated Tue Apr 06 21:32:28 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
  Build Errors : 15 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
@@ -12,10 +12,15 @@ Generated Wed Mar 24 10:31:31 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-Org-Loc-03 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/location-provider-org-loc-01 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-1-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1 : 1 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1-Ob-Question-1 : 1 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-2 : 0 / 0 / 1
@@ -24,6 +29,7 @@ Generated Wed Mar 24 10:31:31 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-5 : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-6 : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-7 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-8 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-1 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-3 : 0 / 0 / 1
@@ -69,31 +75,31 @@ Generated Wed Mar 24 10:31:31 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-BIMS-1 : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-CAM-Admission-1 : 0 / 0 / 2
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/questionnaireresponse-QResponse-SNF-PHQ9-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required : 0 / 2 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-bcs : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cognition-qr : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-cs-dev : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf : 2 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328: The link 'search.html#revinclude' for "_revinclude" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 413, column 1443: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 694, column 1443: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 414, column 1443: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-bcs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 696, column 1443: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 345, column 1513: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 346, column 1391: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 1513: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cognition-qr.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 509, column 1391: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328: The link 'search.html#revinclude' for "_revinclude" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs-dev-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 382, column 200: The link 'http://hl7.org/fhir/R4/null.html' for "http://hl7.org/fhir/StructureDefinition/bodySite" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 396, column 1442: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 642, column 1442: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 397, column 1442: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-cs.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 644, column 1442: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 287, column 328: The link 'search.html#revinclude' for "_revinclude" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 419, column 1432: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
-ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 711, column 1432: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 409, column 1444: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
+ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/StructureDefinition-pacio-plcf.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 679, column 1444: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
 ERROR: /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/output/index.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.pacio-cs: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
@@ -107,15 +113,26 @@ INFORMATION: Location/Org-Loc-03: Location: Validate resource against profile ht
 INFORMATION: Location/provider-org-loc-01: Location: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-1.json ==
 INFORMATION: Observation/BCS-Hospital-MMSE-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
+== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-1-Ob-Question-1.json ==
+INFORMATION: Observation/BCS-Hospital-MMSE-1-Ob-Question-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2.json ==
 INFORMATION: Observation/BCS-Hospital-MMSE-2: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
+== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MMSE-2-Ob-Question-1.json ==
+INFORMATION: Observation/BCS-Hospital-MMSE-2-Ob-Question-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1.json ==
 INFORMATION: Observation/BCS-Hospital-MOCA-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
+== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-1-Ob-Question-1.json ==
+INFORMATION: Observation/BCS-Hospital-MOCA-1-Ob-Question-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2.json ==
 INFORMATION: Observation/BCS-Hospital-MOCA-2: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
+== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-Hospital-MOCA-2-Ob-Question-1.json ==
+INFORMATION: Observation/BCS-Hospital-MOCA-2-Ob-Question-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1.json ==
 INFORMATION: Observation/BCS-SNF-BCAT-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
 ERROR: Observation/BCS-SNF-BCAT-1: Observation.code.coding[0]: The code "TBD-LOINC1" is not valid in the system http://loinc.org; The code provided (http://loinc.org#TBD-LOINC1) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#TBD-LOINC1'
+== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BCAT-1-Ob-Question-1.json ==
+INFORMATION: Observation/BCS-SNF-BCAT-1-Ob-Question-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
+ERROR: Observation/BCS-SNF-BCAT-1-Ob-Question-1: Observation.code.coding[0]: The code "TBD-LOINC2" is not valid in the system http://loinc.org; The code provided (http://loinc.org#TBD-LOINC2) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#TBD-LOINC2'
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1.json ==
 INFORMATION: Observation/BCS-SNF-BIMS-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-1.json ==
@@ -135,6 +152,8 @@ WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-6: Observation.value.ofType(Code
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-7.json ==
 INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-7: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 WARNING: Observation/BCS-SNF-BIMS-1-Ob-Question-7: Observation.value.ofType(CodeableConcept).coding[0]: The display "Yes, after cueing ('a piece of furniture')" is not a valid display for the code {http://loinc.org}LA10125-5 - should be one of ["Yes, after cueing (""a piece of furniture"")"] (from http://tx.fhir.org/r4) for 'http://loinc.org#LA10125-5'
+== /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-BIMS-1-Ob-Question-8.json ==
+INFORMATION: Observation/BCS-SNF-BIMS-1-Ob-Question-8: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1.json ==
 INFORMATION: Observation/BCS-SNF-CAM-Admission-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-CAM-Admission-1-Ob-Question-1.json ==
@@ -236,6 +255,8 @@ INFORMATION: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: 
 WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required.json ==
 INFORMATION: StructureDefinition/assistance-required: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/assistance-required: StructureDefinition.differential.element[3].binding: The valueSet reference http://loinc.org/vs/LL4970-1 on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/assistance-required: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://loinc.org/vs/LL4970-1 on element Extension.value[x] could not be resolved
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used.json ==
 INFORMATION: StructureDefinition/device-patient-used: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used'): The Implementation Guide contains no examples for this extension
@@ -252,6 +273,8 @@ INFORMATION: StructureDefinition/pacio-cs-dev: StructureDefinition: Validate res
 WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev'): The Implementation Guide contains no examples for this profile
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/profiles/structuredefinition-pacio-plcf.json ==
 INFORMATION: StructureDefinition/pacio-plcf: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/pacio-plcf: StructureDefinition.snapshot.element[27].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+ERROR: StructureDefinition/pacio-plcf: StructureDefinition.differential.element[9].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/resources/capabilitystatement-pacio-cap.json ==
 INFORMATION: CapabilityStatement/pacio-cap: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement

@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "b08fefe3-a19b-4c45-865b-a7d5da3f1e58-6",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/b08fefe3-a19b-4c45-865b-a7d5da3f1e58-6",
+  "id" : "a63cc01b-725e-43ce-9987-31c98240cf23-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/a63cc01b-725e-43ce-9987-31c98240cf23-6",
   "name" : "IntersectionObservationCategoryCodesAndObservationCategoryCodes",
   "title" : "Intersection of Observation Category Codes And Observation Category Codes",
   "status" : "draft",
-  "date" : "2021-03-24T10:30:35-07:00",
+  "date" : "2021-04-06T21:31:33-07:00",
   "expansion" : {
     "contains" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",

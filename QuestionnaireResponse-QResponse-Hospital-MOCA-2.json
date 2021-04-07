@@ -29,7 +29,7 @@
           "answer": [
             {
               "valueReference": {
-                "reference": "Observation/BCS-Hospital-MOCA-2"
+                "reference": "Observation/BCS-Hospital-MOCA-2-Ob-Question-1"
               }
             }
           ]
