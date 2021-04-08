@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a63cc01b-725e-43ce-9987-31c98240cf23-119",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a63cc01b-725e-43ce-9987-31c98240cf23-119",
+  "id" : "4f896813-3366-4188-be8a-08a356e90ff3-119",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4f896813-3366-4188-be8a-08a356e90ff3-119",
   "name" : "UnionUSCoreBodyHeightProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Union of US Core Body Height Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-04-06T21:31:34-07:00",
+  "date" : "2021-04-08T08:08:41-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a63cc01b-725e-43ce-9987-31c98240cf23-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4f896813-3366-4188-be8a-08a356e90ff3-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1854,7 +1854,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a63cc01b-725e-43ce-9987-31c98240cf23-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4f896813-3366-4188-be8a-08a356e90ff3-8"
       },
       "mapping" : [{
         "identity" : "w5",
