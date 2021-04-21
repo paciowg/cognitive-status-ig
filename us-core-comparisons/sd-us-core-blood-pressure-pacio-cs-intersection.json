@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "dff0b835-1aa9-4cd6-933d-3a08f2280c2f-69",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/dff0b835-1aa9-4cd6-933d-3a08f2280c2f-69",
+  "id" : "d4aa260f-c32d-4a64-b3b3-64a83ed00415-69",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d4aa260f-c32d-4a64-b3b3-64a83ed00415-69",
   "name" : "IntersectionUSCoreBloodPressureProfileAndCognitiveStatus",
   "title" : "Intersection of US Core Blood Pressure Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-04-21T10:15:29-07:00",
+  "date" : "2021-04-21T10:37:02-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/dff0b835-1aa9-4cd6-933d-3a08f2280c2f-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d4aa260f-c32d-4a64-b3b3-64a83ed00415-9"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1778,7 +1778,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/dff0b835-1aa9-4cd6-933d-3a08f2280c2f-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d4aa260f-c32d-4a64-b3b3-64a83ed00415-9"
       },
       "mapping" : [{
         "identity" : "w5",

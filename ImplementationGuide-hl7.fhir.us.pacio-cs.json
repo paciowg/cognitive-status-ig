@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-04-21T10:15:25-07:00",
+  "date": "2021-04-21T10:36:54-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -409,7 +409,7 @@
           "reference": "StructureDefinition/assistance-required"
         },
         "name": "AssistanceRequired",
-        "description": "Provides a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
+        "description": "Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
         "exampleBoolean": false
       },
       {

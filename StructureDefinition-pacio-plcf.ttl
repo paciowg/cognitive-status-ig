@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "PriorLevelOfCognitiveFunction"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Prior Level of Cognitive Function"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-21T10:15:25-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-04-21T10:36:54-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -594,7 +594,7 @@
        fhir:ElementDefinition.path [ fhir:value "Observation.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "assistance-required" ];
        fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Provides a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension." ];
+       fhir:ElementDefinition.definition [ fhir:value "Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
