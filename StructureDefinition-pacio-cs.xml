@@ -39,7 +39,7 @@
   <name value="CognitiveStatus"/>
   <title value="PACIO Cognitive Status"/>
   <status value="active"/>
-  <date value="2021-04-08T08:08:36-07:00"/>
+  <date value="2021-04-21T10:15:25-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -63,7 +63,7 @@
       <value value="info@pacioproject.org"/>
     </telecom>
   </contact>
-  <description value="An exchange of cognitive status data for a patient."/>
+  <description value="An exchange of cognitive status observation for a patient."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-04-08T08:08:36-07:00",
+  "date": "2021-04-21T10:15:25-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -339,7 +339,7 @@
           "reference": "StructureDefinition/pacio-bcs"
         },
         "name": "PACIO Bundled Cognitive Status",
-        "description": "A point in time bundle of cognitive status observations for a patient.",
+        "description": "A point in time collection of cognitive status observations for a patient.",
         "exampleBoolean": false
       },
       {
@@ -367,7 +367,7 @@
           "reference": "StructureDefinition/pacio-cs"
         },
         "name": "PACIO Cognitive Status",
-        "description": "An exchange of cognitive status data for a patient.",
+        "description": "An exchange of cognitive status observation for a patient.",
         "exampleBoolean": false
       },
       {
@@ -381,7 +381,7 @@
           "reference": "StructureDefinition/pacio-plcf"
         },
         "name": "PACIO Prior Level of Cognitive Function",
-        "description": "An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)",
+        "description": "An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)",
         "exampleBoolean": false
       },
       {
@@ -409,7 +409,7 @@
           "reference": "StructureDefinition/assistance-required"
         },
         "name": "AssistanceRequired",
-        "description": "Associated with prior level of cognitive function to provide indication of level of assistance needed. The 'CMS MDS Prior Functioning' answer list LL4970-1 provides exmples of possible values.",
+        "description": "Provides a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
         "exampleBoolean": false
       },
       {

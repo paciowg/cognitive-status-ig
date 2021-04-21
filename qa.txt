@@ -1,9 +1,9 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 5, warn = 19, info = 1
-IG Publisher Version: 1.1.64 Out of date - current version is 1.1.65
-Generated Thu Apr 08 08:09:41 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+err = 5, warn = 20, info = 1
+IG Publisher Version: 1.1.64 Out of date - current version is 1.1.66
+Generated Wed Apr 21 10:16:44 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
  Build Errors : 5 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
@@ -53,7 +53,7 @@ Generated Thu Apr 08 08:09:41 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-25 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-8 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BCS-SNF-PHQ9-1-Ob-Question-9 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BSJ-Prior-Level-Of-Cognitive-Function-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BSJ-Prior-Level-Of-Cognitive-Function-1 : 0 / 1 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-01 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-02 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-03 : 0 / 0 / 1
@@ -192,6 +192,7 @@ INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-8: Observation: Validate res
 INFORMATION: Observation/BCS-SNF-PHQ9-1-Ob-Question-9: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/observation-BSJ-Prior-Level-Of-Cognitive-Function-1.json ==
 INFORMATION: Observation/BSJ-Prior-Level-Of-Cognitive-Function-1: Observation: Validate resource against profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf
+WARNING: Observation/BSJ-Prior-Level-Of-Cognitive-Function-1: Observation.extension[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set http://loinc.org/vs/LL4309-2 because the value set or code system is not known to the validator]
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-01.json ==
 INFORMATION: Organization/Org-01: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/examples/organization-Org-02.json ==
@@ -245,8 +246,8 @@ INFORMATION: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: 
 WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-assistance-required.json ==
 INFORMATION: StructureDefinition/assistance-required: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/assistance-required: StructureDefinition.differential.element[3].binding: The valueSet reference http://loinc.org/vs/LL4970-1 on element Extension.value[x] could not be resolved
-WARNING: StructureDefinition/assistance-required: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://loinc.org/vs/LL4970-1 on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/assistance-required: StructureDefinition.differential.element[3].binding: The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/assistance-required: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
 == /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/build/input/extensions/structuredefinition-device-patient-used.json ==
 INFORMATION: StructureDefinition/device-patient-used: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used'): The Implementation Guide contains no examples for this extension

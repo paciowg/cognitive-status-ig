@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-04-08T08:08:36-07:00"/>
+  <date value="2021-04-21T10:15:25-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -219,7 +219,7 @@
         <reference value="StructureDefinition/pacio-bcs"/>
       </reference>
       <name value="PACIO Bundled Cognitive Status"/>
-      <description value="A point in time bundle of cognitive status observations for a patient."/>
+      <description value="A point in time collection of cognitive status observations for a patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -241,7 +241,7 @@
         <reference value="StructureDefinition/pacio-cs"/>
       </reference>
       <name value="PACIO Cognitive Status"/>
-      <description value="An exchange of cognitive status data for a patient."/>
+      <description value="An exchange of cognitive status observation for a patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -252,7 +252,7 @@
         <reference value="StructureDefinition/pacio-plcf"/>
       </reference>
       <name value="PACIO Prior Level of Cognitive Function"/>
-      <description value="An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)"/>
+      <description value="An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -274,7 +274,7 @@
         <reference value="StructureDefinition/assistance-required"/>
       </reference>
       <name value="AssistanceRequired"/>
-      <description value="Associated with prior level of cognitive function to provide indication of level of assistance needed. The &#39;CMS MDS Prior Functioning&#39; answer list LL4970-1 provides exmples of possible values."/>
+      <description value="Provides a high-level indication of assistance required for the person&#x2019;s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

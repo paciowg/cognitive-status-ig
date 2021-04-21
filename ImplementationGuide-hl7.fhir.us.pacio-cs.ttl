@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-08T08:08:36-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-04-21T10:15:25-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -323,7 +323,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-bcs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Bundled Cognitive Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A point in time bundle of cognitive status observations for a patient." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A point in time collection of cognitive status observations for a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -351,7 +351,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Cognitive Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of cognitive status data for a patient." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of cognitive status observation for a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -365,7 +365,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pacio-plcf" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Prior Level of Cognitive Function" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of prior level of cognitive function data for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -393,7 +393,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/assistance-required" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AssistanceRequired" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Associated with prior level of cognitive function to provide indication of level of assistance needed. The 'CMS MDS Prior Functioning' answer list LL4970-1 provides exmples of possible values." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provides a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
