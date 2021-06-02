@@ -10,10 +10,11 @@
   fhir:Resource.id [ fhir:value "patientBSJ1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Betsy Smith-Johnson </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Betsy Smith-Johnson</p></div>"
   ];
   fhir:Patient.name [
      fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Betsy Smith-Johnson" ];
      fhir:HumanName.family [ fhir:value "Smith-Johnson" ];
      fhir:HumanName.given [
        fhir:value "Betsy";

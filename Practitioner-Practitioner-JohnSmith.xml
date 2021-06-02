@@ -3,11 +3,15 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="Practitioner-JohnSmith"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Primary Care Physician</p><p><b>gender</b>: male</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4278275001</p><p><b>active</b>: true</p><p><b>name</b>: John Smith</p><p><b>gender</b>: male</p></div>
   </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="4278275001"/>
+  </identifier>
   <active value="true"/>
   <name>
-    <text value="Primary Care Physician"/>
+    <text value="John Smith"/>
     <family value="Smith"/>
     <given value="John"/>
   </name>

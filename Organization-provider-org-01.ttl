@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "provider-org-01"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Primary Care</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Primary Care INC.</p></div>"
   ];
-  fhir:Organization.name [ fhir:value "Primary Care"] .
+  fhir:Organization.name [ fhir:value "Primary Care INC."] .
 
 # - ontology header ------------------------------------------------------------
 

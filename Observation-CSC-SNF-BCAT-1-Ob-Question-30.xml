@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="CSC-SNF-BCAT-1-Ob-Question-30"/>
+  <meta>
+    <profile value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href="Location-Org-Loc-02.html">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org TBD-LOINC2}">BCAT Summary Score</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>performer</b>: <a href="PractitionerRole-Role-SLP-HoneyJones.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech and language therapist</span></a></p><p><b>value</b>: 16 {score}</p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-BCAT-1.html">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020, 9:30:00 AM</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
+    <valueReference>
+      <reference value="Location/Org-Loc-02"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="TBD-LOINC2"/>
+      <display value="BCAT Summary Score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patientBSJ1"/>
+  </subject>
+  <effectiveDateTime value="2020-07-11T11:30:00-05:00"/>
+  <performer>
+    <reference value="PractitionerRole/Role-SLP-HoneyJones"/>
+  </performer>
+  <valueQuantity>
+    <value value="16"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{score}"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="QuestionnaireResponse/QResponse-SNF-BCAT-1"/>
+  </derivedFrom>
+</Observation>

@@ -20,16 +20,20 @@
     }
   ],
   "profiles": {
-    "Observation": [
-      {
-        "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
-        "title": "PACIO Prior Level of Cognitive Function"
-      }
-    ],
     "QuestionnaireResponse": [
       {
         "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
         "title": "PACIO Cognition Questionnaire Response"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc",
+        "title": "PACIO Cognitive Status Collection"
+      },
+      {
+        "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
+        "title": "PACIO Prior Level of Cognitive Function"
       }
     ],
     "DeviceUseStatement": [
@@ -76,9 +80,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

@@ -3,12 +3,18 @@
   "id": "Practitioner-JohnSmith",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Primary Care Physician</p><p><b>gender</b>: male</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 4278275001</p><p><b>active</b>: true</p><p><b>name</b>: John Smith</p><p><b>gender</b>: male</p></div>"
   },
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "4278275001"
+    }
+  ],
   "active": true,
   "name": [
     {
-      "text": "Primary Care Physician",
+      "text": "John Smith",
       "family": "Smith",
       "given": [
         "John"

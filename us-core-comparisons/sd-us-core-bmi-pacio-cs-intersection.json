@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d4aa260f-c32d-4a64-b3b3-64a83ed00415-72",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d4aa260f-c32d-4a64-b3b3-64a83ed00415-72",
+  "id" : "4af86865-13a6-486a-89c7-4a562ec05304-18",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af86865-13a6-486a-89c7-4a562ec05304-18",
   "name" : "IntersectionUSCoreRespiratoryRateProfileAndCognitiveStatus",
   "title" : "Intersection of US Core BMI Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-04-21T10:37:02-07:00",
+  "date" : "2021-06-02T08:22:33-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -466,7 +466,7 @@
     },
     {
       "path" : "Observation.status",
-      "short" : "left: registered | preliminary | final | amended +; right: Should have the value 'final' when the observation is complete.",
+      "short" : "left: registered | preliminary | final | amended +; right: Should have the value 'final' when the observation is complete and there are no further actions needed. Otherwise, another value from the value set may appropriately be used.",
       "definition" : "The status of the result value.",
       "comment" : "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
       "requirements" : "Need to track the status of individual results. Some results are finalized before the whole report is finalized.",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d4aa260f-c32d-4a64-b3b3-64a83ed00415-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-6"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -820,7 +820,7 @@
     },
     {
       "path" : "Observation.performer",
-      "short" : "left: Who is responsible for the observation; right: The person who performed the assessment. May also be used to provide the practitioner role and organization.",
+      "short" : "left: Who is responsible for the observation; right: The person who performed the assessment. The preferred way to specify the performer is to use the PractitionerRole resource to provide both the practitioner and organization.",
       "definition" : "Who was responsible for asserting the observed value as \"true\".",
       "requirements" : "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
       "min" : 1,
@@ -1550,7 +1550,7 @@
     },
     {
       "path" : "Observation.derivedFrom",
-      "short" : "Related measurements the observation is made from",
+      "short" : "left: Related measurements the observation is made from; right: Should point back to...",
       "definition" : "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.",
       "comment" : "All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes] below.",
       "min" : 0,
@@ -1572,7 +1572,7 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1744,7 +1744,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d4aa260f-c32d-4a64-b3b3-64a83ed00415-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-6"
       },
       "mapping" : [{
         "identity" : "w5",

@@ -28,13 +28,6 @@
     "name": "DevicePatientUsed"
   },
   {
-    "id": "pacio-bcs",
-    "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-bcs",
-    "version": "0.1.0",
-    "name": "BundledCognitiveStatus"
-  },
-  {
     "id": "pacio-cognition-qr",
     "type": "StructureDefinition",
     "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
@@ -54,6 +47,13 @@
     "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev",
     "version": "0.1.0",
     "name": "UseOfDevice"
+  },
+  {
+    "id": "pacio-csc",
+    "type": "StructureDefinition",
+    "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc",
+    "version": "0.1.0",
+    "name": "CognitiveStatusCollection"
   },
   {
     "id": "pacio-plcf",

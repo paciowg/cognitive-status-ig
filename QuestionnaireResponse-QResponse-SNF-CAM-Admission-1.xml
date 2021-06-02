@@ -6,7 +6,7 @@
     <profile value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson </a></p><p><b>authored</b>: Apr 9, 2020, 4:00:00 PM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3/C1310</p><p><b>text</b>: Signs and Symptoms of Delirium (from CAM)</p><h3>Items</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Apr 9, 2020, 4:00:00 PM</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>linkId</b>: Section-3/C1310</p><p><b>text</b>: Signs and Symptoms of Delirium (from CAM)</p><h3>Items</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
   </text>
   <status value="completed"/>
   <subject>
@@ -24,7 +24,7 @@
         <text value="Is there evidence of an acute change in mental status from the patients baseline?"/>
         <answer>
           <valueReference>
-            <reference value="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1"/>
+            <reference value="Observation/CSC-SNF-CAM-Admission-1-Ob-Question-1"/>
           </valueReference>
         </answer>
       </item>
@@ -33,7 +33,7 @@
         <text value="Did the patient have difficulty focusing attention, for example being easily distractible, or having difficulty keeping track of what was being said?"/>
         <answer>
           <valueReference>
-            <reference value="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3"/>
+            <reference value="Observation/CSC-SNF-CAM-Admission-1-Ob-Question-3"/>
           </valueReference>
         </answer>
       </item>
@@ -42,7 +42,7 @@
         <text value="Did the resident have altered level of consiousness as indicated by any of the following criteria: (1) Vigilant - startles easily to any sound or touch, (2) Lethargic - repeatedly dozed off when being asked questions, but responded to voice or touch, (3) Stuporous - very difficult to arouse and keep aroused for the interview, (4) Comatose - could not be aroused"/>
         <answer>
           <valueReference>
-            <reference value="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5"/>
+            <reference value="Observation/CSC-SNF-CAM-Admission-1-Ob-Question-5"/>
           </valueReference>
         </answer>
       </item>

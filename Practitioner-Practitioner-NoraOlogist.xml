@@ -3,7 +3,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="Practitioner-NoraOlogist"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 3668788925</p><p><b>active</b>: true</p><p><b>name</b>: Neurologist</p><p><b>telecom</b>: ph: (210) 555 7632</p><p><b>address</b>: 26022 Meadowlark Bay, San Antonio, TX 78260</p><p><b>gender</b>: female</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 3668788925</p><p><b>active</b>: true</p><p><b>name</b>: Nora Ologist</p><p><b>gender</b>: female</p></div>
   </text>
   <identifier>
     <system value="http://hl7.org/fhir/sid/us-npi"/>
@@ -11,16 +11,9 @@
   </identifier>
   <active value="true"/>
   <name>
-    <text value="Neurologist"/>
+    <text value="Nora Ologist"/>
     <family value="Ologist"/>
     <given value="Nora"/>
   </name>
-  <telecom>
-    <system value="phone"/>
-    <value value="(210) 555 7632"/>
-  </telecom>
-  <address>
-    <text value="26022 Meadowlark Bay, San Antonio, TX 78260"/>
-  </address>
   <gender value="female"/>
 </Practitioner>

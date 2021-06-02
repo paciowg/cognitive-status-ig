@@ -11,7 +11,6 @@
     <link href="fhir.css" rel="stylesheet"/>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
@@ -106,15 +105,18 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Profile Highlights and Guidance</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">  <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
@@ -143,16 +145,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#resource-profile-cognitionquestionnaireresponse" id="markdown-toc-resource-profile-cognitionquestionnaireresponse">Resource Profile: CognitionQuestionnaireResponse</a></li>
-  <li><a href="#resource-profile-bundledcognitivestatus" id="markdown-toc-resource-profile-bundledcognitivestatus">Resource Profile: BundledCognitiveStatus</a></li>
+  <li><a href="#resource-profile-cognitivestatuscollection" id="markdown-toc-resource-profile-cognitivestatuscollection">Resource Profile: CognitiveStatusCollection</a></li>
   <li><a href="#resource-profile-cognitivestatus" id="markdown-toc-resource-profile-cognitivestatus">Resource Profile: CognitiveStatus</a></li>
   <li><a href="#resource-profile-priorlevelofcognitivefunction" id="markdown-toc-resource-profile-priorlevelofcognitivefunction">Resource Profile: PriorLevelOfCognitiveFunction</a></li>
   <li><a href="#resource-profile-useofdevice" id="markdown-toc-resource-profile-useofdevice">Resource Profile: UseOfDevice</a></li>
   <li><a href="#data-exchange-guidance-and-examples" id="markdown-toc-data-exchange-guidance-and-examples">Data Exchange Guidance and Examples</a></li>
   <li><a href="#cognitionquestionnaireresponse--cam-example" id="markdown-toc-cognitionquestionnaireresponse--cam-example">CognitionQuestionnaireResponse – CAM Example</a></li>
-  <li><a href="#bundledcognitivestatus--cam-example" id="markdown-toc-bundledcognitivestatus--cam-example">BundledCognitiveStatus – CAM Example</a></li>
-  <li><a href="#bundledcognitivestatus--bims-example" id="markdown-toc-bundledcognitivestatus--bims-example">BundledCognitiveStatus – BIMS Example</a></li>
-  <li><a href="#bundledcognitivestatus--moca-example" id="markdown-toc-bundledcognitivestatus--moca-example">BundledCognitiveStatus – MoCA Example</a></li>
-  <li><a href="#bundledcognitivestatus--phq-9-two-column-example" id="markdown-toc-bundledcognitivestatus--phq-9-two-column-example">BundledCognitiveStatus – PHQ-9 Two-Column Example</a></li>
+  <li><a href="#cognitivestatuscollection--cam-example" id="markdown-toc-cognitivestatuscollection--cam-example">CognitiveStatusCollection – CAM Example</a></li>
+  <li><a href="#cognitivestatuscollection--bims-example" id="markdown-toc-cognitivestatuscollection--bims-example">CognitiveStatusCollection – BIMS Example</a></li>
+  <li><a href="#cognitivestatuscollection--moca-example" id="markdown-toc-cognitivestatuscollection--moca-example">CognitiveStatusCollection – MoCA Example</a></li>
+  <li><a href="#cognitivestatuscollection--phq-9-two-column-example" id="markdown-toc-cognitivestatuscollection--phq-9-two-column-example">CognitiveStatusCollection – PHQ-9 Two-Column Example</a></li>
   <li><a href="#priorlevelofcognitivefunction--prior-level-of-cognitive-function-example" id="markdown-toc-priorlevelofcognitivefunction--prior-level-of-cognitive-function-example">PriorLevelOfCognitiveFunction – Prior Level of Cognitive Function Example</a></li>
 </ul>
 
@@ -200,7 +202,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   </tr>
 </table>
 
-<h3 id="resource-profile-bundledcognitivestatus">Resource Profile: BundledCognitiveStatus</h3>
+<h3 id="resource-profile-cognitivestatuscollection">Resource Profile: CognitiveStatusCollection</h3>
 
 <p>This resource profile is intended to be used for data exchange of a point in time bundle of cognitive status observations from a single post-acute care (PAC) assessment. It is derived from the FHIR resource Observation.</p>
 
@@ -390,7 +392,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   <li>The nesting structure of the ‘item’ fields should correspond to the nesting structure as showed in the questionnaire.</li>
 </ol>
 
-<h3 id="bundledcognitivestatus--cam-example">BundledCognitiveStatus – CAM Example</h3>
+<h3 id="cognitivestatuscollection--cam-example">CognitiveStatusCollection – CAM Example</h3>
 
 <p><img src="BCS_CAM_Example.png" alt="BCS CAM Example" style="float: none;" /></p>
 
@@ -401,7 +403,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   <li>The ‘category’ field should contain the value ‘survey’ for a PAC assessment.</li>
 </ol>
 
-<h3 id="bundledcognitivestatus--bims-example">BundledCognitiveStatus – BIMS Example</h3>
+<h3 id="cognitivestatuscollection--bims-example">CognitiveStatusCollection – BIMS Example</h3>
 
 <p><img src="BCS_BIMS_Example.png" alt="BCS BIMS Example" style="float: none;" /></p>
 
@@ -411,7 +413,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   <li>Use multiple ‘performer’ fields to provide references to FHIR Practitioner, PractitionerRole, and Organization resource instances.</li>
 </ol>
 
-<h3 id="bundledcognitivestatus--moca-example">BundledCognitiveStatus – MoCA Example</h3>
+<h3 id="cognitivestatuscollection--moca-example">CognitiveStatusCollection – MoCA Example</h3>
 
 <p><img src="BCS_MOCA_Example.png" alt="BCS MOCA Example" style="float: none;" /></p>
 
@@ -421,7 +423,7 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
   <li>Use the ‘value’ field of type CodeableConcept to store the total score of the MoCA assessment.</li>
 </ol>
 
-<h3 id="bundledcognitivestatus--phq-9-two-column-example">BundledCognitiveStatus – PHQ-9 Two-Column Example</h3>
+<h3 id="cognitivestatuscollection--phq-9-two-column-example">CognitiveStatusCollection – PHQ-9 Two-Column Example</h3>
 
 <p><img src="BCS_PHQ9_Example.png" alt="BCS PHQ9 Example" style="float: none;" /></p>
 
@@ -461,11 +463,13 @@ For profiles defined in other IGs, the meaning of “Must Support” is establis
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 21, 2021 10:36-0700">2021-04-21</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 2, 2021 08:22-0700">2021-06-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
