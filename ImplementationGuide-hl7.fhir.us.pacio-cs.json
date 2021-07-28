@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-06-02T08:22:29-07:00",
+  "date": "2021-07-28T10:12:48-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -353,7 +353,7 @@
           "reference": "StructureDefinition/pacio-cs"
         },
         "name": "PACIO Cognitive Status",
-        "description": "An exchange of cognitive status observation for a patient.",
+        "description": "An exchange of cognitive status observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen).",
         "exampleBoolean": false
       },
       {
@@ -367,7 +367,7 @@
           "reference": "StructureDefinition/pacio-csc"
         },
         "name": "PACIO Cognitive Status Collection",
-        "description": "A point in time collection of cognitive status observations for a patient.",
+        "description": "A point in time collection of cognitive status observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen).",
         "exampleBoolean": false
       },
       {
@@ -381,7 +381,7 @@
           "reference": "StructureDefinition/pacio-plcf"
         },
         "name": "PACIO Prior Level of Cognitive Function",
-        "description": "An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)",
+        "description": "An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of cognitive assessments. For formal assessments conducted with for example, an assessment instructment, use the Cognitive Status Collecction and Cognitive Status profiles to capture assessment data.",
         "exampleBoolean": false
       },
       {

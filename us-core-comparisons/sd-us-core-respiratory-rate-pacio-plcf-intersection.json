@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4af86865-13a6-486a-89c7-4a562ec05304-141",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af86865-13a6-486a-89c7-4a562ec05304-141",
+  "id" : "e1ecc218-3d84-4baa-b741-25621d74ca66-141",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1ecc218-3d84-4baa-b741-25621d74ca66-141",
   "name" : "IntersectionUSCoreRespiratoryRateProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Intersection of US Core Respiratory Rate Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-06-02T08:22:33-07:00",
+  "date" : "2021-07-28T10:12:53-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-6"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1947,11 +1947,7 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "VitalSignsUnits"
-        }],
-        "strength" : "required",
+        "strength" : "extensible",
         "description" : "Common UCUM units for recording Vital Signs.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1"
       },

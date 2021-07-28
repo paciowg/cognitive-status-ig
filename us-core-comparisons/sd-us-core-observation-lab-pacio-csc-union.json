@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4af86865-13a6-486a-89c7-4a562ec05304-89",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af86865-13a6-486a-89c7-4a562ec05304-89",
+  "id" : "e1ecc218-3d84-4baa-b741-25621d74ca66-89",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1ecc218-3d84-4baa-b741-25621d74ca66-89",
   "name" : "UnionUSCoreLaboratoryResultObservationProfileAndCognitiveStatusCollection",
   "title" : "Union of US Core Laboratory Result Observation Profile And PACIO Cognitive Status Collection",
   "status" : "active",
-  "date" : "2021-06-02T08:22:33-07:00",
+  "date" : "2021-07-28T10:12:53-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -532,7 +532,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-59"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -879,7 +879,7 @@
     {
       "path" : "Observation.value[x]",
       "short" : "left: Result Value; right: Whenever possible should use the CodeableConcept type to provide a suitable code to define the concept. As for values like an assessment score, use the Quantity type.",
-      "definition" : "left: The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD**  be selected from [SNOMED CT].  If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM].  A FHIR [UCUM Codes value set] that defines all UCUM codes is in the FHIR specification.; right: The information determined as a result of making the observation, if the information has a simple value.",
+      "definition" : "left: The Laboratory result value.  If a coded value,  the valueCodeableConcept.code **SHOULD** be selected from [SNOMED CT] if the concept exists. If a numeric value, valueQuantity.code **SHALL** be selected from [UCUM].  A FHIR [UCUM Codes value set] that defines all UCUM codes is in the FHIR specification.; right: The information determined as a result of making the observation, if the information has a simple value.",
       "comment" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section] below.",
       "requirements" : "An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
       "min" : 0,
@@ -1584,7 +1584,7 @@
     },
     {
       "path" : "Observation.hasMember",
-      "short" : "left: Related resource that belongs to the Observation group; right: Should point to...",
+      "short" : "left: Related resource that belongs to the Observation group; right: Each cognitive status observation in the collection.",
       "definition" : "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.",
       "comment" : "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes] below.  Note that a system may calculate results from [QuestionnaireResponse]  into a final score and represent the score as an Observation.",
       "min" : 0,
@@ -1617,7 +1617,7 @@
     },
     {
       "path" : "Observation.derivedFrom",
-      "short" : "left: Related measurements the observation is made from; right: Should point back to...",
+      "short" : "left: Related measurements the observation is made from; right: Should point back to the QuestionnaireResponse that this resource is derived from.",
       "definition" : "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.",
       "comment" : "All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes] below.",
       "min" : 0,

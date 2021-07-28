@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4af86865-13a6-486a-89c7-4a562ec05304-92",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af86865-13a6-486a-89c7-4a562ec05304-92",
+  "id" : "e1ecc218-3d84-4baa-b741-25621d74ca66-92",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1ecc218-3d84-4baa-b741-25621d74ca66-92",
   "name" : "UnionUSCorePulseOximetryProfileAndCognitiveStatusCollection",
   "title" : "Union of US Core Pulse Oximetry Profile And PACIO Cognitive Status Collection",
   "status" : "active",
-  "date" : "2021-06-02T08:22:33-07:00",
+  "date" : "2021-07-28T10:12:53-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -525,7 +525,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-59"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1653,7 +1653,7 @@
     },
     {
       "path" : "Observation.hasMember",
-      "short" : "left: Used when reporting vital signs panel components; right: Should point to...",
+      "short" : "left: Used when reporting vital signs panel components; right: Each cognitive status observation in the collection.",
       "definition" : "left: Used when reporting vital signs panel components.; right: This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.",
       "comment" : "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes] below.  Note that a system may calculate results from [QuestionnaireResponse]  into a final score and represent the score as an Observation.",
       "min" : 0,
@@ -1692,7 +1692,7 @@
     },
     {
       "path" : "Observation.derivedFrom",
-      "short" : "left: Related measurements the observation is made from; right: Should point back to...",
+      "short" : "left: Related measurements the observation is made from; right: Should point back to the QuestionnaireResponse that this resource is derived from.",
       "definition" : "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.",
       "comment" : "All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes] below.",
       "min" : 0,
@@ -1886,7 +1886,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-5"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1962,10 +1962,6 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "VitalSignsUnits"
-        }],
         "strength" : "example",
         "description" : "Common UCUM units for recording Vital Signs.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1"

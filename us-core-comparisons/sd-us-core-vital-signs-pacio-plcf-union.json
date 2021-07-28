@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4af86865-13a6-486a-89c7-4a562ec05304-146",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af86865-13a6-486a-89c7-4a562ec05304-146",
+  "id" : "e1ecc218-3d84-4baa-b741-25621d74ca66-146",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1ecc218-3d84-4baa-b741-25621d74ca66-146",
   "name" : "UnionUSCoreVitalSignsProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Union of US Core Vital Signs Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-06-02T08:22:33-07:00",
+  "date" : "2021-07-28T10:12:53-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -727,7 +727,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1885,7 +1885,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af86865-13a6-486a-89c7-4a562ec05304-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-5"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1961,10 +1961,6 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "VitalSignsUnits"
-        }],
         "strength" : "example",
         "description" : "Common UCUM units for recording Vital Signs.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1"

@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-06-02T08:22:29-07:00"/>
+  <date value="2021-07-28T10:12:48-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -230,7 +230,7 @@
         <reference value="StructureDefinition/pacio-cs"/>
       </reference>
       <name value="PACIO Cognitive Status"/>
-      <description value="An exchange of cognitive status observation for a patient."/>
+      <description value="An exchange of cognitive status observation for a patient. This profile is used for exchanging a single observation data generally included in a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -241,7 +241,7 @@
         <reference value="StructureDefinition/pacio-csc"/>
       </reference>
       <name value="PACIO Cognitive Status Collection"/>
-      <description value="A point in time collection of cognitive status observations for a patient."/>
+      <description value="A point in time collection of cognitive status observations for a patient. This profile is used for exchanging a set of observation data collected through the use of a structured resource (e.g. assessment tool, instrument, or screen)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -252,7 +252,7 @@
         <reference value="StructureDefinition/pacio-plcf"/>
       </reference>
       <name value="PACIO Prior Level of Cognitive Function"/>
-      <description value="An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. (The use of this profile is encouraged in the absence of formal prior level of cognitive assessments.)"/>
+      <description value="An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of cognitive assessments. For formal assessments conducted with for example, an assessment instructment, use the Cognitive Status Collecction and Cognitive Status profiles to capture assessment data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
