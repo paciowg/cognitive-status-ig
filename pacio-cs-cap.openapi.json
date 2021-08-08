@@ -15,7 +15,7 @@
     }
   },
   "externalDocs": {
-    "url": "/CapabilityStatement-pacio-cap.html",
+    "url": "/CapabilityStatement-pacio-cs-cap.html",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

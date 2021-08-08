@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e1ecc218-3d84-4baa-b741-25621d74ca66-62",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1ecc218-3d84-4baa-b741-25621d74ca66-62",
+  "id" : "0249259c-87d5-4564-b0d3-4f669a33acb9-62",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0249259c-87d5-4564-b0d3-4f669a33acb9-62",
   "name" : "UnionUSCorePediatricBMIforAgeObservationProfileAndCognitiveStatusCollection",
   "title" : "Union of US Core Pediatric BMI for Age Observation Profile And PACIO Cognitive Status Collection",
   "status" : "active",
-  "date" : "2021-07-28T10:12:53-07:00",
+  "date" : "2021-08-07T17:41:57-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -525,7 +525,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-59"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -538,7 +538,7 @@
     },
     {
       "path" : "Observation.code",
-      "short" : "left: BMI percentile per age and sex for youth 2-20; right: For a Post-Acute Care Assessment, should include a LOINC code and text for the kind of assessment.",
+      "short" : "left: BMI percentile per age and sex for youth 2-20; right: For a Post-Acute Care structured assessment resource such as an instrument or screen, use a LOINC code to identify the instrument/screen name or panel/section title to indicate the kind of assessment.",
       "definition" : "left: Coded Responses from C-CDA Vital Sign Results.; right: Describes what was observed. Sometimes this is called the observation \"name\".",
       "comment" : "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.",
       "requirements" : "left: 5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301).; right: Knowing what kind of observation is being made is essential to understanding the observation.",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -848,7 +848,7 @@
     },
     {
       "path" : "Observation.value[x]",
-      "short" : "left: Vital Signs Value; right: Whenever possible should use the CodeableConcept type to provide a suitable code to define the concept. As for values like an assessment score, use the Quantity type.",
+      "short" : "left: Vital Signs Value; right: If used, should use the CodeableConcept type whenever possible to provide a suitable code to define the concept. When capturing a collection of related observations, typically this field is not used. As for values like an assessment score or roll-up value, the preferred way is to leave this field unused and use the 'hasMember' field to reference a cognitive status observation specifying the score or roll-up value in the value field using the Quantity type.",
       "definition" : "left: Vital Signs value are typically recorded using the Quantity data type.; right: The information determined as a result of making the observation, if the information has a simple value.",
       "comment" : "An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section] below.",
       "requirements" : "left: 9. SHALL contain exactly one [1..1] value with @xsi:type=\"PQ\" (CONF:7305).; right: An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.",
@@ -1754,7 +1754,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-5"
       },
       "mapping" : [{
         "identity" : "w5",

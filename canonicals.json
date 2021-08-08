@@ -1,8 +1,8 @@
 [
   {
-    "id": "pacio-cap",
+    "id": "pacio-cs-cap",
     "type": "CapabilityStatement",
-    "url": "/CapabilityStatement-pacio-cap.html",
+    "url": "/CapabilityStatement-pacio-cs-cap.html",
     "version": "0.1.0",
     "name": "PACIO_CognitiveStatus_CapabilityStatement"
   },

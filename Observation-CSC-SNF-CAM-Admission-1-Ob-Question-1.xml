@@ -6,7 +6,7 @@
     <profile value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href="Location-Org-Loc-02.html">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 54632-5}">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Apr 9, 2020, 4:00:00 PM</p><p><b>performer</b>: </p><ul><li><a href="Practitioner-Practitioner-HoneyJones.html">Generated Summary: active; Honey Jones; gender: female</a></li><li><a href="Role-RN">Role-RN</a></li><li><a href="Organization-Org-02.html">Organization. Generated Summary: name: Happy Nursing Facility</a></li></ul><p><b>value</b>: <span title="Codes: {http://loinc.org LA32-8}">No</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html">Generated Summary: status: completed; authored: Apr 9, 2020, 4:00:00 PM</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href="Location-Org-Loc-02.html">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 54632-5}">Acute Onset Mental Status Change. Is there evidence of an acute change in mental status from the resident's baseline?</span></p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Apr 9, 2020, 4:00:00 PM</p><p><b>performer</b>: <a href="PractitionerRole-Role-SLP-HoneyJones.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech and language therapist</span></a></p><p><b>value</b>: <span title="Codes: {http://loinc.org LA32-8}">No</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html">Generated Summary: status: completed; authored: Apr 9, 2020, 4:00:00 PM</a></p></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/event-location">
     <valueReference>
@@ -14,6 +14,12 @@
     </valueReference>
   </extension>
   <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
   <code>
     <coding>
       <system value="http://loinc.org"/>
@@ -27,14 +33,7 @@
   </subject>
   <effectiveDateTime value="2020-04-09T18:00:00-05:00"/>
   <performer>
-    <reference value="Practitioner/Practitioner-HoneyJones"/>
-  </performer>
-  <performer>
-    <reference value="Role-RN"/>
-  </performer>
-  <performer>
-    <reference value="Organization/Org-02"/>
-    <display value="Organization"/>
+    <reference value="PractitionerRole/Role-SLP-HoneyJones"/>
   </performer>
   <valueCodeableConcept>
     <coding>

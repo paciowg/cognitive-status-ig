@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-07-28T10:12:48-07:00",
+  "date": "2021-08-07T17:41:52-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -1456,7 +1456,7 @@
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/pacio-cap"
+          "reference": "CapabilityStatement/pacio-cs-cap"
         },
         "name": "PACIO Cognitive Status Capability Statement",
         "description": "This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide.",

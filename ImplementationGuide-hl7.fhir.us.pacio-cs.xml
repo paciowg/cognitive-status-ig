@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-07-28T10:12:48-07:00"/>
+  <date value="2021-08-07T17:41:52-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -1096,7 +1096,7 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/pacio-cap"/>
+        <reference value="CapabilityStatement/pacio-cs-cap"/>
       </reference>
       <name value="PACIO Cognitive Status Capability Statement"/>
       <description value="This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide."/>

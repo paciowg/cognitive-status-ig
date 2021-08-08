@@ -1,5 +1,4 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href=\"Location-Org-Loc-02.html\">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org TBD-LOINC2}\">BCAT Summary Score</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>performer</b>: <a href=\"PractitionerRole-Role-SLP-HoneyJones.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><p><b>value</b>: 16 {score}</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-BCAT-1.html\">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020, 9:30:00 AM</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href=\"Location-Org-Loc-02.html\">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>code</b>: <span title=\"Codes: \">BCAT Summary Score</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>performer</b>: <a href=\"PractitionerRole-Role-SLP-HoneyJones.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><p><b>value</b>: 16 {score}</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-BCAT-1.html\">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020, 9:30:00 AM</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -30,13 +29,7 @@
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:TBD-LOINC2;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "TBD-LOINC2" ];
-       fhir:Coding.display [ fhir:value "BCAT Summary Score" ]
-     ]
+     fhir:CodeableConcept.text [ fhir:value "BCAT Summary Score" ]
   ];
   fhir:Observation.subject [
      fhir:link <http://paciowg.github.io/cognitive-status-ig/Patient/patientBSJ1>;

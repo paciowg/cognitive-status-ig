@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap> a fhir:CapabilityStatement;
+<http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cs-cap> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "pacio-cap"];
+  fhir:Resource.id [ fhir:value "pacio-cs-cap"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PACIO_CognitiveStatus_CapabilityStatement</h2><div><p>This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td>y</td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>Observation</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/StructureDefinition-pacio-cs.html\">https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/StructureDefinition-pacio-cs.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>QuestionnaireResponse</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/StructureDefinition-pacio-cognition-qr.html\">https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/StructureDefinition-pacio-cognition-qr.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr><tr><td>DeviceUseStatement</td><td><a href=\"https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/StructureDefinition-pacio-cs-dev.html\">https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/StructureDefinition-pacio-cs-dev.html</a></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td></tr></table></div>"
   ];
-  fhir:CapabilityStatement.url [ fhir:value "/CapabilityStatement-pacio-cap.html"];
+  fhir:CapabilityStatement.url [ fhir:value "/CapabilityStatement-pacio-cs-cap.html"];
   fhir:CapabilityStatement.version [ fhir:value "0.1.0"];
   fhir:CapabilityStatement.name [ fhir:value "PACIO_CognitiveStatus_CapabilityStatement"];
   fhir:CapabilityStatement.title [ fhir:value "PACIO Cognitive Status Capability Statement"];
@@ -815,7 +815,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap.ttl> a owl:Ontology;
+<http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cs-cap.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

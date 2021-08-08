@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-07-28T10:12:48-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-07T17:41:52-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1595,8 +1595,8 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cap>;
-         fhir:Reference.reference [ fhir:value "CapabilityStatement/pacio-cap" ]
+         fhir:link <http://paciowg.github.io/cognitive-status-ig/CapabilityStatement/pacio-cs-cap>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/pacio-cs-cap" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PACIO Cognitive Status Capability Statement" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Capability Statement defines the expected capabilities of a PACIO Cognitive Status FHIR server conforming to the PACIO Cognitive Status Implementation Guide." ];

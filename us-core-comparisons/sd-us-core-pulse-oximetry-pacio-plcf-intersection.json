@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e1ecc218-3d84-4baa-b741-25621d74ca66-138",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e1ecc218-3d84-4baa-b741-25621d74ca66-138",
+  "id" : "0249259c-87d5-4564-b0d3-4f669a33acb9-138",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0249259c-87d5-4564-b0d3-4f669a33acb9-138",
   "name" : "IntersectionUSCorePulseOximetryProfileAndPriorLevelOfCognitiveFunction",
   "title" : "Intersection of US Core Pulse Oximetry Profile And PACIO Prior Level of Cognitive Function",
   "status" : "active",
-  "date" : "2021-07-28T10:12:53-07:00",
+  "date" : "2021-08-07T17:41:57-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -578,7 +578,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e1ecc218-3d84-4baa-b741-25621d74ca66-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-6"
       },
       "mapping" : [{
         "identity" : "workflow",
