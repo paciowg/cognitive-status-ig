@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "141f5839-08aa-4a4d-97a0-7e4dcf072a92-35",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/141f5839-08aa-4a4d-97a0-7e4dcf072a92-35",
+  "id" : "148d92bd-a567-4028-86b5-c5e6f6a783ff-35",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/148d92bd-a567-4028-86b5-c5e6f6a783ff-35",
   "name" : "UnionUSCoreHeartRateProfileAndCognitiveStatus",
   "title" : "Union of US Core Heart Rate Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-08-13T10:22:10-07:00",
+  "date" : "2021-08-13T12:17:01-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -525,7 +525,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/148d92bd-a567-4028-86b5-c5e6f6a783ff-5"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/148d92bd-a567-4028-86b5-c5e6f6a783ff-8"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1754,7 +1754,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/148d92bd-a567-4028-86b5-c5e6f6a783ff-8"
       },
       "mapping" : [{
         "identity" : "w5",

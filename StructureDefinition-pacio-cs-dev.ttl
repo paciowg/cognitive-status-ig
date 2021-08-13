@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "UseOfDevice"];
   fhir:StructureDefinition.title [ fhir:value "Use of Device"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-13T10:22:00-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-13T12:16:48-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
