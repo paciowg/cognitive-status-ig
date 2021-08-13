@@ -7,6 +7,13 @@
     "name": "PACIO_CognitiveStatus_CapabilityStatement"
   },
   {
+    "id": "pacio-cat-cs",
+    "type": "CodeSystem",
+    "url": "http://paciowg.github.io/cognitive-status-ig/CodeSystem/pacio-cat-cs",
+    "version": "0.1.0",
+    "name": "PACIOFunctioningCategoryCS"
+  },
+  {
     "id": "hl7.fhir.us.pacio-cs",
     "type": "ImplementationGuide",
     "url": "http://paciowg.github.io/cognitive-status-ig/ImplementationGuide/hl7.fhir.us.pacio-cs",
@@ -61,5 +68,12 @@
     "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
     "version": "0.1.0",
     "name": "PriorLevelOfCognitiveFunction"
+  },
+  {
+    "id": "pacio-cat-vs",
+    "type": "ValueSet",
+    "url": "http://paciowg.github.io/cognitive-status-ig/ValueSet/pacio-cat-vs",
+    "version": "0.1.0",
+    "name": "PACIOFunctioningCategoryVS"
   }
 ]

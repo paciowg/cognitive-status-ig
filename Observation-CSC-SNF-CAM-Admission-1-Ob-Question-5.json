@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href=\"Location-Org-Loc-02.html\">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54629-1}\">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Apr 9, 2020, 4:00:00 PM</p><p><b>performer</b>: <a href=\"PractitionerRole-Role-SLP-HoneyJones.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Generated Summary: status: completed; authored: Apr 9, 2020, 4:00:00 PM</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href=\"Location-Org-Loc-02.html\">Generated Summary: status: active; name: Happy Nursing Facility</a></p><p></p><p><b>category</b>: <span title=\"Codes: {http://paciowg.github.io/cognitive-status-ig/CodeSystem/pacio-cat-cs functioning}\">Functioning</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54629-1}\">Disorganized Thinking - Was the resident's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject)?</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Apr 9, 2020, 4:00:00 PM</p><p><b>performer</b>: <a href=\"PractitionerRole-Role-SLP-HoneyJones.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA61-7}\">Behavior not present</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.html\">Generated Summary: status: completed; authored: Apr 9, 2020, 4:00:00 PM</a></p></div>"
   },
   "extension": [
     {
@@ -20,6 +20,14 @@
   ],
   "status": "final",
   "category": [
+    {
+      "coding": [
+        {
+          "system": "http://paciowg.github.io/cognitive-status-ig/CodeSystem/pacio-cat-cs",
+          "code": "functioning"
+        }
+      ]
+    },
     {
       "coding": [
         {

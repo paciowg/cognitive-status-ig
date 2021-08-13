@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href=\"Location-Org-Loc-03.html\">Generated Summary: status: active; name: Sky Harbor Home Health Services</a></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54647-3}\">Feeling bad about yourself - or that you are a failure or have let yourself or your family down</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>performer</b>: <a href=\"PractitionerRole-Role-SLP-LunaBaskins.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA10997-7}\">Never or 1 day</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-PHQ9-1.html\">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020, 9:30:00 AM</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Event Location</b>: <a href=\"Location-Org-Loc-03.html\">Generated Summary: status: active; name: Sky Harbor Home Health Services</a></p><p></p><p><b>category</b>: <span title=\"Codes: {http://paciowg.github.io/cognitive-status-ig/CodeSystem/pacio-cat-cs functioning}\">Functioning</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 54647-3}\">Feeling bad about yourself - or that you are a failure or have let yourself or your family down</span></p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>effective</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>performer</b>: <a href=\"PractitionerRole-Role-SLP-LunaBaskins.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA10997-7}\">Never or 1 day</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-QResponse-SNF-PHQ9-1.html\">Generated Summary: questionnaire: https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17; status: completed; authored: Jul 11, 2020, 9:30:00 AM</a></p></div>"
   },
   "extension": [
     {
@@ -19,6 +19,16 @@
     }
   ],
   "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://paciowg.github.io/cognitive-status-ig/CodeSystem/pacio-cat-cs",
+          "code": "functioning"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {

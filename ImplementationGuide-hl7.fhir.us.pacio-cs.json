@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-08-07T17:41:52-07:00",
+  "date": "2021-08-13T10:22:00-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -423,7 +423,35 @@
           "reference": "StructureDefinition/device-patient-used"
         },
         "name": "DevicePatientUsed",
-        "description": "A record indicating what healthcare-related assistive device was used by a patient during a cognitive status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient.",
+        "description": "Associated with the Cognitive Status Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during a functional status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/pacio-cat-vs"
+        },
+        "name": "PACIO Functioning Category Value Set",
+        "description": "Codes for the classification of patient observation. This is an extension of the ObservationCategoryCodes value set",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/pacio-cat-cs"
+        },
+        "name": "PACIO Functioning Category Code System",
+        "description": "Defining a specific code for the classification of patient observation regarding individual's functioning.",
         "exampleBoolean": false
       },
       {

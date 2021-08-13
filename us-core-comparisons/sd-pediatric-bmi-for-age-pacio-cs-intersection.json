@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0249259c-87d5-4564-b0d3-4f669a33acb9-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0249259c-87d5-4564-b0d3-4f669a33acb9-9",
+  "id" : "141f5839-08aa-4a4d-97a0-7e4dcf072a92-12",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/141f5839-08aa-4a4d-97a0-7e4dcf072a92-12",
   "name" : "IntersectionUSCorePediatricBMIforAgeObservationProfileAndCognitiveStatus",
   "title" : "Intersection of US Core Pediatric BMI for Age Observation Profile And PACIO Cognitive Status",
   "status" : "active",
-  "date" : "2021-08-07T17:41:57-07:00",
+  "date" : "2021-08-13T10:22:10-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -514,7 +514,7 @@
     },
     {
       "path" : "Observation.category",
-      "short" : "Classification of  type of observation",
+      "short" : "left: Classification of  type of observation; right: A second category code may be used along with the code “functioning”. For example, for assessment tool/survey instrument observations use “survey” as a second code.",
       "definition" : "A code that classifies the general type of observation being made.",
       "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
       "requirements" : "Used for filtering what observations are retrieved and displayed.",
@@ -535,13 +535,8 @@
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "ObservationCategory"
-        }],
-        "strength" : "preferred",
-        "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-category"
+        "strength" : "extensible",
+        "valueSet" : "http://paciowg.github.io/cognitive-status-ig/ValueSet/pacio-cat-vs"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -578,7 +573,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-9"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1744,7 +1739,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-9"
       },
       "mapping" : [{
         "identity" : "w5",

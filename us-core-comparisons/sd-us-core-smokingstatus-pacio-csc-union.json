@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0249259c-87d5-4564-b0d3-4f669a33acb9-98",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0249259c-87d5-4564-b0d3-4f669a33acb9-98",
+  "id" : "141f5839-08aa-4a4d-97a0-7e4dcf072a92-98",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/141f5839-08aa-4a4d-97a0-7e4dcf072a92-98",
   "name" : "UnionUSCoreSmokingStatusProfileAndCognitiveStatusCollection",
   "title" : "Union of US Core Smoking Status Observation Profile And PACIO Cognitive Status Collection",
   "status" : "active",
-  "date" : "2021-08-07T17:41:57-07:00",
+  "date" : "2021-08-13T10:22:11-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -474,7 +474,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Codes providing the status of an observation.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-47"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-50"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -503,7 +503,7 @@
     },
     {
       "path" : "Observation.category",
-      "short" : "left: Classification of  type of observation; right: For a Post-Acute Care Assessment, should have the value 'survey'.",
+      "short" : "left: Classification of  type of observation; right: A second category code may be used along with the code “functioning”. For example, for assessment tool/survey instrument observations use “survey” as a second code.",
       "definition" : "A code that classifies the general type of observation being made.",
       "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
       "requirements" : "Used for filtering what observations are retrieved and displayed.",
@@ -526,7 +526,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-5"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -562,7 +562,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/0249259c-87d5-4564-b0d3-4f669a33acb9-50"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/141f5839-08aa-4a4d-97a0-7e4dcf072a92-53"
       },
       "mapping" : [{
         "identity" : "workflow",
