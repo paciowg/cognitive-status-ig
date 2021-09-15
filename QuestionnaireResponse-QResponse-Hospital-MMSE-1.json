@@ -1,11 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "QResponse-Hospital-MMSE-1",
-  "meta": {
-    "profile": [
-      "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
-    ]
-  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 8, 2020, 3:32:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE</p><p><b>text</b>: Mini-Mental State Examination [MMSE]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE/ToTalScore</p><p><b>text</b>: Total score [MMSE]</p></blockquote></blockquote></div>"
@@ -18,12 +13,10 @@
   "authored": "2020-07-08T17:32:00-05:00",
   "item": [
     {
-      "id": "72107-6",
       "linkId": "MMSE",
       "text": "Mini-Mental State Examination [MMSE]",
       "item": [
         {
-          "id": "72106-8",
           "linkId": "MMSE/ToTalScore",
           "text": "Total score [MMSE]",
           "answer": [

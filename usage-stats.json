@@ -17,23 +17,24 @@
       "types": [
         "Reference"
       ]
+    },
+    {
+      "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/event-location",
+      "title": "ObservationEventLocation",
+      "types": [
+        "Reference"
+      ]
     }
   ],
   "profiles": {
-    "QuestionnaireResponse": [
-      {
-        "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
-        "title": "PACIO Cognition Questionnaire Response"
-      }
-    ],
     "Observation": [
       {
         "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc",
         "title": "PACIO Cognitive Status Collection"
       },
       {
-        "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
-        "title": "PACIO Prior Level of Cognitive Function"
+        "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-nhcs",
+        "title": "PACIO Narrative History of Cognitive Status"
       }
     ],
     "DeviceUseStatement": [
@@ -63,8 +64,8 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/event-location": [
-      "Observation"
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -88,6 +89,9 @@
       "Observation"
     ],
     "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/device-patient-used": [
+      "Observation"
+    ],
+    "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/event-location": [
       "Observation"
     ]
   }

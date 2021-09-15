@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+  <id value="CSC-SNF-BIMS-1-UseOfDevice-1"/>
+  <meta>
+    <profile value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>derivedFrom</b>: <a href="Observation-CSC-SNF-BIMS-1.html">Generated Summary: <span title="Codes: {http://paciowg.github.io/cognitive-status-ig/CodeSystem/pacio-cat-cs functioning}">Functioning</span>, <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span>; <span title="Codes: {http://loinc.org 52491-8}">Brief interview for mental status [BIMS]</span>; effective: Jul 11, 2020, 9:30:00 AM</a></p><p><b>recordedOn</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>source</b>: <a href="Practitioner-Practitioner-HoneyJones.html">Generated Summary: active; Honey Jones; gender: female</a></p><p><b>device</b>: <a href="Device-CMS-Device-1.html">Generated Summary: <span title="Codes: {http://snomed.info/sct 50121007}">Eye glasses, device (physical object)</span></a></p></div>
+  </text>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/patientBSJ1"/>
+  </subject>
+  <derivedFrom>
+    <reference value="Observation/CSC-SNF-BIMS-1"/>
+  </derivedFrom>
+  <recordedOn value="2020-07-11T11:30:00-05:00"/>
+  <source>
+    <reference value="Practitioner/Practitioner-HoneyJones"/>
+  </source>
+  <device>
+    <reference value="Device/CMS-Device-1"/>
+  </device>
+</DeviceUseStatement>

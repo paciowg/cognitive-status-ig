@@ -8,13 +8,6 @@
 <http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-BIMS-1> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-SNF-BIMS-1"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
-       fhir:index 0;
-       fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
-     ]
-  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>"
@@ -31,17 +24,14 @@
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "86529-5" ];
      fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3" ];
      fhir:QuestionnaireResponse.item.text [ fhir:value "MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]" ];
      fhir:QuestionnaireResponse.item.item [
        fhir:index 0;
-       fhir:Element.id [ fhir:value "52491-8" ];
        fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0200-C0500" ];
        fhir:QuestionnaireResponse.item.text [ fhir:value "Brief interview for mental status [BIMS]" ];
        fhir:QuestionnaireResponse.item.item [
          fhir:index 0;
-         fhir:Element.id [ fhir:value "52731-7" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0200" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Repetition of Three Words. Number of words repeated after first attempt" ];
          fhir:QuestionnaireResponse.item.answer [
@@ -53,12 +43,10 @@
          ]
        ], [
          fhir:index 1;
-         fhir:Element.id [ fhir:value "54510-3" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Temporal orientation (orientation to year, month, and day) [BIMS]" ];
          fhir:QuestionnaireResponse.item.item [
            fhir:index 0;
-           fhir:Element.id [ fhir:value "52732-5" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300A" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct year" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -70,7 +58,6 @@
            ]
          ], [
            fhir:index 1;
-           fhir:Element.id [ fhir:value "52733-3" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300B" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct month" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -82,7 +69,6 @@
            ]
          ], [
            fhir:index 2;
-           fhir:Element.id [ fhir:value "54609-3" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0300C" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct day of the week" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -95,12 +81,10 @@
          ]
        ], [
          fhir:index 2;
-         fhir:Element.id [ fhir:value "52493-4" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Recall [BIMS]" ];
          fhir:QuestionnaireResponse.item.item [
            fhir:index 0;
-           fhir:Element.id [ fhir:value "52735-8" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400A" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall 'sock'" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -112,7 +96,6 @@
            ]
          ], [
            fhir:index 1;
-           fhir:Element.id [ fhir:value "52736-6" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400B" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall 'blue'" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -124,7 +107,6 @@
            ]
          ], [
            fhir:index 2;
-           fhir:Element.id [ fhir:value "52737-4" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400C" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall 'bed'" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -137,7 +119,6 @@
          ]
        ], [
          fhir:index 3;
-         fhir:Element.id [ fhir:value "54614-3" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0500" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "BIMS Summary Score			{score}" ];
          fhir:QuestionnaireResponse.item.answer [

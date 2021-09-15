@@ -35,11 +35,11 @@
     "name": "DevicePatientUsed"
   },
   {
-    "id": "pacio-cognition-qr",
+    "id": "event-location",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr",
+    "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/event-location",
     "version": "0.1.0",
-    "name": "CognitionQuestionnaireResponse"
+    "name": "ObservationEventLocation"
   },
   {
     "id": "pacio-cs",
@@ -63,11 +63,11 @@
     "name": "CognitiveStatusCollection"
   },
   {
-    "id": "pacio-plcf",
+    "id": "pacio-nhcs",
     "type": "StructureDefinition",
-    "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf",
+    "url": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-nhcs",
     "version": "0.1.0",
-    "name": "PriorLevelOfCognitiveFunction"
+    "name": "NarrativeHistoryOfCognitiveStatus"
   },
   {
     "id": "pacio-cat-vs",

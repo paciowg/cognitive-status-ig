@@ -2,9 +2,6 @@
 
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="QResponse-Hospital-MOCA-2"/>
-  <meta>
-    <profile value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
-  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 10, 2020, 10:16:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MoCA</p><p><b>text</b>: Montreal Cognitive Assessment [MoCA]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MoCA/TotalScore</p><p><b>text</b>: MoCA</p></blockquote></blockquote></div>
   </text>
@@ -14,10 +11,10 @@
     <reference value="Patient/patientBSJ1"/>
   </subject>
   <authored value="2020-07-10T12:16:00-05:00"/>
-  <item id="72133-2">
+  <item>
     <linkId value="MoCA"/>
     <text value="Montreal Cognitive Assessment [MoCA]"/>
-    <item id="72172-0">
+    <item>
       <linkId value="MoCA/TotalScore"/>
       <text value="MoCA"/>
       <answer>

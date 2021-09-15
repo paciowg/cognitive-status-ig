@@ -1,11 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "QResponse-SNF-BIMS-1",
-  "meta": {
-    "profile": [
-      "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
-    ]
-  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>"
@@ -18,17 +13,14 @@
   "authored": "2020-07-11T11:30:00-05:00",
   "item": [
     {
-      "id": "86529-5",
       "linkId": "Section-3",
       "text": "MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]",
       "item": [
         {
-          "id": "52491-8",
           "linkId": "Section-3/C0200-C0500",
           "text": "Brief interview for mental status [BIMS]",
           "item": [
             {
-              "id": "52731-7",
               "linkId": "Section-3/C0200",
               "text": "Repetition of Three Words. Number of words repeated after first attempt",
               "answer": [
@@ -40,12 +32,10 @@
               ]
             },
             {
-              "id": "54510-3",
               "linkId": "Section-3/C0300",
               "text": "Temporal orientation (orientation to year, month, and day) [BIMS]",
               "item": [
                 {
-                  "id": "52732-5",
                   "linkId": "Section-3/C0300A",
                   "text": "Able to report correct year",
                   "answer": [
@@ -57,7 +47,6 @@
                   ]
                 },
                 {
-                  "id": "52733-3",
                   "linkId": "Section-3/C0300B",
                   "text": "Able to report correct month",
                   "answer": [
@@ -69,7 +58,6 @@
                   ]
                 },
                 {
-                  "id": "54609-3",
                   "linkId": "Section-3/C0300C",
                   "text": "Able to report correct day of the week",
                   "answer": [
@@ -83,12 +71,10 @@
               ]
             },
             {
-              "id": "52493-4",
               "linkId": "Section-3/C0400",
               "text": "Recall [BIMS]",
               "item": [
                 {
-                  "id": "52735-8",
                   "linkId": "Section-3/C0400A",
                   "text": "Able to recall 'sock'",
                   "answer": [
@@ -100,7 +86,6 @@
                   ]
                 },
                 {
-                  "id": "52736-6",
                   "linkId": "Section-3/C0400B",
                   "text": "Able to recall 'blue'",
                   "answer": [
@@ -112,7 +97,6 @@
                   ]
                 },
                 {
-                  "id": "52737-4",
                   "linkId": "Section-3/C0400C",
                   "text": "Able to recall 'bed'",
                   "answer": [
@@ -126,7 +110,6 @@
               ]
             },
             {
-              "id": "54614-3",
               "linkId": "Section-3/C0500",
               "text": "BIMS Summary Score\t\t\t{score}",
               "answer": [

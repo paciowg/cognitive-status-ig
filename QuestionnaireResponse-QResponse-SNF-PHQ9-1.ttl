@@ -8,13 +8,6 @@
 <http://paciowg.github.io/cognitive-status-ig/QuestionnaireResponse/QResponse-SNF-PHQ9-1> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "QResponse-SNF-PHQ9-1"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr";
-       fhir:index 0;
-       fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr>
-     ]
-  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: Total Severity Score			{score}</p></blockquote></blockquote></div>"
@@ -31,22 +24,18 @@
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "90482-1" ];
      fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4" ];
      fhir:QuestionnaireResponse.item.text [ fhir:value "MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]" ];
      fhir:QuestionnaireResponse.item.item [
        fhir:index 0;
-       fhir:Element.id [ fhir:value "54635-8" ];
        fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200" ];
        fhir:QuestionnaireResponse.item.text [ fhir:value "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]" ];
        fhir:QuestionnaireResponse.item.item [
          fhir:index 0;
-         fhir:Element.id [ fhir:value "86843-0" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200_1" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Resident mood interview (PHQ-9) - symptom presence in the last 2 weeks [CMS Assessment]" ];
          fhir:QuestionnaireResponse.item.item [
            fhir:index 0;
-           fhir:Element.id [ fhir:value "54636-6" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200A1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Little interest or pleasure in doing things" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -58,7 +47,6 @@
            ]
          ], [
            fhir:index 1;
-           fhir:Element.id [ fhir:value "54638-2" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200B1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling down" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -70,7 +58,6 @@
            ]
          ], [
            fhir:index 2;
-           fhir:Element.id [ fhir:value "54640-8" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200C1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble falling or staying asleep" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -82,7 +69,6 @@
            ]
          ], [
            fhir:index 3;
-           fhir:Element.id [ fhir:value "54642-4" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200D1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling tired or having little energy" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -94,7 +80,6 @@
            ]
          ], [
            fhir:index 4;
-           fhir:Element.id [ fhir:value "54644-0" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200E1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Poor appetite or overeating" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -106,7 +91,6 @@
            ]
          ], [
            fhir:index 5;
-           fhir:Element.id [ fhir:value "54646-5" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200F1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling bad about yourself - or that you are a failure or have let yourself or your family down" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -118,7 +102,6 @@
            ]
          ], [
            fhir:index 6;
-           fhir:Element.id [ fhir:value "54648-1" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200G1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble concentrating on things" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -130,7 +113,6 @@
            ]
          ], [
            fhir:index 7;
-           fhir:Element.id [ fhir:value "54650-7" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200H1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -142,7 +124,6 @@
            ]
          ], [
            fhir:index 8;
-           fhir:Element.id [ fhir:value "54652-3" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200I1" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -155,12 +136,10 @@
          ]
        ], [
          fhir:index 1;
-         fhir:Element.id [ fhir:value "86844-8" ];
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200_2" ];
          fhir:QuestionnaireResponse.item.text [ fhir:value "Resident mood interview (PHQ-9) - symptom frequency in the last 2 weeks [CMS Assessment]" ];
          fhir:QuestionnaireResponse.item.item [
            fhir:index 0;
-           fhir:Element.id [ fhir:value "54637-4" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200A2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Little interest or pleasure in doing things" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -172,7 +151,6 @@
            ]
          ], [
            fhir:index 1;
-           fhir:Element.id [ fhir:value "54639-0" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200B2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling down" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -184,7 +162,6 @@
            ]
          ], [
            fhir:index 2;
-           fhir:Element.id [ fhir:value "54641-6" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200C2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble falling or staying asleep" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -196,7 +173,6 @@
            ]
          ], [
            fhir:index 3;
-           fhir:Element.id [ fhir:value "54643-2" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200D2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling tired or having little energy" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -208,7 +184,6 @@
            ]
          ], [
            fhir:index 4;
-           fhir:Element.id [ fhir:value "54645-7" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200E2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Poor appetite or overeating" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -220,7 +195,6 @@
            ]
          ], [
            fhir:index 5;
-           fhir:Element.id [ fhir:value "54647-3" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200F2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling bad about yourself - or that you are a failure or have let yourself or your family down" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -232,7 +206,6 @@
            ]
          ], [
            fhir:index 6;
-           fhir:Element.id [ fhir:value "54649-9" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200G2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble concentrating on things" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -244,7 +217,6 @@
            ]
          ], [
            fhir:index 7;
-           fhir:Element.id [ fhir:value "54651-5" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200H2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -256,7 +228,6 @@
            ]
          ], [
            fhir:index 8;
-           fhir:Element.id [ fhir:value "54653-1" ];
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200I2" ];
            fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead" ];
            fhir:QuestionnaireResponse.item.answer [
@@ -270,7 +241,6 @@
        ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "54654-9" ];
        fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0300" ];
        fhir:QuestionnaireResponse.item.text [ fhir:value "Total Severity Score			{score}" ];
        fhir:QuestionnaireResponse.item.answer [

@@ -1,11 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "QResponse-Hospital-MOCA-1",
-  "meta": {
-    "profile": [
-      "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
-    ]
-  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 8, 2020, 3:32:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MoCA</p><p><b>text</b>: Montreal Cognitive Assessment [MoCA]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MoCA/TotalScore</p><p><b>text</b>: MoCA</p></blockquote></blockquote></div>"
@@ -18,12 +13,10 @@
   "authored": "2020-07-08T17:32:00-05:00",
   "item": [
     {
-      "id": "72133-2",
       "linkId": "MoCA",
       "text": "Montreal Cognitive Assessment [MoCA]",
       "item": [
         {
-          "id": "72172-0",
           "linkId": "MoCA/TotalScore",
           "text": "MoCA",
           "answer": [

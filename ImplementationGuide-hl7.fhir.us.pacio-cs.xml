@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-08-13T12:16:48-07:00"/>
+  <date value="2021-09-15T16:24:56-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -216,17 +216,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pacio-cognition-qr"/>
-      </reference>
-      <name value="PACIO Cognition Questionnaire Response"/>
-      <description value="A completed, or sections of a completed, CMS PAC assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/pacio-cs"/>
       </reference>
       <name value="PACIO Cognitive Status"/>
@@ -249,10 +238,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pacio-plcf"/>
+        <reference value="StructureDefinition/pacio-nhcs"/>
       </reference>
-      <name value="PACIO Prior Level of Cognitive Function"/>
-      <description value="An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of cognitive assessments. For formal assessments conducted with for example, an assessment instructment, use the Cognitive Status Collecction and Cognitive Status profiles to capture assessment data."/>
+      <name value="PACIO Narrative History of Cognitive Status"/>
+      <description value="An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of cognitive assessments. For formal assessments conducted with for example, an assessment instrument, use the Cognitive Status Collection and Cognitive Status profiles to capture assessment data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -274,7 +263,7 @@
         <reference value="StructureDefinition/assistance-required"/>
       </reference>
       <name value="AssistanceRequired"/>
-      <description value="Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person&#x2019;s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
+      <description value="Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -286,6 +275,17 @@
       </reference>
       <name value="DevicePatientUsed"/>
       <description value="Associated with the Cognitive Status Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during a functional status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/event-location"/>
+      </reference>
+      <name value="ObservationEventLocation"/>
+      <description value="This extension is used to indicate the principal physical location where an observation event occurred."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -315,11 +315,31 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/BSJ-Prior-Level-Of-Cognitive-Function-1"/>
+        <reference value="Observation/BSJ-Narrative-History-Cognitive-Status-1"/>
       </reference>
-      <name value="BSJ-Prior-Level-Of-Cognitive-Function-1"/>
-      <description value="An instance of PriorLevelOfCognitiveFunction"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-plcf"/>
+      <name value="BSJ-Narrative-History-Cognitive-Status-1"/>
+      <description value="An instance of NarrativeHistoryOfCognitiveStatus"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-nhcs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/CMS-Device-1"/>
+      </reference>
+      <name value="CMS-Device-1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/CMS-Device-2"/>
+      </reference>
+      <name value="CMS-Device-2"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -406,28 +426,6 @@
         <reference value="Observation/CSC-Hospital-MOCA-2-Ob-Question-2"/>
       </reference>
       <name value="CSC-Hospital-MOCA-2-Ob-Question-2"/>
-      <description value="An instance of CognitiveStatus"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CSC-SNF-BCAT-1"/>
-      </reference>
-      <name value="CSC-SNF-BCAT-1"/>
-      <description value="An instance of CognitiveStatusCollection"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CSC-SNF-BCAT-1-Ob-Question-30"/>
-      </reference>
-      <name value="CSC-SNF-BCAT-1-Ob-Question-30"/>
       <description value="An instance of CognitiveStatus"/>
       <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
@@ -529,6 +527,26 @@
       <name value="CSC-SNF-BIMS-1-Ob-Question-9"/>
       <description value="An instance of CognitiveStatus"/>
       <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-1"/>
+      </reference>
+      <name value="CSC-SNF-BIMS-1-UseOfDevice-1"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-2"/>
+      </reference>
+      <name value="CSC-SNF-BIMS-1-UseOfDevice-2"/>
+      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -923,8 +941,8 @@
         <reference value="QuestionnaireResponse/QResponse-Hospital-MMSE-1"/>
       </reference>
       <name value="QResponse-Hospital-MMSE-1"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -934,8 +952,8 @@
         <reference value="QuestionnaireResponse/QResponse-Hospital-MMSE-2"/>
       </reference>
       <name value="QResponse-Hospital-MMSE-2"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -945,8 +963,8 @@
         <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA-1"/>
       </reference>
       <name value="QResponse-Hospital-MOCA-1"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -956,19 +974,8 @@
         <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA-2"/>
       </reference>
       <name value="QResponse-Hospital-MOCA-2"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/QResponse-SNF-BCAT-1"/>
-      </reference>
-      <name value="QResponse-SNF-BCAT-1"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -978,8 +985,8 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-BIMS-1"/>
       </reference>
       <name value="QResponse-SNF-BIMS-1"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -989,8 +996,8 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-CAM-Admission-1"/>
       </reference>
       <name value="QResponse-SNF-CAM-Admission-1"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of SDC QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1000,8 +1007,8 @@
         <reference value="QuestionnaireResponse/QResponse-SNF-PHQ9-1"/>
       </reference>
       <name value="QResponse-SNF-PHQ9-1"/>
-      <description value="An instance of CognitionQuestionnaireResponse"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
+      <description value="An instance of QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

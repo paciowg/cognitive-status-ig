@@ -193,15 +193,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-pacio-cognition-qr.html"
-                     title="StructureDefinition/pacio-cognition-qr">PACIO Cognition Questionnaire Response</a>
-               </td>
-               <td>
-<p>A completed, or sections of a completed, CMS PAC assessment.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-pacio-cs.html"
                      title="StructureDefinition/pacio-cs">PACIO Cognitive Status</a>
                </td>
@@ -220,11 +211,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-pacio-plcf.html"
-                     title="StructureDefinition/pacio-plcf">PACIO Prior Level of Cognitive Function</a>
+                  <a href="StructureDefinition-pacio-nhcs.html"
+                     title="StructureDefinition/pacio-nhcs">PACIO Narrative History of Cognitive Status</a>
                </td>
                <td>
-<p>An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of cognitive assessments. For formal assessments conducted with for example, an assessment instructment, use the Cognitive Status Collecction and Cognitive Status profiles to capture assessment data.</p>
+<p>An exchange of summary observation regarding the most recent prior level of cognitive function immediately preceding the current admission, illness, or exacerbation for a patient. The use of this profile is encouraged in the absence of formal prior level of cognitive assessments. For formal assessments conducted with for example, an assessment instrument, use the Cognitive Status Collection and Cognitive Status profiles to capture assessment data.</p>
 </td>
             </tr>
             <tr>
@@ -264,6 +255,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Associated with the Cognitive Status Collection profile to point to a record indicating what healthcare-related assistive device was used by a patient during a functional status assessment. This extension leverages the DeviceUseStatement resource instead of Device resource so as to indicate appropriately a record of assistive device usage by a patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-event-location.html"
+                     title="StructureDefinition/event-location">ObservationEventLocation</a>
+               </td>
+               <td>
+<p>This extension is used to indicate the principal physical location where an observation event occurred.</p>
 </td>
             </tr>
          </tbody>
@@ -320,11 +320,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-BSJ-Prior-Level-Of-Cognitive-Function-1.html"
-                     title="Observation/BSJ-Prior-Level-Of-Cognitive-Function-1">BSJ-Prior-Level-Of-Cognitive-Function-1</a>
+                  <a href="Observation-BSJ-Narrative-History-Cognitive-Status-1.html"
+                     title="Observation/BSJ-Narrative-History-Cognitive-Status-1">BSJ-Narrative-History-Cognitive-Status-1</a>
                </td>
                <td>
-<p>An instance of PriorLevelOfCognitiveFunction</p>
+<p>An instance of NarrativeHistoryOfCognitiveStatus</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-CMS-Device-1.html" title="Device/CMS-Device-1">CMS-Device-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-CMS-Device-2.html" title="Device/CMS-Device-2">CMS-Device-2</a>
+               </td>
+               <td>
+
 </td>
             </tr>
             <tr>
@@ -394,24 +410,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="Observation-CSC-Hospital-MOCA-2-Ob-Question-2.html"
                      title="Observation/CSC-Hospital-MOCA-2-Ob-Question-2">CSC-Hospital-MOCA-2-Ob-Question-2</a>
-               </td>
-               <td>
-<p>An instance of CognitiveStatus</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-CSC-SNF-BCAT-1.html"
-                     title="Observation/CSC-SNF-BCAT-1">CSC-SNF-BCAT-1</a>
-               </td>
-               <td>
-<p>An instance of CognitiveStatusCollection</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-CSC-SNF-BCAT-1-Ob-Question-30.html"
-                     title="Observation/CSC-SNF-BCAT-1-Ob-Question-30">CSC-SNF-BCAT-1-Ob-Question-30</a>
                </td>
                <td>
 <p>An instance of CognitiveStatus</p>
@@ -496,6 +494,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>An instance of CognitiveStatus</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-1.html"
+                     title="DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-1">CSC-SNF-BIMS-1-UseOfDevice-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-2.html"
+                     title="DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-2">CSC-SNF-BIMS-1-UseOfDevice-2</a>
+               </td>
+               <td>
+
 </td>
             </tr>
             <tr>
@@ -813,7 +829,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-Hospital-MMSE-1">QResponse-Hospital-MMSE-1</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -822,7 +838,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-Hospital-MMSE-2">QResponse-Hospital-MMSE-2</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -831,7 +847,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-Hospital-MOCA-1">QResponse-Hospital-MOCA-1</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -840,16 +856,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-Hospital-MOCA-2">QResponse-Hospital-MOCA-2</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-QResponse-SNF-BCAT-1.html"
-                     title="QuestionnaireResponse/QResponse-SNF-BCAT-1">QResponse-SNF-BCAT-1</a>
-               </td>
-               <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -858,7 +865,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-SNF-BIMS-1">QResponse-SNF-BIMS-1</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -867,7 +874,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-SNF-CAM-Admission-1">QResponse-SNF-CAM-Admission-1</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of SDC QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -876,7 +883,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="QuestionnaireResponse/QResponse-SNF-PHQ9-1">QResponse-SNF-PHQ9-1</a>
                </td>
                <td>
-<p>An instance of CognitionQuestionnaireResponse</p>
+<p>An instance of QuestionnaireResponse</p>
 </td>
             </tr>
             <tr>
@@ -995,7 +1002,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 13, 2021 12:16-0700">2021-08-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientcare">HL7 Patient Care Work Group</a>.  Package hl7.fhir.us.pacio-cs#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 15, 2021 16:24-0700">2021-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -2,9 +2,6 @@
 
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="QResponse-Hospital-MMSE-1"/>
-  <meta>
-    <profile value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"/>
-  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 8, 2020, 3:32:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE</p><p><b>text</b>: Mini-Mental State Examination [MMSE]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE/ToTalScore</p><p><b>text</b>: Total score [MMSE]</p></blockquote></blockquote></div>
   </text>
@@ -14,10 +11,10 @@
     <reference value="Patient/patientBSJ1"/>
   </subject>
   <authored value="2020-07-08T17:32:00-05:00"/>
-  <item id="72107-6">
+  <item>
     <linkId value="MMSE"/>
     <text value="Mini-Mental State Examination [MMSE]"/>
-    <item id="72106-8">
+    <item>
       <linkId value="MMSE/ToTalScore"/>
       <text value="Total score [MMSE]"/>
       <answer>

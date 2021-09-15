@@ -1,11 +1,6 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "QResponse-SNF-PHQ9-1",
-  "meta": {
-    "profile": [
-      "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cognition-qr"
-    ]
-  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: Total Severity Score\t\t\t{score}</p></blockquote></blockquote></div>"
@@ -18,22 +13,18 @@
   "authored": "2020-07-11T11:30:00-05:00",
   "item": [
     {
-      "id": "90482-1",
       "linkId": "Section-4",
       "text": "MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]",
       "item": [
         {
-          "id": "54635-8",
           "linkId": "Section-4/D0200",
           "text": "Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]",
           "item": [
             {
-              "id": "86843-0",
               "linkId": "Section-4/D0200_1",
               "text": "Resident mood interview (PHQ-9) - symptom presence in the last 2 weeks [CMS Assessment]",
               "item": [
                 {
-                  "id": "54636-6",
                   "linkId": "Section-4/D0200A1",
                   "text": "Little interest or pleasure in doing things",
                   "answer": [
@@ -45,7 +36,6 @@
                   ]
                 },
                 {
-                  "id": "54638-2",
                   "linkId": "Section-4/D0200B1",
                   "text": "Feeling down",
                   "answer": [
@@ -57,7 +47,6 @@
                   ]
                 },
                 {
-                  "id": "54640-8",
                   "linkId": "Section-4/D0200C1",
                   "text": "Trouble falling or staying asleep",
                   "answer": [
@@ -69,7 +58,6 @@
                   ]
                 },
                 {
-                  "id": "54642-4",
                   "linkId": "Section-4/D0200D1",
                   "text": "Feeling tired or having little energy",
                   "answer": [
@@ -81,7 +69,6 @@
                   ]
                 },
                 {
-                  "id": "54644-0",
                   "linkId": "Section-4/D0200E1",
                   "text": "Poor appetite or overeating",
                   "answer": [
@@ -93,7 +80,6 @@
                   ]
                 },
                 {
-                  "id": "54646-5",
                   "linkId": "Section-4/D0200F1",
                   "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
                   "answer": [
@@ -105,7 +91,6 @@
                   ]
                 },
                 {
-                  "id": "54648-1",
                   "linkId": "Section-4/D0200G1",
                   "text": "Trouble concentrating on things",
                   "answer": [
@@ -117,7 +102,6 @@
                   ]
                 },
                 {
-                  "id": "54650-7",
                   "linkId": "Section-4/D0200H1",
                   "text": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
                   "answer": [
@@ -129,7 +113,6 @@
                   ]
                 },
                 {
-                  "id": "54652-3",
                   "linkId": "Section-4/D0200I1",
                   "text": "Thoughts that you would be better off dead",
                   "answer": [
@@ -143,12 +126,10 @@
               ]
             },
             {
-              "id": "86844-8",
               "linkId": "Section-4/D0200_2",
               "text": "Resident mood interview (PHQ-9) - symptom frequency in the last 2 weeks [CMS Assessment]",
               "item": [
                 {
-                  "id": "54637-4",
                   "linkId": "Section-4/D0200A2",
                   "text": "Little interest or pleasure in doing things",
                   "answer": [
@@ -160,7 +141,6 @@
                   ]
                 },
                 {
-                  "id": "54639-0",
                   "linkId": "Section-4/D0200B2",
                   "text": "Feeling down",
                   "answer": [
@@ -172,7 +152,6 @@
                   ]
                 },
                 {
-                  "id": "54641-6",
                   "linkId": "Section-4/D0200C2",
                   "text": "Trouble falling or staying asleep",
                   "answer": [
@@ -184,7 +163,6 @@
                   ]
                 },
                 {
-                  "id": "54643-2",
                   "linkId": "Section-4/D0200D2",
                   "text": "Feeling tired or having little energy",
                   "answer": [
@@ -196,7 +174,6 @@
                   ]
                 },
                 {
-                  "id": "54645-7",
                   "linkId": "Section-4/D0200E2",
                   "text": "Poor appetite or overeating",
                   "answer": [
@@ -208,7 +185,6 @@
                   ]
                 },
                 {
-                  "id": "54647-3",
                   "linkId": "Section-4/D0200F2",
                   "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
                   "answer": [
@@ -220,7 +196,6 @@
                   ]
                 },
                 {
-                  "id": "54649-9",
                   "linkId": "Section-4/D0200G2",
                   "text": "Trouble concentrating on things",
                   "answer": [
@@ -232,7 +207,6 @@
                   ]
                 },
                 {
-                  "id": "54651-5",
                   "linkId": "Section-4/D0200H2",
                   "text": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
                   "answer": [
@@ -244,7 +218,6 @@
                   ]
                 },
                 {
-                  "id": "54653-1",
                   "linkId": "Section-4/D0200I2",
                   "text": "Thoughts that you would be better off dead",
                   "answer": [
@@ -260,7 +233,6 @@
           ]
         },
         {
-          "id": "54654-9",
           "linkId": "Section-4/D0300",
           "text": "Total Severity Score\t\t\t{score}",
           "answer": [
