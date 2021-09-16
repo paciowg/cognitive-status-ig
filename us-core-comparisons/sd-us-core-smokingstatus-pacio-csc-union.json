@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "cda8ef6a-6d8f-4567-a83d-ec5b7333b8c5-95",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cda8ef6a-6d8f-4567-a83d-ec5b7333b8c5-95",
+  "id" : "d328747a-40e1-494b-a9a7-924e4ebc69b8-95",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d328747a-40e1-494b-a9a7-924e4ebc69b8-95",
   "name" : "UnionUSCoreSmokingStatusProfileAndCognitiveStatusCollection",
   "title" : "Union of US Core Smoking Status Observation Profile And PACIO Cognitive Status Collection",
   "status" : "active",
-  "date" : "2021-09-15T21:08:44-07:00",
+  "date" : "2021-09-16T08:49:42-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -474,7 +474,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "Codes providing the status of an observation.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cda8ef6a-6d8f-4567-a83d-ec5b7333b8c5-47"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d328747a-40e1-494b-a9a7-924e4ebc69b8-47"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -562,7 +562,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cda8ef6a-6d8f-4567-a83d-ec5b7333b8c5-50"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d328747a-40e1-494b-a9a7-924e4ebc69b8-50"
       },
       "mapping" : [{
         "identity" : "workflow",
