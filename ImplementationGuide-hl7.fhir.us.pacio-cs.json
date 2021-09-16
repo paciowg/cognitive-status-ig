@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-09-15T16:24:56-07:00",
+  "date": "2021-09-15T21:08:33-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -61,7 +61,7 @@
       "id": "hl7_fhir_us_core",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.0"
+      "version": "3.1.1"
     }
   ],
   "definition": {
@@ -479,6 +479,7 @@
           "reference": "Device/CMS-Device-1"
         },
         "name": "CMS-Device-1",
+        "description": "An instance of Device",
         "exampleBoolean": true
       },
       {
@@ -492,6 +493,7 @@
           "reference": "Device/CMS-Device-2"
         },
         "name": "CMS-Device-2",
+        "description": "An instance of Device",
         "exampleBoolean": true
       },
       {
@@ -743,6 +745,7 @@
           "reference": "DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-1"
         },
         "name": "CSC-SNF-BIMS-1-UseOfDevice-1",
+        "description": "An instance of UseOfDevice",
         "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev"
       },
       {
@@ -756,6 +759,7 @@
           "reference": "DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-2"
         },
         "name": "CSC-SNF-BIMS-1-UseOfDevice-2",
+        "description": "An instance of UseOfDevice",
         "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev"
       },
       {

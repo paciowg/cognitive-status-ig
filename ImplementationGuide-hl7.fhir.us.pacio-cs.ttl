@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PACIOCognitiveStatusImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "PACIO Cognitive Status Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-09-15T16:24:56-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-09-15T21:08:33-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -67,7 +67,7 @@
        fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.1" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -466,6 +466,7 @@
          fhir:Reference.reference [ fhir:value "Device/CMS-Device-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CMS-Device-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 11;
@@ -479,6 +480,7 @@
          fhir:Reference.reference [ fhir:value "Device/CMS-Device-2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CMS-Device-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of Device" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 12;
@@ -781,6 +783,7 @@
          fhir:Reference.reference [ fhir:value "DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CSC-SNF-BIMS-1-UseOfDevice-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of UseOfDevice" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev";
          fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev>
@@ -797,6 +800,7 @@
          fhir:Reference.reference [ fhir:value "DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CSC-SNF-BIMS-1-UseOfDevice-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An instance of UseOfDevice" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev";
          fhir:link <http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs-dev>

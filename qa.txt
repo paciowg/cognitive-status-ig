@@ -1,11 +1,11 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 17, info = 41
+err = 0, warn = 6, info = 41
 IG Publisher Version: 1.1.80
-Generated Wed Sep 15 16:27:08 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+Generated Wed Sep 15 21:09:54 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
 
- Build Errors : 0 / 5 / 0
+ Build Errors : 0 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/codesystem-pacio-cat-cs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/device-CMS-Device-1 : 0 / 0 / 1
@@ -93,10 +93,6 @@ Generated Wed Sep 15 16:27:08 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/input/resources/capabilitystatement-pacio-cs-cap : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/CMS-Device-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/CMS-Device-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pacio-cs.json ==
 == fsh-generated/resources/codesystem-pacio-cat-cs.json ==
@@ -209,19 +205,12 @@ INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-29: Observation.category[1]:
 == fsh-generated/resources/practitionerrole-provider-role-neurologist.json ==
 == fsh-generated/resources/practitionerrole-provider-role-pcp.json ==
 == fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MMSE-1.json ==
-WARNING: QuestionnaireResponse/QResponse-Hospital-MMSE-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MMSE-2.json ==
-WARNING: QuestionnaireResponse/QResponse-Hospital-MMSE-2: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MOCA-1.json ==
-WARNING: QuestionnaireResponse/QResponse-Hospital-MOCA-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MOCA-2.json ==
-WARNING: QuestionnaireResponse/QResponse-Hospital-MOCA-2: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/questionnaireresponse-QResponse-SNF-BIMS-1.json ==
-WARNING: QuestionnaireResponse/QResponse-SNF-BIMS-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/questionnaireresponse-QResponse-SNF-CAM-Admission-1.json ==
-WARNING: QuestionnaireResponse/QResponse-SNF-CAM-Admission-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/questionnaireresponse-QResponse-SNF-PHQ9-1.json ==
-WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/structuredefinition-assistance-required.json ==
 WARNING: StructureDefinition/assistance-required: StructureDefinition.differential.element[3].binding: The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition/assistance-required: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
