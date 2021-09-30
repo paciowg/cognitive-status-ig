@@ -1,9 +1,9 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 6, info = 0
+err = 0, warn = 8, info = 0
 IG Publisher Version: 1.1.81
-Generated Wed Sep 29 17:19:22 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
+Generated Thu Sep 30 07:47:36 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
  Build Errors : 0 / 1 / 0
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/CodeSystem-pacio-cat-cs : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Device-CMS-Device-1 : 0 / 0 / 1
@@ -153,16 +153,18 @@ WARNING: The jira specification file appears to be out of date with the versions
 == fsh-generated/resources/PractitionerRole-provider-role-neurologist.json ==
 == fsh-generated/resources/PractitionerRole-provider-role-pcp.json ==
 == fsh-generated/resources/QuestionnaireResponse-QResponse-Hospital-MMSE-1.json ==
-WARNING: QuestionnaireResponse/QResponse-Hospital-MMSE-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+WARNING: QuestionnaireResponse/QResponse-Hospital-MMSE-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/QuestionnaireResponse-QResponse-Hospital-MOCA-1.json ==
-WARNING: QuestionnaireResponse/QResponse-Hospital-MOCA-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+WARNING: QuestionnaireResponse/QResponse-Hospital-MOCA-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-BIMS-1.json ==
-WARNING: QuestionnaireResponse/QResponse-SNF-BIMS-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+WARNING: QuestionnaireResponse/QResponse-SNF-BIMS-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.json ==
-WARNING: QuestionnaireResponse/QResponse-SNF-CAM-Admission-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+WARNING: QuestionnaireResponse/QResponse-SNF-CAM-Admission-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-PHQ9-1.json ==
-WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/StructureDefinition-assistance-required.json ==
+WARNING: StructureDefinition/assistance-required: StructureDefinition.differential.element[3].binding: The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/assistance-required: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://loinc.org/vs/LL4309-2 on element Extension.value[x] could not be resolved
 == fsh-generated/resources/StructureDefinition-device-patient-used.json ==
 == fsh-generated/resources/StructureDefinition-event-location.json ==
 == fsh-generated/resources/StructureDefinition-pacio-cs.json ==

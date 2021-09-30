@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "PACIOFunctioningCategoryCS"];
   fhir:CodeSystem.title [ fhir:value "PACIO Functioning Category Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-09-29T17:17:11-07:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-09-30T07:46:12-07:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;

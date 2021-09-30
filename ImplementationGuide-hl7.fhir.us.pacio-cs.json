@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-09-29T17:17:11-07:00",
+  "date": "2021-09-30T07:46:12-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -127,6 +127,19 @@
           {
             "url": "value",
             "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-expansion-params"
+          },
+          {
+            "url": "value",
+            "valueString": "../../input/_resources/terminology-settings.json"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

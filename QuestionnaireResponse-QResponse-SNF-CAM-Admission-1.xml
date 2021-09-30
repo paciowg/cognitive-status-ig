@@ -3,9 +3,9 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="QResponse-SNF-CAM-Admission-1"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Apr 9, 2020, 4:00:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C1310</p><p><b>text</b>: Signs and Symptoms of Delirium (from CAM)</p></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Apr 9, 2020, 4:00:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: Cognitive Patterns</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C1310</p><p><b>text</b>: Signs and Symptoms of Delirium (from CAM)</p></blockquote></blockquote></div>
   </text>
-  <questionnaire value="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml"/>
+  <questionnaire value="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17"/>
   <status value="completed"/>
   <subject>
     <reference value="Patient/patientBSJ1"/>
