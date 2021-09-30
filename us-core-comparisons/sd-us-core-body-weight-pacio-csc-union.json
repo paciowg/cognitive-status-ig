@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d328747a-40e1-494b-a9a7-924e4ebc69b8-77",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d328747a-40e1-494b-a9a7-924e4ebc69b8-77",
+  "id" : "346a1188-8f34-4a94-a2b2-e641303bd198-77",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/346a1188-8f34-4a94-a2b2-e641303bd198-77",
   "name" : "UnionUSCoreBodyWeightProfileAndCognitiveStatusCollection",
   "title" : "Union of US Core Body Weight Profile And PACIO Cognitive Status Collection",
   "status" : "active",
-  "date" : "2021-09-16T08:49:42-07:00",
+  "date" : "2021-09-29T17:17:25-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -562,7 +562,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d328747a-40e1-494b-a9a7-924e4ebc69b8-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/346a1188-8f34-4a94-a2b2-e641303bd198-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1756,7 +1756,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: The vital sign codes from the base FHIR and US Core Vital Signs.; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d328747a-40e1-494b-a9a7-924e4ebc69b8-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/346a1188-8f34-4a94-a2b2-e641303bd198-5"
       },
       "mapping" : [{
         "identity" : "w5",

@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -10,11 +11,11 @@
   fhir:Resource.id [ fhir:value "QResponse-SNF-PHQ9-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: Total Severity Score			{score}</p></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml\">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>author</b>: <a href=\"PractitionerRole-Role-SLP-LunaBaskins.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: PHQ-9 Total Score</p></blockquote></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.questionnaire [
-     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
-     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+     fhir:value "http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml";
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml>
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
@@ -22,6 +23,10 @@
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.author [
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP-LunaBaskins>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP-LunaBaskins" ]
+  ];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
      fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4" ];
@@ -40,9 +45,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Little interest or pleasure in doing things" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-11>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-11" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA33-6;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA33-6" ];
+               fhir:Coding.display [ fhir:value "Yes" ]
              ]
            ]
          ], [
@@ -51,9 +58,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling down" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-13>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-13" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA33-6;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA33-6" ];
+               fhir:Coding.display [ fhir:value "Yes" ]
              ]
            ]
          ], [
@@ -62,9 +71,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble falling or staying asleep" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-15>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-15" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA33-6;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA33-6" ];
+               fhir:Coding.display [ fhir:value "Yes" ]
              ]
            ]
          ], [
@@ -73,9 +84,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling tired or having little energy" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-17>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-17" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA32-8;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA32-8" ];
+               fhir:Coding.display [ fhir:value "No" ]
              ]
            ]
          ], [
@@ -84,9 +97,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Poor appetite or overeating" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-19>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-19" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA32-8;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA32-8" ];
+               fhir:Coding.display [ fhir:value "No" ]
              ]
            ]
          ], [
@@ -95,9 +110,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling bad about yourself - or that you are a failure or have let yourself or your family down" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-21>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-21" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA32-8;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA32-8" ];
+               fhir:Coding.display [ fhir:value "No" ]
              ]
            ]
          ], [
@@ -106,9 +123,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble concentrating on things" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-23>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-23" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA32-8;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA32-8" ];
+               fhir:Coding.display [ fhir:value "No" ]
              ]
            ]
          ], [
@@ -117,9 +136,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-25>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-25" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA32-8;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA32-8" ];
+               fhir:Coding.display [ fhir:value "No" ]
              ]
            ]
          ], [
@@ -128,9 +149,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-27>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-27" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10996-9;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10996-9" ];
+               fhir:Coding.display [ fhir:value "No response" ]
              ]
            ]
          ]
@@ -144,9 +167,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Little interest or pleasure in doing things" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-12>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-12" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10998-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10998-5" ];
+               fhir:Coding.display [ fhir:value "2-6 days (several days)" ]
              ]
            ]
          ], [
@@ -155,9 +180,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling down" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-14>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-14" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10998-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10998-5" ];
+               fhir:Coding.display [ fhir:value "2-6 days (several days)" ]
              ]
            ]
          ], [
@@ -166,9 +193,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble falling or staying asleep" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-16>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-16" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10998-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10998-5" ];
+               fhir:Coding.display [ fhir:value "2-6 days (several days)" ]
              ]
            ]
          ], [
@@ -177,9 +206,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling tired or having little energy" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-18>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-18" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10997-7;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10997-7" ];
+               fhir:Coding.display [ fhir:value "Never or 1 day" ]
              ]
            ]
          ], [
@@ -188,9 +219,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Poor appetite or overeating" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-20>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-20" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10997-7;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10997-7" ];
+               fhir:Coding.display [ fhir:value "Never or 1 day" ]
              ]
            ]
          ], [
@@ -199,9 +232,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Feeling bad about yourself - or that you are a failure or have let yourself or your family down" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-22>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-22" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10997-7;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10997-7" ];
+               fhir:Coding.display [ fhir:value "Never or 1 day" ]
              ]
            ]
          ], [
@@ -210,9 +245,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Trouble concentrating on things" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-24>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-24" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10997-7;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10997-7" ];
+               fhir:Coding.display [ fhir:value "Never or 1 day" ]
              ]
            ]
          ], [
@@ -221,33 +258,29 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-26>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-26" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10997-7;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10997-7" ];
+               fhir:Coding.display [ fhir:value "Never or 1 day" ]
              ]
            ]
          ], [
            fhir:index 8;
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0200I2" ];
-           fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead" ];
-           fhir:QuestionnaireResponse.item.answer [
-             fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-28>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-28" ]
-             ]
-           ]
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Thoughts that you would be better off dead" ]
          ]
        ]
      ], [
        fhir:index 1;
        fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-4/D0300" ];
-       fhir:QuestionnaireResponse.item.text [ fhir:value "Total Severity Score			{score}" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "PHQ-9 Total Score" ];
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
-         fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-PHQ9-1-Ob-Question-29>;
-           fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-PHQ9-1-Ob-Question-29" ]
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ];
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+           fhir:Quantity.code [ fhir:value "{score}" ]
          ]
        ]
      ]

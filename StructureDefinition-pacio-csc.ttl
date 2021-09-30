@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "CognitiveStatusCollection"];
   fhir:StructureDefinition.title [ fhir:value "PACIO Cognitive Status Collection"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-16T08:49:25-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-29T17:17:11-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Patient Care Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

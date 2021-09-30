@@ -52,7 +52,7 @@
   <name value="NarrativeHistoryOfCognitiveStatus"/>
   <title value="PACIO Narrative History of Cognitive Status"/>
   <status value="active"/>
-  <date value="2021-09-16T08:49:25-07:00"/>
+  <date value="2021-09-29T17:17:11-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -474,7 +474,7 @@
       <path value="Observation.extension"/>
       <sliceName value="assistance-required"/>
       <short value="An extension to indicate the level of assistance required for a patient during an assessment."/>
-      <definition value="Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
+      <definition value="Associated with the Narrative History of Cognitive Status profile to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
       <min value="0"/>
       <max value="1"/>
       <base>

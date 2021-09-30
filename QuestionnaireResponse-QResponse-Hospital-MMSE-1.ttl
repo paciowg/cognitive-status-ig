@@ -10,11 +10,11 @@
   fhir:Resource.id [ fhir:value "QResponse-Hospital-MMSE-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 8, 2020, 3:32:00 PM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE</p><p><b>text</b>: Mini-Mental State Examination [MMSE]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE/ToTalScore</p><p><b>text</b>: Total score [MMSE]</p></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml\">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 8, 2020, 3:32:00 PM</p><p><b>author</b>: <a href=\"PractitionerRole-Role-SLP-JennyGlass.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE</p><p><b>text</b>: Mini-Mental State Examination [MMSE]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: MMSE/ToTalScore</p><p><b>text</b>: MMSE Total Score</p></blockquote></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.questionnaire [
-     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
-     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+     fhir:value "http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml";
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml>
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
@@ -22,6 +22,10 @@
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-08T17:32:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.author [
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP-JennyGlass>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP-JennyGlass" ]
+  ];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
      fhir:QuestionnaireResponse.item.linkId [ fhir:value "MMSE" ];
@@ -29,12 +33,13 @@
      fhir:QuestionnaireResponse.item.item [
        fhir:index 0;
        fhir:QuestionnaireResponse.item.linkId [ fhir:value "MMSE/ToTalScore" ];
-       fhir:QuestionnaireResponse.item.text [ fhir:value "Total score [MMSE]" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "MMSE Total Score" ];
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
-         fhir:QuestionnaireResponse.item.answer.valueReference [
-           fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-Hospital-MMSE-1-Ob-Question-31>;
-           fhir:Reference.reference [ fhir:value "Observation/CSC-Hospital-MMSE-1-Ob-Question-31" ]
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ];
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+           fhir:Quantity.code [ fhir:value "{score}" ]
          ]
        ]
      ]

@@ -3,14 +3,17 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="QResponse-SNF-PHQ9-1"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: Total Severity Score			{score}</p></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>author</b>: <a href="PractitionerRole-Role-SLP-LunaBaskins.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: PHQ-9 Total Score</p></blockquote></blockquote></div>
   </text>
-  <questionnaire value="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17"/>
+  <questionnaire value="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml"/>
   <status value="completed"/>
   <subject>
     <reference value="Patient/patientBSJ1"/>
   </subject>
   <authored value="2020-07-11T11:30:00-05:00"/>
+  <author>
+    <reference value="PractitionerRole/Role-SLP-LunaBaskins"/>
+  </author>
   <item>
     <linkId value="Section-4"/>
     <text value="MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]"/>
@@ -24,81 +27,99 @@
           <linkId value="Section-4/D0200A1"/>
           <text value="Little interest or pleasure in doing things"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-11"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA33-6"/>
+              <display value="Yes"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200B1"/>
           <text value="Feeling down"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-13"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA33-6"/>
+              <display value="Yes"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200C1"/>
           <text value="Trouble falling or staying asleep"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-15"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA33-6"/>
+              <display value="Yes"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200D1"/>
           <text value="Feeling tired or having little energy"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-17"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA32-8"/>
+              <display value="No"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200E1"/>
           <text value="Poor appetite or overeating"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-19"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA32-8"/>
+              <display value="No"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200F1"/>
           <text value="Feeling bad about yourself - or that you are a failure or have let yourself or your family down"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-21"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA32-8"/>
+              <display value="No"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200G1"/>
           <text value="Trouble concentrating on things"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-23"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA32-8"/>
+              <display value="No"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200H1"/>
           <text value="Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-25"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA32-8"/>
+              <display value="No"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200I1"/>
           <text value="Thoughts that you would be better off dead"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-27"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10996-9"/>
+              <display value="No response"/>
+            </valueCoding>
           </answer>
         </item>
       </item>
@@ -109,92 +130,105 @@
           <linkId value="Section-4/D0200A2"/>
           <text value="Little interest or pleasure in doing things"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-12"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10998-5"/>
+              <display value="2-6 days (several days)"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200B2"/>
           <text value="Feeling down"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-14"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10998-5"/>
+              <display value="2-6 days (several days)"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200C2"/>
           <text value="Trouble falling or staying asleep"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-16"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10998-5"/>
+              <display value="2-6 days (several days)"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200D2"/>
           <text value="Feeling tired or having little energy"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-18"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10997-7"/>
+              <display value="Never or 1 day"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200E2"/>
           <text value="Poor appetite or overeating"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-20"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10997-7"/>
+              <display value="Never or 1 day"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200F2"/>
           <text value="Feeling bad about yourself - or that you are a failure or have let yourself or your family down"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-22"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10997-7"/>
+              <display value="Never or 1 day"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200G2"/>
           <text value="Trouble concentrating on things"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-24"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10997-7"/>
+              <display value="Never or 1 day"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200H2"/>
           <text value="Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-26"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10997-7"/>
+              <display value="Never or 1 day"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-4/D0200I2"/>
           <text value="Thoughts that you would be better off dead"/>
-          <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-28"/>
-            </valueReference>
-          </answer>
         </item>
       </item>
     </item>
     <item>
       <linkId value="Section-4/D0300"/>
-      <text value="Total Severity Score&#x9;&#x9;&#x9;{score}"/>
+      <text value="PHQ-9 Total Score"/>
       <answer>
-        <valueReference>
-          <reference value="Observation/CSC-SNF-PHQ9-1-Ob-Question-29"/>
-        </valueReference>
+        <valueQuantity>
+          <value value="3"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="{score}"/>
+        </valueQuantity>
       </answer>
     </item>
   </item>

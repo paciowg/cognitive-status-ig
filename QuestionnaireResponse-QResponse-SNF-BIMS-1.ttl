@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -10,11 +11,11 @@
   fhir:Resource.id [ fhir:value "QResponse-SNF-BIMS-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml\">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>author</b>: <a href=\"PractitionerRole-Role-SLP-HoneyJones.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.questionnaire [
-     fhir:value "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17";
-     fhir:link <https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17>
+     fhir:value "http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml";
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml>
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
@@ -22,6 +23,10 @@
      fhir:Reference.reference [ fhir:value "Patient/patientBSJ1" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-07-11T11:30:00-05:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.author [
+     fhir:link <http://paciowg.github.io/cognitive-status-ig/PractitionerRole/Role-SLP-HoneyJones>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Role-SLP-HoneyJones" ]
+  ];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
      fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3" ];
@@ -36,9 +41,11 @@
          fhir:QuestionnaireResponse.item.text [ fhir:value "Repetition of Three Words. Number of words repeated after first attempt" ];
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
-           fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-3>;
-             fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-3" ]
+           fhir:QuestionnaireResponse.item.answer.valueCoding [
+             a loinc:LA6404-3;
+             fhir:Coding.system [ fhir:value "http://loinc.org" ];
+             fhir:Coding.code [ fhir:value "LA6404-3" ];
+             fhir:Coding.display [ fhir:value "Two" ]
            ]
          ]
        ], [
@@ -51,9 +58,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct year" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-4>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-4" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10008-3;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10008-3" ];
+               fhir:Coding.display [ fhir:value "Missed by 1 year" ]
              ]
            ]
          ], [
@@ -62,9 +71,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct month" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-5>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-5" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10010-9;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10010-9" ];
+               fhir:Coding.display [ fhir:value "Missed by 6 days to 1 month" ]
              ]
            ]
          ], [
@@ -73,9 +84,11 @@
            fhir:QuestionnaireResponse.item.text [ fhir:value "Able to report correct day of the week" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-6>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-6" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA9960-1;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA9960-1" ];
+               fhir:Coding.display [ fhir:value "Correct" ]
              ]
            ]
          ]
@@ -86,46 +99,53 @@
          fhir:QuestionnaireResponse.item.item [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400A" ];
-           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall 'sock'" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall \"sock\"" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-7>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-7" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10126-3;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10126-3" ];
+               fhir:Coding.display [ fhir:value "Yes, after cueing (\"something to wear\")" ]
              ]
            ]
          ], [
            fhir:index 1;
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400B" ];
-           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall 'blue'" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall \"blue\"" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-8>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-8" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10978-7;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10978-7" ];
+               fhir:Coding.display [ fhir:value "Yes, after cueing (\"a color\")" ]
              ]
            ]
          ], [
            fhir:index 2;
            fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0400C" ];
-           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall 'bed'" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "Able to recall \"bed\"" ];
            fhir:QuestionnaireResponse.item.answer [
              fhir:index 0;
-             fhir:QuestionnaireResponse.item.answer.valueReference [
-               fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-9>;
-               fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-9" ]
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               a loinc:LA10125-5;
+               fhir:Coding.system [ fhir:value "http://loinc.org" ];
+               fhir:Coding.code [ fhir:value "LA10125-5" ];
+               fhir:Coding.display [ fhir:value "Yes, after cueing (\"a piece of furniture\")" ]
              ]
            ]
          ]
        ], [
          fhir:index 3;
          fhir:QuestionnaireResponse.item.linkId [ fhir:value "Section-3/C0500" ];
-         fhir:QuestionnaireResponse.item.text [ fhir:value "BIMS Summary Score			{score}" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "BIMS Summary Score" ];
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
-           fhir:QuestionnaireResponse.item.answer.valueReference [
-             fhir:link <http://paciowg.github.io/cognitive-status-ig/Observation/CSC-SNF-BIMS-1-Ob-Question-10>;
-             fhir:Reference.reference [ fhir:value "Observation/CSC-SNF-BIMS-1-Ob-Question-10" ]
+           fhir:QuestionnaireResponse.item.answer.valueQuantity [
+             fhir:Quantity.value [ fhir:value "9"^^xsd:decimal ];
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+             fhir:Quantity.code [ fhir:value "{score}" ]
            ]
          ]
        ]

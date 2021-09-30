@@ -11,7 +11,7 @@
   <name value="PACIOCognitiveStatusImplementationGuide"/>
   <title value="PACIO Cognitive Status Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-09-16T08:49:25-07:00"/>
+  <date value="2021-09-29T17:17:11-07:00"/>
   <publisher value="HL7 Patient Care Work Group"/>
   <contact>
     <name value="HL7 Patient Care Work Group"/>
@@ -73,6 +73,30 @@
       </extension>
       <extension url="value">
         <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -173,23 +197,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-publisher"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -263,7 +271,7 @@
         <reference value="StructureDefinition/assistance-required"/>
       </reference>
       <name value="AssistanceRequired"/>
-      <description value="Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
+      <description value="Associated with the Narrative History of Cognitive Status profile to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -370,28 +378,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/CSC-Hospital-MMSE-2"/>
-      </reference>
-      <name value="CSC-Hospital-MMSE-2"/>
-      <description value="An instance of CognitiveStatusCollection"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CSC-Hospital-MMSE-2-Ob-Question-32"/>
-      </reference>
-      <name value="CSC-Hospital-MMSE-2-Ob-Question-32"/>
-      <description value="An instance of CognitiveStatus"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/CSC-Hospital-MOCA-1"/>
       </reference>
       <name value="CSC-Hospital-MOCA-1"/>
@@ -406,28 +392,6 @@
         <reference value="Observation/CSC-Hospital-MOCA-1-Ob-Question-1"/>
       </reference>
       <name value="CSC-Hospital-MOCA-1-Ob-Question-1"/>
-      <description value="An instance of CognitiveStatus"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CSC-Hospital-MOCA-2"/>
-      </reference>
-      <name value="CSC-Hospital-MOCA-2"/>
-      <description value="An instance of CognitiveStatusCollection"/>
-      <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/CSC-Hospital-MOCA-2-Ob-Question-2"/>
-      </reference>
-      <name value="CSC-Hospital-MOCA-2-Ob-Question-2"/>
       <description value="An instance of CognitiveStatus"/>
       <exampleCanonical value="http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"/>
     </resource>
@@ -953,31 +917,9 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/QResponse-Hospital-MMSE-2"/>
-      </reference>
-      <name value="QResponse-Hospital-MMSE-2"/>
-      <description value="An instance of QuestionnaireResponse"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
         <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA-1"/>
       </reference>
       <name value="QResponse-Hospital-MOCA-1"/>
-      <description value="An instance of QuestionnaireResponse"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/QResponse-Hospital-MOCA-2"/>
-      </reference>
-      <name value="QResponse-Hospital-MOCA-2"/>
       <description value="An instance of QuestionnaireResponse"/>
       <exampleBoolean value="true"/>
     </resource>

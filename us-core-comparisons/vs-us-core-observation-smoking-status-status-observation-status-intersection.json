@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "d328747a-40e1-494b-a9a7-924e4ebc69b8-48",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/d328747a-40e1-494b-a9a7-924e4ebc69b8-48",
+  "id" : "346a1188-8f34-4a94-a2b2-e641303bd198-48",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/346a1188-8f34-4a94-a2b2-e641303bd198-48",
   "name" : "IntersectionUSCoreObservationSmokingStatusStatusAndObservationStatus",
   "title" : "Intersection of US Core Status for Smoking Status Observation And ObservationStatus",
   "status" : "active",
-  "date" : "2021-09-16T08:49:41-07:00",
+  "date" : "2021-09-29T17:17:25-07:00",
   "expansion" : {
     "contains" : [{
       "system" : "http://hl7.org/fhir/observation-status",

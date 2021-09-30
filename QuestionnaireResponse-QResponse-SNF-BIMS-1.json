@@ -3,14 +3,17 @@
   "id": "QResponse-SNF-BIMS-1",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml\">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>author</b>: <a href=\"PractitionerRole-Role-SLP-HoneyJones.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>"
   },
-  "questionnaire": "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17",
+  "questionnaire": "http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml",
   "status": "completed",
   "subject": {
     "reference": "Patient/patientBSJ1"
   },
   "authored": "2020-07-11T11:30:00-05:00",
+  "author": {
+    "reference": "PractitionerRole/Role-SLP-HoneyJones"
+  },
   "item": [
     {
       "linkId": "Section-3",
@@ -25,8 +28,10 @@
               "text": "Repetition of Three Words. Number of words repeated after first attempt",
               "answer": [
                 {
-                  "valueReference": {
-                    "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-3"
+                  "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA6404-3",
+                    "display": "Two"
                   }
                 }
               ]
@@ -40,8 +45,10 @@
                   "text": "Able to report correct year",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-4"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10008-3",
+                        "display": "Missed by 1 year"
                       }
                     }
                   ]
@@ -51,8 +58,10 @@
                   "text": "Able to report correct month",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-5"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10010-9",
+                        "display": "Missed by 6 days to 1 month"
                       }
                     }
                   ]
@@ -62,8 +71,10 @@
                   "text": "Able to report correct day of the week",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-6"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA9960-1",
+                        "display": "Correct"
                       }
                     }
                   ]
@@ -76,33 +87,39 @@
               "item": [
                 {
                   "linkId": "Section-3/C0400A",
-                  "text": "Able to recall 'sock'",
+                  "text": "Able to recall \"sock\"",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-7"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10126-3",
+                        "display": "Yes, after cueing (\"something to wear\")"
                       }
                     }
                   ]
                 },
                 {
                   "linkId": "Section-3/C0400B",
-                  "text": "Able to recall 'blue'",
+                  "text": "Able to recall \"blue\"",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-8"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10978-7",
+                        "display": "Yes, after cueing (\"a color\")"
                       }
                     }
                   ]
                 },
                 {
                   "linkId": "Section-3/C0400C",
-                  "text": "Able to recall 'bed'",
+                  "text": "Able to recall \"bed\"",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-9"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10125-5",
+                        "display": "Yes, after cueing (\"a piece of furniture\")"
                       }
                     }
                   ]
@@ -111,11 +128,13 @@
             },
             {
               "linkId": "Section-3/C0500",
-              "text": "BIMS Summary Score\t\t\t{score}",
+              "text": "BIMS Summary Score",
               "answer": [
                 {
-                  "valueReference": {
-                    "reference": "Observation/CSC-SNF-BIMS-1-Ob-Question-10"
+                  "valueQuantity": {
+                    "value": 9,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{score}"
                   }
                 }
               ]

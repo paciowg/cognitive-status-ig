@@ -3,14 +3,17 @@
   "id": "QResponse-SNF-PHQ9-1",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17\">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: Total Severity Score\t\t\t{score}</p></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml\">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-patientBSJ1.html\">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>author</b>: <a href=\"PractitionerRole-Role-SLP-LunaBaskins.html\">Generated Summary: active; <span title=\"Codes: {http://snomed.info/sct 159026005}\">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4</p><p><b>text</b>: MDS v3.0 - RAI v1.18.1 - Mood - OSA [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0200</p><p><b>text</b>: Resident mood interview (PHQ-9) [Reported PHQ-9 CMS]</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-4/D0300</p><p><b>text</b>: PHQ-9 Total Score</p></blockquote></blockquote></div>"
   },
-  "questionnaire": "https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17",
+  "questionnaire": "http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml",
   "status": "completed",
   "subject": {
     "reference": "Patient/patientBSJ1"
   },
   "authored": "2020-07-11T11:30:00-05:00",
+  "author": {
+    "reference": "PractitionerRole/Role-SLP-LunaBaskins"
+  },
   "item": [
     {
       "linkId": "Section-4",
@@ -29,8 +32,10 @@
                   "text": "Little interest or pleasure in doing things",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-11"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA33-6",
+                        "display": "Yes"
                       }
                     }
                   ]
@@ -40,8 +45,10 @@
                   "text": "Feeling down",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-13"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA33-6",
+                        "display": "Yes"
                       }
                     }
                   ]
@@ -51,8 +58,10 @@
                   "text": "Trouble falling or staying asleep",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-15"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA33-6",
+                        "display": "Yes"
                       }
                     }
                   ]
@@ -62,8 +71,10 @@
                   "text": "Feeling tired or having little energy",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-17"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8",
+                        "display": "No"
                       }
                     }
                   ]
@@ -73,8 +84,10 @@
                   "text": "Poor appetite or overeating",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-19"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8",
+                        "display": "No"
                       }
                     }
                   ]
@@ -84,8 +97,10 @@
                   "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-21"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8",
+                        "display": "No"
                       }
                     }
                   ]
@@ -95,8 +110,10 @@
                   "text": "Trouble concentrating on things",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-23"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8",
+                        "display": "No"
                       }
                     }
                   ]
@@ -106,8 +123,10 @@
                   "text": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-25"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8",
+                        "display": "No"
                       }
                     }
                   ]
@@ -117,8 +136,10 @@
                   "text": "Thoughts that you would be better off dead",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-27"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10996-9",
+                        "display": "No response"
                       }
                     }
                   ]
@@ -134,8 +155,10 @@
                   "text": "Little interest or pleasure in doing things",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-12"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10998-5",
+                        "display": "2-6 days (several days)"
                       }
                     }
                   ]
@@ -145,8 +168,10 @@
                   "text": "Feeling down",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-14"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10998-5",
+                        "display": "2-6 days (several days)"
                       }
                     }
                   ]
@@ -156,8 +181,10 @@
                   "text": "Trouble falling or staying asleep",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-16"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10998-5",
+                        "display": "2-6 days (several days)"
                       }
                     }
                   ]
@@ -167,8 +194,10 @@
                   "text": "Feeling tired or having little energy",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-18"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10997-7",
+                        "display": "Never or 1 day"
                       }
                     }
                   ]
@@ -178,8 +207,10 @@
                   "text": "Poor appetite or overeating",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-20"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10997-7",
+                        "display": "Never or 1 day"
                       }
                     }
                   ]
@@ -189,8 +220,10 @@
                   "text": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-22"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10997-7",
+                        "display": "Never or 1 day"
                       }
                     }
                   ]
@@ -200,8 +233,10 @@
                   "text": "Trouble concentrating on things",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-24"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10997-7",
+                        "display": "Never or 1 day"
                       }
                     }
                   ]
@@ -211,22 +246,17 @@
                   "text": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
                   "answer": [
                     {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-26"
+                      "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA10997-7",
+                        "display": "Never or 1 day"
                       }
                     }
                   ]
                 },
                 {
                   "linkId": "Section-4/D0200I2",
-                  "text": "Thoughts that you would be better off dead",
-                  "answer": [
-                    {
-                      "valueReference": {
-                        "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-28"
-                      }
-                    }
-                  ]
+                  "text": "Thoughts that you would be better off dead"
                 }
               ]
             }
@@ -234,11 +264,13 @@
         },
         {
           "linkId": "Section-4/D0300",
-          "text": "Total Severity Score\t\t\t{score}",
+          "text": "PHQ-9 Total Score",
           "answer": [
             {
-              "valueReference": {
-                "reference": "Observation/CSC-SNF-PHQ9-1-Ob-Question-29"
+              "valueQuantity": {
+                "value": 3,
+                "system": "http://unitsofmeasure.org",
+                "code": "{score}"
               }
             }
           ]

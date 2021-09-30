@@ -3,14 +3,17 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
   <id value="QResponse-SNF-BIMS-1"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17">https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml">http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-patientBSJ1.html">Generated Summary: Betsy Smith-Johnson</a></p><p><b>authored</b>: Jul 11, 2020, 9:30:00 AM</p><p><b>author</b>: <a href="PractitionerRole-Role-SLP-HoneyJones.html">Generated Summary: active; <span title="Codes: {http://snomed.info/sct 159026005}">Speech and language therapist</span></a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3</p><p><b>text</b>: MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]</p><blockquote><p><b>item</b></p><p><b>linkId</b>: Section-3/C0200-C0500</p><p><b>text</b>: Brief interview for mental status [BIMS]</p></blockquote></blockquote></div>
   </text>
-  <questionnaire value="https://api.logicahealth.org/PACIO/open/Questionnaire/MDS3.0-NC-1.17"/>
+  <questionnaire value="http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml"/>
   <status value="completed"/>
   <subject>
     <reference value="Patient/patientBSJ1"/>
   </subject>
   <authored value="2020-07-11T11:30:00-05:00"/>
+  <author>
+    <reference value="PractitionerRole/Role-SLP-HoneyJones"/>
+  </author>
   <item>
     <linkId value="Section-3"/>
     <text value="MDS v3.0 - RAI v1.17.2 - Cognitive patterns [CMS Assessment]"/>
@@ -21,9 +24,11 @@
         <linkId value="Section-3/C0200"/>
         <text value="Repetition of Three Words. Number of words repeated after first attempt"/>
         <answer>
-          <valueReference>
-            <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-3"/>
-          </valueReference>
+          <valueCoding>
+            <system value="http://loinc.org"/>
+            <code value="LA6404-3"/>
+            <display value="Two"/>
+          </valueCoding>
         </answer>
       </item>
       <item>
@@ -33,27 +38,33 @@
           <linkId value="Section-3/C0300A"/>
           <text value="Able to report correct year"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-4"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10008-3"/>
+              <display value="Missed by 1 year"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-3/C0300B"/>
           <text value="Able to report correct month"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-5"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10010-9"/>
+              <display value="Missed by 6 days to 1 month"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-3/C0300C"/>
           <text value="Able to report correct day of the week"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-6"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA9960-1"/>
+              <display value="Correct"/>
+            </valueCoding>
           </answer>
         </item>
       </item>
@@ -62,39 +73,47 @@
         <text value="Recall [BIMS]"/>
         <item>
           <linkId value="Section-3/C0400A"/>
-          <text value="Able to recall &#39;sock&#39;"/>
+          <text value="Able to recall &quot;sock&quot;"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-7"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10126-3"/>
+              <display value="Yes, after cueing (&quot;something to wear&quot;)"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-3/C0400B"/>
-          <text value="Able to recall &#39;blue&#39;"/>
+          <text value="Able to recall &quot;blue&quot;"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-8"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10978-7"/>
+              <display value="Yes, after cueing (&quot;a color&quot;)"/>
+            </valueCoding>
           </answer>
         </item>
         <item>
           <linkId value="Section-3/C0400C"/>
-          <text value="Able to recall &#39;bed&#39;"/>
+          <text value="Able to recall &quot;bed&quot;"/>
           <answer>
-            <valueReference>
-              <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-9"/>
-            </valueReference>
+            <valueCoding>
+              <system value="http://loinc.org"/>
+              <code value="LA10125-5"/>
+              <display value="Yes, after cueing (&quot;a piece of furniture&quot;)"/>
+            </valueCoding>
           </answer>
         </item>
       </item>
       <item>
         <linkId value="Section-3/C0500"/>
-        <text value="BIMS Summary Score&#x9;&#x9;&#x9;{score}"/>
+        <text value="BIMS Summary Score"/>
         <answer>
-          <valueReference>
-            <reference value="Observation/CSC-SNF-BIMS-1-Ob-Question-10"/>
-          </valueReference>
+          <valueQuantity>
+            <value value="9"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="{score}"/>
+          </valueQuantity>
         </answer>
       </item>
     </item>

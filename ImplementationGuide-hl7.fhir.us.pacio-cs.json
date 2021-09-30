@@ -10,7 +10,7 @@
   "name": "PACIOCognitiveStatusImplementationGuide",
   "title": "PACIO Cognitive Status Implementation Guide",
   "status": "active",
-  "date": "2021-09-16T08:49:25-07:00",
+  "date": "2021-09-29T17:17:11-07:00",
   "publisher": "HL7 Patient Care Work Group",
   "contact": [
     {
@@ -101,6 +101,45 @@
           {
             "url": "value",
             "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -265,33 +304,7 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-jurisdiction"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "apply-license"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-publisher"
           },
           {
             "url": "value",
@@ -395,7 +408,7 @@
           "reference": "StructureDefinition/assistance-required"
         },
         "name": "AssistanceRequired",
-        "description": "Associated with prior level of cognitive function to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
+        "description": "Associated with the Narrative History of Cognitive Status profile to provide a high-level indication of assistance required for the person’s baseline ability (cognitive function immediately preceding the current admission, illness, or exacerbation for a patient) to answer cognitive related clinical questions. The CMS Assessment answer list LL4309-2 provides possible values for this extension.",
         "exampleBoolean": false
       },
       {
@@ -532,34 +545,6 @@
           }
         ],
         "reference": {
-          "reference": "Observation/CSC-Hospital-MMSE-2"
-        },
-        "name": "CSC-Hospital-MMSE-2",
-        "description": "An instance of CognitiveStatusCollection",
-        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/CSC-Hospital-MMSE-2-Ob-Question-32"
-        },
-        "name": "CSC-Hospital-MMSE-2-Ob-Question-32",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
           "reference": "Observation/CSC-Hospital-MOCA-1"
         },
         "name": "CSC-Hospital-MOCA-1",
@@ -577,34 +562,6 @@
           "reference": "Observation/CSC-Hospital-MOCA-1-Ob-Question-1"
         },
         "name": "CSC-Hospital-MOCA-1-Ob-Question-1",
-        "description": "An instance of CognitiveStatus",
-        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/CSC-Hospital-MOCA-2"
-        },
-        "name": "CSC-Hospital-MOCA-2",
-        "description": "An instance of CognitiveStatusCollection",
-        "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/CSC-Hospital-MOCA-2-Ob-Question-2"
-        },
-        "name": "CSC-Hospital-MOCA-2-Ob-Question-2",
         "description": "An instance of CognitiveStatus",
         "exampleCanonical": "http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs"
       },
@@ -1274,37 +1231,9 @@
           }
         ],
         "reference": {
-          "reference": "QuestionnaireResponse/QResponse-Hospital-MMSE-2"
-        },
-        "name": "QResponse-Hospital-MMSE-2",
-        "description": "An instance of QuestionnaireResponse",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
           "reference": "QuestionnaireResponse/QResponse-Hospital-MOCA-1"
         },
         "name": "QResponse-Hospital-MOCA-1",
-        "description": "An instance of QuestionnaireResponse",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/QResponse-Hospital-MOCA-2"
-        },
-        "name": "QResponse-Hospital-MOCA-2",
         "description": "An instance of QuestionnaireResponse",
         "exampleBoolean": true
       },

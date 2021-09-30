@@ -1,225 +1,173 @@
 ﻿PACIOCognitiveStatusImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 41
-IG Publisher Version: 1.1.80
-Generated Thu Sep 16 08:52:12 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
-
+err = 0, warn = 6, info = 0
+IG Publisher Version: 1.1.81
+Generated Wed Sep 29 17:19:22 PDT 2021. FHIR version 4.0.1 for hl7.fhir.us.pacio-cs#0.1.0 (canonical = http://paciowg.github.io/cognitive-status-ig)
  Build Errors : 0 / 1 / 0
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/CodeSystem-pacio-cat-cs : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Device-CMS-Device-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Device-CMS-Device-2 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-2 : 0 / 0 / 1
  /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pacio-cs : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/codesystem-pacio-cat-cs : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/device-CMS-Device-1 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/device-CMS-Device-2 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/deviceusestatement-CSC-SNF-BIMS-1-UseOfDevice-1 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/deviceusestatement-CSC-SNF-BIMS-1-UseOfDevice-2 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/location-Org-Loc-01 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/location-Org-Loc-02 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/location-Org-Loc-03 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/location-provider-org-loc-01 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/location-provider-org-loc-16 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-BSJ-Narrative-History-Cognitive-Status-1 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MMSE-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MMSE-1-Ob-Question-31 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MMSE-2 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MMSE-2-Ob-Question-32 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MOCA-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MOCA-1-Ob-Question-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MOCA-2 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-Hospital-MOCA-2-Ob-Question-2 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-10 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-3 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-4 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-5 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-6 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-7 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-8 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-9 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1-Ob-Question-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1-Ob-Question-3 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1-Ob-Question-5 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-11 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-12 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-13 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-14 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-15 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-16 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-17 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-18 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-19 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-20 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-21 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-22 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-23 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-24 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-25 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-26 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-27 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-28 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-29 : 0 / 0 / 2
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/organization-Org-01 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/organization-Org-02 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/organization-Org-03 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/organization-provider-org-01 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/organization-provider-org-16 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/patient-patientBSJ1 : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitioner-Practitioner-HoneyJones : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitioner-Practitioner-JennyGlass : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitioner-Practitioner-JohnSmith : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitioner-Practitioner-LunaBaskins : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitioner-Practitioner-NoraOlogist : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitionerrole-Role-SLP-HoneyJones : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitionerrole-Role-SLP-JennyGlass : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitionerrole-Role-SLP-LunaBaskins : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitionerrole-provider-role-neurologist : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/practitionerrole-provider-role-pcp : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MMSE-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MMSE-2 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MOCA-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MOCA-2 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-SNF-BIMS-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-SNF-CAM-Admission-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/questionnaireresponse-QResponse-SNF-PHQ9-1 : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-assistance-required : 0 / 2 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-device-patient-used : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-event-location : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-pacio-cs : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-pacio-cs-dev : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-pacio-csc : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/structuredefinition-pacio-nhcs : 0 / 1 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/valueset-pacio-cat-vs : 0 / 0 / 1
- /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/input/resources/capabilitystatement-pacio-cs-cap : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Location-Org-Loc-01 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Location-Org-Loc-02 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Location-Org-Loc-03 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Location-provider-org-loc-01 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Location-provider-org-loc-16 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-BSJ-Narrative-History-Cognitive-Status-1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-Hospital-MMSE-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-Hospital-MMSE-1-Ob-Question-31 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-Hospital-MOCA-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-Hospital-MOCA-1-Ob-Question-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-10 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-3 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-4 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-5 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-6 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-7 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-8 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-9 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1-Ob-Question-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1-Ob-Question-3 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1-Ob-Question-5 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-11 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-12 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-13 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-14 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-15 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-16 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-17 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-18 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-19 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-20 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-21 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-22 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-23 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-24 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-25 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-26 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-27 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-28 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-29 : 0 / 0 / 2
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Organization-Org-01 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Organization-Org-02 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Organization-Org-03 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Organization-provider-org-01 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Organization-provider-org-16 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Patient-patientBSJ1 : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Practitioner-Practitioner-HoneyJones : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Practitioner-Practitioner-JennyGlass : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Practitioner-Practitioner-JohnSmith : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Practitioner-Practitioner-LunaBaskins : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/Practitioner-Practitioner-NoraOlogist : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/PractitionerRole-Role-SLP-HoneyJones : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/PractitionerRole-Role-SLP-JennyGlass : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/PractitionerRole-Role-SLP-LunaBaskins : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/PractitionerRole-provider-role-neurologist : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/PractitionerRole-provider-role-pcp : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/QuestionnaireResponse-QResponse-Hospital-MMSE-1 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/QuestionnaireResponse-QResponse-Hospital-MOCA-1 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-BIMS-1 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-CAM-Admission-1 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-PHQ9-1 : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-assistance-required : 0 / 2 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-device-patient-used : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-event-location : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-pacio-cs : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-pacio-cs-dev : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-pacio-csc : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/StructureDefinition-pacio-nhcs : 0 / 1 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/fsh-generated/resources/ValueSet-pacio-cat-vs : 0 / 0 / 1
+ /mnt/c/Users/calebwan/workspace/PACIO-dev/github.com-repos/cognitive-status-cli/input/resources/CapabilityStatement-pacio-cs-cap : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
+== fsh-generated/resources/CodeSystem-pacio-cat-cs.json ==
+== fsh-generated/resources/Device-CMS-Device-1.json ==
+== fsh-generated/resources/Device-CMS-Device-2.json ==
+== fsh-generated/resources/DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-1.json ==
+== fsh-generated/resources/DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-2.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pacio-cs.json ==
-== fsh-generated/resources/codesystem-pacio-cat-cs.json ==
-== fsh-generated/resources/device-CMS-Device-1.json ==
-== fsh-generated/resources/device-CMS-Device-2.json ==
-== fsh-generated/resources/deviceusestatement-CSC-SNF-BIMS-1-UseOfDevice-1.json ==
-== fsh-generated/resources/deviceusestatement-CSC-SNF-BIMS-1-UseOfDevice-2.json ==
-== fsh-generated/resources/location-Org-Loc-01.json ==
-== fsh-generated/resources/location-Org-Loc-02.json ==
-== fsh-generated/resources/location-Org-Loc-03.json ==
-== fsh-generated/resources/location-provider-org-loc-01.json ==
-== fsh-generated/resources/location-provider-org-loc-16.json ==
-== fsh-generated/resources/observation-BSJ-Narrative-History-Cognitive-Status-1.json ==
-== fsh-generated/resources/observation-CSC-Hospital-MMSE-1.json ==
-INFORMATION: Observation/CSC-Hospital-MMSE-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-Hospital-MMSE-1-Ob-Question-31.json ==
-INFORMATION: Observation/CSC-Hospital-MMSE-1-Ob-Question-31: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-Hospital-MMSE-2.json ==
-INFORMATION: Observation/CSC-Hospital-MMSE-2: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-Hospital-MMSE-2-Ob-Question-32.json ==
-INFORMATION: Observation/CSC-Hospital-MMSE-2-Ob-Question-32: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-Hospital-MOCA-1.json ==
-INFORMATION: Observation/CSC-Hospital-MOCA-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-Hospital-MOCA-1-Ob-Question-1.json ==
-INFORMATION: Observation/CSC-Hospital-MOCA-1-Ob-Question-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-Hospital-MOCA-2.json ==
-INFORMATION: Observation/CSC-Hospital-MOCA-2: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-Hospital-MOCA-2-Ob-Question-2.json ==
-INFORMATION: Observation/CSC-Hospital-MOCA-2-Ob-Question-2: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-10.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-10: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-3.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-3: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-4.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-4: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-5.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-5: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-6.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-6: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-7.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-7: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-8.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-8: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-BIMS-1-Ob-Question-9.json ==
-INFORMATION: Observation/CSC-SNF-BIMS-1-Ob-Question-9: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1.json ==
-INFORMATION: Observation/CSC-SNF-CAM-Admission-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1-Ob-Question-1.json ==
-INFORMATION: Observation/CSC-SNF-CAM-Admission-1-Ob-Question-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1-Ob-Question-3.json ==
-INFORMATION: Observation/CSC-SNF-CAM-Admission-1-Ob-Question-3: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-CAM-Admission-1-Ob-Question-5.json ==
-INFORMATION: Observation/CSC-SNF-CAM-Admission-1-Ob-Question-5: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-11.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-11: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-12.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-12: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-13.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-13: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-14.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-14: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-15.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-15: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-16.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-16: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-17.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-17: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-18.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-18: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-19.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-19: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-20.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-20: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-21.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-21: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-22.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-22: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-23.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-23: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-24.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-24: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-25.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-25: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-26.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-26: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-27.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-27: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-28.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-28: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/observation-CSC-SNF-PHQ9-1-Ob-Question-29.json ==
-INFORMATION: Observation/CSC-SNF-PHQ9-1-Ob-Question-29: Observation.category[1]: This element does not match any known slice defined in the profile http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs
-== fsh-generated/resources/organization-Org-01.json ==
-== fsh-generated/resources/organization-Org-02.json ==
-== fsh-generated/resources/organization-Org-03.json ==
-== fsh-generated/resources/organization-provider-org-01.json ==
-== fsh-generated/resources/organization-provider-org-16.json ==
-== fsh-generated/resources/patient-patientBSJ1.json ==
-== fsh-generated/resources/practitioner-Practitioner-HoneyJones.json ==
-== fsh-generated/resources/practitioner-Practitioner-JennyGlass.json ==
-== fsh-generated/resources/practitioner-Practitioner-JohnSmith.json ==
-== fsh-generated/resources/practitioner-Practitioner-LunaBaskins.json ==
-== fsh-generated/resources/practitioner-Practitioner-NoraOlogist.json ==
-== fsh-generated/resources/practitionerrole-Role-SLP-HoneyJones.json ==
-== fsh-generated/resources/practitionerrole-Role-SLP-JennyGlass.json ==
-== fsh-generated/resources/practitionerrole-Role-SLP-LunaBaskins.json ==
-== fsh-generated/resources/practitionerrole-provider-role-neurologist.json ==
-== fsh-generated/resources/practitionerrole-provider-role-pcp.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MMSE-1.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MMSE-2.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MOCA-1.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-Hospital-MOCA-2.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-SNF-BIMS-1.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-SNF-CAM-Admission-1.json ==
-== fsh-generated/resources/questionnaireresponse-QResponse-SNF-PHQ9-1.json ==
-== fsh-generated/resources/structuredefinition-assistance-required.json ==
-== fsh-generated/resources/structuredefinition-device-patient-used.json ==
-== fsh-generated/resources/structuredefinition-event-location.json ==
-== fsh-generated/resources/structuredefinition-pacio-cs.json ==
-WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-cs').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-== fsh-generated/resources/structuredefinition-pacio-cs-dev.json ==
-== fsh-generated/resources/structuredefinition-pacio-csc.json ==
-WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-csc').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-== fsh-generated/resources/structuredefinition-pacio-nhcs.json ==
-WARNING: StructureDefinition.where(url = 'http://paciowg.github.io/cognitive-status-ig/StructureDefinition/pacio-nhcs').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
-== fsh-generated/resources/valueset-pacio-cat-vs.json ==
-== input/resources/capabilitystatement-pacio-cs-cap.json ==
+== fsh-generated/resources/Location-Org-Loc-01.json ==
+== fsh-generated/resources/Location-Org-Loc-02.json ==
+== fsh-generated/resources/Location-Org-Loc-03.json ==
+== fsh-generated/resources/Location-provider-org-loc-01.json ==
+== fsh-generated/resources/Location-provider-org-loc-16.json ==
+== fsh-generated/resources/Observation-BSJ-Narrative-History-Cognitive-Status-1.json ==
+== fsh-generated/resources/Observation-CSC-Hospital-MMSE-1.json ==
+== fsh-generated/resources/Observation-CSC-Hospital-MMSE-1-Ob-Question-31.json ==
+== fsh-generated/resources/Observation-CSC-Hospital-MOCA-1.json ==
+== fsh-generated/resources/Observation-CSC-Hospital-MOCA-1-Ob-Question-1.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-10.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-3.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-4.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-5.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-6.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-7.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-8.json ==
+== fsh-generated/resources/Observation-CSC-SNF-BIMS-1-Ob-Question-9.json ==
+== fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1.json ==
+== fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1-Ob-Question-1.json ==
+== fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1-Ob-Question-3.json ==
+== fsh-generated/resources/Observation-CSC-SNF-CAM-Admission-1-Ob-Question-5.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-11.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-12.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-13.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-14.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-15.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-16.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-17.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-18.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-19.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-20.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-21.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-22.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-23.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-24.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-25.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-26.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-27.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-28.json ==
+== fsh-generated/resources/Observation-CSC-SNF-PHQ9-1-Ob-Question-29.json ==
+== fsh-generated/resources/Organization-Org-01.json ==
+== fsh-generated/resources/Organization-Org-02.json ==
+== fsh-generated/resources/Organization-Org-03.json ==
+== fsh-generated/resources/Organization-provider-org-01.json ==
+== fsh-generated/resources/Organization-provider-org-16.json ==
+== fsh-generated/resources/Patient-patientBSJ1.json ==
+== fsh-generated/resources/Practitioner-Practitioner-HoneyJones.json ==
+== fsh-generated/resources/Practitioner-Practitioner-JennyGlass.json ==
+== fsh-generated/resources/Practitioner-Practitioner-JohnSmith.json ==
+== fsh-generated/resources/Practitioner-Practitioner-LunaBaskins.json ==
+== fsh-generated/resources/Practitioner-Practitioner-NoraOlogist.json ==
+== fsh-generated/resources/PractitionerRole-Role-SLP-HoneyJones.json ==
+== fsh-generated/resources/PractitionerRole-Role-SLP-JennyGlass.json ==
+== fsh-generated/resources/PractitionerRole-Role-SLP-LunaBaskins.json ==
+== fsh-generated/resources/PractitionerRole-provider-role-neurologist.json ==
+== fsh-generated/resources/PractitionerRole-provider-role-pcp.json ==
+== fsh-generated/resources/QuestionnaireResponse-QResponse-Hospital-MMSE-1.json ==
+WARNING: QuestionnaireResponse/QResponse-Hospital-MMSE-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/QuestionnaireResponse-QResponse-Hospital-MOCA-1.json ==
+WARNING: QuestionnaireResponse/QResponse-Hospital-MOCA-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-BIMS-1.json ==
+WARNING: QuestionnaireResponse/QResponse-SNF-BIMS-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-CAM-Admission-1.json ==
+WARNING: QuestionnaireResponse/QResponse-SNF-CAM-Admission-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/QuestionnaireResponse-QResponse-SNF-PHQ9-1.json ==
+WARNING: QuestionnaireResponse/QResponse-SNF-PHQ9-1: QuestionnaireResponse: The questionnaire 'http://paciowg.github.io/cognitive-status-ig/MDS3.0-NC-1.17.xml' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/StructureDefinition-assistance-required.json ==
+== fsh-generated/resources/StructureDefinition-device-patient-used.json ==
+== fsh-generated/resources/StructureDefinition-event-location.json ==
+== fsh-generated/resources/StructureDefinition-pacio-cs.json ==
+== fsh-generated/resources/StructureDefinition-pacio-cs-dev.json ==
+== fsh-generated/resources/StructureDefinition-pacio-csc.json ==
+== fsh-generated/resources/StructureDefinition-pacio-nhcs.json ==
+== fsh-generated/resources/ValueSet-pacio-cat-vs.json ==
+== input/resources/CapabilityStatement-pacio-cs-cap.json ==

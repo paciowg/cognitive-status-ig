@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "d328747a-40e1-494b-a9a7-924e4ebc69b8-131",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d328747a-40e1-494b-a9a7-924e4ebc69b8-131",
+  "id" : "346a1188-8f34-4a94-a2b2-e641303bd198-131",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/346a1188-8f34-4a94-a2b2-e641303bd198-131",
   "name" : "UnionUSCoreLaboratoryResultObservationProfileAndNarrativeHistoryOfCognitiveStatus",
   "title" : "Union of US Core Laboratory Result Observation Profile And PACIO Narrative History of Cognitive Status",
   "status" : "active",
-  "date" : "2021-09-16T08:49:42-07:00",
+  "date" : "2021-09-29T17:17:25-07:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
